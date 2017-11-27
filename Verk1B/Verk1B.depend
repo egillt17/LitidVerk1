@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1511804323 source:c:\users\lenovo\desktop\prufa\litidverk1\verk1b\main.cpp
+	<iostream>
+	<fstream>
+

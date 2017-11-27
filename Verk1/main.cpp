@@ -12,7 +12,7 @@ int main()
     fin.open("textFile.txt");
     if(fin.is_open()){
         while(!fin.eof()){
-            fin >> st;
+            getline(fin, st);
             cout << st << endl;
         }
         fin.close();

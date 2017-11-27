@@ -8,12 +8,15 @@ int main()
 {
     string st;
     ifstream fin;
+    char input;
 
     fin.open("textFile.txt");
     if(fin.is_open()){
-        while(!fin.eof()){
-            getline(fin, st);
-            cout << st << endl;
+        while(!fin.eof() && input != 'n'){
+            for (int i = 0; i < 10; i++) {
+                getline(fin, st);
+                cout << st << endl;
+            }
         }
         fin.close();
     }

@@ -27,6 +27,9 @@ int main()
             cout << st << endl;
         }
     }
+    else {
+        cout << "File cannot be read! " << endl;
+    }
 
     fout.close();
     return 0;

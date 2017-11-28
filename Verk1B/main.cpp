@@ -12,7 +12,7 @@ int main()
     getline(cin, str);
     while (str[0] != '\\')
     {
-        cout << str << endl;
+        fout << str << endl;
         getline(cin, str);
     }
 

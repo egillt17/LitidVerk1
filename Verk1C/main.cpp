@@ -7,5 +7,9 @@ int main()
 {
     Superhero hero;
 
+    cin >> hero;
+
+    cout << hero;
+
     return 0;
 }

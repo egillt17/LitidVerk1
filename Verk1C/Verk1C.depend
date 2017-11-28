@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1511875199 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\main.cpp
+1511876676 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\main.cpp
 	<iostream>
 	"Superhero.h"
 
-1511875766 c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\include\superhero.h
+1511876563 c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\include\superhero.h
 	<iostream>
 	<string>
 
-1511874354 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\src\superhero.cpp
+1511877434 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\src\superhero.cpp
 	"Superhero.h"
 

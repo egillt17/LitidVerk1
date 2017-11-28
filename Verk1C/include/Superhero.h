@@ -11,6 +11,8 @@ class Superhero
     public:
         Superhero();
         ~Superhero();
+        friend istream& operator >> (istream& in, Superhero hero);
+        friend ostream& operator << (ostream& out, const Superhero hero);
 
     private:
         string _name;

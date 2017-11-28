@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Code::Blocks layout files
+*.layout
+*.depend

@@ -6,9 +6,7 @@ class Superhero
 {
     public:
         Superhero();
-        virtual ~Superhero();
-
-    protected:
+        ~Superhero();
 
     private:
 };

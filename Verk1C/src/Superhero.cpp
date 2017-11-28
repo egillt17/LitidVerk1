@@ -31,7 +31,7 @@ istream& operator >> (istream& in, Superhero& hero){
 }
 
 ostream& operator << (ostream& out, const Superhero& hero){
-    out << hero._name << " (" << hero._age << ") " << ":";
+    out << hero._name << " (" << hero._age << ")" << ": ";
     if(hero._power == 'f'){
         out << "Flying" << endl;
     }
@@ -51,12 +51,11 @@ ostream& operator << (ostream& out, const Superhero& hero){
     return out;
 }
 
-void Superhero::get_hero(Superhero hero){
-    cout << "Name: " << _name << endl << "Age: " << _age << endl << "SuperPower: " << _power << endl;
+ofstream& operator << (ofstream& os, const Superhero& hero){
+    os << hero._name << " " << hero._age << " " << hero._power << endl;
+    return os;
 }
 
-void Superhero::set_hero(string name, int age, char power){
-    _name = name;
-    _age = age;
-    _power = power;
+void Superhero::get_hero(Superhero hero){
+    cout << "Name: " << _name << endl << "Age: " << _age << endl << "SuperPower: " << _power << endl;
 }

@@ -15,6 +15,7 @@ class Superhero
         ~Superhero();
         friend istream& operator >> (istream& in, Superhero& hero);
         friend ostream& operator << (ostream& out, const Superhero& hero);
+        friend ofstream& operator << (ofstream& os, const Superhero& hero);
         void get_hero(Superhero hero);
         void set_hero(string name, int age, char power);
 
@@ -25,3 +26,4 @@ class Superhero
 };
 
 #endif // SUPERHERO_H
+

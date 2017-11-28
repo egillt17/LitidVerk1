@@ -24,7 +24,22 @@ istream& operator >> (istream& in, Superhero& hero){
 }
 
 ostream& operator << (ostream& out, const Superhero& hero){
-    out << hero._name << " (" << hero._age << ") " << ": " << hero._power;
+    out << hero._name << " (" << hero._age << ") " << ":";
+    if(hero._power == 'f'){
+        out << "Flying" << endl;
+    }
+    else if(hero._power == 'g'){
+        out << "Giant" << endl;
+    }
+    else if(hero._power == 'h'){
+        out << "Hacker" << endl;
+    }
+    else if(hero._power == 'n'){
+        out << "None" << endl;
+    }
+    else{
+        out << "Weakling" << endl;
+    }
 
     return out;
 }

@@ -9,7 +9,7 @@ int main()
 
     cin >> hero;
 
-    cout << hero;
+    cout << endl << hero;
 
     return 0;
 }

@@ -7,6 +7,13 @@ Superhero::Superhero()
     _power = 'n';
 }
 
+Superhero::Superhero(string name, int age, char power)
+{
+    _name = name;
+    _age = age;
+    _power = power;
+}
+
 Superhero::~Superhero()
 {
     //dtor

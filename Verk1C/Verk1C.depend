@@ -11,3 +11,12 @@
 1511880548 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeiğ 1\verkefni 1\litidverk1\verk1c\src\superhero.cpp
 	"Superhero.h"
 
+1511881257 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verk1c\main.cpp
+	<iostream>
+	"Superhero.h"
+
+1511881745 c:\users\lenovo\desktop\verklegt 1\litidverk1\verk1c\include\superhero.h
+	<iostream>
+	<string>
+	<fstream>
+

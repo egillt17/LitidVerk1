@@ -10,6 +10,7 @@ class Pizza
     public:
         Pizza();
         ~Pizza();
+        void make_pizza();
 
     private:
         Toppings topping;

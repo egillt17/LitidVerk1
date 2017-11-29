@@ -9,3 +9,7 @@ Pizza::~Pizza()
 {
     //dtor
 }
+
+void Pizza::make_pizza(){
+
+}

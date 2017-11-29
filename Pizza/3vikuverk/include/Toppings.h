@@ -12,12 +12,12 @@ class Toppings
     public:
         Toppings();
         ~Toppings();
-        void display_toppings();
+        void display_toppings(char input);
         Toppings add_toppings();
 
     private:
         vector<string> name_of_topping;
-        int _price;
+        int _amount;
 };
 
 #endif // TOPPINGS_H

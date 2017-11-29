@@ -44,3 +44,59 @@
 1511888599 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\verkefni 1\verkefni\pizza\3vikuverk\src\pizza.cpp
 	"Pizza.h"
 
+1511888653 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\main.cpp
+	<iostream>
+	"Display.h"
+	"Manager.h"
+	"Sales.h"
+	"Baker.h"
+	"Delivery.h"
+	"Pizza.h"
+	"Order.h"
+
+1511888161 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\display.h
+
+1511888209 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\manager.h
+
+1511888246 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\sales.h
+
+1511888276 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\baker.h
+
+1511888363 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\delivery.h
+
+1511969925 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
+	"Toppings.h"
+	<iostream>
+
+1511970510 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\toppings.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
+1511888634 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\order.h
+
+1511888276 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\baker.cpp
+	"Baker.h"
+
+1511888363 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\delivery.cpp
+	"Delivery.h"
+
+1511888162 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\display.cpp
+	"Display.h"
+
+1511888209 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\manager.cpp
+	"Manager.h"
+
+1511888634 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\order.cpp
+	"Order.h"
+
+1511969934 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
+	"Pizza.h"
+
+1511888246 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\sales.cpp
+	"Sales.h"
+
+1511970639 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\toppings.cpp
+	"Toppings.h"
+

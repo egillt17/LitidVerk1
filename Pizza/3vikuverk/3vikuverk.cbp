@@ -41,6 +41,7 @@
 		<Unit filename="include/Order.h" />
 		<Unit filename="include/Pizza.h" />
 		<Unit filename="include/Sales.h" />
+		<Unit filename="include/Toppings.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Baker.cpp" />
 		<Unit filename="src/Delivery.cpp" />
@@ -49,6 +50,7 @@
 		<Unit filename="src/Order.cpp" />
 		<Unit filename="src/Pizza.cpp" />
 		<Unit filename="src/Sales.cpp" />
+		<Unit filename="src/Toppings.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

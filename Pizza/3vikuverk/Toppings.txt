@@ -1,0 +1,21 @@
+Meat:
+Pepperoni
+Ham
+Minced meat
+Bacon bits
+Bacon slices
+Chicken
+
+Cheeses:
+Fresh Mozzarella
+Cream cheese
+Cheddar cheese
+
+Fruit and Vegetables:
+Pineapple
+Jalapeno
+greeen Olives
+Black Olives
+Onion
+Garlic
+Chilli

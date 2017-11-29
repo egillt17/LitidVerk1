@@ -1,0 +1,15 @@
+Base Pizza (without toppings)
+
+smallPizza 		15$
+mediumPizza 		23$
+largePizza 		30$
+
+menuPizzas
+
+peppyShroom		s (16.9$) m(24.9$) l(31.9$)
+hawaii			s (16.9$) m(24.9$) l(31.9$)
+meatDelight		s (17.9$) m(25.9$) l(32.9$)
+xtraCheesy		s (17.9$) m(25.9$) l(32.9$)
+trueItalian		s (18.9$) m(26.9$) l(33.9$)
+extraGood		s (18.9$) m(26.9$) l(33.9$)
+

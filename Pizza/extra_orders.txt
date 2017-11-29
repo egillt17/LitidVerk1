@@ -1,0 +1,7 @@
+Side orders plus soda
+
+breadsticks 			s(10$) l(13$)
+garlicBrad			s(11$) l(14$)
+soda				s(10$) l(15$)
+sideSauce			2$
+garlicOil			2$

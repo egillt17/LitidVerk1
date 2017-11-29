@@ -1,0 +1,697 @@
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 1
+
+
+   1              		.file	"Sales.cpp"
+   2              		.text
+   3              	Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              		.align 2
+   6              		.globl	__ZN5SalesC2Ev
+   8              	__ZN5SalesC2Ev:
+   9              	LFB1:
+  10              		.file 1 "C:/Users/Nj\341ll M\375rdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src/Sales.cpp"
+   1:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** #include "Sales.h"
+   2:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** 
+   3:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** Sales::Sales()
+  11              		.loc 1 3 0
+  12              		.cfi_startproc
+  13 0000 55       		pushl	%ebp
+  14              		.cfi_def_cfa_offset 8
+  15              		.cfi_offset 5, -8
+  16 0001 89E5     		movl	%esp, %ebp
+  17              		.cfi_def_cfa_register 5
+  18 0003 83EC04   		subl	$4, %esp
+  19 0006 894DFC   		movl	%ecx, -4(%ebp)
+  20              	LBB2:
+  21              		.loc 1 3 0
+  22 0009 8B45FC   		movl	-4(%ebp), %eax
+  23 000c C7000800 		movl	$__ZTV5Sales+8, (%eax)
+  23      0000
+  24              	LBE2:
+   4:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** {
+   5:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp ****     //ctor
+   6:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** }
+  25              		.loc 1 6 0
+  26 0012 C9       		leave
+  27              		.cfi_restore 5
+  28              		.cfi_def_cfa 4, 4
+  29 0013 C3       		ret
+  30              		.cfi_endproc
+  31              	LFE1:
+  32              		.globl	__ZN5SalesC1Ev
+  34              		.set	__ZN5SalesC1Ev,__ZN5SalesC2Ev
+  35              		.align 2
+  36              		.globl	__ZN5SalesD2Ev
+  38              	__ZN5SalesD2Ev:
+  39              	LFB4:
+   7:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** 
+   8:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** Sales::~Sales()
+  40              		.loc 1 8 0
+  41              		.cfi_startproc
+  42 0014 55       		pushl	%ebp
+  43              		.cfi_def_cfa_offset 8
+  44              		.cfi_offset 5, -8
+  45 0015 89E5     		movl	%esp, %ebp
+  46              		.cfi_def_cfa_register 5
+  47 0017 83EC28   		subl	$40, %esp
+  48 001a 894DF4   		movl	%ecx, -12(%ebp)
+  49              	LBB3:
+  50              		.loc 1 8 0
+  51 001d 8B45F4   		movl	-12(%ebp), %eax
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 2
+
+
+  52 0020 C7000800 		movl	$__ZTV5Sales+8, (%eax)
+  52      0000
+  53              	LBE3:
+   9:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** {
+  10:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp ****     //dtor
+  11:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** }
+  54              		.loc 1 11 0
+  55 0026 B8000000 		movl	$0, %eax
+  55      00
+  56 002b 85C0     		testl	%eax, %eax
+  57 002d 740B     		je	L2
+  58              		.loc 1 11 0 is_stmt 0 discriminator 2
+  59 002f 8B45F4   		movl	-12(%ebp), %eax
+  60 0032 890424   		movl	%eax, (%esp)
+  61 0035 E8000000 		call	__ZdlPv
+  61      00
+  62              	L2:
+  63              		.loc 1 11 0
+  64 003a C9       		leave
+  65              		.cfi_restore 5
+  66              		.cfi_def_cfa 4, 4
+  67 003b C3       		ret
+  68              		.cfi_endproc
+  69              	LFE4:
+  70              		.globl	__ZN5SalesD1Ev
+  72              		.set	__ZN5SalesD1Ev,__ZN5SalesD2Ev
+  73              		.align 2
+  74              		.globl	__ZN5SalesD0Ev
+  76              	__ZN5SalesD0Ev:
+  77              	LFB6:
+   8:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Pizza/3vikuverk/src\Sales.cpp **** #include "Sales.h"
+
+Sales::Sales()
+{
+    //ctor
+}
+
+Sales::~Sales()
+{
+    //dtor
+}
+
+  78              		.loc 1 8 0 is_stmt 1
+  79              		.cfi_startproc
+  80 003c 55       		pushl	%ebp
+  81              		.cfi_def_cfa_offset 8
+  82              		.cfi_offset 5, -8
+  83 003d 89E5     		movl	%esp, %ebp
+  84              		.cfi_def_cfa_register 5
+  85 003f 83EC28   		subl	$40, %esp
+  86 0042 894DF4   		movl	%ecx, -12(%ebp)
+  87              		.loc 1 11 0
+  88 0045 8B45F4   		movl	-12(%ebp), %eax
+  89 0048 89C1     		movl	%eax, %ecx
+  90 004a E8C5FFFF 		call	__ZN5SalesD2Ev
+  90      FF
+  91 004f 8B45F4   		movl	-12(%ebp), %eax
+  92 0052 890424   		movl	%eax, (%esp)
+  93 0055 E8000000 		call	__ZdlPv
+  93      00
+  94 005a C9       		leave
+  95              		.cfi_restore 5
+  96              		.cfi_def_cfa 4, 4
+  97 005b C3       		ret
+  98              		.cfi_endproc
+  99              	LFE6:
+ 100              		.globl	__ZTV5Sales
+ 101              		.section	.rdata$_ZTV5Sales,"dr"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 3
+
+
+ 102              		.linkonce same_size
+ 103              		.align 8
+ 104              	__ZTV5Sales:
+ 105 0000 00000000 		.long	0
+ 106 0004 00000000 		.long	__ZTI5Sales
+ 107 0008 14000000 		.long	__ZN5SalesD1Ev
+ 108 000c 3C000000 		.long	__ZN5SalesD0Ev
+ 109              		.globl	__ZTI5Sales
+ 110              		.section	.rdata$_ZTI5Sales,"dr"
+ 111              		.linkonce same_size
+ 112              		.align 4
+ 113              	__ZTI5Sales:
+ 114 0000 08000000 		.long	__ZTVN10__cxxabiv117__class_type_infoE+8
+ 115 0004 00000000 		.long	__ZTS5Sales
+ 116              		.globl	__ZTS5Sales
+ 117              		.section	.rdata$_ZTS5Sales,"dr"
+ 118              		.linkonce same_size
+ 119              	__ZTS5Sales:
+ 120 0000 3553616C 		.ascii "5Sales\0"
+ 120      657300
+ 121 0007 00       		.text
+ 122              	Letext0:
+ 123              		.file 2 "include/Sales.h"
+ 124              		.section	.debug_info,"dr"
+ 125              	Ldebug_info0:
+ 126 0000 6B020000 		.long	0x26b
+ 127 0004 0400     		.word	0x4
+ 128 0006 00000000 		.secrel32	Ldebug_abbrev0
+ 129 000a 04       		.byte	0x4
+ 130 000b 01       		.uleb128 0x1
+ 131 000c 474E5520 		.ascii "GNU C++ 4.9.2 -mtune=generic -march=pentiumpro -g -fexceptions\0"
+ 131      432B2B20 
+ 131      342E392E 
+ 131      32202D6D 
+ 131      74756E65 
+ 132 004b 04       		.byte	0x4
+ 133 004c 433A5C55 		.ascii "C:\\Users\\Nj\341ll M\375rdal\\3viknanamskeid\\LitidVerk1\\Pizza\\3vikuverk\\src\\Sales.cp
+ 133      73657273 
+ 133      5C4E6AE1 
+ 133      6C6C204D 
+ 133      FD726461 
+ 134 009a 433A5C55 		.ascii "C:\\Users\\Nj\341ll M\375rdal\\3viknanamskeid\\LitidVerk1\\Pizza\\3vikuverk\0"
+ 134      73657273 
+ 134      5C4E6AE1 
+ 134      6C6C204D 
+ 134      FD726461 
+ 135 00da 00000000 		.long	Ltext0
+ 136 00de 5C000000 		.long	Letext0-Ltext0
+ 137 00e2 00000000 		.secrel32	Ldebug_line0
+ 138 00e6 02       		.uleb128 0x2
+ 139 00e7 53616C65 		.ascii "Sales\0"
+ 139      7300
+ 140 00ed 04       		.byte	0x4
+ 141 00ee 02       		.byte	0x2
+ 142 00ef 05       		.byte	0x5
+ 143 00f0 E6000000 		.long	0xe6
+ 144 00f4 5E010000 		.long	0x15e
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 4
+
+
+ 145 00f8 03       		.uleb128 0x3
+ 146 00f9 5F767074 		.ascii "_vptr.Sales\0"
+ 146      722E5361 
+ 146      6C657300 
+ 147 0105 70010000 		.long	0x170
+ 148 0109 00       		.byte	0
+ 149 010a 01       		.byte	0x1
+ 150 010b 04       		.uleb128 0x4
+ 151 010c 53616C65 		.ascii "Sales\0"
+ 151      7300
+ 152 0112 01       		.byte	0x1
+ 153 0113 1B010000 		.long	0x11b
+ 154 0117 26010000 		.long	0x126
+ 155 011b 05       		.uleb128 0x5
+ 156 011c 8C010000 		.long	0x18c
+ 157 0120 06       		.uleb128 0x6
+ 158 0121 92010000 		.long	0x192
+ 159 0125 00       		.byte	0
+ 160 0126 07       		.uleb128 0x7
+ 161 0127 53616C65 		.ascii "Sales\0"
+ 161      7300
+ 162 012d 01       		.byte	0x1
+ 163 012e 03       		.byte	0x3
+ 164 012f 01       		.byte	0x1
+ 165 0130 38010000 		.long	0x138
+ 166 0134 3E010000 		.long	0x13e
+ 167 0138 05       		.uleb128 0x5
+ 168 0139 8C010000 		.long	0x18c
+ 169 013d 00       		.byte	0
+ 170 013e 08       		.uleb128 0x8
+ 171 013f 7E53616C 		.ascii "~Sales\0"
+ 171      657300
+ 172 0146 01       		.byte	0x1
+ 173 0147 08       		.byte	0x8
+ 174 0148 01       		.byte	0x1
+ 175 0149 E6000000 		.long	0xe6
+ 176 014d 01       		.byte	0x1
+ 177 014e 52010000 		.long	0x152
+ 178 0152 05       		.uleb128 0x5
+ 179 0153 8C010000 		.long	0x18c
+ 180 0157 05       		.uleb128 0x5
+ 181 0158 69010000 		.long	0x169
+ 182 015c 00       		.byte	0
+ 183 015d 00       		.byte	0
+ 184 015e 09       		.uleb128 0x9
+ 185 015f 69010000 		.long	0x169
+ 186 0163 69010000 		.long	0x169
+ 187 0167 0A       		.uleb128 0xa
+ 188 0168 00       		.byte	0
+ 189 0169 0B       		.uleb128 0xb
+ 190 016a 04       		.byte	0x4
+ 191 016b 05       		.byte	0x5
+ 192 016c 696E7400 		.ascii "int\0"
+ 193 0170 0C       		.uleb128 0xc
+ 194 0171 04       		.byte	0x4
+ 195 0172 76010000 		.long	0x176
+ 196 0176 0D       		.uleb128 0xd
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 5
+
+
+ 197 0177 04       		.byte	0x4
+ 198 0178 5F5F7674 		.ascii "__vtbl_ptr_type\0"
+ 198      626C5F70 
+ 198      74725F74 
+ 198      79706500 
+ 199 0188 5E010000 		.long	0x15e
+ 200 018c 0C       		.uleb128 0xc
+ 201 018d 04       		.byte	0x4
+ 202 018e E6000000 		.long	0xe6
+ 203 0192 0E       		.uleb128 0xe
+ 204 0193 04       		.byte	0x4
+ 205 0194 98010000 		.long	0x198
+ 206 0198 0F       		.uleb128 0xf
+ 207 0199 E6000000 		.long	0xe6
+ 208 019d 10       		.uleb128 0x10
+ 209 019e 26010000 		.long	0x126
+ 210 01a2 00       		.byte	0
+ 211 01a3 AB010000 		.long	0x1ab
+ 212 01a7 B6010000 		.long	0x1b6
+ 213 01ab 11       		.uleb128 0x11
+ 214 01ac 74686973 		.ascii "this\0"
+ 214      00
+ 215 01b1 B6010000 		.long	0x1b6
+ 216 01b5 00       		.byte	0
+ 217 01b6 0F       		.uleb128 0xf
+ 218 01b7 8C010000 		.long	0x18c
+ 219 01bb 12       		.uleb128 0x12
+ 220 01bc 9D010000 		.long	0x19d
+ 221 01c0 5F5A4E35 		.ascii "_ZN5SalesC2Ev\0"
+ 221      53616C65 
+ 221      73433245 
+ 221      7600
+ 222 01ce 00000000 		.long	LFB1
+ 223 01d2 14000000 		.long	LFE1-LFB1
+ 224 01d6 01       		.uleb128 0x1
+ 225 01d7 9C       		.byte	0x9c
+ 226 01d8 E0010000 		.long	0x1e0
+ 227 01dc E9010000 		.long	0x1e9
+ 228 01e0 13       		.uleb128 0x13
+ 229 01e1 AB010000 		.long	0x1ab
+ 230 01e5 02       		.uleb128 0x2
+ 231 01e6 91       		.byte	0x91
+ 232 01e7 74       		.sleb128 -12
+ 233 01e8 00       		.byte	0
+ 234 01e9 10       		.uleb128 0x10
+ 235 01ea 3E010000 		.long	0x13e
+ 236 01ee 00       		.byte	0
+ 237 01ef F7010000 		.long	0x1f7
+ 238 01f3 11020000 		.long	0x211
+ 239 01f7 11       		.uleb128 0x11
+ 240 01f8 74686973 		.ascii "this\0"
+ 240      00
+ 241 01fd B6010000 		.long	0x1b6
+ 242 0201 11       		.uleb128 0x11
+ 243 0202 5F5F696E 		.ascii "__in_chrg\0"
+ 243      5F636872 
+ 243      6700
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 6
+
+
+ 244 020c 11020000 		.long	0x211
+ 245 0210 00       		.byte	0
+ 246 0211 0F       		.uleb128 0xf
+ 247 0212 69010000 		.long	0x169
+ 248 0216 14       		.uleb128 0x14
+ 249 0217 E9010000 		.long	0x1e9
+ 250 021b 5F5A4E35 		.ascii "_ZN5SalesD2Ev\0"
+ 250      53616C65 
+ 250      73443245 
+ 250      7600
+ 251 0229 14000000 		.long	LFB4
+ 252 022d 28000000 		.long	LFE4-LFB4
+ 253 0231 01       		.uleb128 0x1
+ 254 0232 9C       		.byte	0x9c
+ 255 0233 3B020000 		.long	0x23b
+ 256 0237 44020000 		.long	0x244
+ 257 023b 13       		.uleb128 0x13
+ 258 023c F7010000 		.long	0x1f7
+ 259 0240 02       		.uleb128 0x2
+ 260 0241 91       		.byte	0x91
+ 261 0242 6C       		.sleb128 -20
+ 262 0243 00       		.byte	0
+ 263 0244 15       		.uleb128 0x15
+ 264 0245 E9010000 		.long	0x1e9
+ 265 0249 5F5A4E35 		.ascii "_ZN5SalesD0Ev\0"
+ 265      53616C65 
+ 265      73443045 
+ 265      7600
+ 266 0257 3C000000 		.long	LFB6
+ 267 025b 20000000 		.long	LFE6-LFB6
+ 268 025f 01       		.uleb128 0x1
+ 269 0260 9C       		.byte	0x9c
+ 270 0261 65020000 		.long	0x265
+ 271 0265 13       		.uleb128 0x13
+ 272 0266 F7010000 		.long	0x1f7
+ 273 026a 02       		.uleb128 0x2
+ 274 026b 91       		.byte	0x91
+ 275 026c 6C       		.sleb128 -20
+ 276 026d 00       		.byte	0
+ 277 026e 00       		.byte	0
+ 278              		.section	.debug_abbrev,"dr"
+ 279              	Ldebug_abbrev0:
+ 280 0000 01       		.uleb128 0x1
+ 281 0001 11       		.uleb128 0x11
+ 282 0002 01       		.byte	0x1
+ 283 0003 25       		.uleb128 0x25
+ 284 0004 08       		.uleb128 0x8
+ 285 0005 13       		.uleb128 0x13
+ 286 0006 0B       		.uleb128 0xb
+ 287 0007 03       		.uleb128 0x3
+ 288 0008 08       		.uleb128 0x8
+ 289 0009 1B       		.uleb128 0x1b
+ 290 000a 08       		.uleb128 0x8
+ 291 000b 11       		.uleb128 0x11
+ 292 000c 01       		.uleb128 0x1
+ 293 000d 12       		.uleb128 0x12
+ 294 000e 06       		.uleb128 0x6
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 7
+
+
+ 295 000f 10       		.uleb128 0x10
+ 296 0010 17       		.uleb128 0x17
+ 297 0011 00       		.byte	0
+ 298 0012 00       		.byte	0
+ 299 0013 02       		.uleb128 0x2
+ 300 0014 02       		.uleb128 0x2
+ 301 0015 01       		.byte	0x1
+ 302 0016 03       		.uleb128 0x3
+ 303 0017 08       		.uleb128 0x8
+ 304 0018 0B       		.uleb128 0xb
+ 305 0019 0B       		.uleb128 0xb
+ 306 001a 3A       		.uleb128 0x3a
+ 307 001b 0B       		.uleb128 0xb
+ 308 001c 3B       		.uleb128 0x3b
+ 309 001d 0B       		.uleb128 0xb
+ 310 001e 1D       		.uleb128 0x1d
+ 311 001f 13       		.uleb128 0x13
+ 312 0020 01       		.uleb128 0x1
+ 313 0021 13       		.uleb128 0x13
+ 314 0022 00       		.byte	0
+ 315 0023 00       		.byte	0
+ 316 0024 03       		.uleb128 0x3
+ 317 0025 0D       		.uleb128 0xd
+ 318 0026 00       		.byte	0
+ 319 0027 03       		.uleb128 0x3
+ 320 0028 08       		.uleb128 0x8
+ 321 0029 49       		.uleb128 0x49
+ 322 002a 13       		.uleb128 0x13
+ 323 002b 38       		.uleb128 0x38
+ 324 002c 0B       		.uleb128 0xb
+ 325 002d 34       		.uleb128 0x34
+ 326 002e 19       		.uleb128 0x19
+ 327 002f 32       		.uleb128 0x32
+ 328 0030 0B       		.uleb128 0xb
+ 329 0031 00       		.byte	0
+ 330 0032 00       		.byte	0
+ 331 0033 04       		.uleb128 0x4
+ 332 0034 2E       		.uleb128 0x2e
+ 333 0035 01       		.byte	0x1
+ 334 0036 3F       		.uleb128 0x3f
+ 335 0037 19       		.uleb128 0x19
+ 336 0038 03       		.uleb128 0x3
+ 337 0039 08       		.uleb128 0x8
+ 338 003a 34       		.uleb128 0x34
+ 339 003b 19       		.uleb128 0x19
+ 340 003c 32       		.uleb128 0x32
+ 341 003d 0B       		.uleb128 0xb
+ 342 003e 3C       		.uleb128 0x3c
+ 343 003f 19       		.uleb128 0x19
+ 344 0040 64       		.uleb128 0x64
+ 345 0041 13       		.uleb128 0x13
+ 346 0042 01       		.uleb128 0x1
+ 347 0043 13       		.uleb128 0x13
+ 348 0044 00       		.byte	0
+ 349 0045 00       		.byte	0
+ 350 0046 05       		.uleb128 0x5
+ 351 0047 05       		.uleb128 0x5
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 8
+
+
+ 352 0048 00       		.byte	0
+ 353 0049 49       		.uleb128 0x49
+ 354 004a 13       		.uleb128 0x13
+ 355 004b 34       		.uleb128 0x34
+ 356 004c 19       		.uleb128 0x19
+ 357 004d 00       		.byte	0
+ 358 004e 00       		.byte	0
+ 359 004f 06       		.uleb128 0x6
+ 360 0050 05       		.uleb128 0x5
+ 361 0051 00       		.byte	0
+ 362 0052 49       		.uleb128 0x49
+ 363 0053 13       		.uleb128 0x13
+ 364 0054 00       		.byte	0
+ 365 0055 00       		.byte	0
+ 366 0056 07       		.uleb128 0x7
+ 367 0057 2E       		.uleb128 0x2e
+ 368 0058 01       		.byte	0x1
+ 369 0059 3F       		.uleb128 0x3f
+ 370 005a 19       		.uleb128 0x19
+ 371 005b 03       		.uleb128 0x3
+ 372 005c 08       		.uleb128 0x8
+ 373 005d 3A       		.uleb128 0x3a
+ 374 005e 0B       		.uleb128 0xb
+ 375 005f 3B       		.uleb128 0x3b
+ 376 0060 0B       		.uleb128 0xb
+ 377 0061 32       		.uleb128 0x32
+ 378 0062 0B       		.uleb128 0xb
+ 379 0063 3C       		.uleb128 0x3c
+ 380 0064 19       		.uleb128 0x19
+ 381 0065 64       		.uleb128 0x64
+ 382 0066 13       		.uleb128 0x13
+ 383 0067 01       		.uleb128 0x1
+ 384 0068 13       		.uleb128 0x13
+ 385 0069 00       		.byte	0
+ 386 006a 00       		.byte	0
+ 387 006b 08       		.uleb128 0x8
+ 388 006c 2E       		.uleb128 0x2e
+ 389 006d 01       		.byte	0x1
+ 390 006e 3F       		.uleb128 0x3f
+ 391 006f 19       		.uleb128 0x19
+ 392 0070 03       		.uleb128 0x3
+ 393 0071 08       		.uleb128 0x8
+ 394 0072 3A       		.uleb128 0x3a
+ 395 0073 0B       		.uleb128 0xb
+ 396 0074 3B       		.uleb128 0x3b
+ 397 0075 0B       		.uleb128 0xb
+ 398 0076 4C       		.uleb128 0x4c
+ 399 0077 0B       		.uleb128 0xb
+ 400 0078 1D       		.uleb128 0x1d
+ 401 0079 13       		.uleb128 0x13
+ 402 007a 32       		.uleb128 0x32
+ 403 007b 0B       		.uleb128 0xb
+ 404 007c 3C       		.uleb128 0x3c
+ 405 007d 19       		.uleb128 0x19
+ 406 007e 64       		.uleb128 0x64
+ 407 007f 13       		.uleb128 0x13
+ 408 0080 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 9
+
+
+ 409 0081 00       		.byte	0
+ 410 0082 09       		.uleb128 0x9
+ 411 0083 15       		.uleb128 0x15
+ 412 0084 01       		.byte	0x1
+ 413 0085 49       		.uleb128 0x49
+ 414 0086 13       		.uleb128 0x13
+ 415 0087 01       		.uleb128 0x1
+ 416 0088 13       		.uleb128 0x13
+ 417 0089 00       		.byte	0
+ 418 008a 00       		.byte	0
+ 419 008b 0A       		.uleb128 0xa
+ 420 008c 18       		.uleb128 0x18
+ 421 008d 00       		.byte	0
+ 422 008e 00       		.byte	0
+ 423 008f 00       		.byte	0
+ 424 0090 0B       		.uleb128 0xb
+ 425 0091 24       		.uleb128 0x24
+ 426 0092 00       		.byte	0
+ 427 0093 0B       		.uleb128 0xb
+ 428 0094 0B       		.uleb128 0xb
+ 429 0095 3E       		.uleb128 0x3e
+ 430 0096 0B       		.uleb128 0xb
+ 431 0097 03       		.uleb128 0x3
+ 432 0098 08       		.uleb128 0x8
+ 433 0099 00       		.byte	0
+ 434 009a 00       		.byte	0
+ 435 009b 0C       		.uleb128 0xc
+ 436 009c 0F       		.uleb128 0xf
+ 437 009d 00       		.byte	0
+ 438 009e 0B       		.uleb128 0xb
+ 439 009f 0B       		.uleb128 0xb
+ 440 00a0 49       		.uleb128 0x49
+ 441 00a1 13       		.uleb128 0x13
+ 442 00a2 00       		.byte	0
+ 443 00a3 00       		.byte	0
+ 444 00a4 0D       		.uleb128 0xd
+ 445 00a5 0F       		.uleb128 0xf
+ 446 00a6 00       		.byte	0
+ 447 00a7 0B       		.uleb128 0xb
+ 448 00a8 0B       		.uleb128 0xb
+ 449 00a9 03       		.uleb128 0x3
+ 450 00aa 08       		.uleb128 0x8
+ 451 00ab 49       		.uleb128 0x49
+ 452 00ac 13       		.uleb128 0x13
+ 453 00ad 00       		.byte	0
+ 454 00ae 00       		.byte	0
+ 455 00af 0E       		.uleb128 0xe
+ 456 00b0 10       		.uleb128 0x10
+ 457 00b1 00       		.byte	0
+ 458 00b2 0B       		.uleb128 0xb
+ 459 00b3 0B       		.uleb128 0xb
+ 460 00b4 49       		.uleb128 0x49
+ 461 00b5 13       		.uleb128 0x13
+ 462 00b6 00       		.byte	0
+ 463 00b7 00       		.byte	0
+ 464 00b8 0F       		.uleb128 0xf
+ 465 00b9 26       		.uleb128 0x26
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 10
+
+
+ 466 00ba 00       		.byte	0
+ 467 00bb 49       		.uleb128 0x49
+ 468 00bc 13       		.uleb128 0x13
+ 469 00bd 00       		.byte	0
+ 470 00be 00       		.byte	0
+ 471 00bf 10       		.uleb128 0x10
+ 472 00c0 2E       		.uleb128 0x2e
+ 473 00c1 01       		.byte	0x1
+ 474 00c2 47       		.uleb128 0x47
+ 475 00c3 13       		.uleb128 0x13
+ 476 00c4 20       		.uleb128 0x20
+ 477 00c5 0B       		.uleb128 0xb
+ 478 00c6 64       		.uleb128 0x64
+ 479 00c7 13       		.uleb128 0x13
+ 480 00c8 01       		.uleb128 0x1
+ 481 00c9 13       		.uleb128 0x13
+ 482 00ca 00       		.byte	0
+ 483 00cb 00       		.byte	0
+ 484 00cc 11       		.uleb128 0x11
+ 485 00cd 05       		.uleb128 0x5
+ 486 00ce 00       		.byte	0
+ 487 00cf 03       		.uleb128 0x3
+ 488 00d0 08       		.uleb128 0x8
+ 489 00d1 49       		.uleb128 0x49
+ 490 00d2 13       		.uleb128 0x13
+ 491 00d3 34       		.uleb128 0x34
+ 492 00d4 19       		.uleb128 0x19
+ 493 00d5 00       		.byte	0
+ 494 00d6 00       		.byte	0
+ 495 00d7 12       		.uleb128 0x12
+ 496 00d8 2E       		.uleb128 0x2e
+ 497 00d9 01       		.byte	0x1
+ 498 00da 31       		.uleb128 0x31
+ 499 00db 13       		.uleb128 0x13
+ 500 00dc 6E       		.uleb128 0x6e
+ 501 00dd 08       		.uleb128 0x8
+ 502 00de 11       		.uleb128 0x11
+ 503 00df 01       		.uleb128 0x1
+ 504 00e0 12       		.uleb128 0x12
+ 505 00e1 06       		.uleb128 0x6
+ 506 00e2 40       		.uleb128 0x40
+ 507 00e3 18       		.uleb128 0x18
+ 508 00e4 64       		.uleb128 0x64
+ 509 00e5 13       		.uleb128 0x13
+ 510 00e6 9742     		.uleb128 0x2117
+ 511 00e8 19       		.uleb128 0x19
+ 512 00e9 01       		.uleb128 0x1
+ 513 00ea 13       		.uleb128 0x13
+ 514 00eb 00       		.byte	0
+ 515 00ec 00       		.byte	0
+ 516 00ed 13       		.uleb128 0x13
+ 517 00ee 05       		.uleb128 0x5
+ 518 00ef 00       		.byte	0
+ 519 00f0 31       		.uleb128 0x31
+ 520 00f1 13       		.uleb128 0x13
+ 521 00f2 02       		.uleb128 0x2
+ 522 00f3 18       		.uleb128 0x18
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 11
+
+
+ 523 00f4 00       		.byte	0
+ 524 00f5 00       		.byte	0
+ 525 00f6 14       		.uleb128 0x14
+ 526 00f7 2E       		.uleb128 0x2e
+ 527 00f8 01       		.byte	0x1
+ 528 00f9 31       		.uleb128 0x31
+ 529 00fa 13       		.uleb128 0x13
+ 530 00fb 6E       		.uleb128 0x6e
+ 531 00fc 08       		.uleb128 0x8
+ 532 00fd 11       		.uleb128 0x11
+ 533 00fe 01       		.uleb128 0x1
+ 534 00ff 12       		.uleb128 0x12
+ 535 0100 06       		.uleb128 0x6
+ 536 0101 40       		.uleb128 0x40
+ 537 0102 18       		.uleb128 0x18
+ 538 0103 64       		.uleb128 0x64
+ 539 0104 13       		.uleb128 0x13
+ 540 0105 9642     		.uleb128 0x2116
+ 541 0107 19       		.uleb128 0x19
+ 542 0108 01       		.uleb128 0x1
+ 543 0109 13       		.uleb128 0x13
+ 544 010a 00       		.byte	0
+ 545 010b 00       		.byte	0
+ 546 010c 15       		.uleb128 0x15
+ 547 010d 2E       		.uleb128 0x2e
+ 548 010e 01       		.byte	0x1
+ 549 010f 31       		.uleb128 0x31
+ 550 0110 13       		.uleb128 0x13
+ 551 0111 6E       		.uleb128 0x6e
+ 552 0112 08       		.uleb128 0x8
+ 553 0113 11       		.uleb128 0x11
+ 554 0114 01       		.uleb128 0x1
+ 555 0115 12       		.uleb128 0x12
+ 556 0116 06       		.uleb128 0x6
+ 557 0117 40       		.uleb128 0x40
+ 558 0118 18       		.uleb128 0x18
+ 559 0119 64       		.uleb128 0x64
+ 560 011a 13       		.uleb128 0x13
+ 561 011b 9642     		.uleb128 0x2116
+ 562 011d 19       		.uleb128 0x19
+ 563 011e 00       		.byte	0
+ 564 011f 00       		.byte	0
+ 565 0120 00       		.byte	0
+ 566              		.section	.debug_aranges,"dr"
+ 567 0000 1C000000 		.long	0x1c
+ 568 0004 0200     		.word	0x2
+ 569 0006 00000000 		.secrel32	Ldebug_info0
+ 570 000a 04       		.byte	0x4
+ 571 000b 00       		.byte	0
+ 572 000c 0000     		.word	0
+ 573 000e 0000     		.word	0
+ 574 0010 00000000 		.long	Ltext0
+ 575 0014 5C000000 		.long	Letext0-Ltext0
+ 576 0018 00000000 		.long	0
+ 577 001c 00000000 		.long	0
+ 578              		.section	.debug_line,"dr"
+ 579              	Ldebug_line0:
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 12
+
+
+ 580 0000 99000000 		.section	.debug_str,"dr"
+ 580      02007700 
+ 580      00000101 
+ 580      FB0E0D00 
+ 580      01010101 
+ 581              		.ident	"GCC: (tdm-1) 4.9.2"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 Sales.cpp
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:8      .text:00000000 __ZN5SalesC2Ev
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:104    .rdata$_ZTV5Sales:00000000 __ZTV5Sales
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:8      .text:00000000 __ZN5SalesC1Ev
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:38     .text:00000014 __ZN5SalesD2Ev
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:38     .text:00000014 __ZN5SalesD1Ev
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:76     .text:0000003c __ZN5SalesD0Ev
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:113    .rdata$_ZTI5Sales:00000000 __ZTI5Sales
+C:\Users\NJLLMR~1\AppData\Local\Temp\cc70RI8F.s:119    .rdata$_ZTS5Sales:00000000 __ZTS5Sales
+
+UNDEFINED SYMBOLS
+__ZTVN10__cxxabiv117__class_type_infoE
+__ZdlPv

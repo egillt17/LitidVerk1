@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
-    cout << "PIZZA!" << endl;
+    Display mainUI;
+    mainUI.displayMainUI();
     return 0;
 }

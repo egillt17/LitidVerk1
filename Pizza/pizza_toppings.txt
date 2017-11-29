@@ -1,0 +1,31 @@
+MEAT
+
+pepperoni 		1.5$
+mincedBeef	 	1.5$
+ham			1.5$
+bacon			1.5$
+chicken			1.5$
+pulledPork		1.5$
+
+
+VEGETABLE
+pepper 			1.0$
+mushrooms		1.0$
+onion			1.0$
+redOnion		1.0$
+pineapple		1.0$
+jalepeno		1.0$
+tomatoes		1.0$
+chili			1.0$
+
+EXTRA
+
+creamCheese		1.5$
+xtraCheese		1.5$
+mozzarella		1.5$
+spicedCheese		1.5$
+bbqSauce		0.5$
+nacho			0.5$
+blackPepper		0.5$
+garlicOil		0.5$
+xtraSauce		0.5$

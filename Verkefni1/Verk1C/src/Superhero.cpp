@@ -2,16 +2,9 @@
 
 Superhero::Superhero()
 {
-    _name = "";
+    _name[0] = '\0';
     _age = 0;
     _power = 'n';
-}
-
-Superhero::Superhero(string name, int age, char power)
-{
-    _name = name;
-    _age = age;
-    _power = power;
 }
 
 Superhero::~Superhero()
@@ -49,11 +42,6 @@ ostream& operator << (ostream& out, const Superhero& hero){
     }
 
     return out;
-}
-
-ofstream& operator << (ofstream& os, const Superhero& hero){
-    os << hero._name << " " << hero._age << " " << hero._power << endl;
-    return os;
 }
 
 void Superhero::get_hero(Superhero hero){

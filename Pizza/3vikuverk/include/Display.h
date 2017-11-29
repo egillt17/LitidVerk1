@@ -11,7 +11,8 @@ class Display
         void displayMainUI();
         void managerUI();
         void bakerUI();
-        void cashierUI();
+        void deliveryUI();
+        void salesUI();
 
         virtual ~Display();
 

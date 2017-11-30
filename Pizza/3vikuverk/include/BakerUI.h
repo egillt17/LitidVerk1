@@ -7,7 +7,7 @@ class BakerUI
     public:
         BakerUI();
         virtual ~BakerUI();
-        void displayBakerUI()
+        void displayBakerUI();
 
     protected:
 

@@ -1,23 +1,22 @@
-#include "BakerUI.h"
+#include "DeliveryUI.h"
 #include "Display.h"
 
-BakerUI::BakerUI()
+DeliveryUI::DeliveryUI()
 {
     //ctor
 }
 
-BakerUI::~BakerUI()
+DeliveryUI::~DeliveryUI()
 {
     //dtor
 }
-
-void BakerUI::displayBakerUI()
+void DeliveryUI::displayDeliveryUI()
 {
     char answer = ' ';
 
     while (answer != 'q' || answer == 'Q')
     {
-        cout << endl << "Hello Baker!" << endl;
+        cout << endl << "Hello Delivery Person!" << endl;
         cout << "What is you location? " << endl;
         cout << "'a' to go to location a" << endl << "'b' to go to location b" << endl << "'q' to Quit" << endl;
 
@@ -34,7 +33,8 @@ void BakerUI::displayBakerUI()
                 {
                     cout << "---Goes to location a---" << endl;
                     cout << "What would you like to do at location a?" << endl;
-                    cout << "'a' to get a list of all pending orders at location a" << endl << "'b' to get a specific order up" << endl << "'q' to Quit" << endl;
+                    cout << "'a' to get a list of all orders for location a" << endl << "'c' to get a list of all completed orders for location a" << endl << "'b' to get a specific order up" << endl
+                         << "'q' to Quit" << endl;
 
                     cin >> answer;
                     cout << endl;
@@ -52,7 +52,7 @@ void BakerUI::displayBakerUI()
                             while (answer != 'q' || answer == 'Q')
                             {
                                 cout << "What would you like to do about that order?" << endl;
-                                cout << "'a' to mark an order \"In the making\"" << endl << "'b' to mark an order Ready" << endl << "'q' to Quit" << endl;
+                                cout << "'a' to mark an order Paid" << endl << "'b' to mark an order Delivered" << endl << "'q' to Quit" << endl;
 
                                 cin >> answer;
                                 cout << endl;
@@ -61,11 +61,11 @@ void BakerUI::displayBakerUI()
                                 {
                                     if (answer == 'a' || answer == 'A')
                                     {
-                                        cout << "---Marking an order \"In the making\"---" << endl;
+                                        cout << "---Marking an order Paid---" << endl;
                                     }
                                     else if (answer == 'b' || answer == 'B')
                                     {
-                                        cout << "---Marking an order Ready---" << endl;
+                                        cout << "---Marking an order Delivered---" << endl;
                                     }
                                     else
                                     {
@@ -74,15 +74,18 @@ void BakerUI::displayBakerUI()
                                 }
                             }
                         }
+                        else if (answer == 'c' || answer == 'C')
+                        {
+                            cout << "---Get a list of all completed orders for location a---" << endl;
+                        }
                         else
                         {
                             cout << "Wrong input, try again" << endl;
                         }
                     }
                 }
-
             }
-            else if (answer == 'b' || answer == 'B')
+            if (answer == 'b' || answer == 'B')
             {
                 char answer = ' ';
 
@@ -90,7 +93,8 @@ void BakerUI::displayBakerUI()
                 {
                     cout << "---Goes to location b---" << endl;
                     cout << "What would you like to do at location b?" << endl;
-                    cout << "'a' to get a list of all pending orders for location b" << endl << "'b' to get a specific order up" << endl << "'q' to Quit" << endl;
+                    cout << "'a' to get a list of all orders for location b" << endl << "'c' to get a list of all completed orders for location b" << endl << "'b' to get a specific order up" << endl
+                         << "'q' to Quit" << endl;
 
                     cin >> answer;
                     cout << endl;
@@ -108,7 +112,7 @@ void BakerUI::displayBakerUI()
                             while (answer != 'q' || answer == 'Q')
                             {
                                 cout << "What would you like to do about that order?" << endl;
-                                cout << "'a' to mark an order \"In the making\"" << endl << "'b' to mark an order Ready" << endl << "'q' to Quit" << endl;
+                                cout << "'a' to mark an order Paid" << endl << "'b' to mark an order Delivered" << endl << "'q' to Quit" << endl;
 
                                 cin >> answer;
                                 cout << endl;
@@ -117,11 +121,11 @@ void BakerUI::displayBakerUI()
                                 {
                                     if (answer == 'a' || answer == 'A')
                                     {
-                                        cout << "---Marking an order \"In the making\"---" << endl;
+                                        cout << "---Marking an order Paid---" << endl;
                                     }
                                     else if (answer == 'b' || answer == 'B')
                                     {
-                                        cout << "---Marking an order Ready---" << endl;
+                                        cout << "---Marking an order Delivered---" << endl;
                                     }
                                     else
                                     {
@@ -129,7 +133,10 @@ void BakerUI::displayBakerUI()
                                     }
                                 }
                             }
-
+                        }
+                        else if (answer == 'c' || answer == 'C')
+                        {
+                            cout << "---Get a list of all completed orders for location b---" << endl;
                         }
                         else
                         {

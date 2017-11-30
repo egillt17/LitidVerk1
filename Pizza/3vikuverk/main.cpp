@@ -16,7 +16,7 @@ int main()
     //Display mainUI;
     //mainUI.displayMainUI();
 
-    Toppings lala;
-    lala.add_toppings();
+    Pizza lala;
+    lala.make_pizza();
     return 0;
 }

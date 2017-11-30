@@ -17,6 +17,7 @@ void Pizza::make_pizza(){
     Toppings add_toppings;
     char input = '0';
     int amount = 0;
+    int top_amount = 0;
     string add;
     while(input != 'q' || input != 'Q'){
         cout << "what kind of topping would you like to add?" << endl;
@@ -29,7 +30,7 @@ void Pizza::make_pizza(){
         cin >> input;
         if(input == 'i' || input == 'I'){
             pizza.display_sizes(add, amount);
-            pizza._amount = amount;
+            pizza._amount = amount + top_amount;
             pizza._size_of_pizza = add;
         }
         else if(input == 's' || input == 'S'){
@@ -38,7 +39,8 @@ void Pizza::make_pizza(){
         else if(input == 't' || input == 'T'){
             system("CLS");
             pizza._topping_on_pizza = add_toppings.add_toppings();
-            pizza._amount += add_toppings.get_amount(pizza._topping_on_pizza);
+            top_amount += add_toppings.get_amount(pizza._topping_on_pizza);
+            pizza._amount += top_amount;
         }
         else if(input == 'q' || input == 'Q'){
             break;

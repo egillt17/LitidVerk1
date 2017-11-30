@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -12,11 +13,11 @@ class Toppings
     public:
         Toppings();
         ~Toppings();
-        void display_toppings(char input);
+        void display_toppings(char input, int price, string& topping);
         Toppings add_toppings();
 
     private:
-        vector<string> name_of_topping;
+        vector<string> _name_of_topping;
         int _amount;
 };
 

@@ -95,11 +95,11 @@
 
 1511888363 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\delivery.h
 
-1512046953 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
+1512056504 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
 	"Toppings.h"
 	<iostream>
 
-1512044869 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\toppings.h
+1512054893 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\toppings.h
 	<iostream>
 	<fstream>
 	<string>
@@ -127,13 +127,13 @@
 1511888634 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\order.cpp
 	"Order.h"
 
-1512047029 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
+1512057222 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
 	"Pizza.h"
 
 1511888246 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\sales.cpp
 	"Sales.h"
 
-1512050569 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\toppings.cpp
+1512056323 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\toppings.cpp
 	"Toppings.h"
 
 1511970639 h"

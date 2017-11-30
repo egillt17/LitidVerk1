@@ -153,11 +153,12 @@
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\delivery.cpp
 	"Delivery.h"
 
-1512047615 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\display.cpp
+1512047891 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\display.cpp
 	"Display.h"
 	"ManagerUI.h"
 	"BakerUI.h"
 	"DeliveryUI.h"
+	"SalesUI.h"
 
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\manager.cpp
 	"Manager.h"
@@ -197,4 +198,10 @@
 	"Display.h"
 
 1512047581 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\deliveryui.h
+
+1512047808 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\salesui.h
+
+1512047832 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\salesui.cpp
+	"SalesUI.h"
+	"Display.h"
 

@@ -9,3 +9,4 @@ Manager::~Manager()
 {
     //dtor
 }
+

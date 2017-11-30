@@ -1,5 +1,7 @@
 #include "ManagerUI.h"
 #include "Display.h"
+#include "Manager.h"
+#include "Toppings.h"
 
 ManagerUI::ManagerUI()
 {
@@ -32,7 +34,8 @@ void ManagerUI::displayManagerUI()
             }
             else if (answer == 'b' || answer == 'B')
             {
-                cout << "---Adding new Topping--- " << endl;
+                Toppings toppings;
+                toppings.add_toppings();
             }
             else if (answer == 'c' || answer == 'C')
             {

@@ -13,7 +13,9 @@ class Pizza
         void make_pizza();
 
     private:
-        Toppings topping;
+        Toppings topping_on_pizza;
+        int size_of_pizza;
+        string sauce;
 
 };
 

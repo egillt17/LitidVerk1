@@ -57,7 +57,16 @@
 	"Order.h"
 	"Toppings.h"
 
-1511967015 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\main.cpp
+1511983107 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\main.cpp
+	<iostream>
+	"Display.h"
+	"Manager.h"
+	"Sales.h"
+	"Baker.h"
+	"Delivery.h"
+	"Pizza.h"
+	"Order.h"
+	"Toppings.h"
 
 1511888746 d974e4c37a23a28aa0358823186323e06cb2c
 	<iostream>
@@ -69,9 +78,13 @@
 	"Pizza.h"
 	"Order.h"
 
-1511967077 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\display.h
+1511977096 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\display.h
+	<iostream>
 
 1512038485 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\display.h
+	<iostream>
+
+1511971019 9a0cc612bcc930ac39deab84444f89a35beec
 	<iostream>
 
 1511888209 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\manager.h
@@ -82,7 +95,7 @@
 
 1511888363 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\delivery.h
 
-1511974673 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
+1512046953 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
 	"Toppings.h"
 	<iostream>
 
@@ -101,7 +114,7 @@
 1511888363 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\delivery.cpp
 	"Delivery.h"
 
-1512038485 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\display.cpp
+1512046619 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\display.cpp
 	"Display.h"
 
 1511888209 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\manager.cpp
@@ -110,7 +123,7 @@
 1511888634 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\order.cpp
 	"Order.h"
 
-1511974770 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
+1512047029 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
 	"Pizza.h"
 
 1511888246 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\sales.cpp
@@ -132,7 +145,9 @@
 
 1511888746 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\delivery.h
 
-1511888746 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\pizza.h
+1511983107 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\pizza.h
+	"Toppings.h"
+	<iostream>
 
 1511888746 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\order.h
 
@@ -142,7 +157,7 @@
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\delivery.cpp
 	"Delivery.h"
 
-1511982917 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\display.cpp
+1512045184 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\display.cpp
 	"Display.h"
 
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\manager.cpp
@@ -151,9 +166,18 @@
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\order.cpp
 	"Order.h"
 
-1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\pizza.cpp
+1511983107 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\pizza.cpp
 	"Pizza.h"
 
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\sales.cpp
 	"Sales.h"
+
+1511983107 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\toppings.h
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+
+1511983107 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\toppings.cpp
+	"Toppings.h"
 

@@ -11,5 +11,7 @@ Pizza::~Pizza()
 }
 
 void Pizza::make_pizza(){
+    Toppings pizza;
+    pizza.add_toppings();
 
 }

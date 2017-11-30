@@ -46,7 +46,7 @@
 
 1511888746 D
 
-1511975332 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\main.cpp
+1512047275 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\main.cpp
 	<iostream>
 	"Display.h"
 	"Manager.h"
@@ -81,7 +81,10 @@
 1511977096 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\display.h
 	<iostream>
 
-1511971019 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\display.h
+1512038485 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\display.h
+	<iostream>
+
+1511971019 9a0cc612bcc930ac39deab84444f89a35beec
 	<iostream>
 
 1511888209 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\manager.h
@@ -92,15 +95,16 @@
 
 1511888363 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\delivery.h
 
-1511974673 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
+1512046953 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\pizza.h
 	"Toppings.h"
 	<iostream>
 
-1511977648 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\toppings.h
+1512044869 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\toppings.h
 	<iostream>
 	<fstream>
 	<string>
 	<vector>
+	<stdlib.h>
 
 1511888634 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\order.h
 
@@ -110,8 +114,12 @@
 1511888363 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\delivery.cpp
 	"Delivery.h"
 
-1511971020 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\display.cpp
+1512048090 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\display.cpp
 	"Display.h"
+	"ManagerUI.h"
+	"BakerUI.h"
+	"DeliveryUI.h"
+	"SalesUI.h"
 
 1511888209 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\manager.cpp
 	"Manager.h"
@@ -119,13 +127,13 @@
 1511888634 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\order.cpp
 	"Order.h"
 
-1511974770 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
+1512047029 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\pizza.cpp
 	"Pizza.h"
 
 1511888246 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\sales.cpp
 	"Sales.h"
 
-1511978930 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\toppings.cpp
+1512050569 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\toppings.cpp
 	"Toppings.h"
 
 1511970639 h"
@@ -204,6 +212,30 @@
 1512047808 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\salesui.h
 
 1512047832 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\salesui.cpp
+	"SalesUI.h"
+	"Display.h"
+
+1512047806 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\bakerui.cpp
+	"BakerUI.h"
+	"Display.h"
+
+1512047806 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\bakerui.h
+
+1512047192 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\managerui.cpp
+	"ManagerUI.h"
+	"Display.h"
+
+1512047192 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\managerui.h
+
+1512047806 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\deliveryui.cpp
+	"DeliveryUI.h"
+	"Display.h"
+
+1512047806 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\deliveryui.h
+
+1512048090 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\include\salesui.h
+
+1512048090 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza\3vikuverk\src\salesui.cpp
 	"SalesUI.h"
 	"Display.h"
 

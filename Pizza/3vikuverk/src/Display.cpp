@@ -14,7 +14,8 @@ Display::~Display()
     //dtor
 }
 
-void Display::displayMainUI()
+void Display::displayMainUI()                       ///This is the main display for the User Interface, here we are firuring out which role the user is, then we create a class of that
+                                                    ///role and call a function in the UI class of that role.
 {
     char input = ' ';
     cout << "Welcome! " << endl << endl;

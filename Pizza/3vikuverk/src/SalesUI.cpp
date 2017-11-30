@@ -11,7 +11,8 @@ SalesUI::~SalesUI()
     //dtor
 }
 
-void SalesUI::displaySalesUI()
+void SalesUI::displaySalesUI()                  ///Pretty basic if/else commands in this function, to summarize we are figuring out what the sales person wants to do, i.e. mark an order
+                                                ///payed for.
 {
     char answer = ' ';
 

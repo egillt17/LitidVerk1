@@ -11,7 +11,8 @@ BakerUI::~BakerUI()
     //dtor
 }
 
-void BakerUI::displayBakerUI()
+void BakerUI::displayBakerUI()          ///Pretty basic if/else commands in this function, to summarize we are figuring out which location the baker is located at and what
+                                        ///he is doing at that location.
 {
     char answer = ' ';
 

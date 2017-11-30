@@ -10,7 +10,8 @@ DeliveryUI::~DeliveryUI()
 {
     //dtor
 }
-void DeliveryUI::displayDeliveryUI()
+void DeliveryUI::displayDeliveryUI()                ///Pretty basic if/else commands in this function, to summarize we are figuring out which location the delivery person is located at and what
+                                                    ///he is doing at that location.
 {
     char answer = ' ';
 

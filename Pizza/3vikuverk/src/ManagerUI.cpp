@@ -1,5 +1,7 @@
 #include "ManagerUI.h"
 #include "Display.h"
+#include "Manager.h"
+#include "Toppings.h"
 
 ManagerUI::ManagerUI()
 {
@@ -32,15 +34,19 @@ void ManagerUI::displayManagerUI()
             }
             else if (answer == 'b' || answer == 'B')
             {
-                cout << "---Adding new Topping--- " << endl;
+                Manager manager;            ///if the manager chooses to add a new topping then the function managerAddToppings() in the Manager class is called.
+                manager.managerAddToppings();
+
             }
             else if (answer == 'c' || answer == 'C')
             {
-                cout << "---All Pizzas--- " << endl;
+                Manager manager;            ///if the manager chooses to print all available pizzas the function managerPrintPizzas() in the Manager class is called.
+                manager.managerPrintPizzas();
             }
             else if (answer == 'd' || answer == 'D')
             {
-                cout << "---All Toppings--- " << endl;
+                Manager manager;            ///if the manager chooses to print all available toppings the function managerPrintToppings() in the Manager class is called.
+                manager.managerPrintToppings();
             }
             else if (answer == 'e' || answer == 'E')
             {

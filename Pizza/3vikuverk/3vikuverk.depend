@@ -57,7 +57,7 @@
 	"Order.h"
 	"Toppings.h"
 
-1512046929 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\main.cpp
+1512051560 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\main.cpp
 	<iostream>
 	"Display.h"
 	"Manager.h"
@@ -141,7 +141,8 @@
 1511967077 d9d62eb97cba1c9220085066729760676c40b
 	<iostream>
 
-1511888746 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\manager.h
+1512053138 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\manager.h
+	"Toppings.h"
 
 1511888746 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\sales.h
 
@@ -149,7 +150,7 @@
 
 1511888746 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\delivery.h
 
-1511983107 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\pizza.h
+1512050757 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\pizza.h
 	"Toppings.h"
 	<iostream>
 
@@ -161,47 +162,50 @@
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\delivery.cpp
 	"Delivery.h"
 
-1512047891 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\display.cpp
+1512056430 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\display.cpp
 	"Display.h"
 	"ManagerUI.h"
 	"BakerUI.h"
 	"DeliveryUI.h"
 	"SalesUI.h"
 
-1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\manager.cpp
+1512055748 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\manager.cpp
 	"Manager.h"
 
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\order.cpp
 	"Order.h"
 
-1511983107 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\pizza.cpp
+1512050757 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\pizza.cpp
 	"Pizza.h"
 
 1511888746 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\sales.cpp
 	"Sales.h"
 
-1511983107 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\toppings.h
+1512050757 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\toppings.h
 	<iostream>
 	<fstream>
 	<string>
 	<vector>
+	<stdlib.h>
 
-1511983107 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\toppings.cpp
+1512050757 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\toppings.cpp
 	"Toppings.h"
 
 1512046843 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\managerui.h
 
-1512046920 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\managerui.cpp
+1512056600 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\managerui.cpp
 	"ManagerUI.h"
 	"Display.h"
+	"Manager.h"
+	"Toppings.h"
 
-1512047352 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\bakerui.cpp
+1512056006 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\bakerui.cpp
 	"BakerUI.h"
 	"Display.h"
 
 1512047222 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\include\bakerui.h
 
-1512047593 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\deliveryui.cpp
+1512056232 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza\3vikuverk\src\deliveryui.cpp
 	"DeliveryUI.h"
 	"Display.h"
 

@@ -21,7 +21,7 @@ void Pizza::make_pizza(){
     string add;
     while(input != 'q' || input != 'Q'){
         cout << "what kind of topping would you like to add?" << endl;
-        cout << "Size = i | " << "Sauce = s | " << "Toppings = t | " << "Quit = q" << endl;
+        cout << "Size = i | " << "Sauce = s | " << "Toppings = t | " << "Pizza bottom = b | " << "Quit = q" << endl;
         cout << "Picked toppings: " << pizza._topping_on_pizza;
         cout << "Picked size: " << pizza._size_of_pizza << endl;
         cout << "picked sauce: " << pizza._sauce << endl;

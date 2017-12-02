@@ -14,13 +14,11 @@ class Toppings
         Toppings();
         ~Toppings();
         void display_toppings(char input, int price, string& topping);
-        Toppings add_toppings();
+        Toppings add_toppings(int pizza_amount, int& topping_amount, Toppings pizza_top);
         friend ostream& operator << (ostream& out, Toppings top);
-        int get_amount(Toppings amount);
 
     private:
         vector<string> _name_of_topping;
-        int _amount;
 };
 
 #endif // TOPPINGS_H

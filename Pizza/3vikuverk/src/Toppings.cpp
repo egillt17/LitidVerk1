@@ -2,7 +2,7 @@
 
 Toppings::Toppings()
 {
-    _amount = 0;
+    //ctor
 }
 
 Toppings::~Toppings()
@@ -83,18 +83,19 @@ void Toppings::display_toppings(char input, int price, string& topping){
     fin.close();
 }
 
-Toppings Toppings::add_toppings(){
+Toppings Toppings::add_toppings(int pizza_amount, int& topping_amount, Toppings pizza_top){
     Toppings make_pizza;
+    make_pizza = pizza_top;
     string topping;
     int price = 0;
     char input = '0';
 // here the user gets prompted with what topping choices he has
     while(input != 'q' || input != 'Q'){
         cout << "what kind of topping would you like to add?" << endl;
-        cout << "Cheese = c | " << "Meat =  m | " << "Vegetables =  v | " << "Quit = q" << endl;
+        cout << "Cheese = c | " << "Meat =  m | " << "Vegetables =  v | " << "Clear =  e | " << "Quit = q" << endl;
         cout << "picked toppings: ";
         cout << make_pizza;
-        cout << "Topping cost: " << make_pizza._amount << ".kr" << endl;
+        cout << "Pizza cost: " << pizza_amount + topping_amount << ".kr" << endl;
 // here the user picks what kind of topping he wants to add or stop
         cout << "Type: ";
         cin >> input;
@@ -107,9 +108,13 @@ Toppings Toppings::add_toppings(){
         else if(input == 'C' || input == 'c'){
             price = 30;
         }
+        else if(input == 'E' || input == 'e'){
+            make_pizza._name_of_topping.clear();
+            topping_amount = 0;
+        }
         if(input == 'M' || input == 'm' || input == 'V' || input == 'v' || input == 'C' || input == 'c'){
             display_toppings(input, price, topping);
-            make_pizza._amount += price;
+            topping_amount += price;
             make_pizza._name_of_topping.push_back(topping);
         }
         else if(input == 'q' || input == 'Q'){
@@ -134,12 +139,5 @@ ostream& operator << (ostream& out, Toppings top){
         }
         out << endl;
     return out;
-}
-
-int Toppings::get_amount(Toppings amount){
-    int cost = 0;
-    cost = amount._amount;
-
-    return cost;
 }
 

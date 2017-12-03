@@ -17,7 +17,10 @@ int main()
    // mainUI.displayMainUI();
 
     Pizza lala;
-    lala.make_pizza();
+    lala = lala.make_pizza();
+    system("CLS");
+    cout << "This is your pizza: " << endl;
+    cout << lala;
 
     return 0;
 }

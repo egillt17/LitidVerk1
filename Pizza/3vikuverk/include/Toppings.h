@@ -13,9 +13,9 @@ class Toppings
     public:
         Toppings();
         ~Toppings();
-        void display_toppings(char input, int price, string& topping);
+        void display_toppings(char input, int &price, string& topping);
         Toppings add_toppings(int pizza_amount, int& topping_amount, Toppings pizza_top);
-        friend ostream& operator << (ostream& out, Toppings top);
+        friend ostream& operator << (ostream& out, Toppings& top);
 
     private:
         vector<string> _name_of_topping;

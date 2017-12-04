@@ -16,6 +16,8 @@ class Employee
         double get_salary();
         int get_month();
         int get_year();
+        friend ostream& operator << (ostream& out, Employee& employee);
+        friend istream& operator >> (istream& in, Employee& employee);
 
     private:
         string _name;

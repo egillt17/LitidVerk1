@@ -17,10 +17,13 @@ int main()
    // mainUI.displayMainUI();
 
     Pizza lala;
+    Pizza grgr;
     lala = lala.make_pizza();
+    grgr = grgr.make_pizza();
     system("CLS");
-    cout << "This is your pizza: " << endl;
+    cout << "This is your order: " << endl;
     cout << lala;
+    cout << grgr;
 
     return 0;
 }

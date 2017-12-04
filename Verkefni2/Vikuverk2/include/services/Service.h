@@ -1,5 +1,10 @@
 #ifndef SERVICE_H
 #define SERVICE_H
+#include <iostream>
+#include <string>
+#include <stdio.h>
+using namespace std;
+
 
 
 class Service

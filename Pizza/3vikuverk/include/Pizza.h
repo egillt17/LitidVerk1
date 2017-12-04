@@ -11,11 +11,14 @@ class Pizza
         Pizza();
         ~Pizza();
         void make_pizza();
+        void display_sizes(string& add,int& amount);
+        void display_sauce();
 
     private:
-        Toppings topping_on_pizza;
-        int size_of_pizza;
-        string sauce;
+        Toppings _topping_on_pizza;
+        string _size_of_pizza;
+        string _sauce;
+        int _amount;
 
 };
 

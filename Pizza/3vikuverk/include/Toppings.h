@@ -15,6 +15,8 @@ class Toppings
         ~Toppings();
         void display_toppings(char input, int price, string& topping);
         Toppings add_toppings();
+        friend ostream& operator << (ostream& out, Toppings top);
+        int get_amount(Toppings amount);
 
     private:
         vector<string> _name_of_topping;

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "Superhero.h"
 
 using namespace std;
@@ -8,37 +9,43 @@ int main()
     int number_of_heroes = 0;
     ofstream fout;
     ifstream fin;
-    fout.open("Superheroes_b.dat", ios::binary|ios::app);
-
+    // opens the text file so the program can work with it
+    fout.open("Superheroes.txt", ios::app);
+    //ios::app makes sure that the information is written at the bottom of the file
+    //so it doesnt over write something that was already there
     cout << "How many heroes would you like to add? ";
     cin >> number_of_heroes;
 
-    Superhero *hero = new Superhero[number_of_heroes];
-
+    Superhero hero;
+    // uses the constructor with 3 variables
+    Superhero hero4("Aquaman", 25, 'w');
+    fout << hero4;
+    // the loop takes the hero input from the user and adds it to the text file as soon
+    // as its done getting all the info from the user
     for(int i = 0; i < number_of_heroes; i++){
-        cin >> hero[i];
+        cin >> hero;
+        fout << hero;
     }
-    fout.write((char*)(hero), sizeof(Superhero)*number_of_heroes);
+    // closes the text file when the program is done using it with fout
     fout.close();
-
-    fin.open("Superheroes_b.dat", ios::binary);
-    fin.seekg(0, fin.end);
-    int size_of = fin.tellg() / sizeof(Superhero);
-    fin.seekg(0, fin.beg);
-    Superhero *hero2 = new Superhero[size_of];
+    // opens the text file so that the program can read out of it
+    fin.open("Superheroes.txt");
+    string st;
+    // checks if the program was able to find and open the file
     if(fin.is_open()){
-            fin.read((char*)(hero2), sizeof(Superhero)*size_of);
+        // the loop runs until it reaches the end of the file
+        while(!fin.eof()){
+            // get line gets entire lines at a time in the text file
+            getline(fin, st);
+            // prints out the line that was taken from the file
+            cout << st << endl;
+        }
+
     }
     else {
+        // this gets printed if the program was not able to open the file
         cout << "File cannot be read! " << endl;
-    }
-    for(int i = 0; i < size_of; i++){
-        cout << hero2[i];
     }
 
     fin.close();
-    delete[] hero;
-    delete[] hero2;
-    return 0;
 }
-

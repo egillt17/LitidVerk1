@@ -1,17 +1,25 @@
 #include "Superhero.h"
-
+// nulling out the private variables so there wont be anything in them when I want to use them
 Superhero::Superhero()
 {
-    _name[0] = '\0';
+    _name = "";
     _age = 0;
     _power = 'n';
+}
+// adds the 3 variables that the function takes in and puts in the private variables
+Superhero::Superhero(string name, int age, char power){
+    _name = name;
+    _age = age;
+    _power = power;
 }
 
 Superhero::~Superhero()
 {
     //dtor
 }
-
+// here I have overwritten the in stream to show the program how I want
+// the superhero variable to be prompted to the user so the user can add
+// input it
 istream& operator >> (istream& in, Superhero& hero){
     cout << "Name: ";
     in >> hero._name;
@@ -22,7 +30,8 @@ istream& operator >> (istream& in, Superhero& hero){
 
     return in;
 }
-
+// here I have overwritten the in stream to show the program how I want
+// the superhero variable to be printed out
 ostream& operator << (ostream& out, const Superhero& hero){
     out << hero._name << " (" << hero._age << ")" << ": ";
     if(hero._power == 'f'){
@@ -42,8 +51,4 @@ ostream& operator << (ostream& out, const Superhero& hero){
     }
 
     return out;
-}
-
-void Superhero::get_hero(Superhero hero){
-    cout << "Name: " << _name << endl << "Age: " << _age << endl << "SuperPower: " << _power << endl;
 }

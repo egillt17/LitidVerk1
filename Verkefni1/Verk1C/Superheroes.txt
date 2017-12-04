@@ -1,4 +1,5 @@
-Halli (23): Flying
-Atli (11): Hacker
-Nolli (7): Hacker
-Batman (34): Flying
+Aquaman (25): Weakling
+hulk (46): Giant
+Thor (1000): Flying
+Batman (52): Hacker
+Superman (92): Flying

@@ -2,26 +2,26 @@
 #define SUPERHERO_H
 #include <iostream>
 #include <string>
-#include <fstream>
 
 using namespace std;
-
 
 class Superhero
 {
     public:
+        // constructor
         Superhero();
+        // constructor with 3 variables
+        Superhero(string name, int age, char power);
         ~Superhero();
+        // overwritten input stream
         friend istream& operator >> (istream& in, Superhero& hero);
+        // overwritten output stream
         friend ostream& operator << (ostream& out, const Superhero& hero);
-        void get_hero(Superhero hero);
-        void set_hero(string name, int age, char power);
 
     private:
-        char _name[32];
+        string _name;
         int _age;
         char _power;
 };
 
 #endif // SUPERHERO_H
-

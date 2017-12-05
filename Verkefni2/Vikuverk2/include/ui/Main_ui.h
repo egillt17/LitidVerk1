@@ -6,10 +6,16 @@ class Main_ui
 {
     public:
         Main_ui();
-        virtual ~Main_ui();
-
-    protected:
-
+        // main menu
+        void main_menu();
+        // goto menu for a salary record from a ssn
+        void getRcrdMenu();
+        // goto menu to add a new employee to the registry
+        void addEmplMenu();
+        //goto menu for the highest paid employee by year
+        void getHiPayMenu();
+        //goto menu for a yearly salary for a specific ssn 
+        void getYrPayMenu();
     private:
 };
 

@@ -8,7 +8,7 @@ Employee::Employee() {
     _year = 0;
 }
 
-Employee::Employee(string name, string ssn, double salary, int month, int year) {
+Employee::Employee(string name, string ssn, int salary, int month, int year) {
     _name = name;
     _ssn = ssn;
     _salary = salary;
@@ -28,7 +28,7 @@ string Employee::get_ssn() {
     return _ssn;
 }
 
-double Employee::get_salary() {
+int Employee::get_salary() {
     return _salary;
 }
 
@@ -43,7 +43,7 @@ int Employee::get_year() {
 ostream& operator << (ostream& out, Employee& employee) {
     out << "Name: " << employee._name << endl;
     out << "Social Security Number: " << employee._ssn << endl;
-    out << std::fixed << setprecision(2) << "Salary: " << employee._salary << endl;
+    out << std::fixed << setprecision(2) << "Salary: " << employee._salary << ".kr" << endl;
     if(employee._month < 10) {
         out << "Month: " << "0" << employee._month << endl;
     }

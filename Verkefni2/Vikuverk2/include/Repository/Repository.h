@@ -2,6 +2,7 @@
 #define REPOSITORY_H
 
 #include "Employee.h"
+#include "Service.h"
 #include <fstream>
 
 using namespace std;
@@ -11,7 +12,7 @@ class Repository
     public:
         Repository();
         ~Repository();
-        void write_january(Employee employee);
+        void writeInFile(Employee& employee);
 
     private:
 };

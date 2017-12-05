@@ -121,7 +121,6 @@ void Main_ui::addEmplMenu(){
                 cout << "| Please input another employee: " << endl;
             cout <<  "|" << endl;
         }
-
     }
 system("CLS");
 }
@@ -165,6 +164,10 @@ void Main_ui::getRcrdMenu() {
             break;
         }
     }
+    Service get;
+    Employee employee = get.findEmployeeMonth(ssn, month, year);
+    system("CLS");
+    cout << employee;
 }
 
 void Main_ui::getYrPayMenu(){

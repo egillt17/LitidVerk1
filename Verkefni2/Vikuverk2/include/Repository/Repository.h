@@ -14,7 +14,8 @@ class Repository
         Repository();
         ~Repository();
         void writeInFile(Employee& employee);
-        void infoInFile(vector <Employee>& employee);
+        void reWriteInFile(vector <Employee> employee);
+        void getInfoInFile(vector <Employee>& employee);
 
     private:
 };

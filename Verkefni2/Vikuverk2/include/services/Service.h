@@ -19,9 +19,10 @@ class Service
         ~Service();
         void writeEmployeeInFile(string name, string ssn, string salary, string month, string year);
         Employee makeEmployee(string name, string ssn, string salary, string month, string year);
-        Employee findEmployeeMonth();
+        Employee findEmployeeMonth(string ssn, string month, string year);
 
     private:
+        bool employeeCheck(Employee employeeTest);
 };
 
 #endif // SERVICE_H

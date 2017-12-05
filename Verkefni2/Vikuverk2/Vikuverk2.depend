@@ -1,49 +1,47 @@
 # depslib dependency file v1.0
-1512497835 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\main.cpp
+1512509235 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\main.cpp
 	"Main_ui.h"
 	"Employee.h"
 	"Service.h"
 
 1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\ui\main_ui.h
 
-1512488986 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512508209 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Service.h"
 	"Validate.h"
 	<string>
+	<stdlib.h>
 	<iostream>
 
-<<<<<<< HEAD
-1512499046 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
-=======
-1512489206 D
+1512495934 D
 
-1512489214 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
+1512510603 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
+	"Repository.h"
 
 1512402531 0d3aea62b67dd14bda681e5bcf4188d7e37b8
 
 1512489106 616575a472f08de5b9344f30f399b0a884f5b
->>>>>>> 3abd7161036794fab41a04537e68f424e486ee40
+
+1512486093 d7161036794fab41a04537e68f424e486ee40
 	"Repository.h"
 	"Service.h"
 	<iostream>
 	<string>
 	<iomanip>
 
-1512495934 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
+1512510189 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
 	"Employee.h"
 	"Service.h"
 	<fstream>
 	<vector>
 
-<<<<<<< HEAD
-1512498845 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
+1512510629 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
-=======
-1512486093 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
->>>>>>> 3abd7161036794fab41a04537e68f424e486ee40
 
-1512496007 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
+1512498845 "
+
+1512509891 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
 	<string>
 	<stdio.h>
@@ -51,8 +49,7 @@
 	"Employee.h"
 	"Repository.h"
 
-1512497379 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
-	"Employee.h"
+1512504942 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
 	"Employee.h"
 
 1512489106 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\models\employee.h
@@ -112,7 +109,7 @@
 1512491679 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
-1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
+1512499103 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\validate.h

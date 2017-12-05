@@ -45,12 +45,12 @@ ostream& operator << (ostream& out, Employee& employee) {
     out << "Social Security Number: " << employee._ssn << endl;
     out << std::fixed << setprecision(2) << "Salary: " << employee._salary << ".kr" << endl;
     if(employee._month < 10) {
-        out << "Month: " << "0" << employee._month << endl;
+        out << "Date: " << "0" << employee._month << "/";
     }
     else {
-        out << "Month: " << employee._month << endl;
+        out << "Date: " << employee._month << "/";
     }
-    out << "Year: " << employee._year << endl;
+    out << employee._year << endl;
 
     return out;
 }

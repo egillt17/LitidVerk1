@@ -13,15 +13,29 @@ void Repository::writeInFile(Employee& employee) {
     fout.open("Employee.txt", ios::app);
     if(fout.is_open()) {
         fout << employee;
-        fout.close();
     }
     else {
         // throw error!!!
     }
-
+    fout.close();
 }
 
-void Repository::infoInFile(vector <Employee>& employee) {
+void Repository::reWriteInFile(vector <Employee> employee) {
+    ofstream fout;
+    fout.open("Employee.txt");
+    if(fout.is_open()) {
+        for(unsigned int i = 0; i < employee.size(); i++) {
+            fout << employee[i];
+        }
+    }
+    else {
+        // throw error!!!
+    }
+    fout.close();
+}
+
+void Repository::getInfoInFile(vector <Employee>& employee) {
+    employee.clear();
     ifstream fin;
     Service fix;
     string namef = "";
@@ -29,6 +43,7 @@ void Repository::infoInFile(vector <Employee>& employee) {
     string salaryf = "";
     string monthf = "";
     string yearf = "";
+
     fin.open("Employee.txt");
     if(fin.is_open()) {
         while(!fin.eof()) {

@@ -11,9 +11,10 @@ Service::~Service() {
 
 void Service::writeEmployeeInFile(string name, string ssn, string salary, string month, string year) {
     Employee employee = makeEmployee(name, ssn, salary, month, year);
-
-    Repository input;
-    input.writeInFile(employee);
+    if(!employeeCheck(employee)) {
+        Repository input;
+        input.writeInFile(employee);
+    }
 }
 
 Employee Service::makeEmployee(string name, string ssn, string salary, string month, string year) {
@@ -33,15 +34,52 @@ Employee Service::makeEmployee(string name, string ssn, string salary, string mo
     return employee;
 }
 
-Employee Service::findEmployeeMonth() {
-    Employee employee2;
-    Repository get;
+bool Service::employeeCheck(Employee employeeTest) {
+    bool found = false;
     vector <Employee> employee;
-    get.infoInFile(employee);
+    Repository get;
+    get.getInfoInFile(employee);
+
     for(unsigned int i = 0; i < employee.size(); i++) {
-        cout << employee[i] << endl;
+        if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
+            if(employeeTest.get_month() == employee[i].get_month()) {
+                if(employeeTest.get_year() == employee[i].get_year()) {
+                    employee[i] = employeeTest;
+                    found = true;
+                }
+
+            }
+        }
+    }
+    if(found == true) {
+        get.reWriteInFile(employee);
     }
 
+    return found;
+}
+
+Employee Service::findEmployeeMonth(string ssn, string month, string year) {
+    int monthNumber = 0;
+    int yearNumber = 0;
+    Employee employee2;
+    stringstream sin1(month);
+    sin1 >> monthNumber;
+    stringstream sin2(year);
+    sin2 >> yearNumber;
+    Repository get;
+    vector <Employee> employee;
+    get.getInfoInFile(employee);
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(!ssn.compare(employee[i].get_ssn())) {
+            if(monthNumber == employee[i].get_month()) {
+                if(yearNumber == employee[i].get_year()) {
+                    employee2 = employee[i];
+                }
+
+            }
+        }
+    }
 
     return employee2;
 }

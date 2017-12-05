@@ -113,10 +113,8 @@ void Main_ui::addEmplMenu(){
                 break;
             }
         }
-        cout << tmpName << endl;
-        cout << tmpSSN << endl;
-        cout << tmpSalary << endl;
-        cout << tmpMonth << "/" << tmpYear << endl;
+    Service newEmployee;
+    newEmployee.writeEmployeeInFile(tmpName, tmpSSN, tmpSalary, tmpMonth, tmpYear);
     }
 
 }

@@ -33,14 +33,16 @@ int Employee::get_year() {
 }
 
 ostream& operator << (ostream& out, Employee& employee) {
-    out << employee._name << ", " << employee._ssn << ", " << employee._salary << ", ";
+    out << "Name: " << employee._name << endl;
+    out << "Social Security Number: " << employee._ssn << endl;
+    out << std::fixed << setprecision(2) << "Salary: " << employee._salary << endl;
     if(employee._month < 10) {
-        out << "0" << employee._month << ", ";
+        out << "Month: " << "0" << employee._month << endl;
     }
     else {
-        out << employee._month << ", ";
+        out << "Month: " << employee._month << endl;
     }
-    out << employee._year;
+    out << "Year: " << employee._year << endl;
 
     return out;
 }

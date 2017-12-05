@@ -1,14 +1,18 @@
 #ifndef REPOSITORY_H
 #define REPOSITORY_H
 
+#include "Employee.h"
+#include "Service.h"
+#include <fstream>
+
+using namespace std;
 
 class Repository
 {
     public:
         Repository();
-        virtual ~Repository();
-
-    protected:
+        ~Repository();
+        void writeInFile(Employee& employee);
 
     private:
 };

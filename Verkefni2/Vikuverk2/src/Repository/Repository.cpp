@@ -10,7 +10,7 @@ Repository::~Repository() {
 
 void Repository::writeInFile(Employee& employee) {
     ofstream fout;
-    fout.open("January.txt", ios::app);
+    fout.open("Employee.txt", ios::app);
     if(fout.is_open()) {
         fout << employee;
         fout.close();

@@ -11,11 +11,11 @@ class Employee
 {
     public:
         Employee();
-        Employee(string name, string ssn, double salary, int month, int year);
+        Employee(string name, string ssn, int salary, int month, int year);
         ~Employee();
         string get_name();
         string get_ssn();
-        double get_salary();
+        int get_salary();
         int get_month();
         int get_year();
         friend ostream& operator << (ostream& out, Employee& employee);
@@ -24,7 +24,7 @@ class Employee
     private:
         string _name;
         string _ssn;
-        double _salary;
+        int _salary;
         int _month;
         int _year;
 };

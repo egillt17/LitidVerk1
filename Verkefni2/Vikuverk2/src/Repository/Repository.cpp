@@ -8,7 +8,7 @@ Repository::~Repository() {
     //dtor
 }
 
-void write_january(Employee employee) {
+void Repository::writeInFile(Employee& employee) {
     ofstream fout;
     fout.open("January.txt", ios::app);
     if(fout.is_open()) {

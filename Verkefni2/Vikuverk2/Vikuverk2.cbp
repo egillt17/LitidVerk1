@@ -17,6 +17,7 @@
 					<Add directory="include/services" />
 					<Add directory="include/Repository" />
 					<Add directory="include/models" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +31,7 @@
 					<Add directory="include/services" />
 					<Add directory="include/Repository" />
 					<Add directory="include/models" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -41,12 +43,22 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Repository/Repository.h" />
+		<Unit filename="include/exceptions/InvalidMonthExc.h" />
+		<Unit filename="include/exceptions/InvalidNameExc.h" />
+		<Unit filename="include/exceptions/InvalidSalaryExc.h" />
+		<Unit filename="include/exceptions/InvalidSsnExc.h" />
+		<Unit filename="include/exceptions/InvalidYearExc.h" />
 		<Unit filename="include/models/Employee.h" />
 		<Unit filename="include/services/Service.h" />
 		<Unit filename="include/services/Validate.h" />
 		<Unit filename="include/ui/Main_ui.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Repository/Repository.cpp" />
+		<Unit filename="src/exceptions/InvalidMonthExc.cpp" />
+		<Unit filename="src/exceptions/InvalidNameExc.cpp" />
+		<Unit filename="src/exceptions/InvalidSalaryExc.cpp" />
+		<Unit filename="src/exceptions/InvalidSsnExc.cpp" />
+		<Unit filename="src/exceptions/InvalidYearExc.cpp" />
 		<Unit filename="src/models/Employee.cpp" />
 		<Unit filename="src/services/Service.cpp" />
 		<Unit filename="src/services/Validate.cpp" />

@@ -5,16 +5,17 @@ Validate::Validate()
     //ctor
 }
 
-bool Validate::validateSalary(double salary)
+bool Validate::validateSalary(string salary)
 {
-    if (salary >= 0)
-    {
-        return true;
+    for (unsigned int i = 0; i < salary.length() -1; i++){
+        if (!isdigit(salary[i])){
+            return false;
+        }
+        else {
+            return true;
+        }
     }
-    else
-    {
-        return false;
-    }
+return false;
 }
 
 bool Validate::validateSSN(string ssn)
@@ -38,14 +39,20 @@ bool Validate::validateSSN(string ssn)
     return isSSN;
 }
 
-bool Validate::validateMonth(int month)
+bool Validate::validateMonth(string month)
 {
-    if (month <= 12 && month >= 1)
-    {
+    for(unsigned int i = 0; i < month.length() - 1; i++) {
+        if(!isdigit(month[i])){
+            return false;
+        }
+    }
+    int tmpMonth = 0;
+    stringstream sin1(month);
+    sin1 >> tmpMonth;
+    if (tmpMonth <= 12 && tmpMonth >= 1){
         return true;
     }
-    else
-    {
+    else{
         return false;
     }
 }
@@ -72,19 +79,30 @@ bool Validate::validateName(string name)
     return isName;
 }
 
-bool Validate::validateYear(int year)
+bool Validate::validateYear(string year)
 {
-    if (year == 2017)
-    {
-        return true;
+    for(unsigned int i = 0; i < year.length() - 1; i++) {
+        if(!isdigit(year[i])){
+            return false;
+        }
     }
-    else
-    {
-        return false;
+    int tmpYear = 0;
+    if(year.length() == 4) {
+        stringstream sin1(year);
+        sin1 >> tmpYear;
+        if (tmpYear >= 1900 && tmpYear <= 2017)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
+return false;
 }
 
-bool Validate::validateAll(string name, string ssn, double salary, int month, int year)
+bool Validate::validateAll(string name, string ssn, string salary, string month, string year)
 {
     if (validateName(name) && validateSSN(ssn) && validateSalary(salary) && validateMonth(month) && validateYear(year))
     {

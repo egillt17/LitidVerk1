@@ -16,6 +16,8 @@ class Main_ui
         void getHiPayMenu();
         //goto menu for a yearly salary for a specific ssn 
         void getYrPayMenu();
+        
+        
     private:
 };
 

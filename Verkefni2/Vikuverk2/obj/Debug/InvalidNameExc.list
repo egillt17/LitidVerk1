@@ -1,0 +1,299 @@
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s 			page 1
+
+
+   1              		.file	"InvalidNameExc.cpp"
+   2              		.text
+   3              	Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              		.align 2
+   6              		.globl	__ZN14InvalidNameExcC2Ev
+   8              	__ZN14InvalidNameExcC2Ev:
+   9              	LFB1:
+  10              		.file 1 "C:/Users/Nj\341ll M\375rdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions/
+   1:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions\InvalidNameExc.cpp **** #include "InvalidNameExc.h"
+   2:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions\InvalidNameExc.cpp **** 
+   3:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions\InvalidNameExc.cpp **** InvalidNameExc::InvalidNameExc()
+  11              		.loc 1 3 0
+  12              		.cfi_startproc
+  13 0000 55       		pushl	%ebp
+  14              		.cfi_def_cfa_offset 8
+  15              		.cfi_offset 5, -8
+  16 0001 89E5     		movl	%esp, %ebp
+  17              		.cfi_def_cfa_register 5
+  18 0003 83EC04   		subl	$4, %esp
+  19 0006 894DFC   		movl	%ecx, -4(%ebp)
+   4:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions\InvalidNameExc.cpp **** {
+   5:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions\InvalidNameExc.cpp ****     //ctor
+   6:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/src/exceptions\InvalidNameExc.cpp **** }
+  20              		.loc 1 6 0
+  21 0009 C9       		leave
+  22              		.cfi_restore 5
+  23              		.cfi_def_cfa 4, 4
+  24 000a C3       		ret
+  25              		.cfi_endproc
+  26              	LFE1:
+  27              		.globl	__ZN14InvalidNameExcC1Ev
+  29              		.set	__ZN14InvalidNameExcC1Ev,__ZN14InvalidNameExcC2Ev
+  30              	Letext0:
+  31              		.file 2 "include/exceptions/InvalidNameExc.h"
+  32 000b 90       		.section	.debug_info,"dr"
+  33              	Ldebug_info0:
+  34 0000 78010000 		.long	0x178
+  35 0004 0400     		.word	0x4
+  36 0006 00000000 		.secrel32	Ldebug_abbrev0
+  37 000a 04       		.byte	0x4
+  38 000b 01       		.uleb128 0x1
+  39 000c 474E5520 		.ascii "GNU C++ 4.9.2 -mtune=generic -march=pentiumpro -g -fexceptions\0"
+  39      432B2B20 
+  39      342E392E 
+  39      32202D6D 
+  39      74756E65 
+  40 004b 04       		.byte	0x4
+  41 004c 433A5C55 		.ascii "C:\\Users\\Nj\341ll M\375rdal\\3viknanamskeid\\LitidVerk1\\Verkefni2\\Vikuverk2\\src\\exce
+  41      73657273 
+  41      5C4E6AE1 
+  41      6C6C204D 
+  41      FD726461 
+  42 00b2 433A5C55 		.ascii "C:\\Users\\Nj\341ll M\375rdal\\3viknanamskeid\\LitidVerk1\\Verkefni2\\Vikuverk2\0"
+  42      73657273 
+  42      5C4E6AE1 
+  42      6C6C204D 
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s 			page 2
+
+
+  42      FD726461 
+  43 00f6 00000000 		.long	Ltext0
+  44 00fa 0B000000 		.long	Letext0-Ltext0
+  45 00fe 00000000 		.secrel32	Ldebug_line0
+  46 0102 02       		.uleb128 0x2
+  47 0103 00000000 		.secrel32	LASF0
+  48 0107 01       		.byte	0x1
+  49 0108 02       		.byte	0x2
+  50 0109 05       		.byte	0x5
+  51 010a 21010000 		.long	0x121
+  52 010e 03       		.uleb128 0x3
+  53 010f 00000000 		.secrel32	LASF0
+  54 0113 02       		.byte	0x2
+  55 0114 08       		.byte	0x8
+  56 0115 01       		.byte	0x1
+  57 0116 1A010000 		.long	0x11a
+  58 011a 04       		.uleb128 0x4
+  59 011b 21010000 		.long	0x121
+  60 011f 00       		.byte	0
+  61 0120 00       		.byte	0
+  62 0121 05       		.uleb128 0x5
+  63 0122 04       		.byte	0x4
+  64 0123 02010000 		.long	0x102
+  65 0127 06       		.uleb128 0x6
+  66 0128 0E010000 		.long	0x10e
+  67 012c 01       		.byte	0x1
+  68 012d 03       		.byte	0x3
+  69 012e 00       		.byte	0
+  70 012f 37010000 		.long	0x137
+  71 0133 42010000 		.long	0x142
+  72 0137 07       		.uleb128 0x7
+  73 0138 74686973 		.ascii "this\0"
+  73      00
+  74 013d 42010000 		.long	0x142
+  75 0141 00       		.byte	0
+  76 0142 08       		.uleb128 0x8
+  77 0143 21010000 		.long	0x121
+  78 0147 09       		.uleb128 0x9
+  79 0148 27010000 		.long	0x127
+  80 014c 5F5A4E31 		.ascii "_ZN14InvalidNameExcC2Ev\0"
+  80      34496E76 
+  80      616C6964 
+  80      4E616D65 
+  80      45786343 
+  81 0164 00000000 		.long	LFB1
+  82 0168 0B000000 		.long	LFE1-LFB1
+  83 016c 01       		.uleb128 0x1
+  84 016d 9C       		.byte	0x9c
+  85 016e 72010000 		.long	0x172
+  86 0172 0A       		.uleb128 0xa
+  87 0173 37010000 		.long	0x137
+  88 0177 02       		.uleb128 0x2
+  89 0178 91       		.byte	0x91
+  90 0179 74       		.sleb128 -12
+  91 017a 00       		.byte	0
+  92 017b 00       		.byte	0
+  93              		.section	.debug_abbrev,"dr"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s 			page 3
+
+
+  94              	Ldebug_abbrev0:
+  95 0000 01       		.uleb128 0x1
+  96 0001 11       		.uleb128 0x11
+  97 0002 01       		.byte	0x1
+  98 0003 25       		.uleb128 0x25
+  99 0004 08       		.uleb128 0x8
+ 100 0005 13       		.uleb128 0x13
+ 101 0006 0B       		.uleb128 0xb
+ 102 0007 03       		.uleb128 0x3
+ 103 0008 08       		.uleb128 0x8
+ 104 0009 1B       		.uleb128 0x1b
+ 105 000a 08       		.uleb128 0x8
+ 106 000b 11       		.uleb128 0x11
+ 107 000c 01       		.uleb128 0x1
+ 108 000d 12       		.uleb128 0x12
+ 109 000e 06       		.uleb128 0x6
+ 110 000f 10       		.uleb128 0x10
+ 111 0010 17       		.uleb128 0x17
+ 112 0011 00       		.byte	0
+ 113 0012 00       		.byte	0
+ 114 0013 02       		.uleb128 0x2
+ 115 0014 02       		.uleb128 0x2
+ 116 0015 01       		.byte	0x1
+ 117 0016 03       		.uleb128 0x3
+ 118 0017 0E       		.uleb128 0xe
+ 119 0018 0B       		.uleb128 0xb
+ 120 0019 0B       		.uleb128 0xb
+ 121 001a 3A       		.uleb128 0x3a
+ 122 001b 0B       		.uleb128 0xb
+ 123 001c 3B       		.uleb128 0x3b
+ 124 001d 0B       		.uleb128 0xb
+ 125 001e 01       		.uleb128 0x1
+ 126 001f 13       		.uleb128 0x13
+ 127 0020 00       		.byte	0
+ 128 0021 00       		.byte	0
+ 129 0022 03       		.uleb128 0x3
+ 130 0023 2E       		.uleb128 0x2e
+ 131 0024 01       		.byte	0x1
+ 132 0025 3F       		.uleb128 0x3f
+ 133 0026 19       		.uleb128 0x19
+ 134 0027 03       		.uleb128 0x3
+ 135 0028 0E       		.uleb128 0xe
+ 136 0029 3A       		.uleb128 0x3a
+ 137 002a 0B       		.uleb128 0xb
+ 138 002b 3B       		.uleb128 0x3b
+ 139 002c 0B       		.uleb128 0xb
+ 140 002d 32       		.uleb128 0x32
+ 141 002e 0B       		.uleb128 0xb
+ 142 002f 3C       		.uleb128 0x3c
+ 143 0030 19       		.uleb128 0x19
+ 144 0031 64       		.uleb128 0x64
+ 145 0032 13       		.uleb128 0x13
+ 146 0033 00       		.byte	0
+ 147 0034 00       		.byte	0
+ 148 0035 04       		.uleb128 0x4
+ 149 0036 05       		.uleb128 0x5
+ 150 0037 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s 			page 4
+
+
+ 151 0038 49       		.uleb128 0x49
+ 152 0039 13       		.uleb128 0x13
+ 153 003a 34       		.uleb128 0x34
+ 154 003b 19       		.uleb128 0x19
+ 155 003c 00       		.byte	0
+ 156 003d 00       		.byte	0
+ 157 003e 05       		.uleb128 0x5
+ 158 003f 0F       		.uleb128 0xf
+ 159 0040 00       		.byte	0
+ 160 0041 0B       		.uleb128 0xb
+ 161 0042 0B       		.uleb128 0xb
+ 162 0043 49       		.uleb128 0x49
+ 163 0044 13       		.uleb128 0x13
+ 164 0045 00       		.byte	0
+ 165 0046 00       		.byte	0
+ 166 0047 06       		.uleb128 0x6
+ 167 0048 2E       		.uleb128 0x2e
+ 168 0049 01       		.byte	0x1
+ 169 004a 47       		.uleb128 0x47
+ 170 004b 13       		.uleb128 0x13
+ 171 004c 3A       		.uleb128 0x3a
+ 172 004d 0B       		.uleb128 0xb
+ 173 004e 3B       		.uleb128 0x3b
+ 174 004f 0B       		.uleb128 0xb
+ 175 0050 20       		.uleb128 0x20
+ 176 0051 0B       		.uleb128 0xb
+ 177 0052 64       		.uleb128 0x64
+ 178 0053 13       		.uleb128 0x13
+ 179 0054 01       		.uleb128 0x1
+ 180 0055 13       		.uleb128 0x13
+ 181 0056 00       		.byte	0
+ 182 0057 00       		.byte	0
+ 183 0058 07       		.uleb128 0x7
+ 184 0059 05       		.uleb128 0x5
+ 185 005a 00       		.byte	0
+ 186 005b 03       		.uleb128 0x3
+ 187 005c 08       		.uleb128 0x8
+ 188 005d 49       		.uleb128 0x49
+ 189 005e 13       		.uleb128 0x13
+ 190 005f 34       		.uleb128 0x34
+ 191 0060 19       		.uleb128 0x19
+ 192 0061 00       		.byte	0
+ 193 0062 00       		.byte	0
+ 194 0063 08       		.uleb128 0x8
+ 195 0064 26       		.uleb128 0x26
+ 196 0065 00       		.byte	0
+ 197 0066 49       		.uleb128 0x49
+ 198 0067 13       		.uleb128 0x13
+ 199 0068 00       		.byte	0
+ 200 0069 00       		.byte	0
+ 201 006a 09       		.uleb128 0x9
+ 202 006b 2E       		.uleb128 0x2e
+ 203 006c 01       		.byte	0x1
+ 204 006d 31       		.uleb128 0x31
+ 205 006e 13       		.uleb128 0x13
+ 206 006f 6E       		.uleb128 0x6e
+ 207 0070 08       		.uleb128 0x8
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s 			page 5
+
+
+ 208 0071 11       		.uleb128 0x11
+ 209 0072 01       		.uleb128 0x1
+ 210 0073 12       		.uleb128 0x12
+ 211 0074 06       		.uleb128 0x6
+ 212 0075 40       		.uleb128 0x40
+ 213 0076 18       		.uleb128 0x18
+ 214 0077 64       		.uleb128 0x64
+ 215 0078 13       		.uleb128 0x13
+ 216 0079 9742     		.uleb128 0x2117
+ 217 007b 19       		.uleb128 0x19
+ 218 007c 00       		.byte	0
+ 219 007d 00       		.byte	0
+ 220 007e 0A       		.uleb128 0xa
+ 221 007f 05       		.uleb128 0x5
+ 222 0080 00       		.byte	0
+ 223 0081 31       		.uleb128 0x31
+ 224 0082 13       		.uleb128 0x13
+ 225 0083 02       		.uleb128 0x2
+ 226 0084 18       		.uleb128 0x18
+ 227 0085 00       		.byte	0
+ 228 0086 00       		.byte	0
+ 229 0087 00       		.byte	0
+ 230              		.section	.debug_aranges,"dr"
+ 231 0000 1C000000 		.long	0x1c
+ 232 0004 0200     		.word	0x2
+ 233 0006 00000000 		.secrel32	Ldebug_info0
+ 234 000a 04       		.byte	0x4
+ 235 000b 00       		.byte	0
+ 236 000c 0000     		.word	0
+ 237 000e 0000     		.word	0
+ 238 0010 00000000 		.long	Ltext0
+ 239 0014 0B000000 		.long	Letext0-Ltext0
+ 240 0018 00000000 		.long	0
+ 241 001c 00000000 		.long	0
+ 242              		.section	.debug_line,"dr"
+ 243              	Ldebug_line0:
+ 244 0000 B7000000 		.section	.debug_str,"dr"
+ 244      0200A300 
+ 244      00000101 
+ 244      FB0E0D00 
+ 244      01010101 
+ 245              	LASF0:
+ 246 0000 496E7661 		.ascii "InvalidNameExc\0"
+ 246      6C69644E 
+ 246      616D6545 
+ 246      786300
+ 247              		.ident	"GCC: (tdm-1) 4.9.2"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 InvalidNameExc.cpp
+C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s:8      .text:00000000 __ZN14InvalidNameExcC2Ev
+C:\Users\NJLLMR~1\AppData\Local\Temp\ccKZJ0iH.s:8      .text:00000000 __ZN14InvalidNameExcC1Ev
+
+NO UNDEFINED SYMBOLS

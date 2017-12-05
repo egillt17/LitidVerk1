@@ -1,0 +1,3837 @@
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 1
+
+
+   1              		.file	"main.cpp"
+   2              		.text
+   3              	Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              	.lcomm __ZStL8__ioinit,1,1
+   7              		.globl	_main
+   9              	_main:
+  10              	LFB1031:
+  11              		.file 1 "C:/Users/Nj\341ll M\375rdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2/main.cpp"
+   1:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** #include <iostream>
+   2:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** 
+   3:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** #include "Main_ui.h"
+   4:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** 
+   5:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** #include "Employee.h"
+   6:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** 
+   7:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** 
+   8:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** using namespace std;
+   9:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** 
+  10:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** int main()
+  11:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** {
+  12              		.loc 1 11 0
+  13              		.cfi_startproc
+  14 0000 55       		pushl	%ebp
+  15              		.cfi_def_cfa_offset 8
+  16              		.cfi_offset 5, -8
+  17 0001 89E5     		movl	%esp, %ebp
+  18              		.cfi_def_cfa_register 5
+  19 0003 83E4F0   		andl	$-16, %esp
+  20 0006 83EC10   		subl	$16, %esp
+  21              		.loc 1 11 0
+  22 0009 E8000000 		call	___main
+  22      00
+  23              	LBB2:
+  12:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     
+  13:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     Main_ui mainui;
+  24              		.loc 1 13 0
+  25 000e 8D44240F 		leal	15(%esp), %eax
+  26 0012 89C1     		movl	%eax, %ecx
+  27 0014 E8000000 		call	__ZN7Main_uiC1Ev
+  27      00
+  14:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     mainui.main_menu();
+  28              		.loc 1 14 0
+  29 0019 8D44240F 		leal	15(%esp), %eax
+  30 001d 89C1     		movl	%eax, %ecx
+  31 001f E8000000 		call	__ZN7Main_ui9main_menuEv
+  31      00
+  15:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     /*
+  16:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     
+  17:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     Employee lala;
+  18:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     cin >> lala;
+  19:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     cout << endl << lala << endl;
+  20:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     */
+  21:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp ****     return 0;
+  32              		.loc 1 21 0
+  33 0024 B8000000 		movl	$0, %eax
+  33      00
+  34              	LBE2:
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 2
+
+
+  22:C:/Users/Njáll Mýrdal/3viknanamskeid/LitidVerk1/Verkefni2/Vikuverk2\main.cpp **** }
+  35              		.loc 1 22 0
+  36 0029 C9       		leave
+  37              		.cfi_restore 5
+  38              		.cfi_def_cfa 4, 4
+  39 002a C3       		ret
+  40              		.cfi_endproc
+  41              	LFE1031:
+  43              	___tcf_0:
+  44              	LFB1033:
+  45              		.file 2 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/iostream"
+   1:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // Standard iostream objects -*- C++ -*-
+   2:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+   3:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // Copyright (C) 1997-2014 Free Software Foundation, Inc.
+   4:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** //
+   5:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // This file is part of the GNU ISO C++ Library.  This library is free
+   6:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // software; you can redistribute it and/or modify it under the
+   7:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // terms of the GNU General Public License as published by the
+   8:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // Free Software Foundation; either version 3, or (at your option)
+   9:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // any later version.
+  10:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  11:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // This library is distributed in the hope that it will be useful,
+  12:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // but WITHOUT ANY WARRANTY; without even the implied warranty of
+  13:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  14:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // GNU General Public License for more details.
+  15:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  16:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // Under Section 7 of GPL version 3, you are granted additional
+  17:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // permissions described in the GCC Runtime Library Exception, version
+  18:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // 3.1, as published by the Free Software Foundation.
+  19:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  20:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // You should have received a copy of the GNU General Public License and
+  21:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // a copy of the GCC Runtime Library Exception along with this program;
+  22:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+  23:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // <http://www.gnu.org/licenses/>.
+  24:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  25:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** /** @file include/iostream
+  26:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****  *  This is a Standard C++ Library header.
+  27:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****  */
+  28:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  29:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** //
+  30:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** // ISO C++ 14882: 27.3  Standard iostream objects
+  31:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** //
+  32:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  33:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #ifndef _GLIBCXX_IOSTREAM
+  34:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #define _GLIBCXX_IOSTREAM 1
+  35:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  36:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #pragma GCC system_header
+  37:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  38:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #include <bits/c++config.h>
+  39:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #include <ostream>
+  40:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #include <istream>
+  41:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  42:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** namespace std _GLIBCXX_VISIBILITY(default)
+  43:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** {
+  44:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** _GLIBCXX_BEGIN_NAMESPACE_VERSION
+  45:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  46:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   /**
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 3
+
+
+  47:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  @name Standard Stream Objects
+  48:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *
+  49:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  The &lt;iostream&gt; header declares the eight <em>standard stream
+  50:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  objects</em>.  For other declarations, see
+  51:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  http://gcc.gnu.org/onlinedocs/libstdc++/manual/io.html
+  52:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  and the @link iosfwd I/O forward declarations @endlink
+  53:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *
+  54:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  They are required by default to cooperate with the global C
+  55:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  library's @c FILE streams, and to be available during program
+  56:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  startup and termination. For more information, see the section of the
+  57:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****    *  manual linked to above.
+  58:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   */
+  59:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   //@{
+  60:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern istream cin;		/// Linked to standard input
+  61:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern ostream cout;		/// Linked to standard output
+  62:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern ostream cerr;		/// Linked to standard error (unbuffered)
+  63:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern ostream clog;		/// Linked to standard error (buffered)
+  64:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  65:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #ifdef _GLIBCXX_USE_WCHAR_T
+  66:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern wistream wcin;		/// Linked to standard input
+  67:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern wostream wcout;	/// Linked to standard output
+  68:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern wostream wcerr;	/// Linked to standard error (unbuffered)
+  69:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   extern wostream wclog;	/// Linked to standard error (buffered)
+  70:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** #endif
+  71:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   //@}
+  72:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream **** 
+  73:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   // For construction of filebuffers for cout, cin, cerr, clog et. al.
+  74:C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++\iostream ****   static ios_base::Init __ioinit;
+  46              		.loc 2 74 0
+  47              		.cfi_startproc
+  48 002b 55       		pushl	%ebp
+  49              		.cfi_def_cfa_offset 8
+  50              		.cfi_offset 5, -8
+  51 002c 89E5     		movl	%esp, %ebp
+  52              		.cfi_def_cfa_register 5
+  53 002e 83EC08   		subl	$8, %esp
+  54              		.loc 2 74 0
+  55 0031 B9000000 		movl	$__ZStL8__ioinit, %ecx
+  55      00
+  56 0036 E8000000 		call	__ZNSt8ios_base4InitD1Ev
+  56      00
+  57 003b C9       		leave
+  58              		.cfi_restore 5
+  59              		.cfi_def_cfa 4, 4
+  60 003c C3       		ret
+  61              		.cfi_endproc
+  62              	LFE1033:
+  64              	__Z41__static_initialization_and_destruction_0ii:
+  65              	LFB1032:
+  66              		.loc 1 22 0
+  67              		.cfi_startproc
+  68 003d 55       		pushl	%ebp
+  69              		.cfi_def_cfa_offset 8
+  70              		.cfi_offset 5, -8
+  71 003e 89E5     		movl	%esp, %ebp
+  72              		.cfi_def_cfa_register 5
+  73 0040 83EC18   		subl	$24, %esp
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 4
+
+
+  74              		.loc 1 22 0
+  75 0043 837D0801 		cmpl	$1, 8(%ebp)
+  76 0047 751F     		jne	L4
+  77              		.loc 1 22 0 is_stmt 0 discriminator 1
+  78 0049 817D0CFF 		cmpl	$65535, 12(%ebp)
+  78      FF0000
+  79 0050 7516     		jne	L4
+  80              		.loc 2 74 0 is_stmt 1
+  81 0052 B9000000 		movl	$__ZStL8__ioinit, %ecx
+  81      00
+  82 0057 E8000000 		call	__ZNSt8ios_base4InitC1Ev
+  82      00
+  83 005c C704242B 		movl	$___tcf_0, (%esp)
+  83      000000
+  84 0063 E8000000 		call	_atexit
+  84      00
+  85              	L4:
+  86              		.loc 1 22 0
+  87 0068 C9       		leave
+  88              		.cfi_restore 5
+  89              		.cfi_def_cfa 4, 4
+  90 0069 C3       		ret
+  91              		.cfi_endproc
+  92              	LFE1032:
+  94              	__GLOBAL__sub_I_main:
+  95              	LFB1034:
+  96              		.loc 1 22 0
+  97              		.cfi_startproc
+  98 006a 55       		pushl	%ebp
+  99              		.cfi_def_cfa_offset 8
+ 100              		.cfi_offset 5, -8
+ 101 006b 89E5     		movl	%esp, %ebp
+ 102              		.cfi_def_cfa_register 5
+ 103 006d 83EC18   		subl	$24, %esp
+ 104              		.loc 1 22 0
+ 105 0070 C7442404 		movl	$65535, 4(%esp)
+ 105      FFFF0000 
+ 106 0078 C7042401 		movl	$1, (%esp)
+ 106      000000
+ 107 007f E8B9FFFF 		call	__Z41__static_initialization_and_destruction_0ii
+ 107      FF
+ 108 0084 C9       		leave
+ 109              		.cfi_restore 5
+ 110              		.cfi_def_cfa 4, 4
+ 111 0085 C3       		ret
+ 112              		.cfi_endproc
+ 113              	LFE1034:
+ 114              		.section	.ctors,"w"
+ 115              		.align 4
+ 116 0000 6A000000 		.long	__GLOBAL__sub_I_main
+ 117              		.text
+ 118              	Letext0:
+ 119              		.file 3 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/stddef.h"
+ 120              		.file 4 "C:/Program Files (x86)/CodeBlocks/MinGW/include/wctype.h"
+ 121              		.file 5 "C:/Program Files (x86)/CodeBlocks/MinGW/include/wchar.h"
+ 122              		.file 6 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/cwchar"
+ 123              		.file 7 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/mingw32/bits/c+
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 5
+
+
+ 124              		.file 8 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/clocale"
+ 125              		.file 9 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/bits/ios_base.h
+ 126              		.file 10 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/cwctype"
+ 127              		.file 11 "<built-in>"
+ 128              		.file 12 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/debug/debug.h"
+ 129              		.file 13 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/bits/predefine
+ 130              		.file 14 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/ext/new_alloca
+ 131              		.file 15 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/ext/numeric_tr
+ 132              		.file 16 "C:/Program Files (x86)/CodeBlocks/MinGW/include/locale.h"
+ 133              		.file 17 "C:/Program Files (x86)/CodeBlocks/MinGW/lib/gcc/mingw32/4.9.2/include/c++/mingw32/bits/a
+ 134              		.file 18 "C:/Program Files (x86)/CodeBlocks/MinGW/include/ctype.h"
+ 135              		.file 19 "include/ui/Main_ui.h"
+ 136              		.file 20 "include/models/Employee.h"
+ 137 0086 9090     		.section	.debug_info,"dr"
+ 138              	Ldebug_info0:
+ 139 0000 F1190000 		.long	0x19f1
+ 140 0004 0400     		.word	0x4
+ 141 0006 00000000 		.secrel32	Ldebug_abbrev0
+ 142 000a 04       		.byte	0x4
+ 143 000b 01       		.uleb128 0x1
+ 144 000c 474E5520 		.ascii "GNU C++ 4.9.2 -mtune=generic -march=pentiumpro -g -fexceptions\0"
+ 144      432B2B20 
+ 144      342E392E 
+ 144      32202D6D 
+ 144      74756E65 
+ 145 004b 04       		.byte	0x4
+ 146 004c 433A5C55 		.ascii "C:\\Users\\Nj\341ll M\375rdal\\3viknanamskeid\\LitidVerk1\\Verkefni2\\Vikuverk2\\main.cpp\
+ 146      73657273 
+ 146      5C4E6AE1 
+ 146      6C6C204D 
+ 146      FD726461 
+ 147 0099 433A5C55 		.ascii "C:\\Users\\Nj\341ll M\375rdal\\3viknanamskeid\\LitidVerk1\\Verkefni2\\Vikuverk2\0"
+ 147      73657273 
+ 147      5C4E6AE1 
+ 147      6C6C204D 
+ 147      FD726461 
+ 148 00dd 00000000 		.long	Ltext0
+ 149 00e1 86000000 		.long	Letext0-Ltext0
+ 150 00e5 00000000 		.secrel32	Ldebug_line0
+ 151 00e9 02       		.uleb128 0x2
+ 152 00ea 73697A65 		.ascii "size_t\0"
+ 152      5F7400
+ 153 00f1 03       		.byte	0x3
+ 154 00f2 D4       		.byte	0xd4
+ 155 00f3 F7000000 		.long	0xf7
+ 156 00f7 03       		.uleb128 0x3
+ 157 00f8 04       		.byte	0x4
+ 158 00f9 07       		.byte	0x7
+ 159 00fa 756E7369 		.ascii "unsigned int\0"
+ 159      676E6564 
+ 159      20696E74 
+ 159      00
+ 160 0107 04       		.uleb128 0x4
+ 161 0108 77696E74 		.ascii "wint_t\0"
+ 161      5F7400
+ 162 010f 03       		.byte	0x3
+ 163 0110 6101     		.word	0x161
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 6
+
+
+ 164 0112 16010000 		.long	0x116
+ 165 0116 03       		.uleb128 0x3
+ 166 0117 02       		.byte	0x2
+ 167 0118 07       		.byte	0x7
+ 168 0119 73686F72 		.ascii "short unsigned int\0"
+ 168      7420756E 
+ 168      7369676E 
+ 168      65642069 
+ 168      6E7400
+ 169 012c 05       		.uleb128 0x5
+ 170 012d 04       		.byte	0x4
+ 171 012e 5F5F6275 		.ascii "__builtin_va_list\0"
+ 171      696C7469 
+ 171      6E5F7661 
+ 171      5F6C6973 
+ 171      7400
+ 172 0140 44010000 		.long	0x144
+ 173 0144 03       		.uleb128 0x3
+ 174 0145 01       		.byte	0x1
+ 175 0146 06       		.byte	0x6
+ 176 0147 63686172 		.ascii "char\0"
+ 176      00
+ 177 014c 02       		.uleb128 0x2
+ 178 014d 77637479 		.ascii "wctype_t\0"
+ 178      70655F74 
+ 178      00
+ 179 0156 04       		.byte	0x4
+ 180 0157 3E       		.byte	0x3e
+ 181 0158 5C010000 		.long	0x15c
+ 182 015c 03       		.uleb128 0x3
+ 183 015d 02       		.byte	0x2
+ 184 015e 07       		.byte	0x7
+ 185 015f 77636861 		.ascii "wchar_t\0"
+ 185      725F7400 
+ 186 0167 02       		.uleb128 0x2
+ 187 0168 77637472 		.ascii "wctrans_t\0"
+ 187      616E735F 
+ 187      7400
+ 188 0172 04       		.byte	0x4
+ 189 0173 94       		.byte	0x94
+ 190 0174 5C010000 		.long	0x15c
+ 191 0178 03       		.uleb128 0x3
+ 192 0179 04       		.byte	0x4
+ 193 017a 05       		.byte	0x5
+ 194 017b 696E7400 		.ascii "int\0"
+ 195 017f 03       		.uleb128 0x3
+ 196 0180 04       		.byte	0x4
+ 197 0181 05       		.byte	0x5
+ 198 0182 6C6F6E67 		.ascii "long int\0"
+ 198      20696E74 
+ 198      00
+ 199 018b 03       		.uleb128 0x3
+ 200 018c 08       		.byte	0x8
+ 201 018d 05       		.byte	0x5
+ 202 018e 6C6F6E67 		.ascii "long long int\0"
+ 202      206C6F6E 
+ 202      6720696E 
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 7
+
+
+ 202      7400
+ 203 019c 03       		.uleb128 0x3
+ 204 019d 02       		.byte	0x2
+ 205 019e 05       		.byte	0x5
+ 206 019f 73686F72 		.ascii "short int\0"
+ 206      7420696E 
+ 206      7400
+ 207 01a9 06       		.uleb128 0x6
+ 208 01aa 5F696F62 		.ascii "_iobuf\0"
+ 208      756600
+ 209 01b1 20       		.byte	0x20
+ 210 01b2 05       		.byte	0x5
+ 211 01b3 44       		.byte	0x44
+ 212 01b4 30020000 		.long	0x230
+ 213 01b8 07       		.uleb128 0x7
+ 214 01b9 5F707472 		.ascii "_ptr\0"
+ 214      00
+ 215 01be 05       		.byte	0x5
+ 216 01bf 46       		.byte	0x46
+ 217 01c0 30020000 		.long	0x230
+ 218 01c4 00       		.byte	0
+ 219 01c5 07       		.uleb128 0x7
+ 220 01c6 5F636E74 		.ascii "_cnt\0"
+ 220      00
+ 221 01cb 05       		.byte	0x5
+ 222 01cc 47       		.byte	0x47
+ 223 01cd 78010000 		.long	0x178
+ 224 01d1 04       		.byte	0x4
+ 225 01d2 07       		.uleb128 0x7
+ 226 01d3 5F626173 		.ascii "_base\0"
+ 226      6500
+ 227 01d9 05       		.byte	0x5
+ 228 01da 48       		.byte	0x48
+ 229 01db 30020000 		.long	0x230
+ 230 01df 08       		.byte	0x8
+ 231 01e0 07       		.uleb128 0x7
+ 232 01e1 5F666C61 		.ascii "_flag\0"
+ 232      6700
+ 233 01e7 05       		.byte	0x5
+ 234 01e8 49       		.byte	0x49
+ 235 01e9 78010000 		.long	0x178
+ 236 01ed 0C       		.byte	0xc
+ 237 01ee 07       		.uleb128 0x7
+ 238 01ef 5F66696C 		.ascii "_file\0"
+ 238      6500
+ 239 01f5 05       		.byte	0x5
+ 240 01f6 4A       		.byte	0x4a
+ 241 01f7 78010000 		.long	0x178
+ 242 01fb 10       		.byte	0x10
+ 243 01fc 07       		.uleb128 0x7
+ 244 01fd 5F636861 		.ascii "_charbuf\0"
+ 244      72627566 
+ 244      00
+ 245 0206 05       		.byte	0x5
+ 246 0207 4B       		.byte	0x4b
+ 247 0208 78010000 		.long	0x178
+ 248 020c 14       		.byte	0x14
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 8
+
+
+ 249 020d 07       		.uleb128 0x7
+ 250 020e 5F627566 		.ascii "_bufsiz\0"
+ 250      73697A00 
+ 251 0216 05       		.byte	0x5
+ 252 0217 4C       		.byte	0x4c
+ 253 0218 78010000 		.long	0x178
+ 254 021c 18       		.byte	0x18
+ 255 021d 07       		.uleb128 0x7
+ 256 021e 5F746D70 		.ascii "_tmpfname\0"
+ 256      666E616D 
+ 256      6500
+ 257 0228 05       		.byte	0x5
+ 258 0229 4D       		.byte	0x4d
+ 259 022a 30020000 		.long	0x230
+ 260 022e 1C       		.byte	0x1c
+ 261 022f 00       		.byte	0
+ 262 0230 08       		.uleb128 0x8
+ 263 0231 04       		.byte	0x4
+ 264 0232 44010000 		.long	0x144
+ 265 0236 02       		.uleb128 0x2
+ 266 0237 46494C45 		.ascii "FILE\0"
+ 266      00
+ 267 023c 05       		.byte	0x5
+ 268 023d 4E       		.byte	0x4e
+ 269 023e A9010000 		.long	0x1a9
+ 270 0242 06       		.uleb128 0x6
+ 271 0243 746D00   		.ascii "tm\0"
+ 272 0246 24       		.byte	0x24
+ 273 0247 05       		.byte	0x5
+ 274 0248 57       		.byte	0x57
+ 275 0249 DC020000 		.long	0x2dc
+ 276 024d 07       		.uleb128 0x7
+ 277 024e 746D5F73 		.ascii "tm_sec\0"
+ 277      656300
+ 278 0255 05       		.byte	0x5
+ 279 0256 58       		.byte	0x58
+ 280 0257 78010000 		.long	0x178
+ 281 025b 00       		.byte	0
+ 282 025c 07       		.uleb128 0x7
+ 283 025d 746D5F6D 		.ascii "tm_min\0"
+ 283      696E00
+ 284 0264 05       		.byte	0x5
+ 285 0265 59       		.byte	0x59
+ 286 0266 78010000 		.long	0x178
+ 287 026a 04       		.byte	0x4
+ 288 026b 07       		.uleb128 0x7
+ 289 026c 746D5F68 		.ascii "tm_hour\0"
+ 289      6F757200 
+ 290 0274 05       		.byte	0x5
+ 291 0275 5A       		.byte	0x5a
+ 292 0276 78010000 		.long	0x178
+ 293 027a 08       		.byte	0x8
+ 294 027b 07       		.uleb128 0x7
+ 295 027c 746D5F6D 		.ascii "tm_mday\0"
+ 295      64617900 
+ 296 0284 05       		.byte	0x5
+ 297 0285 5B       		.byte	0x5b
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 9
+
+
+ 298 0286 78010000 		.long	0x178
+ 299 028a 0C       		.byte	0xc
+ 300 028b 07       		.uleb128 0x7
+ 301 028c 746D5F6D 		.ascii "tm_mon\0"
+ 301      6F6E00
+ 302 0293 05       		.byte	0x5
+ 303 0294 5C       		.byte	0x5c
+ 304 0295 78010000 		.long	0x178
+ 305 0299 10       		.byte	0x10
+ 306 029a 07       		.uleb128 0x7
+ 307 029b 746D5F79 		.ascii "tm_year\0"
+ 307      65617200 
+ 308 02a3 05       		.byte	0x5
+ 309 02a4 5D       		.byte	0x5d
+ 310 02a5 78010000 		.long	0x178
+ 311 02a9 14       		.byte	0x14
+ 312 02aa 07       		.uleb128 0x7
+ 313 02ab 746D5F77 		.ascii "tm_wday\0"
+ 313      64617900 
+ 314 02b3 05       		.byte	0x5
+ 315 02b4 5E       		.byte	0x5e
+ 316 02b5 78010000 		.long	0x178
+ 317 02b9 18       		.byte	0x18
+ 318 02ba 07       		.uleb128 0x7
+ 319 02bb 746D5F79 		.ascii "tm_yday\0"
+ 319      64617900 
+ 320 02c3 05       		.byte	0x5
+ 321 02c4 5F       		.byte	0x5f
+ 322 02c5 78010000 		.long	0x178
+ 323 02c9 1C       		.byte	0x1c
+ 324 02ca 07       		.uleb128 0x7
+ 325 02cb 746D5F69 		.ascii "tm_isdst\0"
+ 325      73647374 
+ 325      00
+ 326 02d4 05       		.byte	0x5
+ 327 02d5 60       		.byte	0x60
+ 328 02d6 78010000 		.long	0x178
+ 329 02da 20       		.byte	0x20
+ 330 02db 00       		.byte	0
+ 331 02dc 04       		.uleb128 0x4
+ 332 02dd 6D627374 		.ascii "mbstate_t\0"
+ 332      6174655F 
+ 332      7400
+ 333 02e7 05       		.byte	0x5
+ 334 02e8 2701     		.word	0x127
+ 335 02ea 78010000 		.long	0x178
+ 336 02ee 03       		.uleb128 0x3
+ 337 02ef 04       		.byte	0x4
+ 338 02f0 07       		.byte	0x7
+ 339 02f1 6C6F6E67 		.ascii "long unsigned int\0"
+ 339      20756E73 
+ 339      69676E65 
+ 339      6420696E 
+ 339      7400
+ 340 0303 03       		.uleb128 0x3
+ 341 0304 04       		.byte	0x4
+ 342 0305 07       		.byte	0x7
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 10
+
+
+ 343 0306 73697A65 		.ascii "sizetype\0"
+ 343      74797065 
+ 343      00
+ 344 030f 03       		.uleb128 0x3
+ 345 0310 01       		.byte	0x1
+ 346 0311 06       		.byte	0x6
+ 347 0312 7369676E 		.ascii "signed char\0"
+ 347      65642063 
+ 347      68617200 
+ 348 031e 03       		.uleb128 0x3
+ 349 031f 01       		.byte	0x1
+ 350 0320 08       		.byte	0x8
+ 351 0321 756E7369 		.ascii "unsigned char\0"
+ 351      676E6564 
+ 351      20636861 
+ 351      7200
+ 352 032f 03       		.uleb128 0x3
+ 353 0330 08       		.byte	0x8
+ 354 0331 07       		.byte	0x7
+ 355 0332 6C6F6E67 		.ascii "long long unsigned int\0"
+ 355      206C6F6E 
+ 355      6720756E 
+ 355      7369676E 
+ 355      65642069 
+ 356 0349 09       		.uleb128 0x9
+ 357 034a 73746400 		.ascii "std\0"
+ 358 034e 0B       		.byte	0xb
+ 359 034f 00       		.byte	0
+ 360 0350 980A0000 		.long	0xa98
+ 361 0354 0A       		.uleb128 0xa
+ 362 0355 06       		.byte	0x6
+ 363 0356 40       		.byte	0x40
+ 364 0357 DC020000 		.long	0x2dc
+ 365 035b 0A       		.uleb128 0xa
+ 366 035c 06       		.byte	0x6
+ 367 035d 8B       		.byte	0x8b
+ 368 035e 07010000 		.long	0x107
+ 369 0362 0A       		.uleb128 0xa
+ 370 0363 06       		.byte	0x6
+ 371 0364 8D       		.byte	0x8d
+ 372 0365 980A0000 		.long	0xa98
+ 373 0369 0A       		.uleb128 0xa
+ 374 036a 06       		.byte	0x6
+ 375 036b 8E       		.byte	0x8e
+ 376 036c B00A0000 		.long	0xab0
+ 377 0370 0A       		.uleb128 0xa
+ 378 0371 06       		.byte	0x6
+ 379 0372 8F       		.byte	0x8f
+ 380 0373 CE0A0000 		.long	0xace
+ 381 0377 0A       		.uleb128 0xa
+ 382 0378 06       		.byte	0x6
+ 383 0379 90       		.byte	0x90
+ 384 037a F60A0000 		.long	0xaf6
+ 385 037e 0A       		.uleb128 0xa
+ 386 037f 06       		.byte	0x6
+ 387 0380 91       		.byte	0x91
+ 388 0381 130B0000 		.long	0xb13
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 11
+
+
+ 389 0385 0A       		.uleb128 0xa
+ 390 0386 06       		.byte	0x6
+ 391 0387 92       		.byte	0x92
+ 392 0388 3B0B0000 		.long	0xb3b
+ 393 038c 0A       		.uleb128 0xa
+ 394 038d 06       		.byte	0x6
+ 395 038e 93       		.byte	0x93
+ 396 038f 580B0000 		.long	0xb58
+ 397 0393 0A       		.uleb128 0xa
+ 398 0394 06       		.byte	0x6
+ 399 0395 94       		.byte	0x94
+ 400 0396 780B0000 		.long	0xb78
+ 401 039a 0A       		.uleb128 0xa
+ 402 039b 06       		.byte	0x6
+ 403 039c 95       		.byte	0x95
+ 404 039d 970B0000 		.long	0xb97
+ 405 03a1 0A       		.uleb128 0xa
+ 406 03a2 06       		.byte	0x6
+ 407 03a3 96       		.byte	0x96
+ 408 03a4 AE0B0000 		.long	0xbae
+ 409 03a8 0A       		.uleb128 0xa
+ 410 03a9 06       		.byte	0x6
+ 411 03aa 97       		.byte	0x97
+ 412 03ab BE0B0000 		.long	0xbbe
+ 413 03af 0A       		.uleb128 0xa
+ 414 03b0 06       		.byte	0x6
+ 415 03b1 98       		.byte	0x98
+ 416 03b2 F20B0000 		.long	0xbf2
+ 417 03b6 0A       		.uleb128 0xa
+ 418 03b7 06       		.byte	0x6
+ 419 03b8 99       		.byte	0x99
+ 420 03b9 1B0C0000 		.long	0xc1b
+ 421 03bd 0A       		.uleb128 0xa
+ 422 03be 06       		.byte	0x6
+ 423 03bf 9A       		.byte	0x9a
+ 424 03c0 400C0000 		.long	0xc40
+ 425 03c4 0A       		.uleb128 0xa
+ 426 03c5 06       		.byte	0x6
+ 427 03c6 9B       		.byte	0x9b
+ 428 03c7 710C0000 		.long	0xc71
+ 429 03cb 0A       		.uleb128 0xa
+ 430 03cc 06       		.byte	0x6
+ 431 03cd 9C       		.byte	0x9c
+ 432 03ce 8D0C0000 		.long	0xc8d
+ 433 03d2 0A       		.uleb128 0xa
+ 434 03d3 06       		.byte	0x6
+ 435 03d4 A0       		.byte	0xa0
+ 436 03d5 A70C0000 		.long	0xca7
+ 437 03d9 0A       		.uleb128 0xa
+ 438 03da 06       		.byte	0x6
+ 439 03db A1       		.byte	0xa1
+ 440 03dc C60C0000 		.long	0xcc6
+ 441 03e0 0A       		.uleb128 0xa
+ 442 03e1 06       		.byte	0x6
+ 443 03e2 A2       		.byte	0xa2
+ 444 03e3 E40C0000 		.long	0xce4
+ 445 03e7 0A       		.uleb128 0xa
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 12
+
+
+ 446 03e8 06       		.byte	0x6
+ 447 03e9 A4       		.byte	0xa4
+ 448 03ea 090D0000 		.long	0xd09
+ 449 03ee 0A       		.uleb128 0xa
+ 450 03ef 06       		.byte	0x6
+ 451 03f0 AA       		.byte	0xaa
+ 452 03f1 2D0D0000 		.long	0xd2d
+ 453 03f5 0A       		.uleb128 0xa
+ 454 03f6 06       		.byte	0x6
+ 455 03f7 AC       		.byte	0xac
+ 456 03f8 510D0000 		.long	0xd51
+ 457 03fc 0A       		.uleb128 0xa
+ 458 03fd 06       		.byte	0x6
+ 459 03fe AE       		.byte	0xae
+ 460 03ff 700D0000 		.long	0xd70
+ 461 0403 0A       		.uleb128 0xa
+ 462 0404 06       		.byte	0x6
+ 463 0405 B0       		.byte	0xb0
+ 464 0406 8E0D0000 		.long	0xd8e
+ 465 040a 0A       		.uleb128 0xa
+ 466 040b 06       		.byte	0x6
+ 467 040c B1       		.byte	0xb1
+ 468 040d B20D0000 		.long	0xdb2
+ 469 0411 0A       		.uleb128 0xa
+ 470 0412 06       		.byte	0x6
+ 471 0413 B2       		.byte	0xb2
+ 472 0414 CF0D0000 		.long	0xdcf
+ 473 0418 0A       		.uleb128 0xa
+ 474 0419 06       		.byte	0x6
+ 475 041a B3       		.byte	0xb3
+ 476 041b EC0D0000 		.long	0xdec
+ 477 041f 0A       		.uleb128 0xa
+ 478 0420 06       		.byte	0x6
+ 479 0421 B4       		.byte	0xb4
+ 480 0422 0A0E0000 		.long	0xe0a
+ 481 0426 0A       		.uleb128 0xa
+ 482 0427 06       		.byte	0x6
+ 483 0428 B5       		.byte	0xb5
+ 484 0429 270E0000 		.long	0xe27
+ 485 042d 0A       		.uleb128 0xa
+ 486 042e 06       		.byte	0x6
+ 487 042f B6       		.byte	0xb6
+ 488 0430 450E0000 		.long	0xe45
+ 489 0434 0A       		.uleb128 0xa
+ 490 0435 06       		.byte	0x6
+ 491 0436 B7       		.byte	0xb7
+ 492 0437 790E0000 		.long	0xe79
+ 493 043b 0A       		.uleb128 0xa
+ 494 043c 06       		.byte	0x6
+ 495 043d B8       		.byte	0xb8
+ 496 043e 910E0000 		.long	0xe91
+ 497 0442 0A       		.uleb128 0xa
+ 498 0443 06       		.byte	0x6
+ 499 0444 B9       		.byte	0xb9
+ 500 0445 B40E0000 		.long	0xeb4
+ 501 0449 0A       		.uleb128 0xa
+ 502 044a 06       		.byte	0x6
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 13
+
+
+ 503 044b BA       		.byte	0xba
+ 504 044c D70E0000 		.long	0xed7
+ 505 0450 0A       		.uleb128 0xa
+ 506 0451 06       		.byte	0x6
+ 507 0452 BB       		.byte	0xbb
+ 508 0453 FA0E0000 		.long	0xefa
+ 509 0457 0A       		.uleb128 0xa
+ 510 0458 06       		.byte	0x6
+ 511 0459 BC       		.byte	0xbc
+ 512 045a 2B0F0000 		.long	0xf2b
+ 513 045e 0A       		.uleb128 0xa
+ 514 045f 06       		.byte	0x6
+ 515 0460 BD       		.byte	0xbd
+ 516 0461 480F0000 		.long	0xf48
+ 517 0465 0A       		.uleb128 0xa
+ 518 0466 06       		.byte	0x6
+ 519 0467 BF       		.byte	0xbf
+ 520 0468 750F0000 		.long	0xf75
+ 521 046c 0A       		.uleb128 0xa
+ 522 046d 06       		.byte	0x6
+ 523 046e C1       		.byte	0xc1
+ 524 046f 9B0F0000 		.long	0xf9b
+ 525 0473 0A       		.uleb128 0xa
+ 526 0474 06       		.byte	0x6
+ 527 0475 C2       		.byte	0xc2
+ 528 0476 B80F0000 		.long	0xfb8
+ 529 047a 0A       		.uleb128 0xa
+ 530 047b 06       		.byte	0x6
+ 531 047c C3       		.byte	0xc3
+ 532 047d DA0F0000 		.long	0xfda
+ 533 0481 0A       		.uleb128 0xa
+ 534 0482 06       		.byte	0x6
+ 535 0483 C4       		.byte	0xc4
+ 536 0484 FD0F0000 		.long	0xffd
+ 537 0488 0A       		.uleb128 0xa
+ 538 0489 06       		.byte	0x6
+ 539 048a C5       		.byte	0xc5
+ 540 048b 20100000 		.long	0x1020
+ 541 048f 0A       		.uleb128 0xa
+ 542 0490 06       		.byte	0x6
+ 543 0491 C6       		.byte	0xc6
+ 544 0492 38100000 		.long	0x1038
+ 545 0496 0A       		.uleb128 0xa
+ 546 0497 06       		.byte	0x6
+ 547 0498 C7       		.byte	0xc7
+ 548 0499 5C100000 		.long	0x105c
+ 549 049d 0A       		.uleb128 0xa
+ 550 049e 06       		.byte	0x6
+ 551 049f C8       		.byte	0xc8
+ 552 04a0 80100000 		.long	0x1080
+ 553 04a4 0A       		.uleb128 0xa
+ 554 04a5 06       		.byte	0x6
+ 555 04a6 C9       		.byte	0xc9
+ 556 04a7 A5100000 		.long	0x10a5
+ 557 04ab 0A       		.uleb128 0xa
+ 558 04ac 06       		.byte	0x6
+ 559 04ad CA       		.byte	0xca
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 14
+
+
+ 560 04ae C9100000 		.long	0x10c9
+ 561 04b2 0A       		.uleb128 0xa
+ 562 04b3 06       		.byte	0x6
+ 563 04b4 CB       		.byte	0xcb
+ 564 04b5 E3100000 		.long	0x10e3
+ 565 04b9 0A       		.uleb128 0xa
+ 566 04ba 06       		.byte	0x6
+ 567 04bb CC       		.byte	0xcc
+ 568 04bc FC100000 		.long	0x10fc
+ 569 04c0 0A       		.uleb128 0xa
+ 570 04c1 06       		.byte	0x6
+ 571 04c2 CD       		.byte	0xcd
+ 572 04c3 19110000 		.long	0x1119
+ 573 04c7 0A       		.uleb128 0xa
+ 574 04c8 06       		.byte	0x6
+ 575 04c9 CE       		.byte	0xce
+ 576 04ca 37110000 		.long	0x1137
+ 577 04ce 0A       		.uleb128 0xa
+ 578 04cf 06       		.byte	0x6
+ 579 04d0 CF       		.byte	0xcf
+ 580 04d1 55110000 		.long	0x1155
+ 581 04d5 0A       		.uleb128 0xa
+ 582 04d6 06       		.byte	0x6
+ 583 04d7 D0       		.byte	0xd0
+ 584 04d8 72110000 		.long	0x1172
+ 585 04dc 0B       		.uleb128 0xb
+ 586 04dd 06       		.byte	0x6
+ 587 04de 0801     		.word	0x108
+ 588 04e0 57130000 		.long	0x1357
+ 589 04e4 0B       		.uleb128 0xb
+ 590 04e5 06       		.byte	0x6
+ 591 04e6 0901     		.word	0x109
+ 592 04e8 84130000 		.long	0x1384
+ 593 04ec 0B       		.uleb128 0xb
+ 594 04ed 06       		.byte	0x6
+ 595 04ee 0A01     		.word	0x10a
+ 596 04f0 A8130000 		.long	0x13a8
+ 597 04f4 0C       		.uleb128 0xc
+ 598 04f5 5F5F6465 		.ascii "__debug\0"
+ 598      62756700 
+ 599 04fd 0C       		.byte	0xc
+ 600 04fe 30       		.byte	0x30
+ 601 04ff 02       		.uleb128 0x2
+ 602 0500 73697A65 		.ascii "size_t\0"
+ 602      5F7400
+ 603 0507 07       		.byte	0x7
+ 604 0508 BC       		.byte	0xbc
+ 605 0509 F7000000 		.long	0xf7
+ 606 050d 0A       		.uleb128 0xa
+ 607 050e 08       		.byte	0x8
+ 608 050f 35       		.byte	0x35
+ 609 0510 F0130000 		.long	0x13f0
+ 610 0514 0A       		.uleb128 0xa
+ 611 0515 08       		.byte	0x8
+ 612 0516 36       		.byte	0x36
+ 613 0517 8F150000 		.long	0x158f
+ 614 051b 0A       		.uleb128 0xa
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 15
+
+
+ 615 051c 08       		.byte	0x8
+ 616 051d 37       		.byte	0x37
+ 617 051e AF150000 		.long	0x15af
+ 618 0522 02       		.uleb128 0x2
+ 619 0523 70747264 		.ascii "ptrdiff_t\0"
+ 619      6966665F 
+ 619      7400
+ 620 052d 07       		.byte	0x7
+ 621 052e BD       		.byte	0xbd
+ 622 052f 78010000 		.long	0x178
+ 623 0533 0D       		.uleb128 0xd
+ 624 0534 5F496F73 		.ascii "_Ios_Fmtflags\0"
+ 624      5F466D74 
+ 624      666C6167 
+ 624      7300
+ 625 0542 04       		.byte	0x4
+ 626 0543 09       		.byte	0x9
+ 627 0544 33       		.byte	0x33
+ 628 0545 5A060000 		.long	0x65a
+ 629 0549 0E       		.uleb128 0xe
+ 630 054a 5F535F62 		.ascii "_S_boolalpha\0"
+ 630      6F6F6C61 
+ 630      6C706861 
+ 630      00
+ 631 0557 01       		.sleb128 1
+ 632 0558 0E       		.uleb128 0xe
+ 633 0559 5F535F64 		.ascii "_S_dec\0"
+ 633      656300
+ 634 0560 02       		.sleb128 2
+ 635 0561 0E       		.uleb128 0xe
+ 636 0562 5F535F66 		.ascii "_S_fixed\0"
+ 636      69786564 
+ 636      00
+ 637 056b 04       		.sleb128 4
+ 638 056c 0E       		.uleb128 0xe
+ 639 056d 5F535F68 		.ascii "_S_hex\0"
+ 639      657800
+ 640 0574 08       		.sleb128 8
+ 641 0575 0E       		.uleb128 0xe
+ 642 0576 5F535F69 		.ascii "_S_internal\0"
+ 642      6E746572 
+ 642      6E616C00 
+ 643 0582 10       		.sleb128 16
+ 644 0583 0E       		.uleb128 0xe
+ 645 0584 5F535F6C 		.ascii "_S_left\0"
+ 645      65667400 
+ 646 058c 20       		.sleb128 32
+ 647 058d 0E       		.uleb128 0xe
+ 648 058e 5F535F6F 		.ascii "_S_oct\0"
+ 648      637400
+ 649 0595 C000     		.sleb128 64
+ 650 0597 0E       		.uleb128 0xe
+ 651 0598 5F535F72 		.ascii "_S_right\0"
+ 651      69676874 
+ 651      00
+ 652 05a1 8001     		.sleb128 128
+ 653 05a3 0E       		.uleb128 0xe
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 16
+
+
+ 654 05a4 5F535F73 		.ascii "_S_scientific\0"
+ 654      6369656E 
+ 654      74696669 
+ 654      6300
+ 655 05b2 8002     		.sleb128 256
+ 656 05b4 0E       		.uleb128 0xe
+ 657 05b5 5F535F73 		.ascii "_S_showbase\0"
+ 657      686F7762 
+ 657      61736500 
+ 658 05c1 8004     		.sleb128 512
+ 659 05c3 0E       		.uleb128 0xe
+ 660 05c4 5F535F73 		.ascii "_S_showpoint\0"
+ 660      686F7770 
+ 660      6F696E74 
+ 660      00
+ 661 05d1 8008     		.sleb128 1024
+ 662 05d3 0E       		.uleb128 0xe
+ 663 05d4 5F535F73 		.ascii "_S_showpos\0"
+ 663      686F7770 
+ 663      6F7300
+ 664 05df 8010     		.sleb128 2048
+ 665 05e1 0E       		.uleb128 0xe
+ 666 05e2 5F535F73 		.ascii "_S_skipws\0"
+ 666      6B697077 
+ 666      7300
+ 667 05ec 8020     		.sleb128 4096
+ 668 05ee 0E       		.uleb128 0xe
+ 669 05ef 5F535F75 		.ascii "_S_unitbuf\0"
+ 669      6E697462 
+ 669      756600
+ 670 05fa 80C000   		.sleb128 8192
+ 671 05fd 0E       		.uleb128 0xe
+ 672 05fe 5F535F75 		.ascii "_S_uppercase\0"
+ 672      70706572 
+ 672      63617365 
+ 672      00
+ 673 060b 808001   		.sleb128 16384
+ 674 060e 0E       		.uleb128 0xe
+ 675 060f 5F535F61 		.ascii "_S_adjustfield\0"
+ 675      646A7573 
+ 675      74666965 
+ 675      6C6400
+ 676 061e B001     		.sleb128 176
+ 677 0620 0E       		.uleb128 0xe
+ 678 0621 5F535F62 		.ascii "_S_basefield\0"
+ 678      61736566 
+ 678      69656C64 
+ 678      00
+ 679 062e CA00     		.sleb128 74
+ 680 0630 0E       		.uleb128 0xe
+ 681 0631 5F535F66 		.ascii "_S_floatfield\0"
+ 681      6C6F6174 
+ 681      6669656C 
+ 681      6400
+ 682 063f 8402     		.sleb128 260
+ 683 0641 0E       		.uleb128 0xe
+ 684 0642 5F535F69 		.ascii "_S_ios_fmtflags_end\0"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 17
+
+
+ 684      6F735F66 
+ 684      6D74666C 
+ 684      6167735F 
+ 684      656E6400 
+ 685 0656 808004   		.sleb128 65536
+ 686 0659 00       		.byte	0
+ 687 065a 0D       		.uleb128 0xd
+ 688 065b 5F496F73 		.ascii "_Ios_Openmode\0"
+ 688      5F4F7065 
+ 688      6E6D6F64 
+ 688      6500
+ 689 0669 04       		.byte	0x4
+ 690 066a 09       		.byte	0x9
+ 691 066b 67       		.byte	0x67
+ 692 066c C0060000 		.long	0x6c0
+ 693 0670 0E       		.uleb128 0xe
+ 694 0671 5F535F61 		.ascii "_S_app\0"
+ 694      707000
+ 695 0678 01       		.sleb128 1
+ 696 0679 0E       		.uleb128 0xe
+ 697 067a 5F535F61 		.ascii "_S_ate\0"
+ 697      746500
+ 698 0681 02       		.sleb128 2
+ 699 0682 0E       		.uleb128 0xe
+ 700 0683 5F535F62 		.ascii "_S_bin\0"
+ 700      696E00
+ 701 068a 04       		.sleb128 4
+ 702 068b 0E       		.uleb128 0xe
+ 703 068c 5F535F69 		.ascii "_S_in\0"
+ 703      6E00
+ 704 0692 08       		.sleb128 8
+ 705 0693 0E       		.uleb128 0xe
+ 706 0694 5F535F6F 		.ascii "_S_out\0"
+ 706      757400
+ 707 069b 10       		.sleb128 16
+ 708 069c 0E       		.uleb128 0xe
+ 709 069d 5F535F74 		.ascii "_S_trunc\0"
+ 709      72756E63 
+ 709      00
+ 710 06a6 20       		.sleb128 32
+ 711 06a7 0E       		.uleb128 0xe
+ 712 06a8 5F535F69 		.ascii "_S_ios_openmode_end\0"
+ 712      6F735F6F 
+ 712      70656E6D 
+ 712      6F64655F 
+ 712      656E6400 
+ 713 06bc 808004   		.sleb128 65536
+ 714 06bf 00       		.byte	0
+ 715 06c0 0D       		.uleb128 0xd
+ 716 06c1 5F496F73 		.ascii "_Ios_Iostate\0"
+ 716      5F496F73 
+ 716      74617465 
+ 716      00
+ 717 06ce 04       		.byte	0x4
+ 718 06cf 09       		.byte	0x9
+ 719 06d0 8F       		.byte	0x8f
+ 720 06d1 1F070000 		.long	0x71f
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 18
+
+
+ 721 06d5 0E       		.uleb128 0xe
+ 722 06d6 5F535F67 		.ascii "_S_goodbit\0"
+ 722      6F6F6462 
+ 722      697400
+ 723 06e1 00       		.sleb128 0
+ 724 06e2 0E       		.uleb128 0xe
+ 725 06e3 5F535F62 		.ascii "_S_badbit\0"
+ 725      61646269 
+ 725      7400
+ 726 06ed 01       		.sleb128 1
+ 727 06ee 0E       		.uleb128 0xe
+ 728 06ef 5F535F65 		.ascii "_S_eofbit\0"
+ 728      6F666269 
+ 728      7400
+ 729 06f9 02       		.sleb128 2
+ 730 06fa 0E       		.uleb128 0xe
+ 731 06fb 5F535F66 		.ascii "_S_failbit\0"
+ 731      61696C62 
+ 731      697400
+ 732 0706 04       		.sleb128 4
+ 733 0707 0E       		.uleb128 0xe
+ 734 0708 5F535F69 		.ascii "_S_ios_iostate_end\0"
+ 734      6F735F69 
+ 734      6F737461 
+ 734      74655F65 
+ 734      6E6400
+ 735 071b 808004   		.sleb128 65536
+ 736 071e 00       		.byte	0
+ 737 071f 0D       		.uleb128 0xd
+ 738 0720 5F496F73 		.ascii "_Ios_Seekdir\0"
+ 738      5F536565 
+ 738      6B646972 
+ 738      00
+ 739 072d 04       		.byte	0x4
+ 740 072e 09       		.byte	0x9
+ 741 072f B5       		.byte	0xb5
+ 742 0730 67070000 		.long	0x767
+ 743 0734 0E       		.uleb128 0xe
+ 744 0735 5F535F62 		.ascii "_S_beg\0"
+ 744      656700
+ 745 073c 00       		.sleb128 0
+ 746 073d 0E       		.uleb128 0xe
+ 747 073e 5F535F63 		.ascii "_S_cur\0"
+ 747      757200
+ 748 0745 01       		.sleb128 1
+ 749 0746 0E       		.uleb128 0xe
+ 750 0747 5F535F65 		.ascii "_S_end\0"
+ 750      6E6400
+ 751 074e 02       		.sleb128 2
+ 752 074f 0E       		.uleb128 0xe
+ 753 0750 5F535F69 		.ascii "_S_ios_seekdir_end\0"
+ 753      6F735F73 
+ 753      65656B64 
+ 753      69725F65 
+ 753      6E6400
+ 754 0763 808004   		.sleb128 65536
+ 755 0766 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 19
+
+
+ 756 0767 0F       		.uleb128 0xf
+ 757 0768 696F735F 		.ascii "ios_base\0"
+ 757      62617365 
+ 757      00
+ 758 0771 560A0000 		.long	0xa56
+ 759 0775 10       		.uleb128 0x10
+ 760 0776 496E6974 		.ascii "Init\0"
+ 760      00
+ 761 077b 01       		.byte	0x1
+ 762 077c 09       		.byte	0x9
+ 763 077d 1502     		.word	0x215
+ 764 077f 01       		.byte	0x1
+ 765 0780 E8070000 		.long	0x7e8
+ 766 0784 11       		.uleb128 0x11
+ 767 0785 5F535F72 		.ascii "_S_refcount\0"
+ 767      6566636F 
+ 767      756E7400 
+ 768 0791 09       		.byte	0x9
+ 769 0792 1D02     		.word	0x21d
+ 770 0794 C7150000 		.long	0x15c7
+ 771 0798 11       		.uleb128 0x11
+ 772 0799 5F535F73 		.ascii "_S_synced_with_stdio\0"
+ 772      796E6365 
+ 772      645F7769 
+ 772      74685F73 
+ 772      7464696F 
+ 773 07ae 09       		.byte	0x9
+ 774 07af 1E02     		.word	0x21e
+ 775 07b1 E8130000 		.long	0x13e8
+ 776 07b5 12       		.uleb128 0x12
+ 777 07b6 496E6974 		.ascii "Init\0"
+ 777      00
+ 778 07bb 09       		.byte	0x9
+ 779 07bc 1902     		.word	0x219
+ 780 07be 01       		.byte	0x1
+ 781 07bf C7070000 		.long	0x7c7
+ 782 07c3 CD070000 		.long	0x7cd
+ 783 07c7 13       		.uleb128 0x13
+ 784 07c8 EA150000 		.long	0x15ea
+ 785 07cc 00       		.byte	0
+ 786 07cd 14       		.uleb128 0x14
+ 787 07ce 7E496E69 		.ascii "~Init\0"
+ 787      7400
+ 788 07d4 09       		.byte	0x9
+ 789 07d5 1A02     		.word	0x21a
+ 790 07d7 01       		.byte	0x1
+ 791 07d8 DC070000 		.long	0x7dc
+ 792 07dc 13       		.uleb128 0x13
+ 793 07dd EA150000 		.long	0x15ea
+ 794 07e1 13       		.uleb128 0x13
+ 795 07e2 78010000 		.long	0x178
+ 796 07e6 00       		.byte	0
+ 797 07e7 00       		.byte	0
+ 798 07e8 15       		.uleb128 0x15
+ 799 07e9 666D7466 		.ascii "fmtflags\0"
+ 799      6C616773 
+ 799      00
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 20
+
+
+ 800 07f2 09       		.byte	0x9
+ 801 07f3 FF       		.byte	0xff
+ 802 07f4 33050000 		.long	0x533
+ 803 07f8 01       		.byte	0x1
+ 804 07f9 16       		.uleb128 0x16
+ 805 07fa 626F6F6C 		.ascii "boolalpha\0"
+ 805      616C7068 
+ 805      6100
+ 806 0804 09       		.byte	0x9
+ 807 0805 0201     		.word	0x102
+ 808 0807 0D080000 		.long	0x80d
+ 809 080b 01       		.byte	0x1
+ 810 080c 01       		.byte	0x1
+ 811 080d 17       		.uleb128 0x17
+ 812 080e E8070000 		.long	0x7e8
+ 813 0812 16       		.uleb128 0x16
+ 814 0813 64656300 		.ascii "dec\0"
+ 815 0817 09       		.byte	0x9
+ 816 0818 0501     		.word	0x105
+ 817 081a 0D080000 		.long	0x80d
+ 818 081e 01       		.byte	0x1
+ 819 081f 02       		.byte	0x2
+ 820 0820 16       		.uleb128 0x16
+ 821 0821 66697865 		.ascii "fixed\0"
+ 821      6400
+ 822 0827 09       		.byte	0x9
+ 823 0828 0801     		.word	0x108
+ 824 082a 0D080000 		.long	0x80d
+ 825 082e 01       		.byte	0x1
+ 826 082f 04       		.byte	0x4
+ 827 0830 16       		.uleb128 0x16
+ 828 0831 68657800 		.ascii "hex\0"
+ 829 0835 09       		.byte	0x9
+ 830 0836 0B01     		.word	0x10b
+ 831 0838 0D080000 		.long	0x80d
+ 832 083c 01       		.byte	0x1
+ 833 083d 08       		.byte	0x8
+ 834 083e 16       		.uleb128 0x16
+ 835 083f 696E7465 		.ascii "internal\0"
+ 835      726E616C 
+ 835      00
+ 836 0848 09       		.byte	0x9
+ 837 0849 1001     		.word	0x110
+ 838 084b 0D080000 		.long	0x80d
+ 839 084f 01       		.byte	0x1
+ 840 0850 10       		.byte	0x10
+ 841 0851 16       		.uleb128 0x16
+ 842 0852 6C656674 		.ascii "left\0"
+ 842      00
+ 843 0857 09       		.byte	0x9
+ 844 0858 1401     		.word	0x114
+ 845 085a 0D080000 		.long	0x80d
+ 846 085e 01       		.byte	0x1
+ 847 085f 20       		.byte	0x20
+ 848 0860 16       		.uleb128 0x16
+ 849 0861 6F637400 		.ascii "oct\0"
+ 850 0865 09       		.byte	0x9
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 21
+
+
+ 851 0866 1701     		.word	0x117
+ 852 0868 0D080000 		.long	0x80d
+ 853 086c 01       		.byte	0x1
+ 854 086d 40       		.byte	0x40
+ 855 086e 16       		.uleb128 0x16
+ 856 086f 72696768 		.ascii "right\0"
+ 856      7400
+ 857 0875 09       		.byte	0x9
+ 858 0876 1B01     		.word	0x11b
+ 859 0878 0D080000 		.long	0x80d
+ 860 087c 01       		.byte	0x1
+ 861 087d 80       		.byte	0x80
+ 862 087e 18       		.uleb128 0x18
+ 863 087f 73636965 		.ascii "scientific\0"
+ 863      6E746966 
+ 863      696300
+ 864 088a 09       		.byte	0x9
+ 865 088b 1E01     		.word	0x11e
+ 866 088d 0D080000 		.long	0x80d
+ 867 0891 01       		.byte	0x1
+ 868 0892 0001     		.word	0x100
+ 869 0894 18       		.uleb128 0x18
+ 870 0895 73686F77 		.ascii "showbase\0"
+ 870      62617365 
+ 870      00
+ 871 089e 09       		.byte	0x9
+ 872 089f 2201     		.word	0x122
+ 873 08a1 0D080000 		.long	0x80d
+ 874 08a5 01       		.byte	0x1
+ 875 08a6 0002     		.word	0x200
+ 876 08a8 18       		.uleb128 0x18
+ 877 08a9 73686F77 		.ascii "showpoint\0"
+ 877      706F696E 
+ 877      7400
+ 878 08b3 09       		.byte	0x9
+ 879 08b4 2601     		.word	0x126
+ 880 08b6 0D080000 		.long	0x80d
+ 881 08ba 01       		.byte	0x1
+ 882 08bb 0004     		.word	0x400
+ 883 08bd 18       		.uleb128 0x18
+ 884 08be 73686F77 		.ascii "showpos\0"
+ 884      706F7300 
+ 885 08c6 09       		.byte	0x9
+ 886 08c7 2901     		.word	0x129
+ 887 08c9 0D080000 		.long	0x80d
+ 888 08cd 01       		.byte	0x1
+ 889 08ce 0008     		.word	0x800
+ 890 08d0 18       		.uleb128 0x18
+ 891 08d1 736B6970 		.ascii "skipws\0"
+ 891      777300
+ 892 08d8 09       		.byte	0x9
+ 893 08d9 2C01     		.word	0x12c
+ 894 08db 0D080000 		.long	0x80d
+ 895 08df 01       		.byte	0x1
+ 896 08e0 0010     		.word	0x1000
+ 897 08e2 18       		.uleb128 0x18
+ 898 08e3 756E6974 		.ascii "unitbuf\0"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 22
+
+
+ 898      62756600 
+ 899 08eb 09       		.byte	0x9
+ 900 08ec 2F01     		.word	0x12f
+ 901 08ee 0D080000 		.long	0x80d
+ 902 08f2 01       		.byte	0x1
+ 903 08f3 0020     		.word	0x2000
+ 904 08f5 18       		.uleb128 0x18
+ 905 08f6 75707065 		.ascii "uppercase\0"
+ 905      72636173 
+ 905      6500
+ 906 0900 09       		.byte	0x9
+ 907 0901 3301     		.word	0x133
+ 908 0903 0D080000 		.long	0x80d
+ 909 0907 01       		.byte	0x1
+ 910 0908 0040     		.word	0x4000
+ 911 090a 16       		.uleb128 0x16
+ 912 090b 61646A75 		.ascii "adjustfield\0"
+ 912      73746669 
+ 912      656C6400 
+ 913 0917 09       		.byte	0x9
+ 914 0918 3601     		.word	0x136
+ 915 091a 0D080000 		.long	0x80d
+ 916 091e 01       		.byte	0x1
+ 917 091f B0       		.byte	0xb0
+ 918 0920 16       		.uleb128 0x16
+ 919 0921 62617365 		.ascii "basefield\0"
+ 919      6669656C 
+ 919      6400
+ 920 092b 09       		.byte	0x9
+ 921 092c 3901     		.word	0x139
+ 922 092e 0D080000 		.long	0x80d
+ 923 0932 01       		.byte	0x1
+ 924 0933 4A       		.byte	0x4a
+ 925 0934 18       		.uleb128 0x18
+ 926 0935 666C6F61 		.ascii "floatfield\0"
+ 926      74666965 
+ 926      6C6400
+ 927 0940 09       		.byte	0x9
+ 928 0941 3C01     		.word	0x13c
+ 929 0943 0D080000 		.long	0x80d
+ 930 0947 01       		.byte	0x1
+ 931 0948 0401     		.word	0x104
+ 932 094a 19       		.uleb128 0x19
+ 933 094b 696F7374 		.ascii "iostate\0"
+ 933      61746500 
+ 934 0953 09       		.byte	0x9
+ 935 0954 4A01     		.word	0x14a
+ 936 0956 C0060000 		.long	0x6c0
+ 937 095a 01       		.byte	0x1
+ 938 095b 16       		.uleb128 0x16
+ 939 095c 62616462 		.ascii "badbit\0"
+ 939      697400
+ 940 0963 09       		.byte	0x9
+ 941 0964 4E01     		.word	0x14e
+ 942 0966 6C090000 		.long	0x96c
+ 943 096a 01       		.byte	0x1
+ 944 096b 01       		.byte	0x1
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 23
+
+
+ 945 096c 17       		.uleb128 0x17
+ 946 096d 4A090000 		.long	0x94a
+ 947 0971 16       		.uleb128 0x16
+ 948 0972 656F6662 		.ascii "eofbit\0"
+ 948      697400
+ 949 0979 09       		.byte	0x9
+ 950 097a 5101     		.word	0x151
+ 951 097c 6C090000 		.long	0x96c
+ 952 0980 01       		.byte	0x1
+ 953 0981 02       		.byte	0x2
+ 954 0982 16       		.uleb128 0x16
+ 955 0983 6661696C 		.ascii "failbit\0"
+ 955      62697400 
+ 956 098b 09       		.byte	0x9
+ 957 098c 5601     		.word	0x156
+ 958 098e 6C090000 		.long	0x96c
+ 959 0992 01       		.byte	0x1
+ 960 0993 04       		.byte	0x4
+ 961 0994 16       		.uleb128 0x16
+ 962 0995 676F6F64 		.ascii "goodbit\0"
+ 962      62697400 
+ 963 099d 09       		.byte	0x9
+ 964 099e 5901     		.word	0x159
+ 965 09a0 6C090000 		.long	0x96c
+ 966 09a4 01       		.byte	0x1
+ 967 09a5 00       		.byte	0
+ 968 09a6 19       		.uleb128 0x19
+ 969 09a7 6F70656E 		.ascii "openmode\0"
+ 969      6D6F6465 
+ 969      00
+ 970 09b0 09       		.byte	0x9
+ 971 09b1 6901     		.word	0x169
+ 972 09b3 5A060000 		.long	0x65a
+ 973 09b7 01       		.byte	0x1
+ 974 09b8 16       		.uleb128 0x16
+ 975 09b9 61707000 		.ascii "app\0"
+ 976 09bd 09       		.byte	0x9
+ 977 09be 6C01     		.word	0x16c
+ 978 09c0 C6090000 		.long	0x9c6
+ 979 09c4 01       		.byte	0x1
+ 980 09c5 01       		.byte	0x1
+ 981 09c6 17       		.uleb128 0x17
+ 982 09c7 A6090000 		.long	0x9a6
+ 983 09cb 16       		.uleb128 0x16
+ 984 09cc 61746500 		.ascii "ate\0"
+ 985 09d0 09       		.byte	0x9
+ 986 09d1 6F01     		.word	0x16f
+ 987 09d3 C6090000 		.long	0x9c6
+ 988 09d7 01       		.byte	0x1
+ 989 09d8 02       		.byte	0x2
+ 990 09d9 16       		.uleb128 0x16
+ 991 09da 62696E61 		.ascii "binary\0"
+ 991      727900
+ 992 09e1 09       		.byte	0x9
+ 993 09e2 7401     		.word	0x174
+ 994 09e4 C6090000 		.long	0x9c6
+ 995 09e8 01       		.byte	0x1
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 24
+
+
+ 996 09e9 04       		.byte	0x4
+ 997 09ea 16       		.uleb128 0x16
+ 998 09eb 696E00   		.ascii "in\0"
+ 999 09ee 09       		.byte	0x9
+ 1000 09ef 7701     		.word	0x177
+ 1001 09f1 C6090000 		.long	0x9c6
+ 1002 09f5 01       		.byte	0x1
+ 1003 09f6 08       		.byte	0x8
+ 1004 09f7 16       		.uleb128 0x16
+ 1005 09f8 6F757400 		.ascii "out\0"
+ 1006 09fc 09       		.byte	0x9
+ 1007 09fd 7A01     		.word	0x17a
+ 1008 09ff C6090000 		.long	0x9c6
+ 1009 0a03 01       		.byte	0x1
+ 1010 0a04 10       		.byte	0x10
+ 1011 0a05 16       		.uleb128 0x16
+ 1012 0a06 7472756E 		.ascii "trunc\0"
+ 1012      6300
+ 1013 0a0c 09       		.byte	0x9
+ 1014 0a0d 7D01     		.word	0x17d
+ 1015 0a0f C6090000 		.long	0x9c6
+ 1016 0a13 01       		.byte	0x1
+ 1017 0a14 20       		.byte	0x20
+ 1018 0a15 19       		.uleb128 0x19
+ 1019 0a16 7365656B 		.ascii "seekdir\0"
+ 1019      64697200 
+ 1020 0a1e 09       		.byte	0x9
+ 1021 0a1f 8901     		.word	0x189
+ 1022 0a21 1F070000 		.long	0x71f
+ 1023 0a25 01       		.byte	0x1
+ 1024 0a26 16       		.uleb128 0x16
+ 1025 0a27 62656700 		.ascii "beg\0"
+ 1026 0a2b 09       		.byte	0x9
+ 1027 0a2c 8C01     		.word	0x18c
+ 1028 0a2e 340A0000 		.long	0xa34
+ 1029 0a32 01       		.byte	0x1
+ 1030 0a33 00       		.byte	0
+ 1031 0a34 17       		.uleb128 0x17
+ 1032 0a35 150A0000 		.long	0xa15
+ 1033 0a39 16       		.uleb128 0x16
+ 1034 0a3a 63757200 		.ascii "cur\0"
+ 1035 0a3e 09       		.byte	0x9
+ 1036 0a3f 8F01     		.word	0x18f
+ 1037 0a41 340A0000 		.long	0xa34
+ 1038 0a45 01       		.byte	0x1
+ 1039 0a46 01       		.byte	0x1
+ 1040 0a47 16       		.uleb128 0x16
+ 1041 0a48 656E6400 		.ascii "end\0"
+ 1042 0a4c 09       		.byte	0x9
+ 1043 0a4d 9201     		.word	0x192
+ 1044 0a4f 340A0000 		.long	0xa34
+ 1045 0a53 01       		.byte	0x1
+ 1046 0a54 02       		.byte	0x2
+ 1047 0a55 00       		.byte	0
+ 1048 0a56 0A       		.uleb128 0xa
+ 1049 0a57 0A       		.byte	0xa
+ 1050 0a58 52       		.byte	0x52
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 25
+
+
+ 1051 0a59 67010000 		.long	0x167
+ 1052 0a5d 0A       		.uleb128 0xa
+ 1053 0a5e 0A       		.byte	0xa
+ 1054 0a5f 53       		.byte	0x53
+ 1055 0a60 4C010000 		.long	0x14c
+ 1056 0a64 0A       		.uleb128 0xa
+ 1057 0a65 0A       		.byte	0xa
+ 1058 0a66 54       		.byte	0x54
+ 1059 0a67 07010000 		.long	0x107
+ 1060 0a6b 0A       		.uleb128 0xa
+ 1061 0a6c 0A       		.byte	0xa
+ 1062 0a6d 5C       		.byte	0x5c
+ 1063 0a6e F0150000 		.long	0x15f0
+ 1064 0a72 0A       		.uleb128 0xa
+ 1065 0a73 0A       		.byte	0xa
+ 1066 0a74 65       		.byte	0x65
+ 1067 0a75 0F160000 		.long	0x160f
+ 1068 0a79 0A       		.uleb128 0xa
+ 1069 0a7a 0A       		.byte	0xa
+ 1070 0a7b 68       		.byte	0x68
+ 1071 0a7c 2F160000 		.long	0x162f
+ 1072 0a80 0A       		.uleb128 0xa
+ 1073 0a81 0A       		.byte	0xa
+ 1074 0a82 69       		.byte	0x69
+ 1075 0a83 48160000 		.long	0x1648
+ 1076 0a87 1A       		.uleb128 0x1a
+ 1077 0a88 5F5F696F 		.ascii "__ioinit\0"
+ 1077      696E6974 
+ 1077      00
+ 1078 0a91 02       		.byte	0x2
+ 1079 0a92 4A       		.byte	0x4a
+ 1080 0a93 75070000 		.long	0x775
+ 1081 0a97 00       		.byte	0
+ 1082 0a98 1B       		.uleb128 0x1b
+ 1083 0a99 62746F77 		.ascii "btowc\0"
+ 1083      6300
+ 1084 0a9f 05       		.byte	0x5
+ 1085 0aa0 2901     		.word	0x129
+ 1086 0aa2 07010000 		.long	0x107
+ 1087 0aa6 B00A0000 		.long	0xab0
+ 1088 0aaa 1C       		.uleb128 0x1c
+ 1089 0aab 78010000 		.long	0x178
+ 1090 0aaf 00       		.byte	0
+ 1091 0ab0 1D       		.uleb128 0x1d
+ 1092 0ab1 66676574 		.ascii "fgetwc\0"
+ 1092      776300
+ 1093 0ab8 05       		.byte	0x5
+ 1094 0ab9 70       		.byte	0x70
+ 1095 0aba 07010000 		.long	0x107
+ 1096 0abe C80A0000 		.long	0xac8
+ 1097 0ac2 1C       		.uleb128 0x1c
+ 1098 0ac3 C80A0000 		.long	0xac8
+ 1099 0ac7 00       		.byte	0
+ 1100 0ac8 08       		.uleb128 0x8
+ 1101 0ac9 04       		.byte	0x4
+ 1102 0aca 36020000 		.long	0x236
+ 1103 0ace 1D       		.uleb128 0x1d
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 26
+
+
+ 1104 0acf 66676574 		.ascii "fgetws\0"
+ 1104      777300
+ 1105 0ad6 05       		.byte	0x5
+ 1106 0ad7 7B       		.byte	0x7b
+ 1107 0ad8 F00A0000 		.long	0xaf0
+ 1108 0adc F00A0000 		.long	0xaf0
+ 1109 0ae0 1C       		.uleb128 0x1c
+ 1110 0ae1 F00A0000 		.long	0xaf0
+ 1111 0ae5 1C       		.uleb128 0x1c
+ 1112 0ae6 78010000 		.long	0x178
+ 1113 0aea 1C       		.uleb128 0x1c
+ 1114 0aeb C80A0000 		.long	0xac8
+ 1115 0aef 00       		.byte	0
+ 1116 0af0 08       		.uleb128 0x8
+ 1117 0af1 04       		.byte	0x4
+ 1118 0af2 5C010000 		.long	0x15c
+ 1119 0af6 1D       		.uleb128 0x1d
+ 1120 0af7 66707574 		.ascii "fputwc\0"
+ 1120      776300
+ 1121 0afe 05       		.byte	0x5
+ 1122 0aff 71       		.byte	0x71
+ 1123 0b00 07010000 		.long	0x107
+ 1124 0b04 130B0000 		.long	0xb13
+ 1125 0b08 1C       		.uleb128 0x1c
+ 1126 0b09 5C010000 		.long	0x15c
+ 1127 0b0d 1C       		.uleb128 0x1c
+ 1128 0b0e C80A0000 		.long	0xac8
+ 1129 0b12 00       		.byte	0
+ 1130 0b13 1D       		.uleb128 0x1d
+ 1131 0b14 66707574 		.ascii "fputws\0"
+ 1131      777300
+ 1132 0b1b 05       		.byte	0x5
+ 1133 0b1c 7C       		.byte	0x7c
+ 1134 0b1d 78010000 		.long	0x178
+ 1135 0b21 300B0000 		.long	0xb30
+ 1136 0b25 1C       		.uleb128 0x1c
+ 1137 0b26 300B0000 		.long	0xb30
+ 1138 0b2a 1C       		.uleb128 0x1c
+ 1139 0b2b C80A0000 		.long	0xac8
+ 1140 0b2f 00       		.byte	0
+ 1141 0b30 08       		.uleb128 0x8
+ 1142 0b31 04       		.byte	0x4
+ 1143 0b32 360B0000 		.long	0xb36
+ 1144 0b36 17       		.uleb128 0x17
+ 1145 0b37 5C010000 		.long	0x15c
+ 1146 0b3b 1B       		.uleb128 0x1b
+ 1147 0b3c 66776964 		.ascii "fwide\0"
+ 1147      6500
+ 1148 0b42 05       		.byte	0x5
+ 1149 0b43 3701     		.word	0x137
+ 1150 0b45 78010000 		.long	0x178
+ 1151 0b49 580B0000 		.long	0xb58
+ 1152 0b4d 1C       		.uleb128 0x1c
+ 1153 0b4e C80A0000 		.long	0xac8
+ 1154 0b52 1C       		.uleb128 0x1c
+ 1155 0b53 78010000 		.long	0x178
+ 1156 0b57 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 27
+
+
+ 1157 0b58 1D       		.uleb128 0x1d
+ 1158 0b59 66777072 		.ascii "fwprintf\0"
+ 1158      696E7466 
+ 1158      00
+ 1159 0b62 05       		.byte	0x5
+ 1160 0b63 67       		.byte	0x67
+ 1161 0b64 78010000 		.long	0x178
+ 1162 0b68 780B0000 		.long	0xb78
+ 1163 0b6c 1C       		.uleb128 0x1c
+ 1164 0b6d C80A0000 		.long	0xac8
+ 1165 0b71 1C       		.uleb128 0x1c
+ 1166 0b72 300B0000 		.long	0xb30
+ 1167 0b76 1E       		.uleb128 0x1e
+ 1168 0b77 00       		.byte	0
+ 1169 0b78 1D       		.uleb128 0x1d
+ 1170 0b79 66777363 		.ascii "fwscanf\0"
+ 1170      616E6600 
+ 1171 0b81 05       		.byte	0x5
+ 1172 0b82 6D       		.byte	0x6d
+ 1173 0b83 78010000 		.long	0x178
+ 1174 0b87 970B0000 		.long	0xb97
+ 1175 0b8b 1C       		.uleb128 0x1c
+ 1176 0b8c C80A0000 		.long	0xac8
+ 1177 0b90 1C       		.uleb128 0x1c
+ 1178 0b91 300B0000 		.long	0xb30
+ 1179 0b95 1E       		.uleb128 0x1e
+ 1180 0b96 00       		.byte	0
+ 1181 0b97 1D       		.uleb128 0x1d
+ 1182 0b98 67657477 		.ascii "getwc\0"
+ 1182      6300
+ 1183 0b9e 05       		.byte	0x5
+ 1184 0b9f 7D       		.byte	0x7d
+ 1185 0ba0 07010000 		.long	0x107
+ 1186 0ba4 AE0B0000 		.long	0xbae
+ 1187 0ba8 1C       		.uleb128 0x1c
+ 1188 0ba9 C80A0000 		.long	0xac8
+ 1189 0bad 00       		.byte	0
+ 1190 0bae 1F       		.uleb128 0x1f
+ 1191 0baf 67657477 		.ascii "getwchar\0"
+ 1191      63686172 
+ 1191      00
+ 1192 0bb8 05       		.byte	0x5
+ 1193 0bb9 7E       		.byte	0x7e
+ 1194 0bba 07010000 		.long	0x107
+ 1195 0bbe 1B       		.uleb128 0x1b
+ 1196 0bbf 6D62726C 		.ascii "mbrlen\0"
+ 1196      656E00
+ 1197 0bc6 05       		.byte	0x5
+ 1198 0bc7 2A01     		.word	0x12a
+ 1199 0bc9 E9000000 		.long	0xe9
+ 1200 0bcd E10B0000 		.long	0xbe1
+ 1201 0bd1 1C       		.uleb128 0x1c
+ 1202 0bd2 E10B0000 		.long	0xbe1
+ 1203 0bd6 1C       		.uleb128 0x1c
+ 1204 0bd7 E9000000 		.long	0xe9
+ 1205 0bdb 1C       		.uleb128 0x1c
+ 1206 0bdc EC0B0000 		.long	0xbec
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 28
+
+
+ 1207 0be0 00       		.byte	0
+ 1208 0be1 08       		.uleb128 0x8
+ 1209 0be2 04       		.byte	0x4
+ 1210 0be3 E70B0000 		.long	0xbe7
+ 1211 0be7 17       		.uleb128 0x17
+ 1212 0be8 44010000 		.long	0x144
+ 1213 0bec 08       		.uleb128 0x8
+ 1214 0bed 04       		.byte	0x4
+ 1215 0bee DC020000 		.long	0x2dc
+ 1216 0bf2 1B       		.uleb128 0x1b
+ 1217 0bf3 6D627274 		.ascii "mbrtowc\0"
+ 1217      6F776300 
+ 1218 0bfb 05       		.byte	0x5
+ 1219 0bfc 2C01     		.word	0x12c
+ 1220 0bfe E9000000 		.long	0xe9
+ 1221 0c02 1B0C0000 		.long	0xc1b
+ 1222 0c06 1C       		.uleb128 0x1c
+ 1223 0c07 F00A0000 		.long	0xaf0
+ 1224 0c0b 1C       		.uleb128 0x1c
+ 1225 0c0c E10B0000 		.long	0xbe1
+ 1226 0c10 1C       		.uleb128 0x1c
+ 1227 0c11 E9000000 		.long	0xe9
+ 1228 0c15 1C       		.uleb128 0x1c
+ 1229 0c16 EC0B0000 		.long	0xbec
+ 1230 0c1a 00       		.byte	0
+ 1231 0c1b 1B       		.uleb128 0x1b
+ 1232 0c1c 6D627369 		.ascii "mbsinit\0"
+ 1232      6E697400 
+ 1233 0c24 05       		.byte	0x5
+ 1234 0c25 3801     		.word	0x138
+ 1235 0c27 78010000 		.long	0x178
+ 1236 0c2b 350C0000 		.long	0xc35
+ 1237 0c2f 1C       		.uleb128 0x1c
+ 1238 0c30 350C0000 		.long	0xc35
+ 1239 0c34 00       		.byte	0
+ 1240 0c35 08       		.uleb128 0x8
+ 1241 0c36 04       		.byte	0x4
+ 1242 0c37 3B0C0000 		.long	0xc3b
+ 1243 0c3b 17       		.uleb128 0x17
+ 1244 0c3c DC020000 		.long	0x2dc
+ 1245 0c40 1B       		.uleb128 0x1b
+ 1246 0c41 6D627372 		.ascii "mbsrtowcs\0"
+ 1246      746F7763 
+ 1246      7300
+ 1247 0c4b 05       		.byte	0x5
+ 1248 0c4c 2E01     		.word	0x12e
+ 1249 0c4e E9000000 		.long	0xe9
+ 1250 0c52 6B0C0000 		.long	0xc6b
+ 1251 0c56 1C       		.uleb128 0x1c
+ 1252 0c57 F00A0000 		.long	0xaf0
+ 1253 0c5b 1C       		.uleb128 0x1c
+ 1254 0c5c 6B0C0000 		.long	0xc6b
+ 1255 0c60 1C       		.uleb128 0x1c
+ 1256 0c61 E9000000 		.long	0xe9
+ 1257 0c65 1C       		.uleb128 0x1c
+ 1258 0c66 EC0B0000 		.long	0xbec
+ 1259 0c6a 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 29
+
+
+ 1260 0c6b 08       		.uleb128 0x8
+ 1261 0c6c 04       		.byte	0x4
+ 1262 0c6d E10B0000 		.long	0xbe1
+ 1263 0c71 1D       		.uleb128 0x1d
+ 1264 0c72 70757477 		.ascii "putwc\0"
+ 1264      6300
+ 1265 0c78 05       		.byte	0x5
+ 1266 0c79 7F       		.byte	0x7f
+ 1267 0c7a 07010000 		.long	0x107
+ 1268 0c7e 8D0C0000 		.long	0xc8d
+ 1269 0c82 1C       		.uleb128 0x1c
+ 1270 0c83 07010000 		.long	0x107
+ 1271 0c87 1C       		.uleb128 0x1c
+ 1272 0c88 C80A0000 		.long	0xac8
+ 1273 0c8c 00       		.byte	0
+ 1274 0c8d 1D       		.uleb128 0x1d
+ 1275 0c8e 70757477 		.ascii "putwchar\0"
+ 1275      63686172 
+ 1275      00
+ 1276 0c97 05       		.byte	0x5
+ 1277 0c98 80       		.byte	0x80
+ 1278 0c99 07010000 		.long	0x107
+ 1279 0c9d A70C0000 		.long	0xca7
+ 1280 0ca1 1C       		.uleb128 0x1c
+ 1281 0ca2 07010000 		.long	0x107
+ 1282 0ca6 00       		.byte	0
+ 1283 0ca7 1D       		.uleb128 0x1d
+ 1284 0ca8 73777363 		.ascii "swscanf\0"
+ 1284      616E6600 
+ 1285 0cb0 05       		.byte	0x5
+ 1286 0cb1 6F       		.byte	0x6f
+ 1287 0cb2 78010000 		.long	0x178
+ 1288 0cb6 C60C0000 		.long	0xcc6
+ 1289 0cba 1C       		.uleb128 0x1c
+ 1290 0cbb 300B0000 		.long	0xb30
+ 1291 0cbf 1C       		.uleb128 0x1c
+ 1292 0cc0 300B0000 		.long	0xb30
+ 1293 0cc4 1E       		.uleb128 0x1e
+ 1294 0cc5 00       		.byte	0
+ 1295 0cc6 1D       		.uleb128 0x1d
+ 1296 0cc7 756E6765 		.ascii "ungetwc\0"
+ 1296      74776300 
+ 1297 0ccf 05       		.byte	0x5
+ 1298 0cd0 72       		.byte	0x72
+ 1299 0cd1 07010000 		.long	0x107
+ 1300 0cd5 E40C0000 		.long	0xce4
+ 1301 0cd9 1C       		.uleb128 0x1c
+ 1302 0cda 5C010000 		.long	0x15c
+ 1303 0cde 1C       		.uleb128 0x1c
+ 1304 0cdf C80A0000 		.long	0xac8
+ 1305 0ce3 00       		.byte	0
+ 1306 0ce4 1D       		.uleb128 0x1d
+ 1307 0ce5 76667770 		.ascii "vfwprintf\0"
+ 1307      72696E74 
+ 1307      6600
+ 1308 0cef 05       		.byte	0x5
+ 1309 0cf0 6A       		.byte	0x6a
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 30
+
+
+ 1310 0cf1 78010000 		.long	0x178
+ 1311 0cf5 090D0000 		.long	0xd09
+ 1312 0cf9 1C       		.uleb128 0x1c
+ 1313 0cfa C80A0000 		.long	0xac8
+ 1314 0cfe 1C       		.uleb128 0x1c
+ 1315 0cff 300B0000 		.long	0xb30
+ 1316 0d03 1C       		.uleb128 0x1c
+ 1317 0d04 2C010000 		.long	0x12c
+ 1318 0d08 00       		.byte	0
+ 1319 0d09 1D       		.uleb128 0x1d
+ 1320 0d0a 76667773 		.ascii "vfwscanf\0"
+ 1320      63616E66 
+ 1320      00
+ 1321 0d13 05       		.byte	0x5
+ 1322 0d14 9A       		.byte	0x9a
+ 1323 0d15 78010000 		.long	0x178
+ 1324 0d19 2D0D0000 		.long	0xd2d
+ 1325 0d1d 1C       		.uleb128 0x1c
+ 1326 0d1e C80A0000 		.long	0xac8
+ 1327 0d22 1C       		.uleb128 0x1c
+ 1328 0d23 300B0000 		.long	0xb30
+ 1329 0d27 1C       		.uleb128 0x1c
+ 1330 0d28 2C010000 		.long	0x12c
+ 1331 0d2c 00       		.byte	0
+ 1332 0d2d 1D       		.uleb128 0x1d
+ 1333 0d2e 76737773 		.ascii "vswscanf\0"
+ 1333      63616E66 
+ 1333      00
+ 1334 0d37 05       		.byte	0x5
+ 1335 0d38 9C       		.byte	0x9c
+ 1336 0d39 78010000 		.long	0x178
+ 1337 0d3d 510D0000 		.long	0xd51
+ 1338 0d41 1C       		.uleb128 0x1c
+ 1339 0d42 300B0000 		.long	0xb30
+ 1340 0d46 1C       		.uleb128 0x1c
+ 1341 0d47 300B0000 		.long	0xb30
+ 1342 0d4b 1C       		.uleb128 0x1c
+ 1343 0d4c 2C010000 		.long	0x12c
+ 1344 0d50 00       		.byte	0
+ 1345 0d51 1D       		.uleb128 0x1d
+ 1346 0d52 76777072 		.ascii "vwprintf\0"
+ 1346      696E7466 
+ 1346      00
+ 1347 0d5b 05       		.byte	0x5
+ 1348 0d5c 6B       		.byte	0x6b
+ 1349 0d5d 78010000 		.long	0x178
+ 1350 0d61 700D0000 		.long	0xd70
+ 1351 0d65 1C       		.uleb128 0x1c
+ 1352 0d66 300B0000 		.long	0xb30
+ 1353 0d6a 1C       		.uleb128 0x1c
+ 1354 0d6b 2C010000 		.long	0x12c
+ 1355 0d6f 00       		.byte	0
+ 1356 0d70 1D       		.uleb128 0x1d
+ 1357 0d71 76777363 		.ascii "vwscanf\0"
+ 1357      616E6600 
+ 1358 0d79 05       		.byte	0x5
+ 1359 0d7a 99       		.byte	0x99
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 31
+
+
+ 1360 0d7b 78010000 		.long	0x178
+ 1361 0d7f 8E0D0000 		.long	0xd8e
+ 1362 0d83 1C       		.uleb128 0x1c
+ 1363 0d84 300B0000 		.long	0xb30
+ 1364 0d88 1C       		.uleb128 0x1c
+ 1365 0d89 2C010000 		.long	0x12c
+ 1366 0d8d 00       		.byte	0
+ 1367 0d8e 1B       		.uleb128 0x1b
+ 1368 0d8f 77637274 		.ascii "wcrtomb\0"
+ 1368      6F6D6200 
+ 1369 0d97 05       		.byte	0x5
+ 1370 0d98 3001     		.word	0x130
+ 1371 0d9a E9000000 		.long	0xe9
+ 1372 0d9e B20D0000 		.long	0xdb2
+ 1373 0da2 1C       		.uleb128 0x1c
+ 1374 0da3 30020000 		.long	0x230
+ 1375 0da7 1C       		.uleb128 0x1c
+ 1376 0da8 5C010000 		.long	0x15c
+ 1377 0dac 1C       		.uleb128 0x1c
+ 1378 0dad EC0B0000 		.long	0xbec
+ 1379 0db1 00       		.byte	0
+ 1380 0db2 1D       		.uleb128 0x1d
+ 1381 0db3 77637363 		.ascii "wcscat\0"
+ 1381      617400
+ 1382 0dba 05       		.byte	0x5
+ 1383 0dbb D9       		.byte	0xd9
+ 1384 0dbc F00A0000 		.long	0xaf0
+ 1385 0dc0 CF0D0000 		.long	0xdcf
+ 1386 0dc4 1C       		.uleb128 0x1c
+ 1387 0dc5 F00A0000 		.long	0xaf0
+ 1388 0dc9 1C       		.uleb128 0x1c
+ 1389 0dca 300B0000 		.long	0xb30
+ 1390 0dce 00       		.byte	0
+ 1391 0dcf 1D       		.uleb128 0x1d
+ 1392 0dd0 77637363 		.ascii "wcscmp\0"
+ 1392      6D7000
+ 1393 0dd7 05       		.byte	0x5
+ 1394 0dd8 DB       		.byte	0xdb
+ 1395 0dd9 78010000 		.long	0x178
+ 1396 0ddd EC0D0000 		.long	0xdec
+ 1397 0de1 1C       		.uleb128 0x1c
+ 1398 0de2 300B0000 		.long	0xb30
+ 1399 0de6 1C       		.uleb128 0x1c
+ 1400 0de7 300B0000 		.long	0xb30
+ 1401 0deb 00       		.byte	0
+ 1402 0dec 1D       		.uleb128 0x1d
+ 1403 0ded 77637363 		.ascii "wcscoll\0"
+ 1403      6F6C6C00 
+ 1404 0df5 05       		.byte	0x5
+ 1405 0df6 DC       		.byte	0xdc
+ 1406 0df7 78010000 		.long	0x178
+ 1407 0dfb 0A0E0000 		.long	0xe0a
+ 1408 0dff 1C       		.uleb128 0x1c
+ 1409 0e00 300B0000 		.long	0xb30
+ 1410 0e04 1C       		.uleb128 0x1c
+ 1411 0e05 300B0000 		.long	0xb30
+ 1412 0e09 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 32
+
+
+ 1413 0e0a 1D       		.uleb128 0x1d
+ 1414 0e0b 77637363 		.ascii "wcscpy\0"
+ 1414      707900
+ 1415 0e12 05       		.byte	0x5
+ 1416 0e13 DD       		.byte	0xdd
+ 1417 0e14 F00A0000 		.long	0xaf0
+ 1418 0e18 270E0000 		.long	0xe27
+ 1419 0e1c 1C       		.uleb128 0x1c
+ 1420 0e1d F00A0000 		.long	0xaf0
+ 1421 0e21 1C       		.uleb128 0x1c
+ 1422 0e22 300B0000 		.long	0xb30
+ 1423 0e26 00       		.byte	0
+ 1424 0e27 1D       		.uleb128 0x1d
+ 1425 0e28 77637363 		.ascii "wcscspn\0"
+ 1425      73706E00 
+ 1426 0e30 05       		.byte	0x5
+ 1427 0e31 DE       		.byte	0xde
+ 1428 0e32 E9000000 		.long	0xe9
+ 1429 0e36 450E0000 		.long	0xe45
+ 1430 0e3a 1C       		.uleb128 0x1c
+ 1431 0e3b 300B0000 		.long	0xb30
+ 1432 0e3f 1C       		.uleb128 0x1c
+ 1433 0e40 300B0000 		.long	0xb30
+ 1434 0e44 00       		.byte	0
+ 1435 0e45 1D       		.uleb128 0x1d
+ 1436 0e46 77637366 		.ascii "wcsftime\0"
+ 1436      74696D65 
+ 1436      00
+ 1437 0e4f 05       		.byte	0x5
+ 1438 0e50 CF       		.byte	0xcf
+ 1439 0e51 E9000000 		.long	0xe9
+ 1440 0e55 6E0E0000 		.long	0xe6e
+ 1441 0e59 1C       		.uleb128 0x1c
+ 1442 0e5a F00A0000 		.long	0xaf0
+ 1443 0e5e 1C       		.uleb128 0x1c
+ 1444 0e5f E9000000 		.long	0xe9
+ 1445 0e63 1C       		.uleb128 0x1c
+ 1446 0e64 300B0000 		.long	0xb30
+ 1447 0e68 1C       		.uleb128 0x1c
+ 1448 0e69 6E0E0000 		.long	0xe6e
+ 1449 0e6d 00       		.byte	0
+ 1450 0e6e 08       		.uleb128 0x8
+ 1451 0e6f 04       		.byte	0x4
+ 1452 0e70 740E0000 		.long	0xe74
+ 1453 0e74 17       		.uleb128 0x17
+ 1454 0e75 42020000 		.long	0x242
+ 1455 0e79 1D       		.uleb128 0x1d
+ 1456 0e7a 7763736C 		.ascii "wcslen\0"
+ 1456      656E00
+ 1457 0e81 05       		.byte	0x5
+ 1458 0e82 E0       		.byte	0xe0
+ 1459 0e83 E9000000 		.long	0xe9
+ 1460 0e87 910E0000 		.long	0xe91
+ 1461 0e8b 1C       		.uleb128 0x1c
+ 1462 0e8c 300B0000 		.long	0xb30
+ 1463 0e90 00       		.byte	0
+ 1464 0e91 1D       		.uleb128 0x1d
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 33
+
+
+ 1465 0e92 7763736E 		.ascii "wcsncat\0"
+ 1465      63617400 
+ 1466 0e9a 05       		.byte	0x5
+ 1467 0e9b E1       		.byte	0xe1
+ 1468 0e9c F00A0000 		.long	0xaf0
+ 1469 0ea0 B40E0000 		.long	0xeb4
+ 1470 0ea4 1C       		.uleb128 0x1c
+ 1471 0ea5 F00A0000 		.long	0xaf0
+ 1472 0ea9 1C       		.uleb128 0x1c
+ 1473 0eaa 300B0000 		.long	0xb30
+ 1474 0eae 1C       		.uleb128 0x1c
+ 1475 0eaf E9000000 		.long	0xe9
+ 1476 0eb3 00       		.byte	0
+ 1477 0eb4 1D       		.uleb128 0x1d
+ 1478 0eb5 7763736E 		.ascii "wcsncmp\0"
+ 1478      636D7000 
+ 1479 0ebd 05       		.byte	0x5
+ 1480 0ebe E2       		.byte	0xe2
+ 1481 0ebf 78010000 		.long	0x178
+ 1482 0ec3 D70E0000 		.long	0xed7
+ 1483 0ec7 1C       		.uleb128 0x1c
+ 1484 0ec8 300B0000 		.long	0xb30
+ 1485 0ecc 1C       		.uleb128 0x1c
+ 1486 0ecd 300B0000 		.long	0xb30
+ 1487 0ed1 1C       		.uleb128 0x1c
+ 1488 0ed2 E9000000 		.long	0xe9
+ 1489 0ed6 00       		.byte	0
+ 1490 0ed7 1D       		.uleb128 0x1d
+ 1491 0ed8 7763736E 		.ascii "wcsncpy\0"
+ 1491      63707900 
+ 1492 0ee0 05       		.byte	0x5
+ 1493 0ee1 E3       		.byte	0xe3
+ 1494 0ee2 F00A0000 		.long	0xaf0
+ 1495 0ee6 FA0E0000 		.long	0xefa
+ 1496 0eea 1C       		.uleb128 0x1c
+ 1497 0eeb F00A0000 		.long	0xaf0
+ 1498 0eef 1C       		.uleb128 0x1c
+ 1499 0ef0 300B0000 		.long	0xb30
+ 1500 0ef4 1C       		.uleb128 0x1c
+ 1501 0ef5 E9000000 		.long	0xe9
+ 1502 0ef9 00       		.byte	0
+ 1503 0efa 1B       		.uleb128 0x1b
+ 1504 0efb 77637372 		.ascii "wcsrtombs\0"
+ 1504      746F6D62 
+ 1504      7300
+ 1505 0f05 05       		.byte	0x5
+ 1506 0f06 3201     		.word	0x132
+ 1507 0f08 E9000000 		.long	0xe9
+ 1508 0f0c 250F0000 		.long	0xf25
+ 1509 0f10 1C       		.uleb128 0x1c
+ 1510 0f11 30020000 		.long	0x230
+ 1511 0f15 1C       		.uleb128 0x1c
+ 1512 0f16 250F0000 		.long	0xf25
+ 1513 0f1a 1C       		.uleb128 0x1c
+ 1514 0f1b E9000000 		.long	0xe9
+ 1515 0f1f 1C       		.uleb128 0x1c
+ 1516 0f20 EC0B0000 		.long	0xbec
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 34
+
+
+ 1517 0f24 00       		.byte	0
+ 1518 0f25 08       		.uleb128 0x8
+ 1519 0f26 04       		.byte	0x4
+ 1520 0f27 300B0000 		.long	0xb30
+ 1521 0f2b 1D       		.uleb128 0x1d
+ 1522 0f2c 77637373 		.ascii "wcsspn\0"
+ 1522      706E00
+ 1523 0f33 05       		.byte	0x5
+ 1524 0f34 E6       		.byte	0xe6
+ 1525 0f35 E9000000 		.long	0xe9
+ 1526 0f39 480F0000 		.long	0xf48
+ 1527 0f3d 1C       		.uleb128 0x1c
+ 1528 0f3e 300B0000 		.long	0xb30
+ 1529 0f42 1C       		.uleb128 0x1c
+ 1530 0f43 300B0000 		.long	0xb30
+ 1531 0f47 00       		.byte	0
+ 1532 0f48 1D       		.uleb128 0x1d
+ 1533 0f49 77637374 		.ascii "wcstod\0"
+ 1533      6F6400
+ 1534 0f50 05       		.byte	0x5
+ 1535 0f51 A6       		.byte	0xa6
+ 1536 0f52 650F0000 		.long	0xf65
+ 1537 0f56 650F0000 		.long	0xf65
+ 1538 0f5a 1C       		.uleb128 0x1c
+ 1539 0f5b 300B0000 		.long	0xb30
+ 1540 0f5f 1C       		.uleb128 0x1c
+ 1541 0f60 6F0F0000 		.long	0xf6f
+ 1542 0f64 00       		.byte	0
+ 1543 0f65 03       		.uleb128 0x3
+ 1544 0f66 08       		.byte	0x8
+ 1545 0f67 04       		.byte	0x4
+ 1546 0f68 646F7562 		.ascii "double\0"
+ 1546      6C6500
+ 1547 0f6f 08       		.uleb128 0x8
+ 1548 0f70 04       		.byte	0x4
+ 1549 0f71 F00A0000 		.long	0xaf0
+ 1550 0f75 1D       		.uleb128 0x1d
+ 1551 0f76 77637374 		.ascii "wcstof\0"
+ 1551      6F6600
+ 1552 0f7d 05       		.byte	0x5
+ 1553 0f7e A8       		.byte	0xa8
+ 1554 0f7f 920F0000 		.long	0xf92
+ 1555 0f83 920F0000 		.long	0xf92
+ 1556 0f87 1C       		.uleb128 0x1c
+ 1557 0f88 300B0000 		.long	0xb30
+ 1558 0f8c 1C       		.uleb128 0x1c
+ 1559 0f8d 6F0F0000 		.long	0xf6f
+ 1560 0f91 00       		.byte	0
+ 1561 0f92 03       		.uleb128 0x3
+ 1562 0f93 04       		.byte	0x4
+ 1563 0f94 04       		.byte	0x4
+ 1564 0f95 666C6F61 		.ascii "float\0"
+ 1564      7400
+ 1565 0f9b 1D       		.uleb128 0x1d
+ 1566 0f9c 77637374 		.ascii "wcstok\0"
+ 1566      6F6B00
+ 1567 0fa3 05       		.byte	0x5
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 35
+
+
+ 1568 0fa4 E8       		.byte	0xe8
+ 1569 0fa5 F00A0000 		.long	0xaf0
+ 1570 0fa9 B80F0000 		.long	0xfb8
+ 1571 0fad 1C       		.uleb128 0x1c
+ 1572 0fae F00A0000 		.long	0xaf0
+ 1573 0fb2 1C       		.uleb128 0x1c
+ 1574 0fb3 300B0000 		.long	0xb30
+ 1575 0fb7 00       		.byte	0
+ 1576 0fb8 1D       		.uleb128 0x1d
+ 1577 0fb9 77637374 		.ascii "wcstol\0"
+ 1577      6F6C00
+ 1578 0fc0 05       		.byte	0x5
+ 1579 0fc1 A4       		.byte	0xa4
+ 1580 0fc2 7F010000 		.long	0x17f
+ 1581 0fc6 DA0F0000 		.long	0xfda
+ 1582 0fca 1C       		.uleb128 0x1c
+ 1583 0fcb 300B0000 		.long	0xb30
+ 1584 0fcf 1C       		.uleb128 0x1c
+ 1585 0fd0 6F0F0000 		.long	0xf6f
+ 1586 0fd4 1C       		.uleb128 0x1c
+ 1587 0fd5 78010000 		.long	0x178
+ 1588 0fd9 00       		.byte	0
+ 1589 0fda 1D       		.uleb128 0x1d
+ 1590 0fdb 77637374 		.ascii "wcstoul\0"
+ 1590      6F756C00 
+ 1591 0fe3 05       		.byte	0x5
+ 1592 0fe4 A5       		.byte	0xa5
+ 1593 0fe5 EE020000 		.long	0x2ee
+ 1594 0fe9 FD0F0000 		.long	0xffd
+ 1595 0fed 1C       		.uleb128 0x1c
+ 1596 0fee 300B0000 		.long	0xb30
+ 1597 0ff2 1C       		.uleb128 0x1c
+ 1598 0ff3 6F0F0000 		.long	0xf6f
+ 1599 0ff7 1C       		.uleb128 0x1c
+ 1600 0ff8 78010000 		.long	0x178
+ 1601 0ffc 00       		.byte	0
+ 1602 0ffd 1D       		.uleb128 0x1d
+ 1603 0ffe 77637378 		.ascii "wcsxfrm\0"
+ 1603      66726D00 
+ 1604 1006 05       		.byte	0x5
+ 1605 1007 E9       		.byte	0xe9
+ 1606 1008 E9000000 		.long	0xe9
+ 1607 100c 20100000 		.long	0x1020
+ 1608 1010 1C       		.uleb128 0x1c
+ 1609 1011 F00A0000 		.long	0xaf0
+ 1610 1015 1C       		.uleb128 0x1c
+ 1611 1016 300B0000 		.long	0xb30
+ 1612 101a 1C       		.uleb128 0x1c
+ 1613 101b E9000000 		.long	0xe9
+ 1614 101f 00       		.byte	0
+ 1615 1020 1B       		.uleb128 0x1b
+ 1616 1021 7763746F 		.ascii "wctob\0"
+ 1616      6200
+ 1617 1027 05       		.byte	0x5
+ 1618 1028 3401     		.word	0x134
+ 1619 102a 78010000 		.long	0x178
+ 1620 102e 38100000 		.long	0x1038
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 36
+
+
+ 1621 1032 1C       		.uleb128 0x1c
+ 1622 1033 07010000 		.long	0x107
+ 1623 1037 00       		.byte	0
+ 1624 1038 1B       		.uleb128 0x1b
+ 1625 1039 776D656D 		.ascii "wmemcmp\0"
+ 1625      636D7000 
+ 1626 1041 05       		.byte	0x5
+ 1627 1042 4201     		.word	0x142
+ 1628 1044 78010000 		.long	0x178
+ 1629 1048 5C100000 		.long	0x105c
+ 1630 104c 1C       		.uleb128 0x1c
+ 1631 104d 300B0000 		.long	0xb30
+ 1632 1051 1C       		.uleb128 0x1c
+ 1633 1052 300B0000 		.long	0xb30
+ 1634 1056 1C       		.uleb128 0x1c
+ 1635 1057 E9000000 		.long	0xe9
+ 1636 105b 00       		.byte	0
+ 1637 105c 1B       		.uleb128 0x1b
+ 1638 105d 776D656D 		.ascii "wmemcpy\0"
+ 1638      63707900 
+ 1639 1065 05       		.byte	0x5
+ 1640 1066 4301     		.word	0x143
+ 1641 1068 F00A0000 		.long	0xaf0
+ 1642 106c 80100000 		.long	0x1080
+ 1643 1070 1C       		.uleb128 0x1c
+ 1644 1071 F00A0000 		.long	0xaf0
+ 1645 1075 1C       		.uleb128 0x1c
+ 1646 1076 300B0000 		.long	0xb30
+ 1647 107a 1C       		.uleb128 0x1c
+ 1648 107b E9000000 		.long	0xe9
+ 1649 107f 00       		.byte	0
+ 1650 1080 1B       		.uleb128 0x1b
+ 1651 1081 776D656D 		.ascii "wmemmove\0"
+ 1651      6D6F7665 
+ 1651      00
+ 1652 108a 05       		.byte	0x5
+ 1653 108b 4601     		.word	0x146
+ 1654 108d F00A0000 		.long	0xaf0
+ 1655 1091 A5100000 		.long	0x10a5
+ 1656 1095 1C       		.uleb128 0x1c
+ 1657 1096 F00A0000 		.long	0xaf0
+ 1658 109a 1C       		.uleb128 0x1c
+ 1659 109b 300B0000 		.long	0xb30
+ 1660 109f 1C       		.uleb128 0x1c
+ 1661 10a0 E9000000 		.long	0xe9
+ 1662 10a4 00       		.byte	0
+ 1663 10a5 1B       		.uleb128 0x1b
+ 1664 10a6 776D656D 		.ascii "wmemset\0"
+ 1664      73657400 
+ 1665 10ae 05       		.byte	0x5
+ 1666 10af 4001     		.word	0x140
+ 1667 10b1 F00A0000 		.long	0xaf0
+ 1668 10b5 C9100000 		.long	0x10c9
+ 1669 10b9 1C       		.uleb128 0x1c
+ 1670 10ba F00A0000 		.long	0xaf0
+ 1671 10be 1C       		.uleb128 0x1c
+ 1672 10bf 5C010000 		.long	0x15c
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 37
+
+
+ 1673 10c3 1C       		.uleb128 0x1c
+ 1674 10c4 E9000000 		.long	0xe9
+ 1675 10c8 00       		.byte	0
+ 1676 10c9 1D       		.uleb128 0x1d
+ 1677 10ca 77707269 		.ascii "wprintf\0"
+ 1677      6E746600 
+ 1678 10d2 05       		.byte	0x5
+ 1679 10d3 68       		.byte	0x68
+ 1680 10d4 78010000 		.long	0x178
+ 1681 10d8 E3100000 		.long	0x10e3
+ 1682 10dc 1C       		.uleb128 0x1c
+ 1683 10dd 300B0000 		.long	0xb30
+ 1684 10e1 1E       		.uleb128 0x1e
+ 1685 10e2 00       		.byte	0
+ 1686 10e3 1D       		.uleb128 0x1d
+ 1687 10e4 77736361 		.ascii "wscanf\0"
+ 1687      6E6600
+ 1688 10eb 05       		.byte	0x5
+ 1689 10ec 6E       		.byte	0x6e
+ 1690 10ed 78010000 		.long	0x178
+ 1691 10f1 FC100000 		.long	0x10fc
+ 1692 10f5 1C       		.uleb128 0x1c
+ 1693 10f6 300B0000 		.long	0xb30
+ 1694 10fa 1E       		.uleb128 0x1e
+ 1695 10fb 00       		.byte	0
+ 1696 10fc 1D       		.uleb128 0x1d
+ 1697 10fd 77637363 		.ascii "wcschr\0"
+ 1697      687200
+ 1698 1104 05       		.byte	0x5
+ 1699 1105 DA       		.byte	0xda
+ 1700 1106 F00A0000 		.long	0xaf0
+ 1701 110a 19110000 		.long	0x1119
+ 1702 110e 1C       		.uleb128 0x1c
+ 1703 110f 300B0000 		.long	0xb30
+ 1704 1113 1C       		.uleb128 0x1c
+ 1705 1114 5C010000 		.long	0x15c
+ 1706 1118 00       		.byte	0
+ 1707 1119 1D       		.uleb128 0x1d
+ 1708 111a 77637370 		.ascii "wcspbrk\0"
+ 1708      62726B00 
+ 1709 1122 05       		.byte	0x5
+ 1710 1123 E4       		.byte	0xe4
+ 1711 1124 F00A0000 		.long	0xaf0
+ 1712 1128 37110000 		.long	0x1137
+ 1713 112c 1C       		.uleb128 0x1c
+ 1714 112d 300B0000 		.long	0xb30
+ 1715 1131 1C       		.uleb128 0x1c
+ 1716 1132 300B0000 		.long	0xb30
+ 1717 1136 00       		.byte	0
+ 1718 1137 1D       		.uleb128 0x1d
+ 1719 1138 77637372 		.ascii "wcsrchr\0"
+ 1719      63687200 
+ 1720 1140 05       		.byte	0x5
+ 1721 1141 E5       		.byte	0xe5
+ 1722 1142 F00A0000 		.long	0xaf0
+ 1723 1146 55110000 		.long	0x1155
+ 1724 114a 1C       		.uleb128 0x1c
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 38
+
+
+ 1725 114b 300B0000 		.long	0xb30
+ 1726 114f 1C       		.uleb128 0x1c
+ 1727 1150 5C010000 		.long	0x15c
+ 1728 1154 00       		.byte	0
+ 1729 1155 1D       		.uleb128 0x1d
+ 1730 1156 77637373 		.ascii "wcsstr\0"
+ 1730      747200
+ 1731 115d 05       		.byte	0x5
+ 1732 115e E7       		.byte	0xe7
+ 1733 115f F00A0000 		.long	0xaf0
+ 1734 1163 72110000 		.long	0x1172
+ 1735 1167 1C       		.uleb128 0x1c
+ 1736 1168 300B0000 		.long	0xb30
+ 1737 116c 1C       		.uleb128 0x1c
+ 1738 116d 300B0000 		.long	0xb30
+ 1739 1171 00       		.byte	0
+ 1740 1172 1B       		.uleb128 0x1b
+ 1741 1173 776D656D 		.ascii "wmemchr\0"
+ 1741      63687200 
+ 1742 117b 05       		.byte	0x5
+ 1743 117c 4101     		.word	0x141
+ 1744 117e F00A0000 		.long	0xaf0
+ 1745 1182 96110000 		.long	0x1196
+ 1746 1186 1C       		.uleb128 0x1c
+ 1747 1187 300B0000 		.long	0xb30
+ 1748 118b 1C       		.uleb128 0x1c
+ 1749 118c 5C010000 		.long	0x15c
+ 1750 1190 1C       		.uleb128 0x1c
+ 1751 1191 E9000000 		.long	0xe9
+ 1752 1195 00       		.byte	0
+ 1753 1196 09       		.uleb128 0x9
+ 1754 1197 5F5F676E 		.ascii "__gnu_cxx\0"
+ 1754      755F6378 
+ 1754      7800
+ 1755 11a1 06       		.byte	0x6
+ 1756 11a2 F2       		.byte	0xf2
+ 1757 11a3 57130000 		.long	0x1357
+ 1758 11a7 0A       		.uleb128 0xa
+ 1759 11a8 06       		.byte	0x6
+ 1760 11a9 F8       		.byte	0xf8
+ 1761 11aa 57130000 		.long	0x1357
+ 1762 11ae 0B       		.uleb128 0xb
+ 1763 11af 06       		.byte	0x6
+ 1764 11b0 0101     		.word	0x101
+ 1765 11b2 84130000 		.long	0x1384
+ 1766 11b6 0B       		.uleb128 0xb
+ 1767 11b7 06       		.byte	0x6
+ 1768 11b8 0201     		.word	0x102
+ 1769 11ba A8130000 		.long	0x13a8
+ 1770 11be 0C       		.uleb128 0xc
+ 1771 11bf 5F5F6F70 		.ascii "__ops\0"
+ 1771      7300
+ 1772 11c5 0D       		.byte	0xd
+ 1773 11c6 24       		.byte	0x24
+ 1774 11c7 0A       		.uleb128 0xa
+ 1775 11c8 0E       		.byte	0xe
+ 1776 11c9 2C       		.byte	0x2c
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 39
+
+
+ 1777 11ca FF040000 		.long	0x4ff
+ 1778 11ce 0A       		.uleb128 0xa
+ 1779 11cf 0E       		.byte	0xe
+ 1780 11d0 2D       		.byte	0x2d
+ 1781 11d1 22050000 		.long	0x522
+ 1782 11d5 06       		.uleb128 0x6
+ 1783 11d6 5F5F6E75 		.ascii "__numeric_traits_integer<int>\0"
+ 1783      6D657269 
+ 1783      635F7472 
+ 1783      61697473 
+ 1783      5F696E74 
+ 1784 11f4 01       		.byte	0x1
+ 1785 11f5 0F       		.byte	0xf
+ 1786 11f6 37       		.byte	0x37
+ 1787 11f7 31120000 		.long	0x1231
+ 1788 11fb 20       		.uleb128 0x20
+ 1789 11fc 00000000 		.secrel32	LASF0
+ 1790 1200 0F       		.byte	0xf
+ 1791 1201 3A       		.byte	0x3a
+ 1792 1202 DB150000 		.long	0x15db
+ 1793 1206 20       		.uleb128 0x20
+ 1794 1207 06000000 		.secrel32	LASF1
+ 1795 120b 0F       		.byte	0xf
+ 1796 120c 3B       		.byte	0x3b
+ 1797 120d DB150000 		.long	0x15db
+ 1798 1211 20       		.uleb128 0x20
+ 1799 1212 1C000000 		.secrel32	LASF2
+ 1800 1216 0F       		.byte	0xf
+ 1801 1217 3F       		.byte	0x3f
+ 1802 1218 E0150000 		.long	0x15e0
+ 1803 121c 20       		.uleb128 0x20
+ 1804 121d 0C000000 		.secrel32	LASF3
+ 1805 1221 0F       		.byte	0xf
+ 1806 1222 40       		.byte	0x40
+ 1807 1223 DB150000 		.long	0x15db
+ 1808 1227 21       		.uleb128 0x21
+ 1809 1228 15000000 		.secrel32	LASF4
+ 1810 122c 78010000 		.long	0x178
+ 1811 1230 00       		.byte	0
+ 1812 1231 06       		.uleb128 0x6
+ 1813 1232 5F5F6E75 		.ascii "__numeric_traits_integer<long unsigned int>\0"
+ 1813      6D657269 
+ 1813      635F7472 
+ 1813      61697473 
+ 1813      5F696E74 
+ 1814 125e 01       		.byte	0x1
+ 1815 125f 0F       		.byte	0xf
+ 1816 1260 37       		.byte	0x37
+ 1817 1261 9B120000 		.long	0x129b
+ 1818 1265 20       		.uleb128 0x20
+ 1819 1266 00000000 		.secrel32	LASF0
+ 1820 126a 0F       		.byte	0xf
+ 1821 126b 3A       		.byte	0x3a
+ 1822 126c E5150000 		.long	0x15e5
+ 1823 1270 20       		.uleb128 0x20
+ 1824 1271 06000000 		.secrel32	LASF1
+ 1825 1275 0F       		.byte	0xf
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 40
+
+
+ 1826 1276 3B       		.byte	0x3b
+ 1827 1277 E5150000 		.long	0x15e5
+ 1828 127b 20       		.uleb128 0x20
+ 1829 127c 1C000000 		.secrel32	LASF2
+ 1830 1280 0F       		.byte	0xf
+ 1831 1281 3F       		.byte	0x3f
+ 1832 1282 E0150000 		.long	0x15e0
+ 1833 1286 20       		.uleb128 0x20
+ 1834 1287 0C000000 		.secrel32	LASF3
+ 1835 128b 0F       		.byte	0xf
+ 1836 128c 40       		.byte	0x40
+ 1837 128d DB150000 		.long	0x15db
+ 1838 1291 21       		.uleb128 0x21
+ 1839 1292 15000000 		.secrel32	LASF4
+ 1840 1296 EE020000 		.long	0x2ee
+ 1841 129a 00       		.byte	0
+ 1842 129b 06       		.uleb128 0x6
+ 1843 129c 5F5F6E75 		.ascii "__numeric_traits_integer<char>\0"
+ 1843      6D657269 
+ 1843      635F7472 
+ 1843      61697473 
+ 1843      5F696E74 
+ 1844 12bb 01       		.byte	0x1
+ 1845 12bc 0F       		.byte	0xf
+ 1846 12bd 37       		.byte	0x37
+ 1847 12be F8120000 		.long	0x12f8
+ 1848 12c2 20       		.uleb128 0x20
+ 1849 12c3 00000000 		.secrel32	LASF0
+ 1850 12c7 0F       		.byte	0xf
+ 1851 12c8 3A       		.byte	0x3a
+ 1852 12c9 E70B0000 		.long	0xbe7
+ 1853 12cd 20       		.uleb128 0x20
+ 1854 12ce 06000000 		.secrel32	LASF1
+ 1855 12d2 0F       		.byte	0xf
+ 1856 12d3 3B       		.byte	0x3b
+ 1857 12d4 E70B0000 		.long	0xbe7
+ 1858 12d8 20       		.uleb128 0x20
+ 1859 12d9 1C000000 		.secrel32	LASF2
+ 1860 12dd 0F       		.byte	0xf
+ 1861 12de 3F       		.byte	0x3f
+ 1862 12df E0150000 		.long	0x15e0
+ 1863 12e3 20       		.uleb128 0x20
+ 1864 12e4 0C000000 		.secrel32	LASF3
+ 1865 12e8 0F       		.byte	0xf
+ 1866 12e9 40       		.byte	0x40
+ 1867 12ea DB150000 		.long	0x15db
+ 1868 12ee 21       		.uleb128 0x21
+ 1869 12ef 15000000 		.secrel32	LASF4
+ 1870 12f3 44010000 		.long	0x144
+ 1871 12f7 00       		.byte	0
+ 1872 12f8 22       		.uleb128 0x22
+ 1873 12f9 5F5F6E75 		.ascii "__numeric_traits_integer<short int>\0"
+ 1873      6D657269 
+ 1873      635F7472 
+ 1873      61697473 
+ 1873      5F696E74 
+ 1874 131d 01       		.byte	0x1
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 41
+
+
+ 1875 131e 0F       		.byte	0xf
+ 1876 131f 37       		.byte	0x37
+ 1877 1320 20       		.uleb128 0x20
+ 1878 1321 00000000 		.secrel32	LASF0
+ 1879 1325 0F       		.byte	0xf
+ 1880 1326 3A       		.byte	0x3a
+ 1881 1327 60160000 		.long	0x1660
+ 1882 132b 20       		.uleb128 0x20
+ 1883 132c 06000000 		.secrel32	LASF1
+ 1884 1330 0F       		.byte	0xf
+ 1885 1331 3B       		.byte	0x3b
+ 1886 1332 60160000 		.long	0x1660
+ 1887 1336 20       		.uleb128 0x20
+ 1888 1337 1C000000 		.secrel32	LASF2
+ 1889 133b 0F       		.byte	0xf
+ 1890 133c 3F       		.byte	0x3f
+ 1891 133d E0150000 		.long	0x15e0
+ 1892 1341 20       		.uleb128 0x20
+ 1893 1342 0C000000 		.secrel32	LASF3
+ 1894 1346 0F       		.byte	0xf
+ 1895 1347 40       		.byte	0x40
+ 1896 1348 DB150000 		.long	0x15db
+ 1897 134c 21       		.uleb128 0x21
+ 1898 134d 15000000 		.secrel32	LASF4
+ 1899 1351 9C010000 		.long	0x19c
+ 1900 1355 00       		.byte	0
+ 1901 1356 00       		.byte	0
+ 1902 1357 1D       		.uleb128 0x1d
+ 1903 1358 77637374 		.ascii "wcstold\0"
+ 1903      6F6C6400 
+ 1904 1360 05       		.byte	0x5
+ 1905 1361 A9       		.byte	0xa9
+ 1906 1362 75130000 		.long	0x1375
+ 1907 1366 75130000 		.long	0x1375
+ 1908 136a 1C       		.uleb128 0x1c
+ 1909 136b 300B0000 		.long	0xb30
+ 1910 136f 1C       		.uleb128 0x1c
+ 1911 1370 6F0F0000 		.long	0xf6f
+ 1912 1374 00       		.byte	0
+ 1913 1375 03       		.uleb128 0x3
+ 1914 1376 0C       		.byte	0xc
+ 1915 1377 04       		.byte	0x4
+ 1916 1378 6C6F6E67 		.ascii "long double\0"
+ 1916      20646F75 
+ 1916      626C6500 
+ 1917 1384 1B       		.uleb128 0x1b
+ 1918 1385 77637374 		.ascii "wcstoll\0"
+ 1918      6F6C6C00 
+ 1919 138d 05       		.byte	0x5
+ 1920 138e 4701     		.word	0x147
+ 1921 1390 8B010000 		.long	0x18b
+ 1922 1394 A8130000 		.long	0x13a8
+ 1923 1398 1C       		.uleb128 0x1c
+ 1924 1399 300B0000 		.long	0xb30
+ 1925 139d 1C       		.uleb128 0x1c
+ 1926 139e 6F0F0000 		.long	0xf6f
+ 1927 13a2 1C       		.uleb128 0x1c
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 42
+
+
+ 1928 13a3 78010000 		.long	0x178
+ 1929 13a7 00       		.byte	0
+ 1930 13a8 1B       		.uleb128 0x1b
+ 1931 13a9 77637374 		.ascii "wcstoull\0"
+ 1931      6F756C6C 
+ 1931      00
+ 1932 13b2 05       		.byte	0x5
+ 1933 13b3 4901     		.word	0x149
+ 1934 13b5 2F030000 		.long	0x32f
+ 1935 13b9 CD130000 		.long	0x13cd
+ 1936 13bd 1C       		.uleb128 0x1c
+ 1937 13be 300B0000 		.long	0xb30
+ 1938 13c2 1C       		.uleb128 0x1c
+ 1939 13c3 6F0F0000 		.long	0xf6f
+ 1940 13c7 1C       		.uleb128 0x1c
+ 1941 13c8 78010000 		.long	0x178
+ 1942 13cc 00       		.byte	0
+ 1943 13cd 09       		.uleb128 0x9
+ 1944 13ce 5F5F676E 		.ascii "__gnu_debug\0"
+ 1944      755F6465 
+ 1944      62756700 
+ 1945 13da 0C       		.byte	0xc
+ 1946 13db 37       		.byte	0x37
+ 1947 13dc E8130000 		.long	0x13e8
+ 1948 13e0 23       		.uleb128 0x23
+ 1949 13e1 0C       		.byte	0xc
+ 1950 13e2 38       		.byte	0x38
+ 1951 13e3 F4040000 		.long	0x4f4
+ 1952 13e7 00       		.byte	0
+ 1953 13e8 03       		.uleb128 0x3
+ 1954 13e9 01       		.byte	0x1
+ 1955 13ea 02       		.byte	0x2
+ 1956 13eb 626F6F6C 		.ascii "bool\0"
+ 1956      00
+ 1957 13f0 06       		.uleb128 0x6
+ 1958 13f1 6C636F6E 		.ascii "lconv\0"
+ 1958      7600
+ 1959 13f7 30       		.byte	0x30
+ 1960 13f8 10       		.byte	0x10
+ 1961 13f9 2D       		.byte	0x2d
+ 1962 13fa 8F150000 		.long	0x158f
+ 1963 13fe 07       		.uleb128 0x7
+ 1964 13ff 64656369 		.ascii "decimal_point\0"
+ 1964      6D616C5F 
+ 1964      706F696E 
+ 1964      7400
+ 1965 140d 10       		.byte	0x10
+ 1966 140e 2F       		.byte	0x2f
+ 1967 140f 30020000 		.long	0x230
+ 1968 1413 00       		.byte	0
+ 1969 1414 07       		.uleb128 0x7
+ 1970 1415 74686F75 		.ascii "thousands_sep\0"
+ 1970      73616E64 
+ 1970      735F7365 
+ 1970      7000
+ 1971 1423 10       		.byte	0x10
+ 1972 1424 30       		.byte	0x30
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 43
+
+
+ 1973 1425 30020000 		.long	0x230
+ 1974 1429 04       		.byte	0x4
+ 1975 142a 07       		.uleb128 0x7
+ 1976 142b 67726F75 		.ascii "grouping\0"
+ 1976      70696E67 
+ 1976      00
+ 1977 1434 10       		.byte	0x10
+ 1978 1435 31       		.byte	0x31
+ 1979 1436 30020000 		.long	0x230
+ 1980 143a 08       		.byte	0x8
+ 1981 143b 07       		.uleb128 0x7
+ 1982 143c 696E745F 		.ascii "int_curr_symbol\0"
+ 1982      63757272 
+ 1982      5F73796D 
+ 1982      626F6C00 
+ 1983 144c 10       		.byte	0x10
+ 1984 144d 32       		.byte	0x32
+ 1985 144e 30020000 		.long	0x230
+ 1986 1452 0C       		.byte	0xc
+ 1987 1453 07       		.uleb128 0x7
+ 1988 1454 63757272 		.ascii "currency_symbol\0"
+ 1988      656E6379 
+ 1988      5F73796D 
+ 1988      626F6C00 
+ 1989 1464 10       		.byte	0x10
+ 1990 1465 33       		.byte	0x33
+ 1991 1466 30020000 		.long	0x230
+ 1992 146a 10       		.byte	0x10
+ 1993 146b 07       		.uleb128 0x7
+ 1994 146c 6D6F6E5F 		.ascii "mon_decimal_point\0"
+ 1994      64656369 
+ 1994      6D616C5F 
+ 1994      706F696E 
+ 1994      7400
+ 1995 147e 10       		.byte	0x10
+ 1996 147f 34       		.byte	0x34
+ 1997 1480 30020000 		.long	0x230
+ 1998 1484 14       		.byte	0x14
+ 1999 1485 07       		.uleb128 0x7
+ 2000 1486 6D6F6E5F 		.ascii "mon_thousands_sep\0"
+ 2000      74686F75 
+ 2000      73616E64 
+ 2000      735F7365 
+ 2000      7000
+ 2001 1498 10       		.byte	0x10
+ 2002 1499 35       		.byte	0x35
+ 2003 149a 30020000 		.long	0x230
+ 2004 149e 18       		.byte	0x18
+ 2005 149f 07       		.uleb128 0x7
+ 2006 14a0 6D6F6E5F 		.ascii "mon_grouping\0"
+ 2006      67726F75 
+ 2006      70696E67 
+ 2006      00
+ 2007 14ad 10       		.byte	0x10
+ 2008 14ae 36       		.byte	0x36
+ 2009 14af 30020000 		.long	0x230
+ 2010 14b3 1C       		.byte	0x1c
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 44
+
+
+ 2011 14b4 07       		.uleb128 0x7
+ 2012 14b5 706F7369 		.ascii "positive_sign\0"
+ 2012      74697665 
+ 2012      5F736967 
+ 2012      6E00
+ 2013 14c3 10       		.byte	0x10
+ 2014 14c4 37       		.byte	0x37
+ 2015 14c5 30020000 		.long	0x230
+ 2016 14c9 20       		.byte	0x20
+ 2017 14ca 07       		.uleb128 0x7
+ 2018 14cb 6E656761 		.ascii "negative_sign\0"
+ 2018      74697665 
+ 2018      5F736967 
+ 2018      6E00
+ 2019 14d9 10       		.byte	0x10
+ 2020 14da 38       		.byte	0x38
+ 2021 14db 30020000 		.long	0x230
+ 2022 14df 24       		.byte	0x24
+ 2023 14e0 07       		.uleb128 0x7
+ 2024 14e1 696E745F 		.ascii "int_frac_digits\0"
+ 2024      66726163 
+ 2024      5F646967 
+ 2024      69747300 
+ 2025 14f1 10       		.byte	0x10
+ 2026 14f2 39       		.byte	0x39
+ 2027 14f3 44010000 		.long	0x144
+ 2028 14f7 28       		.byte	0x28
+ 2029 14f8 07       		.uleb128 0x7
+ 2030 14f9 66726163 		.ascii "frac_digits\0"
+ 2030      5F646967 
+ 2030      69747300 
+ 2031 1505 10       		.byte	0x10
+ 2032 1506 3A       		.byte	0x3a
+ 2033 1507 44010000 		.long	0x144
+ 2034 150b 29       		.byte	0x29
+ 2035 150c 07       		.uleb128 0x7
+ 2036 150d 705F6373 		.ascii "p_cs_precedes\0"
+ 2036      5F707265 
+ 2036      63656465 
+ 2036      7300
+ 2037 151b 10       		.byte	0x10
+ 2038 151c 3B       		.byte	0x3b
+ 2039 151d 44010000 		.long	0x144
+ 2040 1521 2A       		.byte	0x2a
+ 2041 1522 07       		.uleb128 0x7
+ 2042 1523 705F7365 		.ascii "p_sep_by_space\0"
+ 2042      705F6279 
+ 2042      5F737061 
+ 2042      636500
+ 2043 1532 10       		.byte	0x10
+ 2044 1533 3C       		.byte	0x3c
+ 2045 1534 44010000 		.long	0x144
+ 2046 1538 2B       		.byte	0x2b
+ 2047 1539 07       		.uleb128 0x7
+ 2048 153a 6E5F6373 		.ascii "n_cs_precedes\0"
+ 2048      5F707265 
+ 2048      63656465 
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 45
+
+
+ 2048      7300
+ 2049 1548 10       		.byte	0x10
+ 2050 1549 3D       		.byte	0x3d
+ 2051 154a 44010000 		.long	0x144
+ 2052 154e 2C       		.byte	0x2c
+ 2053 154f 07       		.uleb128 0x7
+ 2054 1550 6E5F7365 		.ascii "n_sep_by_space\0"
+ 2054      705F6279 
+ 2054      5F737061 
+ 2054      636500
+ 2055 155f 10       		.byte	0x10
+ 2056 1560 3E       		.byte	0x3e
+ 2057 1561 44010000 		.long	0x144
+ 2058 1565 2D       		.byte	0x2d
+ 2059 1566 07       		.uleb128 0x7
+ 2060 1567 705F7369 		.ascii "p_sign_posn\0"
+ 2060      676E5F70 
+ 2060      6F736E00 
+ 2061 1573 10       		.byte	0x10
+ 2062 1574 3F       		.byte	0x3f
+ 2063 1575 44010000 		.long	0x144
+ 2064 1579 2E       		.byte	0x2e
+ 2065 157a 07       		.uleb128 0x7
+ 2066 157b 6E5F7369 		.ascii "n_sign_posn\0"
+ 2066      676E5F70 
+ 2066      6F736E00 
+ 2067 1587 10       		.byte	0x10
+ 2068 1588 40       		.byte	0x40
+ 2069 1589 44010000 		.long	0x144
+ 2070 158d 2F       		.byte	0x2f
+ 2071 158e 00       		.byte	0
+ 2072 158f 1D       		.uleb128 0x1d
+ 2073 1590 7365746C 		.ascii "setlocale\0"
+ 2073      6F63616C 
+ 2073      6500
+ 2074 159a 10       		.byte	0x10
+ 2075 159b 47       		.byte	0x47
+ 2076 159c 30020000 		.long	0x230
+ 2077 15a0 AF150000 		.long	0x15af
+ 2078 15a4 1C       		.uleb128 0x1c
+ 2079 15a5 78010000 		.long	0x178
+ 2080 15a9 1C       		.uleb128 0x1c
+ 2081 15aa E10B0000 		.long	0xbe1
+ 2082 15ae 00       		.byte	0
+ 2083 15af 1F       		.uleb128 0x1f
+ 2084 15b0 6C6F6361 		.ascii "localeconv\0"
+ 2084      6C65636F 
+ 2084      6E7600
+ 2085 15bb 10       		.byte	0x10
+ 2086 15bc 48       		.byte	0x48
+ 2087 15bd C1150000 		.long	0x15c1
+ 2088 15c1 08       		.uleb128 0x8
+ 2089 15c2 04       		.byte	0x4
+ 2090 15c3 F0130000 		.long	0x13f0
+ 2091 15c7 02       		.uleb128 0x2
+ 2092 15c8 5F41746F 		.ascii "_Atomic_word\0"
+ 2092      6D69635F 
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 46
+
+
+ 2092      776F7264 
+ 2092      00
+ 2093 15d5 11       		.byte	0x11
+ 2094 15d6 20       		.byte	0x20
+ 2095 15d7 78010000 		.long	0x178
+ 2096 15db 17       		.uleb128 0x17
+ 2097 15dc 78010000 		.long	0x178
+ 2098 15e0 17       		.uleb128 0x17
+ 2099 15e1 E8130000 		.long	0x13e8
+ 2100 15e5 17       		.uleb128 0x17
+ 2101 15e6 EE020000 		.long	0x2ee
+ 2102 15ea 08       		.uleb128 0x8
+ 2103 15eb 04       		.byte	0x4
+ 2104 15ec 75070000 		.long	0x775
+ 2105 15f0 1D       		.uleb128 0x1d
+ 2106 15f1 69737763 		.ascii "iswctype\0"
+ 2106      74797065 
+ 2106      00
+ 2107 15fa 12       		.byte	0x12
+ 2108 15fb C4       		.byte	0xc4
+ 2109 15fc 78010000 		.long	0x178
+ 2110 1600 0F160000 		.long	0x160f
+ 2111 1604 1C       		.uleb128 0x1c
+ 2112 1605 07010000 		.long	0x107
+ 2113 1609 1C       		.uleb128 0x1c
+ 2114 160a 4C010000 		.long	0x14c
+ 2115 160e 00       		.byte	0
+ 2116 160f 1D       		.uleb128 0x1d
+ 2117 1610 746F7763 		.ascii "towctrans\0"
+ 2117      7472616E 
+ 2117      7300
+ 2118 161a 04       		.byte	0x4
+ 2119 161b 9D       		.byte	0x9d
+ 2120 161c 07010000 		.long	0x107
+ 2121 1620 2F160000 		.long	0x162f
+ 2122 1624 1C       		.uleb128 0x1c
+ 2123 1625 07010000 		.long	0x107
+ 2124 1629 1C       		.uleb128 0x1c
+ 2125 162a 67010000 		.long	0x167
+ 2126 162e 00       		.byte	0
+ 2127 162f 1D       		.uleb128 0x1d
+ 2128 1630 77637472 		.ascii "wctrans\0"
+ 2128      616E7300 
+ 2129 1638 04       		.byte	0x4
+ 2130 1639 9E       		.byte	0x9e
+ 2131 163a 67010000 		.long	0x167
+ 2132 163e 48160000 		.long	0x1648
+ 2133 1642 1C       		.uleb128 0x1c
+ 2134 1643 E10B0000 		.long	0xbe1
+ 2135 1647 00       		.byte	0
+ 2136 1648 1D       		.uleb128 0x1d
+ 2137 1649 77637479 		.ascii "wctype\0"
+ 2137      706500
+ 2138 1650 04       		.byte	0x4
+ 2139 1651 9F       		.byte	0x9f
+ 2140 1652 4C010000 		.long	0x14c
+ 2141 1656 60160000 		.long	0x1660
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 47
+
+
+ 2142 165a 1C       		.uleb128 0x1c
+ 2143 165b E10B0000 		.long	0xbe1
+ 2144 165f 00       		.byte	0
+ 2145 1660 17       		.uleb128 0x17
+ 2146 1661 9C010000 		.long	0x19c
+ 2147 1665 24       		.uleb128 0x24
+ 2148 1666 4D61696E 		.ascii "Main_ui\0"
+ 2148      5F756900 
+ 2149 166e 01       		.byte	0x1
+ 2150 166f 13       		.byte	0x13
+ 2151 1670 05       		.byte	0x5
+ 2152 1671 A8170000 		.long	0x17a8
+ 2153 1675 25       		.uleb128 0x25
+ 2154 1676 4D61696E 		.ascii "Main_ui\0"
+ 2154      5F756900 
+ 2155 167e 13       		.byte	0x13
+ 2156 167f 08       		.byte	0x8
+ 2157 1680 01       		.byte	0x1
+ 2158 1681 89160000 		.long	0x1689
+ 2159 1685 8F160000 		.long	0x168f
+ 2160 1689 13       		.uleb128 0x13
+ 2161 168a A8170000 		.long	0x17a8
+ 2162 168e 00       		.byte	0
+ 2163 168f 26       		.uleb128 0x26
+ 2164 1690 6D61696E 		.ascii "main_menu\0"
+ 2164      5F6D656E 
+ 2164      7500
+ 2165 169a 13       		.byte	0x13
+ 2166 169b 0A       		.byte	0xa
+ 2167 169c 5F5A4E37 		.ascii "_ZN7Main_ui9main_menuEv\0"
+ 2167      4D61696E 
+ 2167      5F756939 
+ 2167      6D61696E 
+ 2167      5F6D656E 
+ 2168 16b4 01       		.byte	0x1
+ 2169 16b5 BD160000 		.long	0x16bd
+ 2170 16b9 C3160000 		.long	0x16c3
+ 2171 16bd 13       		.uleb128 0x13
+ 2172 16be A8170000 		.long	0x17a8
+ 2173 16c2 00       		.byte	0
+ 2174 16c3 26       		.uleb128 0x26
+ 2175 16c4 67657452 		.ascii "getRcrdMenu\0"
+ 2175      6372644D 
+ 2175      656E7500 
+ 2176 16d0 13       		.byte	0x13
+ 2177 16d1 0C       		.byte	0xc
+ 2178 16d2 5F5A4E37 		.ascii "_ZN7Main_ui11getRcrdMenuEv\0"
+ 2178      4D61696E 
+ 2178      5F756931 
+ 2178      31676574 
+ 2178      52637264 
+ 2179 16ed 01       		.byte	0x1
+ 2180 16ee F6160000 		.long	0x16f6
+ 2181 16f2 FC160000 		.long	0x16fc
+ 2182 16f6 13       		.uleb128 0x13
+ 2183 16f7 A8170000 		.long	0x17a8
+ 2184 16fb 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 48
+
+
+ 2185 16fc 26       		.uleb128 0x26
+ 2186 16fd 61646445 		.ascii "addEmplMenu\0"
+ 2186      6D706C4D 
+ 2186      656E7500 
+ 2187 1709 13       		.byte	0x13
+ 2188 170a 0E       		.byte	0xe
+ 2189 170b 5F5A4E37 		.ascii "_ZN7Main_ui11addEmplMenuEv\0"
+ 2189      4D61696E 
+ 2189      5F756931 
+ 2189      31616464 
+ 2189      456D706C 
+ 2190 1726 01       		.byte	0x1
+ 2191 1727 2F170000 		.long	0x172f
+ 2192 172b 35170000 		.long	0x1735
+ 2193 172f 13       		.uleb128 0x13
+ 2194 1730 A8170000 		.long	0x17a8
+ 2195 1734 00       		.byte	0
+ 2196 1735 26       		.uleb128 0x26
+ 2197 1736 67657448 		.ascii "getHiPayMenu\0"
+ 2197      69506179 
+ 2197      4D656E75 
+ 2197      00
+ 2198 1743 13       		.byte	0x13
+ 2199 1744 10       		.byte	0x10
+ 2200 1745 5F5A4E37 		.ascii "_ZN7Main_ui12getHiPayMenuEv\0"
+ 2200      4D61696E 
+ 2200      5F756931 
+ 2200      32676574 
+ 2200      48695061 
+ 2201 1761 01       		.byte	0x1
+ 2202 1762 6A170000 		.long	0x176a
+ 2203 1766 70170000 		.long	0x1770
+ 2204 176a 13       		.uleb128 0x13
+ 2205 176b A8170000 		.long	0x17a8
+ 2206 176f 00       		.byte	0
+ 2207 1770 27       		.uleb128 0x27
+ 2208 1771 67657459 		.ascii "getYrPayMenu\0"
+ 2208      72506179 
+ 2208      4D656E75 
+ 2208      00
+ 2209 177e 13       		.byte	0x13
+ 2210 177f 12       		.byte	0x12
+ 2211 1780 5F5A4E37 		.ascii "_ZN7Main_ui12getYrPayMenuEv\0"
+ 2211      4D61696E 
+ 2211      5F756931 
+ 2211      32676574 
+ 2211      59725061 
+ 2212 179c 01       		.byte	0x1
+ 2213 179d A1170000 		.long	0x17a1
+ 2214 17a1 13       		.uleb128 0x13
+ 2215 17a2 A8170000 		.long	0x17a8
+ 2216 17a6 00       		.byte	0
+ 2217 17a7 00       		.byte	0
+ 2218 17a8 08       		.uleb128 0x8
+ 2219 17a9 04       		.byte	0x4
+ 2220 17aa 65160000 		.long	0x1665
+ 2221 17ae 23       		.uleb128 0x23
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 49
+
+
+ 2222 17af 14       		.byte	0x14
+ 2223 17b0 08       		.byte	0x8
+ 2224 17b1 49030000 		.long	0x349
+ 2225 17b5 23       		.uleb128 0x23
+ 2226 17b6 01       		.byte	0x1
+ 2227 17b7 08       		.byte	0x8
+ 2228 17b8 49030000 		.long	0x349
+ 2229 17bc 28       		.uleb128 0x28
+ 2230 17bd 6D61696E 		.ascii "main\0"
+ 2230      00
+ 2231 17c2 01       		.byte	0x1
+ 2232 17c3 0A       		.byte	0xa
+ 2233 17c4 78010000 		.long	0x178
+ 2234 17c8 00000000 		.long	LFB1031
+ 2235 17cc 2B000000 		.long	LFE1031-LFB1031
+ 2236 17d0 01       		.uleb128 0x1
+ 2237 17d1 9C       		.byte	0x9c
+ 2238 17d2 F2170000 		.long	0x17f2
+ 2239 17d6 29       		.uleb128 0x29
+ 2240 17d7 0E000000 		.long	LBB2
+ 2241 17db 1B000000 		.long	LBE2-LBB2
+ 2242 17df 2A       		.uleb128 0x2a
+ 2243 17e0 6D61696E 		.ascii "mainui\0"
+ 2243      756900
+ 2244 17e7 01       		.byte	0x1
+ 2245 17e8 0D       		.byte	0xd
+ 2246 17e9 65160000 		.long	0x1665
+ 2247 17ed 02       		.uleb128 0x2
+ 2248 17ee 74       		.byte	0x74
+ 2249 17ef 0F       		.sleb128 15
+ 2250 17f0 00       		.byte	0
+ 2251 17f1 00       		.byte	0
+ 2252 17f2 2B       		.uleb128 0x2b
+ 2253 17f3 5F5F7463 		.ascii "__tcf_0\0"
+ 2253      665F3000 
+ 2254 17fb 2B000000 		.long	LFB1033
+ 2255 17ff 12000000 		.long	LFE1033-LFB1033
+ 2256 1803 01       		.uleb128 0x1
+ 2257 1804 9C       		.byte	0x9c
+ 2258 1805 2C       		.uleb128 0x2c
+ 2259 1806 5F5F7374 		.ascii "__static_initialization_and_destruction_0\0"
+ 2259      61746963 
+ 2259      5F696E69 
+ 2259      7469616C 
+ 2259      697A6174 
+ 2260 1830 3D000000 		.long	LFB1032
+ 2261 1834 2D000000 		.long	LFE1032-LFB1032
+ 2262 1838 01       		.uleb128 0x1
+ 2263 1839 9C       		.byte	0x9c
+ 2264 183a 6D180000 		.long	0x186d
+ 2265 183e 2D       		.uleb128 0x2d
+ 2266 183f 5F5F696E 		.ascii "__initialize_p\0"
+ 2266      69746961 
+ 2266      6C697A65 
+ 2266      5F7000
+ 2267 184e 01       		.byte	0x1
+ 2268 184f 16       		.byte	0x16
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 50
+
+
+ 2269 1850 78010000 		.long	0x178
+ 2270 1854 02       		.uleb128 0x2
+ 2271 1855 91       		.byte	0x91
+ 2272 1856 00       		.sleb128 0
+ 2273 1857 2D       		.uleb128 0x2d
+ 2274 1858 5F5F7072 		.ascii "__priority\0"
+ 2274      696F7269 
+ 2274      747900
+ 2275 1863 01       		.byte	0x1
+ 2276 1864 16       		.byte	0x16
+ 2277 1865 78010000 		.long	0x178
+ 2278 1869 02       		.uleb128 0x2
+ 2279 186a 91       		.byte	0x91
+ 2280 186b 04       		.sleb128 4
+ 2281 186c 00       		.byte	0
+ 2282 186d 2B       		.uleb128 0x2b
+ 2283 186e 5F474C4F 		.ascii "_GLOBAL__sub_I_main\0"
+ 2283      42414C5F 
+ 2283      5F737562 
+ 2283      5F495F6D 
+ 2283      61696E00 
+ 2284 1882 6A000000 		.long	LFB1034
+ 2285 1886 1C000000 		.long	LFE1034-LFB1034
+ 2286 188a 01       		.uleb128 0x1
+ 2287 188b 9C       		.byte	0x9c
+ 2288 188c 2E       		.uleb128 0x2e
+ 2289 188d 870A0000 		.long	0xa87
+ 2290 1891 05       		.uleb128 0x5
+ 2291 1892 03       		.byte	0x3
+ 2292 1893 00000000 		.long	__ZStL8__ioinit
+ 2293 1897 2F       		.uleb128 0x2f
+ 2294 1898 FB110000 		.long	0x11fb
+ 2295 189c 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIiE5__minE\0"
+ 2295      5F5F676E 
+ 2295      755F6378 
+ 2295      7832345F 
+ 2295      5F6E756D 
+ 2296 18ce 80808080 		.sleb128 -2147483648
+ 2296      78
+ 2297 18d3 30       		.uleb128 0x30
+ 2298 18d4 06120000 		.long	0x1206
+ 2299 18d8 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIiE5__maxE\0"
+ 2299      5F5F676E 
+ 2299      755F6378 
+ 2299      7832345F 
+ 2299      5F6E756D 
+ 2300 190a FFFFFF7F 		.long	0x7fffffff
+ 2301 190e 31       		.uleb128 0x31
+ 2302 190f 86120000 		.long	0x1286
+ 2303 1913 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerImE8__digitsE\0"
+ 2303      5F5F676E 
+ 2303      755F6378 
+ 2303      7832345F 
+ 2303      5F6E756D 
+ 2304 1948 20       		.byte	0x20
+ 2305 1949 31       		.uleb128 0x31
+ 2306 194a CD120000 		.long	0x12cd
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 51
+
+
+ 2307 194e 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIcE5__maxE\0"
+ 2307      5F5F676E 
+ 2307      755F6378 
+ 2307      7832345F 
+ 2307      5F6E756D 
+ 2308 1980 7F       		.byte	0x7f
+ 2309 1981 2F       		.uleb128 0x2f
+ 2310 1982 20130000 		.long	0x1320
+ 2311 1986 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIsE5__minE\0"
+ 2311      5F5F676E 
+ 2311      755F6378 
+ 2311      7832345F 
+ 2311      5F6E756D 
+ 2312 19b8 80807E   		.sleb128 -32768
+ 2313 19bb 32       		.uleb128 0x32
+ 2314 19bc 2B130000 		.long	0x132b
+ 2315 19c0 5F5A4E39 		.ascii "_ZN9__gnu_cxx24__numeric_traits_integerIsE5__maxE\0"
+ 2315      5F5F676E 
+ 2315      755F6378 
+ 2315      7832345F 
+ 2315      5F6E756D 
+ 2316 19f2 FF7F     		.word	0x7fff
+ 2317 19f4 00       		.byte	0
+ 2318              		.section	.debug_abbrev,"dr"
+ 2319              	Ldebug_abbrev0:
+ 2320 0000 01       		.uleb128 0x1
+ 2321 0001 11       		.uleb128 0x11
+ 2322 0002 01       		.byte	0x1
+ 2323 0003 25       		.uleb128 0x25
+ 2324 0004 08       		.uleb128 0x8
+ 2325 0005 13       		.uleb128 0x13
+ 2326 0006 0B       		.uleb128 0xb
+ 2327 0007 03       		.uleb128 0x3
+ 2328 0008 08       		.uleb128 0x8
+ 2329 0009 1B       		.uleb128 0x1b
+ 2330 000a 08       		.uleb128 0x8
+ 2331 000b 11       		.uleb128 0x11
+ 2332 000c 01       		.uleb128 0x1
+ 2333 000d 12       		.uleb128 0x12
+ 2334 000e 06       		.uleb128 0x6
+ 2335 000f 10       		.uleb128 0x10
+ 2336 0010 17       		.uleb128 0x17
+ 2337 0011 00       		.byte	0
+ 2338 0012 00       		.byte	0
+ 2339 0013 02       		.uleb128 0x2
+ 2340 0014 16       		.uleb128 0x16
+ 2341 0015 00       		.byte	0
+ 2342 0016 03       		.uleb128 0x3
+ 2343 0017 08       		.uleb128 0x8
+ 2344 0018 3A       		.uleb128 0x3a
+ 2345 0019 0B       		.uleb128 0xb
+ 2346 001a 3B       		.uleb128 0x3b
+ 2347 001b 0B       		.uleb128 0xb
+ 2348 001c 49       		.uleb128 0x49
+ 2349 001d 13       		.uleb128 0x13
+ 2350 001e 00       		.byte	0
+ 2351 001f 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 52
+
+
+ 2352 0020 03       		.uleb128 0x3
+ 2353 0021 24       		.uleb128 0x24
+ 2354 0022 00       		.byte	0
+ 2355 0023 0B       		.uleb128 0xb
+ 2356 0024 0B       		.uleb128 0xb
+ 2357 0025 3E       		.uleb128 0x3e
+ 2358 0026 0B       		.uleb128 0xb
+ 2359 0027 03       		.uleb128 0x3
+ 2360 0028 08       		.uleb128 0x8
+ 2361 0029 00       		.byte	0
+ 2362 002a 00       		.byte	0
+ 2363 002b 04       		.uleb128 0x4
+ 2364 002c 16       		.uleb128 0x16
+ 2365 002d 00       		.byte	0
+ 2366 002e 03       		.uleb128 0x3
+ 2367 002f 08       		.uleb128 0x8
+ 2368 0030 3A       		.uleb128 0x3a
+ 2369 0031 0B       		.uleb128 0xb
+ 2370 0032 3B       		.uleb128 0x3b
+ 2371 0033 05       		.uleb128 0x5
+ 2372 0034 49       		.uleb128 0x49
+ 2373 0035 13       		.uleb128 0x13
+ 2374 0036 00       		.byte	0
+ 2375 0037 00       		.byte	0
+ 2376 0038 05       		.uleb128 0x5
+ 2377 0039 0F       		.uleb128 0xf
+ 2378 003a 00       		.byte	0
+ 2379 003b 0B       		.uleb128 0xb
+ 2380 003c 0B       		.uleb128 0xb
+ 2381 003d 03       		.uleb128 0x3
+ 2382 003e 08       		.uleb128 0x8
+ 2383 003f 49       		.uleb128 0x49
+ 2384 0040 13       		.uleb128 0x13
+ 2385 0041 00       		.byte	0
+ 2386 0042 00       		.byte	0
+ 2387 0043 06       		.uleb128 0x6
+ 2388 0044 13       		.uleb128 0x13
+ 2389 0045 01       		.byte	0x1
+ 2390 0046 03       		.uleb128 0x3
+ 2391 0047 08       		.uleb128 0x8
+ 2392 0048 0B       		.uleb128 0xb
+ 2393 0049 0B       		.uleb128 0xb
+ 2394 004a 3A       		.uleb128 0x3a
+ 2395 004b 0B       		.uleb128 0xb
+ 2396 004c 3B       		.uleb128 0x3b
+ 2397 004d 0B       		.uleb128 0xb
+ 2398 004e 01       		.uleb128 0x1
+ 2399 004f 13       		.uleb128 0x13
+ 2400 0050 00       		.byte	0
+ 2401 0051 00       		.byte	0
+ 2402 0052 07       		.uleb128 0x7
+ 2403 0053 0D       		.uleb128 0xd
+ 2404 0054 00       		.byte	0
+ 2405 0055 03       		.uleb128 0x3
+ 2406 0056 08       		.uleb128 0x8
+ 2407 0057 3A       		.uleb128 0x3a
+ 2408 0058 0B       		.uleb128 0xb
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 53
+
+
+ 2409 0059 3B       		.uleb128 0x3b
+ 2410 005a 0B       		.uleb128 0xb
+ 2411 005b 49       		.uleb128 0x49
+ 2412 005c 13       		.uleb128 0x13
+ 2413 005d 38       		.uleb128 0x38
+ 2414 005e 0B       		.uleb128 0xb
+ 2415 005f 00       		.byte	0
+ 2416 0060 00       		.byte	0
+ 2417 0061 08       		.uleb128 0x8
+ 2418 0062 0F       		.uleb128 0xf
+ 2419 0063 00       		.byte	0
+ 2420 0064 0B       		.uleb128 0xb
+ 2421 0065 0B       		.uleb128 0xb
+ 2422 0066 49       		.uleb128 0x49
+ 2423 0067 13       		.uleb128 0x13
+ 2424 0068 00       		.byte	0
+ 2425 0069 00       		.byte	0
+ 2426 006a 09       		.uleb128 0x9
+ 2427 006b 39       		.uleb128 0x39
+ 2428 006c 01       		.byte	0x1
+ 2429 006d 03       		.uleb128 0x3
+ 2430 006e 08       		.uleb128 0x8
+ 2431 006f 3A       		.uleb128 0x3a
+ 2432 0070 0B       		.uleb128 0xb
+ 2433 0071 3B       		.uleb128 0x3b
+ 2434 0072 0B       		.uleb128 0xb
+ 2435 0073 01       		.uleb128 0x1
+ 2436 0074 13       		.uleb128 0x13
+ 2437 0075 00       		.byte	0
+ 2438 0076 00       		.byte	0
+ 2439 0077 0A       		.uleb128 0xa
+ 2440 0078 08       		.uleb128 0x8
+ 2441 0079 00       		.byte	0
+ 2442 007a 3A       		.uleb128 0x3a
+ 2443 007b 0B       		.uleb128 0xb
+ 2444 007c 3B       		.uleb128 0x3b
+ 2445 007d 0B       		.uleb128 0xb
+ 2446 007e 18       		.uleb128 0x18
+ 2447 007f 13       		.uleb128 0x13
+ 2448 0080 00       		.byte	0
+ 2449 0081 00       		.byte	0
+ 2450 0082 0B       		.uleb128 0xb
+ 2451 0083 08       		.uleb128 0x8
+ 2452 0084 00       		.byte	0
+ 2453 0085 3A       		.uleb128 0x3a
+ 2454 0086 0B       		.uleb128 0xb
+ 2455 0087 3B       		.uleb128 0x3b
+ 2456 0088 05       		.uleb128 0x5
+ 2457 0089 18       		.uleb128 0x18
+ 2458 008a 13       		.uleb128 0x13
+ 2459 008b 00       		.byte	0
+ 2460 008c 00       		.byte	0
+ 2461 008d 0C       		.uleb128 0xc
+ 2462 008e 39       		.uleb128 0x39
+ 2463 008f 00       		.byte	0
+ 2464 0090 03       		.uleb128 0x3
+ 2465 0091 08       		.uleb128 0x8
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 54
+
+
+ 2466 0092 3A       		.uleb128 0x3a
+ 2467 0093 0B       		.uleb128 0xb
+ 2468 0094 3B       		.uleb128 0x3b
+ 2469 0095 0B       		.uleb128 0xb
+ 2470 0096 00       		.byte	0
+ 2471 0097 00       		.byte	0
+ 2472 0098 0D       		.uleb128 0xd
+ 2473 0099 04       		.uleb128 0x4
+ 2474 009a 01       		.byte	0x1
+ 2475 009b 03       		.uleb128 0x3
+ 2476 009c 08       		.uleb128 0x8
+ 2477 009d 0B       		.uleb128 0xb
+ 2478 009e 0B       		.uleb128 0xb
+ 2479 009f 3A       		.uleb128 0x3a
+ 2480 00a0 0B       		.uleb128 0xb
+ 2481 00a1 3B       		.uleb128 0x3b
+ 2482 00a2 0B       		.uleb128 0xb
+ 2483 00a3 01       		.uleb128 0x1
+ 2484 00a4 13       		.uleb128 0x13
+ 2485 00a5 00       		.byte	0
+ 2486 00a6 00       		.byte	0
+ 2487 00a7 0E       		.uleb128 0xe
+ 2488 00a8 28       		.uleb128 0x28
+ 2489 00a9 00       		.byte	0
+ 2490 00aa 03       		.uleb128 0x3
+ 2491 00ab 08       		.uleb128 0x8
+ 2492 00ac 1C       		.uleb128 0x1c
+ 2493 00ad 0D       		.uleb128 0xd
+ 2494 00ae 00       		.byte	0
+ 2495 00af 00       		.byte	0
+ 2496 00b0 0F       		.uleb128 0xf
+ 2497 00b1 02       		.uleb128 0x2
+ 2498 00b2 01       		.byte	0x1
+ 2499 00b3 03       		.uleb128 0x3
+ 2500 00b4 08       		.uleb128 0x8
+ 2501 00b5 3C       		.uleb128 0x3c
+ 2502 00b6 19       		.uleb128 0x19
+ 2503 00b7 01       		.uleb128 0x1
+ 2504 00b8 13       		.uleb128 0x13
+ 2505 00b9 00       		.byte	0
+ 2506 00ba 00       		.byte	0
+ 2507 00bb 10       		.uleb128 0x10
+ 2508 00bc 02       		.uleb128 0x2
+ 2509 00bd 01       		.byte	0x1
+ 2510 00be 03       		.uleb128 0x3
+ 2511 00bf 08       		.uleb128 0x8
+ 2512 00c0 0B       		.uleb128 0xb
+ 2513 00c1 0B       		.uleb128 0xb
+ 2514 00c2 3A       		.uleb128 0x3a
+ 2515 00c3 0B       		.uleb128 0xb
+ 2516 00c4 3B       		.uleb128 0x3b
+ 2517 00c5 05       		.uleb128 0x5
+ 2518 00c6 32       		.uleb128 0x32
+ 2519 00c7 0B       		.uleb128 0xb
+ 2520 00c8 01       		.uleb128 0x1
+ 2521 00c9 13       		.uleb128 0x13
+ 2522 00ca 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 55
+
+
+ 2523 00cb 00       		.byte	0
+ 2524 00cc 11       		.uleb128 0x11
+ 2525 00cd 0D       		.uleb128 0xd
+ 2526 00ce 00       		.byte	0
+ 2527 00cf 03       		.uleb128 0x3
+ 2528 00d0 08       		.uleb128 0x8
+ 2529 00d1 3A       		.uleb128 0x3a
+ 2530 00d2 0B       		.uleb128 0xb
+ 2531 00d3 3B       		.uleb128 0x3b
+ 2532 00d4 05       		.uleb128 0x5
+ 2533 00d5 49       		.uleb128 0x49
+ 2534 00d6 13       		.uleb128 0x13
+ 2535 00d7 3F       		.uleb128 0x3f
+ 2536 00d8 19       		.uleb128 0x19
+ 2537 00d9 3C       		.uleb128 0x3c
+ 2538 00da 19       		.uleb128 0x19
+ 2539 00db 00       		.byte	0
+ 2540 00dc 00       		.byte	0
+ 2541 00dd 12       		.uleb128 0x12
+ 2542 00de 2E       		.uleb128 0x2e
+ 2543 00df 01       		.byte	0x1
+ 2544 00e0 3F       		.uleb128 0x3f
+ 2545 00e1 19       		.uleb128 0x19
+ 2546 00e2 03       		.uleb128 0x3
+ 2547 00e3 08       		.uleb128 0x8
+ 2548 00e4 3A       		.uleb128 0x3a
+ 2549 00e5 0B       		.uleb128 0xb
+ 2550 00e6 3B       		.uleb128 0x3b
+ 2551 00e7 05       		.uleb128 0x5
+ 2552 00e8 32       		.uleb128 0x32
+ 2553 00e9 0B       		.uleb128 0xb
+ 2554 00ea 3C       		.uleb128 0x3c
+ 2555 00eb 19       		.uleb128 0x19
+ 2556 00ec 64       		.uleb128 0x64
+ 2557 00ed 13       		.uleb128 0x13
+ 2558 00ee 01       		.uleb128 0x1
+ 2559 00ef 13       		.uleb128 0x13
+ 2560 00f0 00       		.byte	0
+ 2561 00f1 00       		.byte	0
+ 2562 00f2 13       		.uleb128 0x13
+ 2563 00f3 05       		.uleb128 0x5
+ 2564 00f4 00       		.byte	0
+ 2565 00f5 49       		.uleb128 0x49
+ 2566 00f6 13       		.uleb128 0x13
+ 2567 00f7 34       		.uleb128 0x34
+ 2568 00f8 19       		.uleb128 0x19
+ 2569 00f9 00       		.byte	0
+ 2570 00fa 00       		.byte	0
+ 2571 00fb 14       		.uleb128 0x14
+ 2572 00fc 2E       		.uleb128 0x2e
+ 2573 00fd 01       		.byte	0x1
+ 2574 00fe 3F       		.uleb128 0x3f
+ 2575 00ff 19       		.uleb128 0x19
+ 2576 0100 03       		.uleb128 0x3
+ 2577 0101 08       		.uleb128 0x8
+ 2578 0102 3A       		.uleb128 0x3a
+ 2579 0103 0B       		.uleb128 0xb
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 56
+
+
+ 2580 0104 3B       		.uleb128 0x3b
+ 2581 0105 05       		.uleb128 0x5
+ 2582 0106 32       		.uleb128 0x32
+ 2583 0107 0B       		.uleb128 0xb
+ 2584 0108 3C       		.uleb128 0x3c
+ 2585 0109 19       		.uleb128 0x19
+ 2586 010a 64       		.uleb128 0x64
+ 2587 010b 13       		.uleb128 0x13
+ 2588 010c 00       		.byte	0
+ 2589 010d 00       		.byte	0
+ 2590 010e 15       		.uleb128 0x15
+ 2591 010f 16       		.uleb128 0x16
+ 2592 0110 00       		.byte	0
+ 2593 0111 03       		.uleb128 0x3
+ 2594 0112 08       		.uleb128 0x8
+ 2595 0113 3A       		.uleb128 0x3a
+ 2596 0114 0B       		.uleb128 0xb
+ 2597 0115 3B       		.uleb128 0x3b
+ 2598 0116 0B       		.uleb128 0xb
+ 2599 0117 49       		.uleb128 0x49
+ 2600 0118 13       		.uleb128 0x13
+ 2601 0119 32       		.uleb128 0x32
+ 2602 011a 0B       		.uleb128 0xb
+ 2603 011b 00       		.byte	0
+ 2604 011c 00       		.byte	0
+ 2605 011d 16       		.uleb128 0x16
+ 2606 011e 0D       		.uleb128 0xd
+ 2607 011f 00       		.byte	0
+ 2608 0120 03       		.uleb128 0x3
+ 2609 0121 08       		.uleb128 0x8
+ 2610 0122 3A       		.uleb128 0x3a
+ 2611 0123 0B       		.uleb128 0xb
+ 2612 0124 3B       		.uleb128 0x3b
+ 2613 0125 05       		.uleb128 0x5
+ 2614 0126 49       		.uleb128 0x49
+ 2615 0127 13       		.uleb128 0x13
+ 2616 0128 3F       		.uleb128 0x3f
+ 2617 0129 19       		.uleb128 0x19
+ 2618 012a 32       		.uleb128 0x32
+ 2619 012b 0B       		.uleb128 0xb
+ 2620 012c 3C       		.uleb128 0x3c
+ 2621 012d 19       		.uleb128 0x19
+ 2622 012e 1C       		.uleb128 0x1c
+ 2623 012f 0B       		.uleb128 0xb
+ 2624 0130 00       		.byte	0
+ 2625 0131 00       		.byte	0
+ 2626 0132 17       		.uleb128 0x17
+ 2627 0133 26       		.uleb128 0x26
+ 2628 0134 00       		.byte	0
+ 2629 0135 49       		.uleb128 0x49
+ 2630 0136 13       		.uleb128 0x13
+ 2631 0137 00       		.byte	0
+ 2632 0138 00       		.byte	0
+ 2633 0139 18       		.uleb128 0x18
+ 2634 013a 0D       		.uleb128 0xd
+ 2635 013b 00       		.byte	0
+ 2636 013c 03       		.uleb128 0x3
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 57
+
+
+ 2637 013d 08       		.uleb128 0x8
+ 2638 013e 3A       		.uleb128 0x3a
+ 2639 013f 0B       		.uleb128 0xb
+ 2640 0140 3B       		.uleb128 0x3b
+ 2641 0141 05       		.uleb128 0x5
+ 2642 0142 49       		.uleb128 0x49
+ 2643 0143 13       		.uleb128 0x13
+ 2644 0144 3F       		.uleb128 0x3f
+ 2645 0145 19       		.uleb128 0x19
+ 2646 0146 32       		.uleb128 0x32
+ 2647 0147 0B       		.uleb128 0xb
+ 2648 0148 3C       		.uleb128 0x3c
+ 2649 0149 19       		.uleb128 0x19
+ 2650 014a 1C       		.uleb128 0x1c
+ 2651 014b 05       		.uleb128 0x5
+ 2652 014c 00       		.byte	0
+ 2653 014d 00       		.byte	0
+ 2654 014e 19       		.uleb128 0x19
+ 2655 014f 16       		.uleb128 0x16
+ 2656 0150 00       		.byte	0
+ 2657 0151 03       		.uleb128 0x3
+ 2658 0152 08       		.uleb128 0x8
+ 2659 0153 3A       		.uleb128 0x3a
+ 2660 0154 0B       		.uleb128 0xb
+ 2661 0155 3B       		.uleb128 0x3b
+ 2662 0156 05       		.uleb128 0x5
+ 2663 0157 49       		.uleb128 0x49
+ 2664 0158 13       		.uleb128 0x13
+ 2665 0159 32       		.uleb128 0x32
+ 2666 015a 0B       		.uleb128 0xb
+ 2667 015b 00       		.byte	0
+ 2668 015c 00       		.byte	0
+ 2669 015d 1A       		.uleb128 0x1a
+ 2670 015e 34       		.uleb128 0x34
+ 2671 015f 00       		.byte	0
+ 2672 0160 03       		.uleb128 0x3
+ 2673 0161 08       		.uleb128 0x8
+ 2674 0162 3A       		.uleb128 0x3a
+ 2675 0163 0B       		.uleb128 0xb
+ 2676 0164 3B       		.uleb128 0x3b
+ 2677 0165 0B       		.uleb128 0xb
+ 2678 0166 49       		.uleb128 0x49
+ 2679 0167 13       		.uleb128 0x13
+ 2680 0168 3C       		.uleb128 0x3c
+ 2681 0169 19       		.uleb128 0x19
+ 2682 016a 00       		.byte	0
+ 2683 016b 00       		.byte	0
+ 2684 016c 1B       		.uleb128 0x1b
+ 2685 016d 2E       		.uleb128 0x2e
+ 2686 016e 01       		.byte	0x1
+ 2687 016f 3F       		.uleb128 0x3f
+ 2688 0170 19       		.uleb128 0x19
+ 2689 0171 03       		.uleb128 0x3
+ 2690 0172 08       		.uleb128 0x8
+ 2691 0173 3A       		.uleb128 0x3a
+ 2692 0174 0B       		.uleb128 0xb
+ 2693 0175 3B       		.uleb128 0x3b
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 58
+
+
+ 2694 0176 05       		.uleb128 0x5
+ 2695 0177 49       		.uleb128 0x49
+ 2696 0178 13       		.uleb128 0x13
+ 2697 0179 3C       		.uleb128 0x3c
+ 2698 017a 19       		.uleb128 0x19
+ 2699 017b 01       		.uleb128 0x1
+ 2700 017c 13       		.uleb128 0x13
+ 2701 017d 00       		.byte	0
+ 2702 017e 00       		.byte	0
+ 2703 017f 1C       		.uleb128 0x1c
+ 2704 0180 05       		.uleb128 0x5
+ 2705 0181 00       		.byte	0
+ 2706 0182 49       		.uleb128 0x49
+ 2707 0183 13       		.uleb128 0x13
+ 2708 0184 00       		.byte	0
+ 2709 0185 00       		.byte	0
+ 2710 0186 1D       		.uleb128 0x1d
+ 2711 0187 2E       		.uleb128 0x2e
+ 2712 0188 01       		.byte	0x1
+ 2713 0189 3F       		.uleb128 0x3f
+ 2714 018a 19       		.uleb128 0x19
+ 2715 018b 03       		.uleb128 0x3
+ 2716 018c 08       		.uleb128 0x8
+ 2717 018d 3A       		.uleb128 0x3a
+ 2718 018e 0B       		.uleb128 0xb
+ 2719 018f 3B       		.uleb128 0x3b
+ 2720 0190 0B       		.uleb128 0xb
+ 2721 0191 49       		.uleb128 0x49
+ 2722 0192 13       		.uleb128 0x13
+ 2723 0193 3C       		.uleb128 0x3c
+ 2724 0194 19       		.uleb128 0x19
+ 2725 0195 01       		.uleb128 0x1
+ 2726 0196 13       		.uleb128 0x13
+ 2727 0197 00       		.byte	0
+ 2728 0198 00       		.byte	0
+ 2729 0199 1E       		.uleb128 0x1e
+ 2730 019a 18       		.uleb128 0x18
+ 2731 019b 00       		.byte	0
+ 2732 019c 00       		.byte	0
+ 2733 019d 00       		.byte	0
+ 2734 019e 1F       		.uleb128 0x1f
+ 2735 019f 2E       		.uleb128 0x2e
+ 2736 01a0 00       		.byte	0
+ 2737 01a1 3F       		.uleb128 0x3f
+ 2738 01a2 19       		.uleb128 0x19
+ 2739 01a3 03       		.uleb128 0x3
+ 2740 01a4 08       		.uleb128 0x8
+ 2741 01a5 3A       		.uleb128 0x3a
+ 2742 01a6 0B       		.uleb128 0xb
+ 2743 01a7 3B       		.uleb128 0x3b
+ 2744 01a8 0B       		.uleb128 0xb
+ 2745 01a9 49       		.uleb128 0x49
+ 2746 01aa 13       		.uleb128 0x13
+ 2747 01ab 3C       		.uleb128 0x3c
+ 2748 01ac 19       		.uleb128 0x19
+ 2749 01ad 00       		.byte	0
+ 2750 01ae 00       		.byte	0
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 59
+
+
+ 2751 01af 20       		.uleb128 0x20
+ 2752 01b0 0D       		.uleb128 0xd
+ 2753 01b1 00       		.byte	0
+ 2754 01b2 03       		.uleb128 0x3
+ 2755 01b3 0E       		.uleb128 0xe
+ 2756 01b4 3A       		.uleb128 0x3a
+ 2757 01b5 0B       		.uleb128 0xb
+ 2758 01b6 3B       		.uleb128 0x3b
+ 2759 01b7 0B       		.uleb128 0xb
+ 2760 01b8 49       		.uleb128 0x49
+ 2761 01b9 13       		.uleb128 0x13
+ 2762 01ba 3F       		.uleb128 0x3f
+ 2763 01bb 19       		.uleb128 0x19
+ 2764 01bc 3C       		.uleb128 0x3c
+ 2765 01bd 19       		.uleb128 0x19
+ 2766 01be 00       		.byte	0
+ 2767 01bf 00       		.byte	0
+ 2768 01c0 21       		.uleb128 0x21
+ 2769 01c1 2F       		.uleb128 0x2f
+ 2770 01c2 00       		.byte	0
+ 2771 01c3 03       		.uleb128 0x3
+ 2772 01c4 0E       		.uleb128 0xe
+ 2773 01c5 49       		.uleb128 0x49
+ 2774 01c6 13       		.uleb128 0x13
+ 2775 01c7 00       		.byte	0
+ 2776 01c8 00       		.byte	0
+ 2777 01c9 22       		.uleb128 0x22
+ 2778 01ca 13       		.uleb128 0x13
+ 2779 01cb 01       		.byte	0x1
+ 2780 01cc 03       		.uleb128 0x3
+ 2781 01cd 08       		.uleb128 0x8
+ 2782 01ce 0B       		.uleb128 0xb
+ 2783 01cf 0B       		.uleb128 0xb
+ 2784 01d0 3A       		.uleb128 0x3a
+ 2785 01d1 0B       		.uleb128 0xb
+ 2786 01d2 3B       		.uleb128 0x3b
+ 2787 01d3 0B       		.uleb128 0xb
+ 2788 01d4 00       		.byte	0
+ 2789 01d5 00       		.byte	0
+ 2790 01d6 23       		.uleb128 0x23
+ 2791 01d7 3A       		.uleb128 0x3a
+ 2792 01d8 00       		.byte	0
+ 2793 01d9 3A       		.uleb128 0x3a
+ 2794 01da 0B       		.uleb128 0xb
+ 2795 01db 3B       		.uleb128 0x3b
+ 2796 01dc 0B       		.uleb128 0xb
+ 2797 01dd 18       		.uleb128 0x18
+ 2798 01de 13       		.uleb128 0x13
+ 2799 01df 00       		.byte	0
+ 2800 01e0 00       		.byte	0
+ 2801 01e1 24       		.uleb128 0x24
+ 2802 01e2 02       		.uleb128 0x2
+ 2803 01e3 01       		.byte	0x1
+ 2804 01e4 03       		.uleb128 0x3
+ 2805 01e5 08       		.uleb128 0x8
+ 2806 01e6 0B       		.uleb128 0xb
+ 2807 01e7 0B       		.uleb128 0xb
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 60
+
+
+ 2808 01e8 3A       		.uleb128 0x3a
+ 2809 01e9 0B       		.uleb128 0xb
+ 2810 01ea 3B       		.uleb128 0x3b
+ 2811 01eb 0B       		.uleb128 0xb
+ 2812 01ec 01       		.uleb128 0x1
+ 2813 01ed 13       		.uleb128 0x13
+ 2814 01ee 00       		.byte	0
+ 2815 01ef 00       		.byte	0
+ 2816 01f0 25       		.uleb128 0x25
+ 2817 01f1 2E       		.uleb128 0x2e
+ 2818 01f2 01       		.byte	0x1
+ 2819 01f3 3F       		.uleb128 0x3f
+ 2820 01f4 19       		.uleb128 0x19
+ 2821 01f5 03       		.uleb128 0x3
+ 2822 01f6 08       		.uleb128 0x8
+ 2823 01f7 3A       		.uleb128 0x3a
+ 2824 01f8 0B       		.uleb128 0xb
+ 2825 01f9 3B       		.uleb128 0x3b
+ 2826 01fa 0B       		.uleb128 0xb
+ 2827 01fb 32       		.uleb128 0x32
+ 2828 01fc 0B       		.uleb128 0xb
+ 2829 01fd 3C       		.uleb128 0x3c
+ 2830 01fe 19       		.uleb128 0x19
+ 2831 01ff 64       		.uleb128 0x64
+ 2832 0200 13       		.uleb128 0x13
+ 2833 0201 01       		.uleb128 0x1
+ 2834 0202 13       		.uleb128 0x13
+ 2835 0203 00       		.byte	0
+ 2836 0204 00       		.byte	0
+ 2837 0205 26       		.uleb128 0x26
+ 2838 0206 2E       		.uleb128 0x2e
+ 2839 0207 01       		.byte	0x1
+ 2840 0208 3F       		.uleb128 0x3f
+ 2841 0209 19       		.uleb128 0x19
+ 2842 020a 03       		.uleb128 0x3
+ 2843 020b 08       		.uleb128 0x8
+ 2844 020c 3A       		.uleb128 0x3a
+ 2845 020d 0B       		.uleb128 0xb
+ 2846 020e 3B       		.uleb128 0x3b
+ 2847 020f 0B       		.uleb128 0xb
+ 2848 0210 6E       		.uleb128 0x6e
+ 2849 0211 08       		.uleb128 0x8
+ 2850 0212 32       		.uleb128 0x32
+ 2851 0213 0B       		.uleb128 0xb
+ 2852 0214 3C       		.uleb128 0x3c
+ 2853 0215 19       		.uleb128 0x19
+ 2854 0216 64       		.uleb128 0x64
+ 2855 0217 13       		.uleb128 0x13
+ 2856 0218 01       		.uleb128 0x1
+ 2857 0219 13       		.uleb128 0x13
+ 2858 021a 00       		.byte	0
+ 2859 021b 00       		.byte	0
+ 2860 021c 27       		.uleb128 0x27
+ 2861 021d 2E       		.uleb128 0x2e
+ 2862 021e 01       		.byte	0x1
+ 2863 021f 3F       		.uleb128 0x3f
+ 2864 0220 19       		.uleb128 0x19
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 61
+
+
+ 2865 0221 03       		.uleb128 0x3
+ 2866 0222 08       		.uleb128 0x8
+ 2867 0223 3A       		.uleb128 0x3a
+ 2868 0224 0B       		.uleb128 0xb
+ 2869 0225 3B       		.uleb128 0x3b
+ 2870 0226 0B       		.uleb128 0xb
+ 2871 0227 6E       		.uleb128 0x6e
+ 2872 0228 08       		.uleb128 0x8
+ 2873 0229 32       		.uleb128 0x32
+ 2874 022a 0B       		.uleb128 0xb
+ 2875 022b 3C       		.uleb128 0x3c
+ 2876 022c 19       		.uleb128 0x19
+ 2877 022d 64       		.uleb128 0x64
+ 2878 022e 13       		.uleb128 0x13
+ 2879 022f 00       		.byte	0
+ 2880 0230 00       		.byte	0
+ 2881 0231 28       		.uleb128 0x28
+ 2882 0232 2E       		.uleb128 0x2e
+ 2883 0233 01       		.byte	0x1
+ 2884 0234 3F       		.uleb128 0x3f
+ 2885 0235 19       		.uleb128 0x19
+ 2886 0236 03       		.uleb128 0x3
+ 2887 0237 08       		.uleb128 0x8
+ 2888 0238 3A       		.uleb128 0x3a
+ 2889 0239 0B       		.uleb128 0xb
+ 2890 023a 3B       		.uleb128 0x3b
+ 2891 023b 0B       		.uleb128 0xb
+ 2892 023c 49       		.uleb128 0x49
+ 2893 023d 13       		.uleb128 0x13
+ 2894 023e 11       		.uleb128 0x11
+ 2895 023f 01       		.uleb128 0x1
+ 2896 0240 12       		.uleb128 0x12
+ 2897 0241 06       		.uleb128 0x6
+ 2898 0242 40       		.uleb128 0x40
+ 2899 0243 18       		.uleb128 0x18
+ 2900 0244 9642     		.uleb128 0x2116
+ 2901 0246 19       		.uleb128 0x19
+ 2902 0247 01       		.uleb128 0x1
+ 2903 0248 13       		.uleb128 0x13
+ 2904 0249 00       		.byte	0
+ 2905 024a 00       		.byte	0
+ 2906 024b 29       		.uleb128 0x29
+ 2907 024c 0B       		.uleb128 0xb
+ 2908 024d 01       		.byte	0x1
+ 2909 024e 11       		.uleb128 0x11
+ 2910 024f 01       		.uleb128 0x1
+ 2911 0250 12       		.uleb128 0x12
+ 2912 0251 06       		.uleb128 0x6
+ 2913 0252 00       		.byte	0
+ 2914 0253 00       		.byte	0
+ 2915 0254 2A       		.uleb128 0x2a
+ 2916 0255 34       		.uleb128 0x34
+ 2917 0256 00       		.byte	0
+ 2918 0257 03       		.uleb128 0x3
+ 2919 0258 08       		.uleb128 0x8
+ 2920 0259 3A       		.uleb128 0x3a
+ 2921 025a 0B       		.uleb128 0xb
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 62
+
+
+ 2922 025b 3B       		.uleb128 0x3b
+ 2923 025c 0B       		.uleb128 0xb
+ 2924 025d 49       		.uleb128 0x49
+ 2925 025e 13       		.uleb128 0x13
+ 2926 025f 02       		.uleb128 0x2
+ 2927 0260 18       		.uleb128 0x18
+ 2928 0261 00       		.byte	0
+ 2929 0262 00       		.byte	0
+ 2930 0263 2B       		.uleb128 0x2b
+ 2931 0264 2E       		.uleb128 0x2e
+ 2932 0265 00       		.byte	0
+ 2933 0266 03       		.uleb128 0x3
+ 2934 0267 08       		.uleb128 0x8
+ 2935 0268 34       		.uleb128 0x34
+ 2936 0269 19       		.uleb128 0x19
+ 2937 026a 11       		.uleb128 0x11
+ 2938 026b 01       		.uleb128 0x1
+ 2939 026c 12       		.uleb128 0x12
+ 2940 026d 06       		.uleb128 0x6
+ 2941 026e 40       		.uleb128 0x40
+ 2942 026f 18       		.uleb128 0x18
+ 2943 0270 9642     		.uleb128 0x2116
+ 2944 0272 19       		.uleb128 0x19
+ 2945 0273 00       		.byte	0
+ 2946 0274 00       		.byte	0
+ 2947 0275 2C       		.uleb128 0x2c
+ 2948 0276 2E       		.uleb128 0x2e
+ 2949 0277 01       		.byte	0x1
+ 2950 0278 03       		.uleb128 0x3
+ 2951 0279 08       		.uleb128 0x8
+ 2952 027a 34       		.uleb128 0x34
+ 2953 027b 19       		.uleb128 0x19
+ 2954 027c 11       		.uleb128 0x11
+ 2955 027d 01       		.uleb128 0x1
+ 2956 027e 12       		.uleb128 0x12
+ 2957 027f 06       		.uleb128 0x6
+ 2958 0280 40       		.uleb128 0x40
+ 2959 0281 18       		.uleb128 0x18
+ 2960 0282 9642     		.uleb128 0x2116
+ 2961 0284 19       		.uleb128 0x19
+ 2962 0285 01       		.uleb128 0x1
+ 2963 0286 13       		.uleb128 0x13
+ 2964 0287 00       		.byte	0
+ 2965 0288 00       		.byte	0
+ 2966 0289 2D       		.uleb128 0x2d
+ 2967 028a 05       		.uleb128 0x5
+ 2968 028b 00       		.byte	0
+ 2969 028c 03       		.uleb128 0x3
+ 2970 028d 08       		.uleb128 0x8
+ 2971 028e 3A       		.uleb128 0x3a
+ 2972 028f 0B       		.uleb128 0xb
+ 2973 0290 3B       		.uleb128 0x3b
+ 2974 0291 0B       		.uleb128 0xb
+ 2975 0292 49       		.uleb128 0x49
+ 2976 0293 13       		.uleb128 0x13
+ 2977 0294 02       		.uleb128 0x2
+ 2978 0295 18       		.uleb128 0x18
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 63
+
+
+ 2979 0296 00       		.byte	0
+ 2980 0297 00       		.byte	0
+ 2981 0298 2E       		.uleb128 0x2e
+ 2982 0299 34       		.uleb128 0x34
+ 2983 029a 00       		.byte	0
+ 2984 029b 47       		.uleb128 0x47
+ 2985 029c 13       		.uleb128 0x13
+ 2986 029d 02       		.uleb128 0x2
+ 2987 029e 18       		.uleb128 0x18
+ 2988 029f 00       		.byte	0
+ 2989 02a0 00       		.byte	0
+ 2990 02a1 2F       		.uleb128 0x2f
+ 2991 02a2 34       		.uleb128 0x34
+ 2992 02a3 00       		.byte	0
+ 2993 02a4 47       		.uleb128 0x47
+ 2994 02a5 13       		.uleb128 0x13
+ 2995 02a6 6E       		.uleb128 0x6e
+ 2996 02a7 08       		.uleb128 0x8
+ 2997 02a8 1C       		.uleb128 0x1c
+ 2998 02a9 0D       		.uleb128 0xd
+ 2999 02aa 00       		.byte	0
+ 3000 02ab 00       		.byte	0
+ 3001 02ac 30       		.uleb128 0x30
+ 3002 02ad 34       		.uleb128 0x34
+ 3003 02ae 00       		.byte	0
+ 3004 02af 47       		.uleb128 0x47
+ 3005 02b0 13       		.uleb128 0x13
+ 3006 02b1 6E       		.uleb128 0x6e
+ 3007 02b2 08       		.uleb128 0x8
+ 3008 02b3 1C       		.uleb128 0x1c
+ 3009 02b4 06       		.uleb128 0x6
+ 3010 02b5 00       		.byte	0
+ 3011 02b6 00       		.byte	0
+ 3012 02b7 31       		.uleb128 0x31
+ 3013 02b8 34       		.uleb128 0x34
+ 3014 02b9 00       		.byte	0
+ 3015 02ba 47       		.uleb128 0x47
+ 3016 02bb 13       		.uleb128 0x13
+ 3017 02bc 6E       		.uleb128 0x6e
+ 3018 02bd 08       		.uleb128 0x8
+ 3019 02be 1C       		.uleb128 0x1c
+ 3020 02bf 0B       		.uleb128 0xb
+ 3021 02c0 00       		.byte	0
+ 3022 02c1 00       		.byte	0
+ 3023 02c2 32       		.uleb128 0x32
+ 3024 02c3 34       		.uleb128 0x34
+ 3025 02c4 00       		.byte	0
+ 3026 02c5 47       		.uleb128 0x47
+ 3027 02c6 13       		.uleb128 0x13
+ 3028 02c7 6E       		.uleb128 0x6e
+ 3029 02c8 08       		.uleb128 0x8
+ 3030 02c9 1C       		.uleb128 0x1c
+ 3031 02ca 05       		.uleb128 0x5
+ 3032 02cb 00       		.byte	0
+ 3033 02cc 00       		.byte	0
+ 3034 02cd 00       		.byte	0
+ 3035              		.section	.debug_aranges,"dr"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 64
+
+
+ 3036 0000 1C000000 		.long	0x1c
+ 3037 0004 0200     		.word	0x2
+ 3038 0006 00000000 		.secrel32	Ldebug_info0
+ 3039 000a 04       		.byte	0x4
+ 3040 000b 00       		.byte	0
+ 3041 000c 0000     		.word	0
+ 3042 000e 0000     		.word	0
+ 3043 0010 00000000 		.long	Ltext0
+ 3044 0014 86000000 		.long	Letext0-Ltext0
+ 3045 0018 00000000 		.long	0
+ 3046 001c 00000000 		.long	0
+ 3047              		.section	.debug_line,"dr"
+ 3048              	Ldebug_line0:
+ 3049 0000 BE030000 		.section	.debug_str,"dr"
+ 3049      02008403 
+ 3049      00000101 
+ 3049      FB0E0D00 
+ 3049      01010101 
+ 3050              	LASF0:
+ 3051 0000 5F5F6D69 		.ascii "__min\0"
+ 3051      6E00
+ 3052              	LASF1:
+ 3053 0006 5F5F6D61 		.ascii "__max\0"
+ 3053      7800
+ 3054              	LASF3:
+ 3055 000c 5F5F6469 		.ascii "__digits\0"
+ 3055      67697473 
+ 3055      00
+ 3056              	LASF4:
+ 3057 0015 5F56616C 		.ascii "_Value\0"
+ 3057      756500
+ 3058              	LASF2:
+ 3059 001c 5F5F6973 		.ascii "__is_signed\0"
+ 3059      5F736967 
+ 3059      6E656400 
+ 3060              		.ident	"GCC: (tdm-1) 4.9.2"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s 			page 65
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.cpp
+                             .bss:00000000 __ZStL8__ioinit
+C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s:9      .text:00000000 _main
+C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s:43     .text:0000002b ___tcf_0
+C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s:64     .text:0000003d __Z41__static_initialization_and_destruction_0ii
+C:\Users\NJLLMR~1\AppData\Local\Temp\cckZsDas.s:94     .text:0000006a __GLOBAL__sub_I_main
+
+UNDEFINED SYMBOLS
+___main
+__ZN7Main_uiC1Ev
+__ZN7Main_ui9main_menuEv
+__ZNSt8ios_base4InitD1Ev
+__ZNSt8ios_base4InitC1Ev
+_atexit

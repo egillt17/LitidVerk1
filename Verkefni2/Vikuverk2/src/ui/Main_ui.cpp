@@ -56,12 +56,13 @@ void Main_ui::main_menu(){
 }
 
 void Main_ui::addEmplMenu(){
+
     Validate validate;
     int input;
     string tmpName;
     string tmpSSN;
-    double tmpSalary;
-    int tmpMonth, tmpYear;
+    string tmpSalary;
+    string tmpMonth, tmpYear;
     cout << "How many employees do you wan't to add? :";
     cin >> input;
     for(int i = 0; i < input; i++){
@@ -117,7 +118,7 @@ void Main_ui::addEmplMenu(){
         cout << tmpSalary << endl;
         cout << tmpMonth << "/" << tmpYear << endl;
     }
-    
+
 }
 
 void Main_ui::getRcrdMenu() {
@@ -131,3 +132,7 @@ void Main_ui::getYrPayMenu(){
 void Main_ui::getHiPayMenu(){
 
 }
+/*
+Service newEmployee
+newEmployee.writeEmployeeInFile(string name, string ssn, string salary, string month, string year);
+*/

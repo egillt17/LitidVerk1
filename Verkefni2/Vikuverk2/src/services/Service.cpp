@@ -22,5 +22,6 @@ void Service::writeEmployeeInFile(string name, string ssn, string salary, string
     sin3 >> yearNumber;
 
     Employee employee(name, ssn, salaryNumber, monthNumber, yearNumber);
-
+    Repository input;
+    input.writeInFile(employee);
 }

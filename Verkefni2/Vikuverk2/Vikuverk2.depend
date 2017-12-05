@@ -40,7 +40,7 @@
 	<string>
 	<iomanip>
 
-1512486953 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
+1512487033 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
 	<iostream>
 	"Main_ui.h"
 	"Employee.h"
@@ -51,7 +51,7 @@
 1512486787 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
 	"Employee.h"
 
-1512486787 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\models\employee.h
+1512487503 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\models\employee.h
 	<iostream>
 	<string>
 	<iomanip>

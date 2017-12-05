@@ -14,20 +14,20 @@ Main_ui::Main_ui()
 
 void Main_ui::main_menu(){
     char input = '\0';
-    
+
     while(true) {
-        cout << "        This is a salary registry menu             " << endl;
-        cout << "           Choose following things                 " << endl;
+        cout << "          This is a salary registry menu           " << endl;
+        cout << "             Choose following things               " << endl;
         cout << "---------------------------------------------------" << endl;
         cout << "| 1. Add an employee to the salary registry       |" << endl;
         cout << "|                                                 |" << endl;
-        cout << "| 2. Get salary records from an employee          |" << endl;
+        cout << "| 2. Get monthly salary records from an employee  |" << endl;
         cout << "|                                                 |" << endl;
         cout << "| 3. Get yearly salary from an employee           |" << endl;
         cout << "|                                                 |" << endl;
         cout << "| 4. Get the highest paid employee by year        |" << endl;
         cout << "|                                                 |" << endl;
-        cout << "| 5. quit the program                             |" << endl;
+        cout << "| 5. Quit the program                             |" << endl;
         cout << "|                                                 |" << endl;
         cout << "---------------------------------------------------" << endl;
         cout << "| Please input a number : ";
@@ -51,10 +51,7 @@ void Main_ui::main_menu(){
         else {
             cout << "Invalid input -- try again" << endl;
         }
-        
     }
-    
-    
 }
 
 void Main_ui::addEmplMenu(){
@@ -73,7 +70,7 @@ void Main_ui::addEmplMenu(){
     cin >> input_ch;
     int input = input_ch - '0';
     for(int i = 0; i < input; i++){
-            
+
         while(true){
             cout << "| Enter a name: ";
             cin.ignore();
@@ -104,7 +101,7 @@ void Main_ui::addEmplMenu(){
             else {
                 break;
             }
-        } 
+        }
         while(true) {
             cout << "| Enter a month (1 - 12): ";
                 cin >> tmpMonth;
@@ -130,15 +127,94 @@ system("CLS");
 }
 
 void Main_ui::getRcrdMenu() {
+    string ssn;
+    string month;
+    string year;
+    Validate validate;
+    cout << "                                                         " << endl;
+    cout << "  Here you get the monthly sarary record of an employee  " << endl;
+    cout << "---------------------------------------------------------" << endl;
 
+    while(true) {
+        cout << "Social Security Number (10 digits only): ";
+        cin >> ssn;
+        if (!validate.validateSSN(ssn)) {
+            cout << "invalid input -- try again" << endl;
+        }
+        else {
+            break;
+        }
+    }
+    while(true) {
+        cout << "Enter a month (1 - 12): ";
+            cin >> month;
+        if(!validate.validateMonth(month)) {
+            cout << "invalid input -- try again" << endl;
+        }
+        else {
+            break;
+        }
+    }
+    while(true) {
+        cout << "Enter a year (2017 and below): ";
+            cin >> year;
+        if(!validate.validateYear(year)) {
+            cout << "invalid input -- try again" << endl;
+        }
+        else {
+            break;
+        }
+    }
 }
 
 void Main_ui::getYrPayMenu(){
+    string ssn;
+    string year;
+    Validate validate;
+    cout << "                                                         " << endl;
+    cout << "  Here you get the yearly sarary from an employee        " << endl;
+    cout << "---------------------------------------------------------" << endl;
 
+    while(true) {
+        cout << "Social Security Number (10 digits only): ";
+        cin >> ssn;
+        if (!validate.validateSSN(ssn)) {
+            cout << "invalid input -- try again" << endl;
+        }
+        else {
+            break;
+        }
+    }
+    while(true) {
+        cout << "Enter a year (2017 and below): ";
+            cin >> year;
+        if(!validate.validateYear(year)) {
+            cout << "invalid input -- try again" << endl;
+        }
+        else {
+            break;
+        }
+    }
 }
 
 void Main_ui::getHiPayMenu(){
+    string ssn;
+    string year;
+    Validate validate;
+    cout << "                                                         " << endl;
+    cout << "  Here you get the highest paid employee by year         " << endl;
+    cout << "---------------------------------------------------------" << endl;
 
+    while(true) {
+        cout << "Enter a year (2017 and below): ";
+            cin >> year;
+        if(!validate.validateYear(year)) {
+            cout << "invalid input -- try again" << endl;
+        }
+        else {
+            break;
+        }
+    }
 }
 /*
 Service newEmployee

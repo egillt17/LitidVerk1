@@ -1,0 +1,5 @@
+Name: Njall
+Social Security Number: 1234567890
+Salary: 250000.kr
+Month: 06
+Year: 2015

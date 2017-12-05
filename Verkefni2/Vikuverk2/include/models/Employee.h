@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <fstream>
 
 using namespace std;
 
@@ -20,6 +21,7 @@ class Employee
         int get_year();
         friend ostream& operator << (ostream& out, Employee& employee);
         friend istream& operator >> (istream& in, Employee& employee);
+        friend ofstream& operator << (ofstream& out, Employee& employee);
 
     private:
         string _name;

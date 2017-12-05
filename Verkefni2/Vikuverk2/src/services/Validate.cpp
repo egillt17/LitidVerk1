@@ -7,23 +7,20 @@ Validate::Validate()
 
 bool Validate::validateSalary(string salary)
 {
-    for (unsigned int i = 0; i < salary.length() -1; i++){
+    for (unsigned int i = 0; i < salary.length(); i++){
         if (!isdigit(salary[i])){
             return false;
         }
-        else {
-            return true;
-        }
     }
-return false;
+return true;
 }
 
 bool Validate::validateSSN(string ssn)
 {
     bool isSSN = false;
-    if (ssn.size() == 10)
+    if (ssn.length() == 10)
     {
-        for (unsigned int i = 0; i < ssn.length() -1; i++)
+        for (unsigned int i = 0; i < ssn.length(); i++)
         {
             if (!isdigit(ssn[i]))
             {
@@ -41,7 +38,7 @@ bool Validate::validateSSN(string ssn)
 
 bool Validate::validateMonth(string month)
 {
-    for(unsigned int i = 0; i < month.length() - 1; i++) {
+    for(unsigned int i = 0; i < month.length(); i++) {
         if(!isdigit(month[i])){
             return false;
         }
@@ -81,7 +78,7 @@ bool Validate::validateName(string name)
 
 bool Validate::validateYear(string year)
 {
-    for(unsigned int i = 0; i < year.length() - 1; i++) {
+    for(unsigned int i = 0; i < year.length(); i++) {
         if(!isdigit(year[i])){
             return false;
         }

@@ -1,30 +1,33 @@
 # depslib dependency file v1.0
-1512407575 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\main.cpp
-	<iostream>
+1512488985 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\main.cpp
 	"Main_ui.h"
 	"Employee.h"
 
-1512481924 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\ui\main_ui.h
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\ui\main_ui.h
 
-1512481924 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512488986 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Service.h"
 	"Validate.h"
 	<string>
 	<iostream>
 
+<<<<<<< HEAD
 1512487462 D
 
 1512486181 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
 
 1512402531 0d3aea62b67dd14bda681e5bcf4188d7e37b8
+=======
+1512489214 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
+>>>>>>> 58d616575a472f08de5b9344f30f399b0a884f5b
 	"Repository.h"
 	"Service.h"
 	<iostream>
 	<string>
 	<iomanip>
 
-1512483577 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
+1512489936 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
 	"Employee.h"
 	"Service.h"
 	<fstream>
@@ -39,11 +42,19 @@
 	"Employee.h"
 	"Repository.h"
 
-1512487439 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
+1512489206 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
 	"Employee.h"
 	"Employee.h"
 
+<<<<<<< HEAD
 1512487462 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\models\employee.h
+=======
+1512489106 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\models\employee.h
+	<iostream>
+	<string>
+	<iomanip>
+	<fstream>
+>>>>>>> 58d616575a472f08de5b9344f30f399b0a884f5b
 
 1512403099 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
 	<iostream>
@@ -105,11 +116,12 @@
 1512403062 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
-1512485097 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
+1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
-1512485097 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\validate.h
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\validate.h
 	"Service.h"
+	<sstream>
 
 1512483393 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
 	"InvalidMonthExc.h"
@@ -136,7 +148,7 @@
 
 1512483426 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 
-1512487273 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
+1512491047 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512486899 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\services\validate.h
@@ -161,11 +173,12 @@
 	"Service.h"
 	<fstream>
 
-1512487393 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512491362 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Service.h"
 	"Validate.h"
 	<string>
+	<stdlib.h>
 	<iostream>
 
 1512484125 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
@@ -182,4 +195,29 @@
 1512488621 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\main.cpp
 	"Main_ui.h"
 	"Employee.h"
+
+1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
+	"InvalidMonthExc.h"
+
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidmonthexc.h
+
+1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidnameexc.cpp
+	"InvalidNameExc.h"
+
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidnameexc.h
+
+1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidsalaryexc.cpp
+	"InvalidSalaryExc.h"
+
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidsalaryexc.h
+
+1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidssnexc.cpp
+	"InvalidSsnExc.h"
+
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidssnexc.h
+
+1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidyearexc.cpp
+	"InvalidYearExc.h"
+
+1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 

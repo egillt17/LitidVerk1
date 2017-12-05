@@ -1,7 +1,6 @@
 #include "Employee.h"
 
-Employee::Employee()
-{
+Employee::Employee() {
     _name = "";
     _ssn = "";
     _salary = 0;
@@ -9,8 +8,15 @@ Employee::Employee()
     _year = 0;
 }
 
-Employee::~Employee()
-{
+Employee::Employee(string name, string ssn, double salary, int month, int year) {
+    _name = name;
+    _ssn = ssn;
+    _salary = salary;
+    _month = month;
+    _year = year;
+}
+
+Employee::~Employee() {
     //dtor
 }
 
@@ -32,4 +38,34 @@ int Employee::get_month() {
 
 int Employee::get_year() {
     return _year;
+}
+
+ostream& operator << (ostream& out, Employee& employee) {
+    out << "Name: " << employee._name << endl;
+    out << "Social Security Number: " << employee._ssn << endl;
+    out << std::fixed << setprecision(2) << "Salary: " << employee._salary << endl;
+    if(employee._month < 10) {
+        out << "Month: " << "0" << employee._month << endl;
+    }
+    else {
+        out << "Month: " << employee._month << endl;
+    }
+    out << "Year: " << employee._year << endl;
+
+    return out;
+}
+
+istream& operator >> (istream& in, Employee& employee) {
+    cout << "Name: ";
+    in >> employee._name;
+    cout << "Social Security Number: ";
+    in >> employee._ssn;
+    cout << "Salary: ";
+    in >> employee._salary;
+    cout << "Month: ";
+    in >> employee._month;
+    cout << "Year: ";
+    in >> employee._year;
+
+    return in;
 }

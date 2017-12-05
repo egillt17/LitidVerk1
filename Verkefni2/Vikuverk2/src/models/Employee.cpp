@@ -8,6 +8,14 @@ Employee::Employee() {
     _year = 0;
 }
 
+Employee::Employee(string name, string ssn, double salary, int month, int year) {
+    _name = name;
+    _ssn = ssn;
+    _salary = salary;
+    _month = month;
+    _year = year;
+}
+
 Employee::~Employee() {
     //dtor
 }

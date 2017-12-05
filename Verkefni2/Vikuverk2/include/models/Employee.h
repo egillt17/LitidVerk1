@@ -11,6 +11,7 @@ class Employee
 {
     public:
         Employee();
+        Employee(string name, string ssn, double salary, int month, int year);
         ~Employee();
         string get_name();
         string get_ssn();

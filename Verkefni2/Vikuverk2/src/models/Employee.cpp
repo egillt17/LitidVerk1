@@ -71,6 +71,6 @@ istream& operator >> (istream& in, Employee& employee) {
 }
 
 ofstream& operator << (ofstream& out, Employee& employee) {
-    out << employee._name << "," << employee._ssn << "," << employee._salary << "," << employee._month << "," << employee._year << endl;
+    out << ":" << employee._name << ":" << employee._ssn << ":" << employee._salary << ":" << employee._month << ":" << employee._year << endl;
     return out;
 }

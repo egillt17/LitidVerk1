@@ -18,6 +18,8 @@ class Service
         Service();
         ~Service();
         void writeEmployeeInFile(string name, string ssn, string salary, string month, string year);
+        Employee makeEmployee(string name, string ssn, string salary, string month, string year);
+        Employee findEmployeeMonth();
 
     private:
 };

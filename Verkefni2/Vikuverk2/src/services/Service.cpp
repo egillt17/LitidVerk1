@@ -10,6 +10,13 @@ Service::~Service() {
 }
 
 void Service::writeEmployeeInFile(string name, string ssn, string salary, string month, string year) {
+    Employee employee = makeEmployee(name, ssn, salary, month, year);
+
+    Repository input;
+    input.writeInFile(employee);
+}
+
+Employee Service::makeEmployee(string name, string ssn, string salary, string month, string year) {
     int salaryNumber = 0;
     int monthNumber = 0;
     int yearNumber = 0;
@@ -22,6 +29,19 @@ void Service::writeEmployeeInFile(string name, string ssn, string salary, string
     sin3 >> yearNumber;
 
     Employee employee(name, ssn, salaryNumber, monthNumber, yearNumber);
-    Repository input;
-    input.writeInFile(employee);
+
+    return employee;
+}
+
+Employee Service::findEmployeeMonth() {
+    Employee employee2;
+    Repository get;
+    vector <Employee> employee;
+    get.infoInFile(employee);
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        cout << employee[i] << endl;
+    }
+
+
+    return employee2;
 }

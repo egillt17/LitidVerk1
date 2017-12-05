@@ -106,7 +106,7 @@
 
 1512483426 c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 
-1512487273 source:c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
+1512491047 source:c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512486899 c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\services\validate.h
@@ -131,11 +131,12 @@
 	"Service.h"
 	<fstream>
 
-1512487393 source:c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512491362 source:c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Service.h"
 	"Validate.h"
 	<string>
+	<stdlib.h>
 	<iostream>
 
 1512484125 c:\users\njáll mırdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h

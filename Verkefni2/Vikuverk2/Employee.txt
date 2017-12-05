@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 :jon:1111111111:111:1:2015
 :hannes:2222222222:222:2:2015
 :einar:3333333333:333:3:2015
 :jona:4444444444:444:4:2015
 :audur:5555555555:555:5:2015
+=======
+<<<<<<< HEAD
+Name: Njall
+Social Security Number: 1234567890
+Salary: 250000.kr
+Month: 06
+Year: 2015
+Name: Egill Aron Thorisson
+Social Security Number: 1349586218
+Salary: 14000.kr
+Month: 01
+Year: 2015
+=======
+
+halldor,1234567890,13245,4,2015
+>>>>>>> 58d616575a472f08de5b9344f30f399b0a884f5b
+>>>>>>> 3abd7161036794fab41a04537e68f424e486ee40

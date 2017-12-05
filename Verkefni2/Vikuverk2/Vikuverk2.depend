@@ -13,8 +13,22 @@
 	<string>
 	<iostream>
 
+<<<<<<< HEAD
 1512499046 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
+=======
+1512489206 D
+
+1512489214 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\repository\repository.cpp
+
+1512402531 0d3aea62b67dd14bda681e5bcf4188d7e37b8
+
+1512489106 616575a472f08de5b9344f30f399b0a884f5b
+>>>>>>> 3abd7161036794fab41a04537e68f424e486ee40
 	"Repository.h"
+	"Service.h"
+	<iostream>
+	<string>
+	<iomanip>
 
 1512495934 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
 	"Employee.h"
@@ -22,8 +36,12 @@
 	<fstream>
 	<vector>
 
+<<<<<<< HEAD
 1512498845 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
+=======
+1512486093 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
+>>>>>>> 3abd7161036794fab41a04537e68f424e486ee40
 
 1512496007 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
@@ -35,6 +53,7 @@
 
 1512497379 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
 	"Employee.h"
+	"Employee.h"
 
 1512489106 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\models\employee.h
 	<iostream>
@@ -42,39 +61,55 @@
 	<iomanip>
 	<fstream>
 
-1512403099 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
+1512488937 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
+	"Main_ui.h"
+	"Employee.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
+
+1512491679 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
+	"Employee.h"
+
+1512491679 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\models\employee.h
 	<iostream>
+	<string>
+	<iomanip>
+	<fstream>
+
+1512488467 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\repository\repository.cpp
+	"Repository.h"
+
+1512491679 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\repository\repository.h
+	"Employee.h"
+	"Service.h"
+	<fstream>
+
+1512496627 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Service.h"
 	"Validate.h"
+	<string>
+	<stdlib.h>
+	<iostream>
 
-1512396980 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
-
-1512396980 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
-	"employee.h"
-
-1512396980 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\models\employee.h
-
-1512396980 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\repository\repository.cpp
-	"Repository.h"
-
-1512396980 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\repository\repository.h
-
-1512396980 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
-	"Main_ui.h"
-
-1512402531 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
+1512488467 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
 
-1512402531 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\service.h
+1512486787 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
 	<string>
 	<stdio.h>
+	<sstream>
+	"Employee.h"
+	"Repository.h"
 
-1512403062 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\validate.h
+1512486787 y.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\validate.h
 	"Service.h"
+	<sstream>
 
-1512403062 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
+1512491679 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
@@ -109,7 +144,7 @@
 
 1512483426 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 
-1512487273 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
+1512491047 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512486899 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\services\validate.h
@@ -134,11 +169,12 @@
 	"Service.h"
 	<fstream>
 
-1512487393 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512491362 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Service.h"
 	"Validate.h"
 	<string>
+	<stdlib.h>
 	<iostream>
 
 1512484125 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
@@ -180,4 +216,29 @@
 	"InvalidYearExc.h"
 
 1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
+
+1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
+	"InvalidMonthExc.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidmonthexc.h
+
+1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidnameexc.cpp
+	"InvalidNameExc.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidnameexc.h
+
+1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidsalaryexc.cpp
+	"InvalidSalaryExc.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidsalaryexc.h
+
+1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidssnexc.cpp
+	"InvalidSsnExc.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidssnexc.h
+
+1512488195 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidyearexc.cpp
+	"InvalidYearExc.h"
+
+1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 

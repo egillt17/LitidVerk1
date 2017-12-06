@@ -26,7 +26,7 @@ class Employee
         ///get function that gives you the month of the salary record
         int get_year();
         ///get function that gives you the year of the salary record
-        void set_salary(int salary);
+        void set_salary(double salary);
         ///set function to set only the salary of a salary record
         void set_month(int month);
         ///set function to set only the month of a salary record

@@ -9,8 +9,9 @@
 	<stdlib.h>
 	<iostream>
 
-1512572655 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
+	"Validate.h"
 
 1512495934 D
 
@@ -34,7 +35,7 @@
 	<fstream>
 	<vector>
 
-1512579494 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
+1512583305 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
 
 1512498845 "
@@ -47,10 +48,10 @@
 	"Employee.h"
 	"Repository.h"
 
-1512580016 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
+1512580866 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\models\employee.cpp
 	"Employee.h"
 
-1512579934 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\models\employee.h
+1512580866 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\models\employee.h
 	<iostream>
 	<string>
 	<sstream>
@@ -108,11 +109,17 @@
 1512491679 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
-1512499103 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
-1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\validate.h
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\validate.h
 	"Service.h"
+	"InvalidNameExc.h"
+	"InvalidMonthExc.h"
+	"InvalidSalaryExc.h"
+	"InvalidSsnExc.h"
+	"InvalidYearExc.h"
+	"InvalidInputExc.h"
 	<sstream>
 
 1512483393 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
@@ -188,30 +195,35 @@
 	"Main_ui.h"
 	"Employee.h"
 
-1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
 	"InvalidMonthExc.h"
 
-1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidmonthexc.h
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidmonthexc.h
+	"Employee.h"
 
-1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidnameexc.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidnameexc.cpp
 	"InvalidNameExc.h"
 
-1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidnameexc.h
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidnameexc.h
+	"Employee.h"
 
-1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidsalaryexc.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidsalaryexc.cpp
 	"InvalidSalaryExc.h"
 
-1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidsalaryexc.h
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidsalaryexc.h
+	"Employee.h"
 
-1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidssnexc.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidssnexc.cpp
 	"InvalidSsnExc.h"
 
-1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidssnexc.h
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidssnexc.h
+	"Employee.h"
 
-1512488285 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidyearexc.cpp
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidyearexc.cpp
 	"InvalidYearExc.h"
 
-1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
+	"Employee.h"
 
 1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
 	"InvalidMonthExc.h"
@@ -237,4 +249,10 @@
 	"InvalidYearExc.h"
 
 1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
+
+1512580136 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidinputexc.h
+	"Employee.h"
+
+1512580136 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\exceptions\invalidinputexc.cpp
+	"InvalidInputExc.h"
 

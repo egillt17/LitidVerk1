@@ -36,7 +36,7 @@ int Employee::get_year() {
     return _year;   ///Get function that returns the year of the salary record
 }
 
-void Employee::set_salary(int salary) {
+void Employee::set_salary(double salary) {
     stringstream sin;  ///Converts the int into a string so it can be added to the salary variable
     sin << salary;
     sin >> _salary;   ///Set function that sets only the salary of the salary record

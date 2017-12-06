@@ -82,8 +82,8 @@ Employee Service::findEmployeeMonth(string ssn, string month, string year) {
 
 Employee Service::findEmployeeYearlySalary(string ssn, string year) {
     int yearNumber = 0;
-    int salary = 0;
-    int cash = 0;
+    double salary = 0;
+    double cash = 0;
     bool found = false;
     vector <Employee> employee;
     Employee employeeYs;
@@ -116,8 +116,8 @@ Employee Service::findEmployeeYearlySalary(string ssn, string year) {
 Employee Service::findHighestEmployeeYearly(string year) {
     Employee highestEmployee;
     int yearNumber = 0;
-    int salary = 0;
-    int cash = 0;
+    double salary = 0;
+    double cash = 0;
     bool found = false;
     vector <Employee> employee;
     vector <Employee> employeef;
@@ -149,9 +149,15 @@ Employee Service::findHighestEmployeeYearly(string year) {
             employeef[i].set_month(0);
         }
     }
+    stringstream sin5(employeef[0].get_salary());
+    sin5 >> salary;
     for(unsigned int i = 0; i < employeef.size(); i++) {
-        if(employeef[i].get_salary() > highestEmployee.get_salary()) {
+        stringstream sin4(employeef[i].get_salary());
+        sin4 >> cash;
+        if(cash > salary) {
             highestEmployee = employeef[i];
+            stringstream sin5(employeef[i].get_salary());
+            sin5 >> salary;
         }
     }
 

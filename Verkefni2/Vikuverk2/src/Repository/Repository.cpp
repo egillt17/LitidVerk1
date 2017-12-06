@@ -2,8 +2,8 @@
 
 void Repository::writeInFile(Employee& employee) {
     ofstream fout;
-    fout.open("Employee.txt", ios::app);
-    if(fout.is_open()) {
+    fout.open("Employee.txt", ios::app);                        ///If Employee.txt is open then write an employee into the .txt file, we're using ios::app so the new employee
+    if(fout.is_open()) {                                        ///simply goes to the bottom of the text file
         fout << employee;
     }
     else {
@@ -17,7 +17,7 @@ void Repository::reWriteInFile(vector <Employee> employee) {
     fout.open("Employee.txt");
     if(fout.is_open()) {
         for(unsigned int i = 0; i < employee.size(); i++) {     ///If Employee.txt is open then write all the employees inside the vector until the size of the vector
-            fout << employee[i];                                ///is surpassed
+            fout << employee[i];                                ///is surpassed (not using ios::app here so the file is completely rewritten)
         }
     }
     else {

@@ -239,6 +239,7 @@ void Main_ui::getHiPayMenu(){
     string ssn;
     string year;
     Validate validate;
+    Service get;
     cout << "                                                         " << endl;
     cout << "  Here you get the highest paid employee by year         " << endl;
     cout << "---------------------------------------------------------" << endl;
@@ -254,6 +255,11 @@ void Main_ui::getHiPayMenu(){
             cout << exc.getMessage() << endl;
         }
     }
+//    Employee employee = get.findHighestEmployeeYearly(year);
+//    cout << "Employee: " << endl << employee;
+    system("PAUSE");
+    system("CLS");
+
 }
 /*
 Service newEmployee

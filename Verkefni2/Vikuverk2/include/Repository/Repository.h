@@ -11,11 +11,12 @@ using namespace std;
 class Repository
 {
     public:
-        Repository();
-        ~Repository();
         void writeInFile(Employee& employee);
+        ///Function to write directly to a .txt file
         void reWriteInFile(vector <Employee> employee);
+        ///Function to rewrite the whole .txt file, will explain better in the .cpp file
         void getInfoInFile(vector <Employee>& employee);
+
 
     private:
 };

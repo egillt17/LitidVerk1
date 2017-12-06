@@ -41,13 +41,15 @@ bool Service::employeeCheck(Employee employeeTest) {
     get.getInfoInFile(employee);
 
     for(unsigned int i = 0; i < employee.size(); i++) {
-        if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
-            if(employeeTest.get_month() == employee[i].get_month()) {
-                if(employeeTest.get_year() == employee[i].get_year()) {
-                    employee[i] = employeeTest;
-                    found = true;
-                }
+        if(!employeeTest.get_name().compare(employee[i].get_name())) {
+            if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
+                if(employeeTest.get_month() == employee[i].get_month()) {
+                    if(employeeTest.get_year() == employee[i].get_year()) {
+                        employee[i] = employeeTest;
+                        found = true;
+                    }
 
+                }
             }
         }
     }
@@ -82,4 +84,34 @@ Employee Service::findEmployeeMonth(string ssn, string month, string year) {
     }
 
     return employee2;
+}
+
+Employee Service::findEmployeeYearlySalary(string ssn, string year) {
+    int yearNumber = 0;
+    int salary = 0;
+    bool found = false;
+    vector <Employee> employee;
+    Employee employeeYs;
+    Repository get;
+    get.getInfoInFile(employee);
+
+    stringstream sin1(year);
+    sin1 >> yearNumber;
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(!ssn.compare(employee[i].get_ssn())) {
+            if(yearNumber == employee[i].get_year()) {
+                employeeYs = employee[i];
+                salary += employee[i].get_salary();
+                found = true;
+
+            }
+        }
+    }
+    if(found == true) {
+        employeeYs.set_salary(salary);
+        employeeYs.set_month(0);
+    }
+
+    return employeeYs;
 }

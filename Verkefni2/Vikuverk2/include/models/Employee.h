@@ -19,6 +19,8 @@ class Employee
         int get_salary();
         int get_month();
         int get_year();
+        void set_salary(int salary);
+        void set_month(int month);
         friend ostream& operator << (ostream& out, Employee& employee);
         friend istream& operator >> (istream& in, Employee& employee);
         friend ofstream& operator << (ofstream& out, Employee& employee);

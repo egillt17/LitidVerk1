@@ -20,6 +20,7 @@ class Service
         void writeEmployeeInFile(string name, string ssn, string salary, string month, string year);
         Employee makeEmployee(string name, string ssn, string salary, string month, string year);
         Employee findEmployeeMonth(string ssn, string month, string year);
+        Employee findEmployeeYearlySalary(string ssn, string year);
 
     private:
         bool employeeCheck(Employee employeeTest);

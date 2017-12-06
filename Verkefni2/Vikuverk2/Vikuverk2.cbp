@@ -43,6 +43,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Repository/Repository.h" />
+		<Unit filename="include/exceptions/InvalidInputExc.h" />
 		<Unit filename="include/exceptions/InvalidMonthExc.h" />
 		<Unit filename="include/exceptions/InvalidNameExc.h" />
 		<Unit filename="include/exceptions/InvalidSalaryExc.h" />
@@ -54,6 +55,7 @@
 		<Unit filename="include/ui/Main_ui.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Repository/Repository.cpp" />
+		<Unit filename="src/exceptions/InvalidInputExc.cpp" />
 		<Unit filename="src/exceptions/InvalidMonthExc.cpp" />
 		<Unit filename="src/exceptions/InvalidNameExc.cpp" />
 		<Unit filename="src/exceptions/InvalidSalaryExc.cpp" />

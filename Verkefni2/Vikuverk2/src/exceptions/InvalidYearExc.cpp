@@ -1,6 +1,10 @@
 #include "InvalidYearExc.h"
 
-InvalidYearExc::InvalidYearExc()
+InvalidYearExc::InvalidYearExc(string message)
 {
-    //ctor
+    this->message = message;
+}
+
+string InvalidYearExc::getMessage() {
+    return message;
 }

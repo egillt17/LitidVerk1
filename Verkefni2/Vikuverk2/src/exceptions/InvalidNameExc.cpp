@@ -1,6 +1,10 @@
 #include "InvalidNameExc.h"
 
-InvalidNameExc::InvalidNameExc()
+InvalidNameExc::InvalidNameExc(string message)
 {
-    //ctor
+    this->message = message;
+}
+
+string InvalidNameExc::getMessage() {
+    return message;
 }

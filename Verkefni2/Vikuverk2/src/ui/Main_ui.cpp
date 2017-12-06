@@ -60,7 +60,7 @@ void Main_ui::addEmplMenu(){
 
     Validate validate;  /// to validate the variables
     /// different variables to use in this function
-    string input_ch;    
+    string input_ch;
     int input = 0;
     string tmpName;
     string tmpSSN;
@@ -70,7 +70,7 @@ void Main_ui::addEmplMenu(){
     cout << "    Here you can add employees to the registry     " << endl;
     cout << "---------------------------------------------------" << endl;
     cout << "|                                                  " << endl;
-    
+
     /// this loop checks if the input, for how many employee to input
     while(true){
         cout << "| How many employees do you wan't to add? (max 10): ";
@@ -88,9 +88,9 @@ void Main_ui::addEmplMenu(){
     for(int i = 0; i < input; i++){ ///loop for number of employees to input
 
         while(true){ /// loop to check the name
-            cout << "| Enter a name: ";     
+            cout << "| Enter a name: ";
             cin.ignore();   /// to ignore a whitespace
-            getline(cin, tmpName);  
+            getline(cin, tmpName);
             try{        /// this tries to validate the name in the Validate class
                 (validate.validateName(tmpName));
                 break;  /// goes to the next step if it validates
@@ -126,8 +126,8 @@ void Main_ui::addEmplMenu(){
             cin >> tmpMonth;
             try {
                 (validate.validateMonth(tmpMonth));
-                break;            
-            }  
+                break;
+            }
             catch(InvalidMonthExc exc) {
                 cout << exc.getMessage() << endl;
             }
@@ -174,7 +174,7 @@ void Main_ui::getRcrdMenu() {
         }
         catch (InvalidSsnExc exc) {
             cout << exc.getMessage() << endl;
-        }            
+        }
     }
     while(true) {   /// loop to input and check the month
         cout << "| Enter a month (1 - 12): ";
@@ -218,7 +218,7 @@ void Main_ui::getYrPayMenu(){
     cout << "                                                         " << endl;
     cout << "  Here you get the yearly sarary from an employee        " << endl;
     cout << "---------------------------------------------------------" << endl;
-    
+
     /// same as in addEmplMenu(), except it inputs and checks only SSN and the year
     while(true) {
         cout << "| Social Security Number (10 digits only): ";
@@ -229,7 +229,7 @@ void Main_ui::getYrPayMenu(){
         }
         catch (InvalidSsnExc exc) {
             cout << exc.getMessage() << endl;
-        }            
+        }
     }
     while(true) {
         cout << "| Enter a year :";
@@ -272,13 +272,10 @@ void Main_ui::getHiPayMenu(){
             cout << exc.getMessage() << endl;
         }
     }
-<<<<<<< HEAD
+
     Employee employee = get.findHighestEmployeeYearly(year);
     cout << "Employee: " << endl << employee;
-=======
-    //Employee employee = get.findHighestEmployeeYearly(year);
-    //cout << "Employee: " << endl << employee;
->>>>>>> feae682f835a83d3459fbda9b54f40a8d6560b8a
+
     system("PAUSE");
     system("CLS");
 

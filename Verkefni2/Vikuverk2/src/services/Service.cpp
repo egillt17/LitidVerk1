@@ -18,18 +18,15 @@ void Service::writeEmployeeInFile(string name, string ssn, string salary, string
 }
 
 Employee Service::makeEmployee(string name, string ssn, string salary, string month, string year) {
-    int salaryNumber = 0;
     int monthNumber = 0;
     int yearNumber = 0;
 
-    stringstream sin1(salary);
-    sin1 >> salaryNumber;
     stringstream sin2(month);
     sin2 >> monthNumber;
     stringstream sin3(year);
     sin3 >> yearNumber;
 
-    Employee employee(name, ssn, salaryNumber, monthNumber, yearNumber);
+    Employee employee(name, ssn, salary, monthNumber, yearNumber);
 
     return employee;
 }
@@ -86,6 +83,7 @@ Employee Service::findEmployeeMonth(string ssn, string month, string year) {
 Employee Service::findEmployeeYearlySalary(string ssn, string year) {
     int yearNumber = 0;
     int salary = 0;
+    int cash = 0;
     bool found = false;
     vector <Employee> employee;
     Employee employeeYs;
@@ -99,7 +97,9 @@ Employee Service::findEmployeeYearlySalary(string ssn, string year) {
         if(!ssn.compare(employee[i].get_ssn())) {
             if(yearNumber == employee[i].get_year()) {
                 employeeYs = employee[i];
-                salary += employee[i].get_salary();
+                stringstream sin2(employee[i].get_salary());
+                sin2 >> cash;
+                salary += cash;
                 found = true;
 
             }
@@ -117,6 +117,7 @@ Employee Service::findHighestEmployeeYearly(string year) {
     Employee highestEmployee;
     int yearNumber = 0;
     int salary = 0;
+    int cash = 0;
     bool found = false;
     vector <Employee> employee;
     vector <Employee> employeef;
@@ -137,7 +138,9 @@ Employee Service::findHighestEmployeeYearly(string year) {
         found = false;
         for(unsigned int j = 0; j < employee.size(); j++) {
             if(!employeef[i].get_ssn().compare(employee[j].get_ssn())) {
-                salary += employee[j].get_salary();
+                stringstream sin2(employee[j].get_salary());
+                sin2 >> cash;
+                salary += cash;
                 found = true;
             }
         }
@@ -146,11 +149,9 @@ Employee Service::findHighestEmployeeYearly(string year) {
             employeef[i].set_month(0);
         }
     }
-        cout << employeef.size() << endl;
     for(unsigned int i = 0; i < employeef.size(); i++) {
         if(employeef[i].get_salary() > highestEmployee.get_salary()) {
             highestEmployee = employeef[i];
-            cout << highestEmployee << endl;
         }
     }
 

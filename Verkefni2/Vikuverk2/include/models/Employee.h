@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <sstream>
 #include <iomanip>
 #include <fstream>
 
@@ -12,25 +13,37 @@ class Employee
 {
     public:
         Employee();
-        Employee(string name, string ssn, int salary, int month, int year);
-        ~Employee();
+        ///Default constructor
+        Employee(string name, string ssn, string salary, int month, int year);
+        ///Constructor that takes in the the parameters above
         string get_name();
+        ///get function that gives you the name of an employee
         string get_ssn();
-        int get_salary();
+        ///get function that gives you the social security number of an employee
+        string get_salary();
+        ///get function that gives you the salary of an employee
         int get_month();
+        ///get function that gives you the month of the salary record
         int get_year();
+        ///get function that gives you the year of the salary record
         void set_salary(int salary);
+        ///set function to set only the salary of a salary record
         void set_month(int month);
+        ///set function to set only the month of a salary record
         friend ostream& operator << (ostream& out, Employee& employee);
+        ///ostream cout overload function
         friend istream& operator >> (istream& in, Employee& employee);
+        ///istream cin overload function
         friend ofstream& operator << (ofstream& out, Employee& employee);
+        ///ofstream overload function to write directly to a .txt file
 
     private:
         string _name;
         string _ssn;
-        int _salary;
+        string _salary;
         int _month;
         int _year;
+        ///Private member variables
 };
 
 #endif // EMPLOYEE_H

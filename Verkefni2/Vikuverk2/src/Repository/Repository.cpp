@@ -1,13 +1,5 @@
 #include "Repository.h"
 
-Repository::Repository() {
-    //ctor
-}
-
-Repository::~Repository() {
-    //dtor
-}
-
 void Repository::writeInFile(Employee& employee) {
     ofstream fout;
     fout.open("Employee.txt", ios::app);
@@ -24,13 +16,13 @@ void Repository::reWriteInFile(vector <Employee> employee) {
     ofstream fout;
     fout.open("Employee.txt");
     if(fout.is_open()) {
-        for(unsigned int i = 0; i < employee.size(); i++) {
-            fout << employee[i];
+        for(unsigned int i = 0; i < employee.size(); i++) {     ///If Employee.txt is open then write all the employees inside the vector until the size of the vector
+            fout << employee[i];                                ///is surpassed
         }
     }
     else {
         // throw error!!!
-    }
+    }                                                           ///Else throw error
     fout.close();
 }
 
@@ -66,7 +58,6 @@ void Repository::getInfoInFile(vector <Employee>& employee) {
                 else if(i == 4) {
                     getline(fin, yearf, ':');
                 }
-
             }
             Employee employee2 = fix.makeEmployee(namef, ssnf, salaryf, monthf, yearf);
             employee.push_back(employee2);

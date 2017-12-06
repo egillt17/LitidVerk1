@@ -56,41 +56,41 @@
 	<iomanip>
 	<fstream>
 
-1512488937 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
+1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
 	"Main_ui.h"
-	"Employee.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
-
-1512491679 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
-	"Employee.h"
-
-1512491679 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\models\employee.h
-	<iostream>
-	<string>
-	<iomanip>
-	<fstream>
-
-1512488467 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\repository\repository.cpp
-	"Repository.h"
-
-1512491679 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\repository\repository.h
-	"Employee.h"
-	"Service.h"
-	<fstream>
-
-1512496627 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
-	"Main_ui.h"
+1512567049 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
 	"Service.h"
 	"Validate.h"
 	<string>
 	<stdlib.h>
 	<iostream>
 
-1512488467 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
+1512571574 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
+	"Employee.h"
+
+1512571574 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\models\employee.h
+	<iostream>
+	<string>
+	<iomanip>
+	<fstream>
+
+1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\repository\repository.cpp
+	"Repository.h"
+
+1512575216 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\repository\repository.h
+	"Employee.h"
+	"Service.h"
+	<fstream>
+	<vector>
+
+1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+	"Main_ui.h"
+
+1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
 
-1512486787 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\service.h
+1512567049 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
 	<string>
 	<stdio.h>

@@ -1,15 +1,16 @@
 #ifndef INVALIDSALARYEXC_H
 #define INVALIDSALARYEXC_H
 
+#include "Employee.h"
 
 class InvalidSalaryExc
 {
     public:
-        InvalidSalaryExc();
-
-    protected:
+        InvalidSalaryExc(string message);
+        string getMessage();
 
     private:
+        string message;
 };
 
 #endif // INVALIDSALARYEXC_H

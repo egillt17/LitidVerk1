@@ -1,11 +1,4 @@
 #include "Main_ui.h"
-#include "Service.h"
-#include "Validate.h"
-#include <string>
-#include <stdlib.h>
-#include <iostream>
-
-using namespace std;
 
 Main_ui::Main_ui()
 {
@@ -37,12 +30,15 @@ void Main_ui::main_menu(){
             addEmplMenu();
         }
         else if(input == '2') {
+            system("CLS");
             getRcrdMenu();
         }
         else if(input == '3'){
+            system("CLS");
             getYrPayMenu();
         }
         else if(input == '4') {
+            system("CLS");
             getHiPayMenu();
         }
         else if (input == '5') {
@@ -121,7 +117,6 @@ void Main_ui::addEmplMenu(){
                 cout << "| Please input another employee: " << endl;
             cout <<  "|" << endl;
         }
-
     }
 system("CLS");
 }
@@ -165,12 +160,18 @@ void Main_ui::getRcrdMenu() {
             break;
         }
     }
+    Service get;
+    Employee employee = get.findEmployeeMonth(ssn, month, year);
+    cout << "Employee: " << endl << employee;
+    system("PAUSE");
+    system("CLS");
 }
 
 void Main_ui::getYrPayMenu(){
     string ssn;
     string year;
     Validate validate;
+    Service get;
     cout << "                                                         " << endl;
     cout << "  Here you get the yearly sarary from an employee        " << endl;
     cout << "---------------------------------------------------------" << endl;
@@ -195,12 +196,18 @@ void Main_ui::getYrPayMenu(){
             break;
         }
     }
+    Employee employee;
+    employee = get.findEmployeeYearlySalary(ssn, year);
+    cout << "Employee: " << endl << employee;
+    system("PAUSE");
+    system("CLS");
 }
 
 void Main_ui::getHiPayMenu(){
     string ssn;
     string year;
     Validate validate;
+    Service get;
     cout << "                                                         " << endl;
     cout << "  Here you get the highest paid employee by year         " << endl;
     cout << "---------------------------------------------------------" << endl;
@@ -215,6 +222,11 @@ void Main_ui::getHiPayMenu(){
             break;
         }
     }
+//    Employee employee = get.findHighestEmployeeYearly(year);
+//    cout << "Employee: " << endl << employee;
+    system("PAUSE");
+    system("CLS");
+
 }
 /*
 Service newEmployee

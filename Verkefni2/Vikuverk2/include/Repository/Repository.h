@@ -4,6 +4,7 @@
 #include "Employee.h"
 #include "Service.h"
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -13,7 +14,8 @@ class Repository
         Repository();
         ~Repository();
         void writeInFile(Employee& employee);
-
+        void reWriteInFile(vector <Employee> employee);
+        void getInfoInFile(vector <Employee>& employee);
 
     private:
 };

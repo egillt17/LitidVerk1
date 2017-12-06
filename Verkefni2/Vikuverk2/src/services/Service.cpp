@@ -10,6 +10,14 @@ Service::~Service() {
 }
 
 void Service::writeEmployeeInFile(string name, string ssn, string salary, string month, string year) {
+    Employee employee = makeEmployee(name, ssn, salary, month, year);
+    if(!employeeCheck(employee)) {
+        Repository input;
+        input.writeInFile(employee);
+    }
+}
+
+Employee Service::makeEmployee(string name, string ssn, string salary, string month, string year) {
     int salaryNumber = 0;
     int monthNumber = 0;
     int yearNumber = 0;
@@ -22,6 +30,127 @@ void Service::writeEmployeeInFile(string name, string ssn, string salary, string
     sin3 >> yearNumber;
 
     Employee employee(name, ssn, salaryNumber, monthNumber, yearNumber);
-    Repository input;
-    input.writeInFile(employee);
+
+    return employee;
+}
+
+bool Service::employeeCheck(Employee employeeTest) {
+    bool found = false;
+    vector <Employee> employee;
+    Repository get;
+    get.getInfoInFile(employee);
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(!employeeTest.get_name().compare(employee[i].get_name())) {
+            if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
+                if(employeeTest.get_month() == employee[i].get_month()) {
+                    if(employeeTest.get_year() == employee[i].get_year()) {
+                        employee[i] = employeeTest;
+                        found = true;
+                    }
+
+                }
+            }
+        }
+    }
+    if(found == true) {
+        get.reWriteInFile(employee);
+    }
+
+    return found;
+}
+
+Employee Service::findEmployeeMonth(string ssn, string month, string year) {
+    int monthNumber = 0;
+    int yearNumber = 0;
+    Employee employee2;
+    stringstream sin1(month);
+    sin1 >> monthNumber;
+    stringstream sin2(year);
+    sin2 >> yearNumber;
+    Repository get;
+    vector <Employee> employee;
+    get.getInfoInFile(employee);
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(!ssn.compare(employee[i].get_ssn())) {
+            if(monthNumber == employee[i].get_month()) {
+                if(yearNumber == employee[i].get_year()) {
+                    employee2 = employee[i];
+                }
+
+            }
+        }
+    }
+
+    return employee2;
+}
+
+Employee Service::findEmployeeYearlySalary(string ssn, string year) {
+    int yearNumber = 0;
+    int salary = 0;
+    bool found = false;
+    vector <Employee> employee;
+    Employee employeeYs;
+    Repository get;
+    get.getInfoInFile(employee);
+
+    stringstream sin1(year);
+    sin1 >> yearNumber;
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(!ssn.compare(employee[i].get_ssn())) {
+            if(yearNumber == employee[i].get_year()) {
+                employeeYs = employee[i];
+                salary += employee[i].get_salary();
+                found = true;
+
+            }
+        }
+    }
+    if(found == true) {
+        employeeYs.set_salary(salary);
+        employeeYs.set_month(0);
+    }
+
+    return employeeYs;
+}
+
+Employee Service::findHighestEmployeeYearly(string year) {
+    Employee highestEmployee;
+    int yearNumber = 0;
+    int salary = 0;
+    bool found = false;
+    vector <Employee> employee;
+    Employee employeef[employee.size()];
+
+    Repository get;
+    get.getInfoInFile(employee);
+    stringstream sin1(year);
+    sin1 >> yearNumber;
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        salary = 0;
+        found = false;
+        for(unsigned int j = 0; j < employee.size(); j++) {
+            if(!employeef[i].get_name().compare("") && yearNumber == employee[j].get_year()) {
+                employeef[i] = employee[j];
+                found = true;
+            }
+            if(!employeef[i].get_name().compare(employee[j].get_name())) {
+                salary += employee[j].get_salary();
+            }
+        }
+        if(found) {
+            employeef[i].set_salary(salary);
+        }
+    }
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(employeef[i].get_salary() > highestEmployee.get_salary()) {
+            highestEmployee = employeef[i];
+        }
+    }
+
+    return highestEmployee;
 }

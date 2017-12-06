@@ -65,7 +65,7 @@ void Main_ui::addEmplMenu(){
     cout << "    Here you can add employees to the registry     " << endl;
     cout << "---------------------------------------------------" << endl;
     cout << "|                                                  " << endl;
-    
+
     while(true){
         cout << "| How many employees do you wan't to add? (max 10): ";
         cin >> input_ch;
@@ -120,8 +120,8 @@ void Main_ui::addEmplMenu(){
             cin >> tmpMonth;
             try {
                 (validate.validateMonth(tmpMonth));
-                break;            
-            }  
+                break;
+            }
             catch(InvalidMonthExc exc) {
                 cout << exc.getMessage() << endl;
             }
@@ -166,7 +166,7 @@ void Main_ui::getRcrdMenu() {
         }
         catch (InvalidSsnExc exc) {
             cout << exc.getMessage() << endl;
-        }            
+        }
     }
     while(true) {
         cout << "| Enter a month (1 - 12): ";
@@ -215,7 +215,7 @@ void Main_ui::getYrPayMenu(){
         }
         catch (InvalidSsnExc exc) {
             cout << exc.getMessage() << endl;
-        }            
+        }
     }
     while(true) {
         cout << "| Enter a year :";

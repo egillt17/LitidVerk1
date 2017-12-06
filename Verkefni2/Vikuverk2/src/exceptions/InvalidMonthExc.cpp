@@ -1,10 +1,10 @@
 #include "InvalidMonthExc.h"
 
-InvalidMonthExc::InvalidMonthExc(string message) 
+InvalidMonthExc::InvalidMonthExc(string message)
 {
-    this->message = message;
+    _message = message;
 }
 
 string InvalidMonthExc::getMessage() {
-    return message;
+    return _message;
 }

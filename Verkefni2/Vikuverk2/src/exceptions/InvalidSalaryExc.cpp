@@ -2,9 +2,9 @@
 
 InvalidSalaryExc::InvalidSalaryExc(string message)
 {
-    this->message = message;
+    _message = message;
 }
 
 string InvalidSalaryExc::getMessage() {
-    return message;
+    return _message;
 }

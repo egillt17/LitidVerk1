@@ -10,7 +10,7 @@ class InvalidSsnExc
         string getMessage();
 
     private:
-        string message;
+        string _message;
 };
 
 #endif // INVALIDSSNEXC_H

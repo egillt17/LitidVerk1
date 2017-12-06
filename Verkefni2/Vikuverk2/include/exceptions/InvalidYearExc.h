@@ -10,7 +10,7 @@ class InvalidYearExc
         string getMessage();
 
     private:
-        string message;
+        string _message;
 };
 
 #endif // INVALIDYEAREXC_H

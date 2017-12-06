@@ -2,9 +2,9 @@
 
 InvalidSsnExc::InvalidSsnExc(string message)
 {
-    this->message = message;
+    _message = message;
 }
 
 string InvalidSsnExc::getMessage() {
-    return message;
+    return _message;
 }

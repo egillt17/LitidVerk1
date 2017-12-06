@@ -46,6 +46,7 @@
 		<Unit filename="include/exceptions/InvalidInputExc.h" />
 		<Unit filename="include/exceptions/InvalidMonthExc.h" />
 		<Unit filename="include/exceptions/InvalidNameExc.h" />
+		<Unit filename="include/exceptions/InvalidRcrdExc.h" />
 		<Unit filename="include/exceptions/InvalidSalaryExc.h" />
 		<Unit filename="include/exceptions/InvalidSsnExc.h" />
 		<Unit filename="include/exceptions/InvalidYearExc.h" />
@@ -58,6 +59,7 @@
 		<Unit filename="src/exceptions/InvalidInputExc.cpp" />
 		<Unit filename="src/exceptions/InvalidMonthExc.cpp" />
 		<Unit filename="src/exceptions/InvalidNameExc.cpp" />
+		<Unit filename="src/exceptions/InvalidRcrdExc.cpp" />
 		<Unit filename="src/exceptions/InvalidSalaryExc.cpp" />
 		<Unit filename="src/exceptions/InvalidSsnExc.cpp" />
 		<Unit filename="src/exceptions/InvalidYearExc.cpp" />

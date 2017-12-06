@@ -56,7 +56,7 @@
 	<iomanip>
 	<fstream>
 
-1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
+1512577205 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\main.cpp
 	"Main_ui.h"
 
 1512567049 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
@@ -84,8 +84,9 @@
 	<fstream>
 	<vector>
 
-1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512579925 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
+	"Validate.h"
 
 1512567049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
@@ -100,11 +101,17 @@
 
 1512486787 y.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\validate.h
+1512577190 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\validate.h
 	"Service.h"
+	"InvalidNameExc.h"
+	"InvalidMonthExc.h"
+	"InvalidSalaryExc.h"
+	"InvalidSsnExc.h"
+	"InvalidYearExc.h"
+	"InvalidInputExc.h"
 	<sstream>
 
-1512491679 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
+1512577190 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512499103 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\validate.cpp
@@ -212,28 +219,44 @@
 
 1512488285 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 
-1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
+1512580640 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidmonthexc.cpp
 	"InvalidMonthExc.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidmonthexc.h
+1512580602 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidmonthexc.h
+	"Employee.h"
 
-1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidnameexc.cpp
+1512580432 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidnameexc.cpp
 	"InvalidNameExc.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidnameexc.h
+1512580425 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidnameexc.h
+	"Employee.h"
 
-1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidsalaryexc.cpp
+1512580618 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidsalaryexc.cpp
 	"InvalidSalaryExc.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidsalaryexc.h
+1512580589 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidsalaryexc.h
+	"Employee.h"
 
-1512488194 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidssnexc.cpp
+1512580623 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidssnexc.cpp
 	"InvalidSsnExc.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidssnexc.h
+1512580581 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidssnexc.h
+	"Employee.h"
 
-1512488195 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidyearexc.cpp
+1512580610 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidyearexc.cpp
 	"InvalidYearExc.h"
 
-1512488194 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
+1512580573 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
+	"Employee.h"
+
+1512580461 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidinputexc.h
+	"Employee.h"
+
+1512580461 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidinputexc.cpp
+	"InvalidInputExc.h"
+
+1512580346 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\exceptions\invalidrcrdexc.cpp
+	"InvalidRcrdExc.h"
+
+1512580346 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidrcrdexc.h
 

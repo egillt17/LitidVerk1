@@ -1,10 +1,10 @@
 #include "InvalidInputExc.h"
 
-InvalidInputExc::InvalidInputExc(string message) 
+InvalidInputExc::InvalidInputExc(string message)
 {
-    this->message = message;
+    _message = message;
 }
 
 string InvalidInputExc::getMessage() {
-    return message;
+    return _message;
 }

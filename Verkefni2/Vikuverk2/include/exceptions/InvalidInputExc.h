@@ -10,7 +10,7 @@ class InvalidInputExc
         string getMessage();
 
     private:
-        string message;
+        string _message;
 };
 
 #endif // INVALIDINPUTEXC_H

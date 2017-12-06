@@ -2,9 +2,9 @@
 
 InvalidYearExc::InvalidYearExc(string message)
 {
-    this->message = message;
+    _message = message;
 }
 
 string InvalidYearExc::getMessage() {
-    return message;
+    return _message;
 }

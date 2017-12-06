@@ -2,9 +2,9 @@
 
 InvalidNameExc::InvalidNameExc(string message)
 {
-    this->message = message;
+    _message = message;
 }
 
 string InvalidNameExc::getMessage() {
-    return message;
+    return _message;
 }

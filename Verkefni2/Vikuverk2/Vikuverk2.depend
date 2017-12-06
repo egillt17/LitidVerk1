@@ -9,7 +9,7 @@
 	<stdlib.h>
 	<iostream>
 
-1512561849 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512565492 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 
 1512495934 D
@@ -34,12 +34,12 @@
 	<fstream>
 	<vector>
 
-1512561920 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
+1512565425 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
 
 1512498845 "
 
-1512561849 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
+1512563527 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
 	<string>
 	<stdio.h>

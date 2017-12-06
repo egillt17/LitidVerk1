@@ -115,3 +115,42 @@ Employee Service::findEmployeeYearlySalary(string ssn, string year) {
 
     return employeeYs;
 }
+
+Employee Service::findHighestEmployeeYearly(string year) {
+    Employee highestEmployee;
+    int yearNumber = 0;
+    int salary = 0;
+    bool found = false;
+    vector <Employee> employee;
+    Employee employeef[employee.size()];
+
+    Repository get;
+    get.getInfoInFile(employee);
+    stringstream sin1(year);
+    sin1 >> yearNumber;
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        salary = 0;
+        found = false;
+        for(unsigned int j = 0; j < employee.size(); j++) {
+            if(!employeef[i].get_name().compare("") && yearNumber == employee[j].get_year()) {
+                employeef[i] = employee[j];
+                found = true;
+            }
+            if(!employeef[i].get_name().compare(employee[j].get_name())) {
+                salary += employee[j].get_salary();
+            }
+        }
+        if(found) {
+            employeef[i].set_salary(salary);
+        }
+    }
+
+    for(unsigned int i = 0; i < employee.size(); i++) {
+        if(employeef[i].get_salary() > highestEmployee.get_salary()) {
+            highestEmployee = employeef[i];
+        }
+    }
+
+    return highestEmployee;
+}

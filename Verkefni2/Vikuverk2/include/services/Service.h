@@ -21,6 +21,7 @@ class Service
         Employee makeEmployee(string name, string ssn, string salary, string month, string year);
         Employee findEmployeeMonth(string ssn, string month, string year);
         Employee findEmployeeYearlySalary(string ssn, string year);
+        Employee findHighestEmployeeYearly(string year);
 
     private:
         bool employeeCheck(Employee employeeTest);

@@ -222,8 +222,8 @@ void Main_ui::getHiPayMenu(){
             break;
         }
     }
-//    Employee employee = get.findHighestEmployeeYearly(year);
-//    cout << "Employee: " << endl << employee;
+    Employee employee = get.findHighestEmployeeYearly(year);
+    cout << "Employee: " << endl << employee;
     system("PAUSE");
     system("CLS");
 

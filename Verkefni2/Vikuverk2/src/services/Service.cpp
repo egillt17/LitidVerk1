@@ -41,14 +41,11 @@ bool Service::employeeCheck(Employee employeeTest) {
     get.getInfoInFile(employee);
 
     for(unsigned int i = 0; i < employee.size(); i++) {
-        if(!employeeTest.get_name().compare(employee[i].get_name())) {
-            if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
-                if(employeeTest.get_month() == employee[i].get_month()) {
-                    if(employeeTest.get_year() == employee[i].get_year()) {
-                        employee[i] = employeeTest;
-                        found = true;
-                    }
-
+        if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
+            if(employeeTest.get_month() == employee[i].get_month()) {
+                if(employeeTest.get_year() == employee[i].get_year()) {
+                    employee[i] = employeeTest;
+                    found = true;
                 }
             }
         }
@@ -122,7 +119,7 @@ Employee Service::findHighestEmployeeYearly(string year) {
     int salary = 0;
     bool found = false;
     vector <Employee> employee;
-    Employee employeef[employee.size()];
+    vector <Employee> employeef;
 
     Repository get;
     get.getInfoInFile(employee);
@@ -130,25 +127,30 @@ Employee Service::findHighestEmployeeYearly(string year) {
     sin1 >> yearNumber;
 
     for(unsigned int i = 0; i < employee.size(); i++) {
+        if(employee[i].get_year() == yearNumber) {
+            employeef.push_back(employee[i]);
+        }
+    }
+
+    for(unsigned int i = 0; i < employeef.size(); i++) {
         salary = 0;
         found = false;
         for(unsigned int j = 0; j < employee.size(); j++) {
-            if(!employeef[i].get_name().compare("") && yearNumber == employee[j].get_year()) {
-                employeef[i] = employee[j];
-                found = true;
-            }
-            if(!employeef[i].get_name().compare(employee[j].get_name())) {
+            if(!employeef[i].get_ssn().compare(employee[j].get_ssn())) {
                 salary += employee[j].get_salary();
+                found = true;
             }
         }
         if(found) {
             employeef[i].set_salary(salary);
+            employeef[i].set_month(0);
         }
     }
-
-    for(unsigned int i = 0; i < employee.size(); i++) {
+        cout << employeef.size() << endl;
+    for(unsigned int i = 0; i < employeef.size(); i++) {
         if(employeef[i].get_salary() > highestEmployee.get_salary()) {
             highestEmployee = employeef[i];
+            cout << highestEmployee << endl;
         }
     }
 

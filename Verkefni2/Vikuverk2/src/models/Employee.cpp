@@ -50,7 +50,7 @@ void Employee::set_month(int month) {
 ostream& operator << (ostream& out, Employee& employee) {
     out << "Name: " << employee._name << endl;
     out << "Social Security Number: " << employee._ssn << endl;
-    out << std::fixed << setprecision(2) << "Salary: " << employee._salary << ".kr" << endl;
+    out << "Salary: " << employee._salary << ".kr" << endl;
     if(employee._month < 10 && employee._month > 0) {
         out << "Date: " << "0" << employee._month << "/";
     }

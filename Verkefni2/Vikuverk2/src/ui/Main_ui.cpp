@@ -1,4 +1,6 @@
 #include "Main_ui.h"
+#include "Validate.h"
+//#include "InvalidNameExc.h"
 
 Main_ui::Main_ui()
 {
@@ -53,7 +55,8 @@ void Main_ui::main_menu(){
 void Main_ui::addEmplMenu(){
 
     Validate validate;
-    char input_ch = '\0';
+    string input_ch;
+    int input = 0;
     string tmpName;
     string tmpSSN;
     string tmpSalary;
@@ -62,60 +65,84 @@ void Main_ui::addEmplMenu(){
     cout << "    Here you can add employees to the registry     " << endl;
     cout << "---------------------------------------------------" << endl;
     cout << "|                                                  " << endl;
-    cout << "| How many employees do you wan't to add? : ";
-    cin >> input_ch;
-    int input = input_ch - '0';
+    
+    while(true){
+        cout << "| How many employees do you wan't to add? (max 10): ";
+        cin >> input_ch;
+        try {
+            (validate.validateInput(input_ch));
+            stringstream sin1(input_ch);
+            sin1 >> input;
+            break;
+        }
+        catch(InvalidInputExc exc) {
+            cout << exc.getMessage() << endl;
+        }
+    }
     for(int i = 0; i < input; i++){
 
         while(true){
             cout << "| Enter a name: ";
             cin.ignore();
             getline(cin, tmpName);
-            if (!validate.validateName(tmpName)){
-                cout << "| invalid input -- try again" << endl;
-            }
-            else{
+            try{
+                (validate.validateName(tmpName));
                 break;
+            }
+            catch(InvalidNameExc exc){
+                cout << exc.getMessage() << endl;
             }
         }
         while(true) {
             cout << "| Social Security Number (10 digits only): ";
             cin >> tmpSSN;
-            if(!validate.validateSSN(tmpSSN)) {
-                cout << "| invalid input -- try again" << endl;
-            }
-            else {
+            try {
+                (validate.validateSSN(tmpSSN));
                 break;
+            }
+            catch (InvalidSsnExc exc) {
+                cout << exc.getMessage() << endl;
             }
         }
         while(true) {
             cout << "| Enter monthly salary: ";
-                cin >> tmpSalary;
-            if(!validate.validateSalary(tmpSalary)) {
-                cout << "| invalid input -- try again" << endl;
-            }
-            else {
+            cin >> tmpSalary;
+            try {
+                (validate.validateSalary(tmpSalary));
                 break;
+            }
+            catch (InvalidSalaryExc exc) {
+                cout << exc.getMessage() << endl;
             }
         }
         while(true) {
             cout << "| Enter a month (1 - 12): ";
-                cin >> tmpMonth;
-            cout << "| Enter a year :";
-                cin >> tmpYear;
-            if(!validate.validateMonth(tmpMonth) || !validate.validateYear(tmpYear)) {
-                cout << "| invalid input -- Month (1 - 12) Year (2017 or below)"  << endl;
+            cin >> tmpMonth;
+            try {
+                (validate.validateMonth(tmpMonth));
+                break;            
+            }  
+            catch(InvalidMonthExc exc) {
+                cout << exc.getMessage() << endl;
             }
-            else {
+        }
+        while(true) {
+            cout << "| Enter a year :";
+            cin >> tmpYear;
+            try {
+                (validate.validateYear(tmpYear));
                 break;
+            }
+            catch(InvalidYearExc exc) {
+                cout << exc.getMessage() << endl;
             }
         }
     Service newEmployee;
     newEmployee.writeEmployeeInFile(tmpName, tmpSSN, tmpSalary, tmpMonth, tmpYear);
         if(input > 1) {
             cout << "|" << endl;
-                cout << "| Please input another employee: " << endl;
-            cout <<  "|" << endl;
+            cout << "| Please input another employee: " << endl;
+            cout << "|" << endl;
         }
     }
 system("CLS");
@@ -127,42 +154,45 @@ void Main_ui::getRcrdMenu() {
     string year;
     Validate validate;
     cout << "                                                         " << endl;
-    cout << "  Here you get the monthly sarary record of an employee  " << endl;
+    cout << "  Here you get the monthly salary record of an employee  " << endl;
     cout << "---------------------------------------------------------" << endl;
 
     while(true) {
-        cout << "Social Security Number (10 digits only): ";
+        cout << "| Social Security Number (10 digits only): ";
         cin >> ssn;
-        if (!validate.validateSSN(ssn)) {
-            cout << "invalid input -- try again" << endl;
-        }
-        else {
+        try {
+            (validate.validateSSN(ssn));
             break;
+        }
+        catch (InvalidSsnExc exc) {
+            cout << exc.getMessage() << endl;
+        }            
+    }
+    while(true) {
+        cout << "| Enter a month (1 - 12): ";
+        cin >> month;
+        try {
+            (validate.validateMonth(month));
+            break;
+        }
+        catch (InvalidMonthExc exc) {
+            cout << exc.getMessage() << endl;
         }
     }
     while(true) {
-        cout << "Enter a month (1 - 12): ";
-            cin >> month;
-        if(!validate.validateMonth(month)) {
-            cout << "invalid input -- try again" << endl;
-        }
-        else {
+        cout << "| Enter a year :";
+        cin >> year;
+        try {
+            (validate.validateYear(year));
             break;
         }
-    }
-    while(true) {
-        cout << "Enter a year (2017 and below): ";
-            cin >> year;
-        if(!validate.validateYear(year)) {
-            cout << "invalid input -- try again" << endl;
-        }
-        else {
-            break;
+        catch (InvalidYearExc exc) {
+            cout << exc.getMessage() << endl;
         }
     }
     Service get;
     Employee employee = get.findEmployeeMonth(ssn, month, year);
-    cout << "Employee: " << endl << employee;
+    cout << "| Employee: " << endl << employee;
     system("PAUSE");
     system("CLS");
 }
@@ -177,23 +207,25 @@ void Main_ui::getYrPayMenu(){
     cout << "---------------------------------------------------------" << endl;
 
     while(true) {
-        cout << "Social Security Number (10 digits only): ";
+        cout << "| Social Security Number (10 digits only): ";
         cin >> ssn;
-        if (!validate.validateSSN(ssn)) {
-            cout << "invalid input -- try again" << endl;
-        }
-        else {
+        try {
+            (validate.validateSSN(ssn));
             break;
         }
+        catch (InvalidSsnExc exc) {
+            cout << exc.getMessage() << endl;
+        }            
     }
     while(true) {
-        cout << "Enter a year (2017 and below): ";
-            cin >> year;
-        if(!validate.validateYear(year)) {
-            cout << "invalid input -- try again" << endl;
-        }
-        else {
+        cout << "| Enter a year :";
+        cin >> year;
+        try {
+            (validate.validateYear(year));
             break;
+        }
+        catch (InvalidYearExc exc) {
+            cout << exc.getMessage() << endl;
         }
     }
     Employee employee;
@@ -212,13 +244,14 @@ void Main_ui::getHiPayMenu(){
     cout << "---------------------------------------------------------" << endl;
 
     while(true) {
-        cout << "Enter a year (2017 and below): ";
-            cin >> year;
-        if(!validate.validateYear(year)) {
-            cout << "invalid input -- try again" << endl;
-        }
-        else {
+        cout << "| Enter a year :";
+        cin >> year;
+        try {
+            (validate.validateYear(year));
             break;
+        }
+        catch (InvalidYearExc exc) {
+            cout << exc.getMessage() << endl;
         }
     }
 }

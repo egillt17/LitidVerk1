@@ -1,6 +1,10 @@
 #include "InvalidSalaryExc.h"
 
-InvalidSalaryExc::InvalidSalaryExc()
+InvalidSalaryExc::InvalidSalaryExc(string message)
 {
-    //ctor
+    this->message = message;
+}
+
+string InvalidSalaryExc::getMessage() {
+    return message;
 }

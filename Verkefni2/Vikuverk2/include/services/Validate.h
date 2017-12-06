@@ -1,6 +1,12 @@
 #ifndef VALIDATE_H
 #define VALIDATE_H
 #include "Service.h"
+#include "InvalidNameExc.h"
+#include "InvalidMonthExc.h"
+#include "InvalidSalaryExc.h"
+#include "InvalidSsnExc.h"
+#include "InvalidYearExc.h"
+#include "InvalidInputExc.h"
 #include <sstream>
 
 
@@ -8,6 +14,7 @@ class Validate
 {
     public:
         Validate();
+        bool validateInput(string input);
         bool validateSalary(string salary);
         bool validateSSN(string ssn);
         bool validateMonth(string month);

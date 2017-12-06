@@ -1,6 +1,10 @@
 #include "InvalidSsnExc.h"
 
-InvalidSsnExc::InvalidSsnExc()
+InvalidSsnExc::InvalidSsnExc(string message)
 {
-    //ctor
+    this->message = message;
+}
+
+string InvalidSsnExc::getMessage() {
+    return message;
 }

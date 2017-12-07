@@ -9,7 +9,7 @@
 	<stdlib.h>
 	<iostream>
 
-1512488621 D
+1512575952 D
 
 1512583594 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
@@ -42,12 +42,10 @@
 
 1512575952 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
 
-<<<<<<< HEAD
-1512583305 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
-=======
 1512652867 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
->>>>>>> adbbe0a16709bcedcf4fb856f71ae03dfc631c03
+
+1512652867 be0a16709bcedcf4fb856f71ae03dfc631c03
 
 1512488285 "
 
@@ -103,16 +101,16 @@
 	<fstream>
 	<vector>
 
-1512653804 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512653845 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
 	"Validate.h"
 
 1512579925 h"
 
-1512651464 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
+1512653884 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
 
-1512567049 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\service.h
+1512653884 c:\users\lenovo\desktop\verklegt 1\litidverk1\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
 	<string>
 	<stdio.h>

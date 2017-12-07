@@ -1,14 +1,6 @@
 #include "Service.h"
 
 
-Service::Service() {
-    //ctor
-}
-
-Service::~Service() {
-    //dtor
-}
-
 void Service::writeEmployeeInFile(string name, string ssn, string salary, string month, string year) {
     Employee employee = makeEmployee(name, ssn, salary, month, year);
     if(!employeeCheck(employee)) {
@@ -149,15 +141,15 @@ Employee Service::findHighestEmployeeYearly(string year) {
             employeef[i].set_month(0);
         }
     }
-    stringstream sin5(employeef[0].get_salary());
-    sin5 >> salary;
-    for(unsigned int i = 0; i < employeef.size(); i++) {
-        stringstream sin4(employeef[i].get_salary());
-        sin4 >> cash;
-        if(cash > salary) {
+    double highest = 0;
+    for (unsigned int i = 0; i < employeef.size(); i++) {
+        salary = 0;
+        stringstream sin3(employeef[i].get_salary());
+        sin3 >> salary;
+        if(salary > highest) {
             highestEmployee = employeef[i];
-            stringstream sin5(employeef[i].get_salary());
-            sin5 >> salary;
+            stringstream sin4(employeef[i].get_salary());
+            sin4 >> highest;
         }
     }
 

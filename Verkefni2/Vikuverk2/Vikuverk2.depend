@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1512558875 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\main.cpp
+1512584322 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\main.cpp
 	"Main_ui.h"
 
 1512558941 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\ui\main_ui.h
@@ -42,11 +42,16 @@
 
 1512575952 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\repository\repository.h
 
+<<<<<<< HEAD
 1512583305 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
+=======
+1512652867 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\src\services\service.cpp
+	"Service.h"
+>>>>>>> adbbe0a16709bcedcf4fb856f71ae03dfc631c03
 
 1512488285 "
 
-1512563527 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
+1512651402 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\verkefni2\vikuverk2\include\services\service.h
 	<iostream>
 	<string>
 	<stdio.h>

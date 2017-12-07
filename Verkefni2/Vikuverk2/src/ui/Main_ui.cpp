@@ -20,7 +20,7 @@ void Main_ui::main_menu(){
         cout << "| 5. Quit the program                             |" << endl;
         cout << "|                                                 |" << endl;
         cout << "---------------------------------------------------" << endl;
-        cout << "| Please input a number : ";
+        cout << "Please input a number : ";
         ///if else statement for the main menu
         cin >> input;
         if (input == '1') {     /// to add a new employee menu

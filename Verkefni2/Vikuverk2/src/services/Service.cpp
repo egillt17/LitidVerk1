@@ -129,17 +129,21 @@ Employee Service::findHighestEmployeeYearly(string year) {
         salary = 0;
         found = false;
         for(unsigned int j = 0; j < employee.size(); j++) {
-            if(!employeef[i].get_ssn().compare(employee[j].get_ssn())) {
+        if(!employeef[i].get_ssn().compare(employee[j].get_ssn())) {
+            if(yearNumber == employee[j].get_year()) {
                 stringstream sin2(employee[j].get_salary());
                 sin2 >> cash;
                 salary += cash;
                 found = true;
+
             }
         }
-        if(found) {
-            employeef[i].set_salary(salary);
-            employeef[i].set_month(0);
-        }
+    }
+    if(found == true) {
+        employeef[i].set_salary(salary);
+        employeef[i].set_month(0);
+    }
+
     }
     double highest = 0;
     for (unsigned int i = 0; i < employeef.size(); i++) {

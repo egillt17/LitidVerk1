@@ -1,11 +1,6 @@
 #include "Main_ui.h"
 #include "Validate.h"
 
-Main_ui::Main_ui()
-{
-    //ctor
-}
-
 ///the main menu function
 void Main_ui::main_menu(){
     char input = '\0';
@@ -25,7 +20,7 @@ void Main_ui::main_menu(){
         cout << "| 5. Quit the program                             |" << endl;
         cout << "|                                                 |" << endl;
         cout << "---------------------------------------------------" << endl;
-        cout << "| Please input a number : ";
+        cout << "Please input a number : ";
         ///if else statement for the main menu
         cin >> input;
         if (input == '1') {     /// to add a new employee menu
@@ -69,11 +64,11 @@ void Main_ui::addEmplMenu(){
     cout << "                                                   " << endl;
     cout << "    Here you can add employees to the registry     " << endl;
     cout << "---------------------------------------------------" << endl;
-    cout << "|                                                  " << endl;
+    cout << "                                                   " << endl;
 
     /// this loop checks if the input, for how many employee to input
     while(true){
-        cout << "| How many employees do you wan't to add? (max 10): ";
+        cout << "How many employees do you wan't to add? (max 10): ";
         cin >> input_ch;
         try {
             (validate.validateInput(input_ch)); /// validates the input in the Validate class
@@ -88,7 +83,7 @@ void Main_ui::addEmplMenu(){
     for(int i = 0; i < input; i++){ ///loop for number of employees to input
 
         while(true){ /// loop to check the name
-            cout << "| Enter a name: ";
+            cout << "Enter a name: ";
             cin.ignore();   /// to ignore a whitespace
             getline(cin, tmpName);
             try{        /// this tries to validate the name in the Validate class
@@ -100,7 +95,7 @@ void Main_ui::addEmplMenu(){
             }
         }
         while(true) {   /// loop to check the SSN
-            cout << "| Social Security Number (10 digits only): ";
+            cout << "Social Security Number (10 digits only): ";
             cin >> tmpSSN;
             try {
                 (validate.validateSSN(tmpSSN)); /// tries to check if it is valid
@@ -111,7 +106,7 @@ void Main_ui::addEmplMenu(){
             }
         }
         while(true) {   /// loop to check the salary
-            cout << "| Enter monthly salary: ";
+            cout << "Enter monthly salary: ";
             cin >> tmpSalary;
             try {
                 (validate.validateSalary(tmpSalary));   /// tries to check if it is valid
@@ -122,7 +117,7 @@ void Main_ui::addEmplMenu(){
             }
         }
         while(true) {   /// loop to check the month
-            cout << "| Enter a month (1 - 12): ";
+            cout << "Enter a month (1 - 12): ";
             cin >> tmpMonth;
             try {
                 (validate.validateMonth(tmpMonth));
@@ -133,7 +128,7 @@ void Main_ui::addEmplMenu(){
             }
         }
         while(true) {   /// loop to check the year
-            cout << "| Enter a year :";
+            cout << "Enter a year :";
             cin >> tmpYear;
             try {
                 (validate.validateYear(tmpYear));
@@ -146,9 +141,9 @@ void Main_ui::addEmplMenu(){
     Service newEmployee;    ///makes a new employee from the service class
     newEmployee.writeEmployeeInFile(tmpName, tmpSSN, tmpSalary, tmpMonth, tmpYear);   /// this writes the to the newEmployee class all the variables
         if(input > 1) {     /// this prints out if you wan't to input more than 1 employees
-            cout << "|" << endl;
-            cout << "| Please input another employee: " << endl;
-            cout << "|" << endl;
+            cout << endl;
+            cout << "Please input another employee: " << endl;
+            cout << endl;
         }
     }
 system("CLS");  /// clears screen
@@ -168,7 +163,7 @@ void Main_ui::getRcrdMenu() {
 
     /// this is the same as in the "input new employee" function, except it looks for the SSN, month and year
     while(true) {
-        cout << "| Social Security Number (10 digits only): ";
+        cout << "Social Security Number (10 digits only): ";
         cin >> ssn;
         try {   /// loop to input and check the SSN
             (validate.validateSSN(ssn));
@@ -179,7 +174,7 @@ void Main_ui::getRcrdMenu() {
         }
     }
     while(true) {   /// loop to input and check the month
-        cout << "| Enter a month (1 - 12): ";
+        cout << "Enter a month (1 - 12): ";
         cin >> month;
         try {
             (validate.validateMonth(month));
@@ -208,14 +203,14 @@ void Main_ui::getRcrdMenu() {
     Employee employee = get.findEmployeeMonth(ssn, month, year);
 
     if (employee.get_name() != ""){
-        cout << "| Employee: " << endl << employee; /// it prints it out
-        system("PAUSE");
+        cout << "Employee: " << endl << employee;         /// Here we check if the employee is accually found by checking if his name is the empty string,
+        system("PAUSE");                                    ///and if thats not the case then we print out the employee
         system("CLS");
     }
     else {
-        cout << "Employee does not exist, exiting to main menu" << endl << endl;
+        cout << "Record does not exist, exiting to main menu" << endl << endl;
         system("PAUSE");
-        system("CLS");
+        system("CLS");                                      ///If the employees name is in fact the emty string then an error message pops up saying the employee does not exist
     }
 }
 
@@ -231,7 +226,7 @@ void Main_ui::getYrPayMenu(){
 
     /// same as in addEmplMenu(), except it inputs and checks only SSN and the year
     while(true) {
-        cout << "| Social Security Number (10 digits only): ";
+        cout << "Social Security Number (10 digits only): ";
         cin >> ssn;
         try {
             (validate.validateSSN(ssn));
@@ -242,7 +237,7 @@ void Main_ui::getYrPayMenu(){
         }
     }
     while(true) {
-        cout << "| Enter a year :";
+        cout << "Enter a year :";
         cin >> year;
         try {
             (validate.validateYear(year));
@@ -259,14 +254,14 @@ void Main_ui::getYrPayMenu(){
     employee = get.findEmployeeYearlySalary(ssn, year);
 
     if (employee.get_name() != ""){
-        cout << "| Employee: " << endl << employee; /// it prints it out
-        system("PAUSE");
+        cout << "Employee: " << endl << employee;                 /// Here we check if the employee is accually found by checking if his name is the empty string,
+        system("PAUSE");                                            ///and if thats not the case then we print out the employee
         system("CLS");
     }
     else {
-        cout << "Employee does not exist, exiting to main menu" << endl << endl;
+        cout << "Record does not exist, exiting to main menu" << endl << endl;
         system("PAUSE");
-        system("CLS");
+        system("CLS");                                  ///If the employees name is in fact the emty string then an error message pops up saying the employee does not exist
     }
 }
 
@@ -280,13 +275,13 @@ void Main_ui::getHiPayMenu(){
     cout << "---------------------------------------------------------" << endl;
 
     while(true) {
-        cout << "| Enter a year :";
+        cout << "Enter a year :";
         cin >> year;
         try {
-            (validate.validateYear(year));
-            break;
+            (validate.validateYear(year));          ///Here we try to validate the year by calling the Validate class, and if the year is valid then the program
+            break;                                  ///continues, if its not valid then an exception is thrown
         }
-        catch (InvalidYearExc exc) {
+        catch (InvalidYearExc exc) {                ///Catches the error message and prints it on the screen
             cout << exc.getMessage() << endl;
         }
     }
@@ -294,18 +289,13 @@ void Main_ui::getHiPayMenu(){
     Employee employee = get.findHighestEmployeeYearly(year);
 
     if (employee.get_name() != ""){
-        cout << "| Employee: " << endl << employee; /// it prints it out
-        system("PAUSE");
+        cout << "Employee: " << endl << employee;                 /// Here we check if the employee is accually found by checking if his name is the empty string,
+        system("PAUSE");                                            ///and if thats not the case then we print out the employee
         system("CLS");
     }
     else {
-        cout << "Employee does not exist, exiting to main menu" << endl << endl;
+        cout << "Record does not exist, exiting to main menu" << endl << endl;
         system("PAUSE");
-        system("CLS");
+        system("CLS");                                  ///If the employees name is in fact the emty string then an error message pops up saying the employee does not exist
     }
-
 }
-/*
-Service newEmployee
-newEmployee.writeEmployeeInFile(string name, string ssn, string salary, string month, string year);
-*/

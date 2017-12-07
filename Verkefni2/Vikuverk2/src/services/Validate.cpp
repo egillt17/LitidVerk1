@@ -2,19 +2,19 @@
 
 /// Validate how many employees the user wants to create, maximum 10, and if it is a digit,
 bool Validate::validateInput(string input){
-    for(unsigned int i = 0; i < input.length(); i++) {  /// goes through the string, 
+    for(unsigned int i = 0; i < input.length(); i++) {  /// goes through the string,
         if(!isdigit(input[i])){     /// checks if it is only digits, if not
-            throw(InvalidInputExc("| Invalid input - (digits only)"));  /// it throws the invalid inputexception message
+            throw(InvalidInputExc("Invalid input - (digits only)"));  /// it throws the invalid inputexception message
         }
     }
-    int tmpInput = 0;           
+    int tmpInput = 0;
     stringstream sin1(input);
     sin1 >> tmpInput;           /// convert the string to int
     if (tmpInput >= 1 && tmpInput <= 10){           /// checks if it is 1 to 10
         return true;
     }
     else {
-        throw(InvalidInputExc("| Invalid input - (1 to 10)"));  /// if not, throws another invalid inputexception message
+        throw(InvalidInputExc("Invalid input - (1 to 10)"));  /// if not, throws another invalid inputexception message
     }
 
 }
@@ -24,7 +24,7 @@ bool Validate::validateSalary(string salary)
 {
     for (unsigned int i = 0; i < salary.length(); i++){ /// goes through the string, check if only digit
         if (!isdigit(salary[i])){
-            throw(InvalidSalaryExc("| Invalid input - (digits only)")); /// if not, throws invalidsalaryexception message
+            throw(InvalidSalaryExc("Invalid input - (digits only)")); /// if not, throws invalidsalaryexception message
         }
     }
 return true;
@@ -39,22 +39,22 @@ bool Validate::validateSSN(string ssn)
         {
             if (!isdigit(ssn[i]))
             {
-                throw(InvalidSsnExc("| Invalid input - (10 - digits only)"));   /// if not, throws an error message, only digits
+                throw(InvalidSsnExc("Invalid input - (10 - digits only)"));   /// if not, throws an error message, only digits
             }
         }
     }
     else {
-        throw(InvalidSsnExc("| Invalid lenght - (10 - digits)"));   /// throws another error if it is not the correct length
+        throw(InvalidSsnExc("Invalid lenght - (10 - digits)"));   /// throws another error if it is not the correct length
     }
 return true;
 }
 
-/// to Validate month 
+/// to Validate month
 bool Validate::validateMonth(string month)
 {
     for(unsigned int i = 0; i < month.length(); i++) {  /// check if only digit
         if(!isdigit(month[i])){
-            throw(InvalidMonthExc("| Invalid input - (digits only)"));  /// throws an error if it is not
+            throw(InvalidMonthExc("Invalid input - (digits only)"));  /// throws an error if it is not
         }
     }
     int tmpMonth = 0;
@@ -64,7 +64,7 @@ bool Validate::validateMonth(string month)
         return true;
     }
     else{
-        throw(InvalidMonthExc("| Invalid input - (1 to 12)"));  /// throws error, must be 1 to 12
+        throw(InvalidMonthExc("Invalid input - (1 to 12)"));  /// throws error, must be 1 to 12
     }
 }
 
@@ -75,11 +75,11 @@ bool Validate::validateName(string name)
     {
         if (!isalpha(name[i]) && name[i] != ' ')    /// string can have whitespace
         {
-            throw(InvalidNameExc("| Invalid input - (letters only)"));  /// throws error, if it contains digit
+            throw(InvalidNameExc("Invalid input - (letters only)"));  /// throws error, if it contains digit
         }
     }
     if (name[0] == ' '){    /// checks if the first letter is not a whitespace, throws an error message
-        throw(InvalidNameExc("| Invalid input - (must start with a letter)"));  
+        throw(InvalidNameExc("Invalid input - (must start with a letter)"));
     }
 return true;
 }
@@ -89,12 +89,12 @@ bool Validate::validateYear(string year)
 {
     for(unsigned int i = 0; i < year.length(); i++) {   /// checks if it contains only digits
         if(!isdigit(year[i])){
-            throw(InvalidYearExc("| Invalid input - (digits only)"));   /// throws an error message
+            throw(InvalidYearExc("Invalid input - (digits only)"));   /// throws an error message
         }
     }
     int tmpYear = 0;
     if(year.length() != 4) {    /// checks if it is only 4 digits in length
-        throw(InvalidYearExc("| Invalid input - (4 - digits only)"));   /// throws an error message
+        throw(InvalidYearExc("Invalid input - (4 - digits only)"));   /// throws an error message
     }
     stringstream sin1(year);
     sin1 >> tmpYear;    /// converts the string to integer
@@ -104,8 +104,8 @@ bool Validate::validateYear(string year)
     }
     else
     {
-        throw(InvalidYearExc("| Invalid input - (1900 to 2017)"));  /// throws an error message
+        throw(InvalidYearExc("Invalid input - (1900 to 2017)"));  /// throws an error message
     }
-throw(InvalidYearExc("| Invalid input"));
+throw(InvalidYearExc("Invalid input"));
 }
 

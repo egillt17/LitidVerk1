@@ -68,21 +68,6 @@ ostream& operator << (ostream& out, Employee& employee) {
     return out;             ///ostream overload function
 }
 
-istream& operator >> (istream& in, Employee& employee) {
-    cout << "Name: ";
-    in >> employee._name;
-    cout << "Social Security Number: ";
-    in >> employee._ssn;
-    cout << "Salary: ";
-    in >> employee._salary;
-    cout << "Month: ";
-    in >> employee._month;
-    cout << "Year: ";
-    in >> employee._year;
-
-    return in;              ///istream overload function
-}
-
 ofstream& operator << (ofstream& out, Employee& employee) {
     out << ":" << employee._name << ":" << employee._ssn << ":" << employee._salary << ":" << employee._month << ":" << employee._year << endl;
     return out;

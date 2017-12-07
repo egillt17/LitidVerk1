@@ -18,18 +18,15 @@ void Service::writeEmployeeInFile(string name, string ssn, string salary, string
 }
 
 Employee Service::makeEmployee(string name, string ssn, string salary, string month, string year) {
-    int salaryNumber = 0;
     int monthNumber = 0;
     int yearNumber = 0;
 
-    stringstream sin1(salary);
-    sin1 >> salaryNumber;
     stringstream sin2(month);
     sin2 >> monthNumber;
     stringstream sin3(year);
     sin3 >> yearNumber;
 
-    Employee employee(name, ssn, salaryNumber, monthNumber, yearNumber);
+    Employee employee(name, ssn, salary, monthNumber, yearNumber);
 
     return employee;
 }
@@ -41,14 +38,11 @@ bool Service::employeeCheck(Employee employeeTest) {
     get.getInfoInFile(employee);
 
     for(unsigned int i = 0; i < employee.size(); i++) {
-        if(!employeeTest.get_name().compare(employee[i].get_name())) {
-            if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
-                if(employeeTest.get_month() == employee[i].get_month()) {
-                    if(employeeTest.get_year() == employee[i].get_year()) {
-                        employee[i] = employeeTest;
-                        found = true;
-                    }
-
+        if(!employeeTest.get_ssn().compare(employee[i].get_ssn())) {
+            if(employeeTest.get_month() == employee[i].get_month()) {
+                if(employeeTest.get_year() == employee[i].get_year()) {
+                    employee[i] = employeeTest;
+                    found = true;
                 }
             }
         }
@@ -88,7 +82,8 @@ Employee Service::findEmployeeMonth(string ssn, string month, string year) {
 
 Employee Service::findEmployeeYearlySalary(string ssn, string year) {
     int yearNumber = 0;
-    int salary = 0;
+    double salary = 0;
+    double cash = 0;
     bool found = false;
     vector <Employee> employee;
     Employee employeeYs;
@@ -102,7 +97,9 @@ Employee Service::findEmployeeYearlySalary(string ssn, string year) {
         if(!ssn.compare(employee[i].get_ssn())) {
             if(yearNumber == employee[i].get_year()) {
                 employeeYs = employee[i];
-                salary += employee[i].get_salary();
+                stringstream sin2(employee[i].get_salary());
+                sin2 >> cash;
+                salary += cash;
                 found = true;
 
             }
@@ -119,10 +116,11 @@ Employee Service::findEmployeeYearlySalary(string ssn, string year) {
 Employee Service::findHighestEmployeeYearly(string year) {
     Employee highestEmployee;
     int yearNumber = 0;
-    int salary = 0;
+    double salary = 0;
+    double cash = 0;
     bool found = false;
     vector <Employee> employee;
-    Employee employeef[employee.size()];
+    vector <Employee> employeef;
 
     Repository get;
     get.getInfoInFile(employee);
@@ -130,25 +128,36 @@ Employee Service::findHighestEmployeeYearly(string year) {
     sin1 >> yearNumber;
 
     for(unsigned int i = 0; i < employee.size(); i++) {
+        if(employee[i].get_year() == yearNumber) {
+            employeef.push_back(employee[i]);
+        }
+    }
+
+    for(unsigned int i = 0; i < employeef.size(); i++) {
         salary = 0;
         found = false;
         for(unsigned int j = 0; j < employee.size(); j++) {
-            if(!employeef[i].get_name().compare("") && yearNumber == employee[j].get_year()) {
-                employeef[i] = employee[j];
+            if(!employeef[i].get_ssn().compare(employee[j].get_ssn())) {
+                stringstream sin2(employee[j].get_salary());
+                sin2 >> cash;
+                salary += cash;
                 found = true;
-            }
-            if(!employeef[i].get_name().compare(employee[j].get_name())) {
-                salary += employee[j].get_salary();
             }
         }
         if(found) {
             employeef[i].set_salary(salary);
+            employeef[i].set_month(0);
         }
     }
-
-    for(unsigned int i = 0; i < employee.size(); i++) {
-        if(employeef[i].get_salary() > highestEmployee.get_salary()) {
+    stringstream sin5(employeef[0].get_salary());
+    sin5 >> salary;
+    for(unsigned int i = 0; i < employeef.size(); i++) {
+        stringstream sin4(employeef[i].get_salary());
+        sin4 >> cash;
+        if(cash > salary) {
             highestEmployee = employeef[i];
+            stringstream sin5(employeef[i].get_salary());
+            sin5 >> salary;
         }
     }
 

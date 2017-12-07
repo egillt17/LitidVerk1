@@ -11,7 +11,7 @@ class InvalidMonthExc
         string getMessage();
 
     private:
-        string message;
+        string _message;
 };
 
 #endif // INVALIDMONTHEXC_H

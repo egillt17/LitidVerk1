@@ -4,8 +4,3 @@ Main_ui::Main_ui()
 {
     //ctor
 }
-
-Main_ui::~Main_ui()
-{
-    //dtor
-}

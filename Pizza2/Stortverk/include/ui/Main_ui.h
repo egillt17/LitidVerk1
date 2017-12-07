@@ -6,9 +6,6 @@ class Main_ui
 {
     public:
         Main_ui();
-        virtual ~Main_ui();
-
-    protected:
 
     private:
 };

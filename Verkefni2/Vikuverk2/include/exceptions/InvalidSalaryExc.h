@@ -10,7 +10,7 @@ class InvalidSalaryExc
         string getMessage();
 
     private:
-        string message;
+        string _message;
 };
 
 #endif // INVALIDSALARYEXC_H

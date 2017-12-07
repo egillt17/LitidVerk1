@@ -154,12 +154,14 @@ void Main_ui::addEmplMenu(){
 system("CLS");  /// clears screen
 }
 
-/// The menu to get look up employee in records
+/// The menu to look up an employee in records
 void Main_ui::getRcrdMenu() {
     string ssn;
     string month;
     string year;
     Validate validate;
+
+
     cout << "                                                         " << endl;
     cout << "  Here you get the monthly salary record of an employee  " << endl;
     cout << "---------------------------------------------------------" << endl;
@@ -204,9 +206,17 @@ void Main_ui::getRcrdMenu() {
     /// get goes into the find employee by month function, inputs the variables
     /// if it finds the specific employee, by month in the get class
     Employee employee = get.findEmployeeMonth(ssn, month, year);
-    cout << "| Employee: " << endl << employee; /// it prints it out
-    system("PAUSE");
-    system("CLS");
+
+    if (employee.get_name() != ""){
+        cout << "| Employee: " << endl << employee; /// it prints it out
+        system("PAUSE");
+        system("CLS");
+    }
+    else {
+        cout << "Employee does not exist, exiting to main menu" << endl << endl;
+        system("PAUSE");
+        system("CLS");
+    }
 }
 
 /// The menu to find the yearly salary from an employee
@@ -247,9 +257,17 @@ void Main_ui::getYrPayMenu(){
     /// if it finds the specific employee, by month in the get class
     Employee employee;
     employee = get.findEmployeeYearlySalary(ssn, year);
-    cout << "Employee: " << endl << employee; /// it prints it out;
-    system("PAUSE");
-    system("CLS");
+
+    if (employee.get_name() != ""){
+        cout << "| Employee: " << endl << employee; /// it prints it out
+        system("PAUSE");
+        system("CLS");
+    }
+    else {
+        cout << "Employee does not exist, exiting to main menu" << endl << endl;
+        system("PAUSE");
+        system("CLS");
+    }
 }
 
 void Main_ui::getHiPayMenu(){
@@ -274,10 +292,17 @@ void Main_ui::getHiPayMenu(){
     }
 
     Employee employee = get.findHighestEmployeeYearly(year);
-    cout << "Employee: " << endl << employee;
 
-    system("PAUSE");
-    system("CLS");
+    if (employee.get_name() != ""){
+        cout << "| Employee: " << endl << employee; /// it prints it out
+        system("PAUSE");
+        system("CLS");
+    }
+    else {
+        cout << "Employee does not exist, exiting to main menu" << endl << endl;
+        system("PAUSE");
+        system("CLS");
+    }
 
 }
 /*

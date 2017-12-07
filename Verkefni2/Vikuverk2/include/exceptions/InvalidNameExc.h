@@ -10,7 +10,7 @@ class InvalidNameExc
         string getMessage();
 
     private:
-        string message;
+        string _message;
 };
 
 #endif // INVALIDNAMEEXC_H

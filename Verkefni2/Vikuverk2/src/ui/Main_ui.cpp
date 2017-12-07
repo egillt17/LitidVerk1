@@ -1,11 +1,6 @@
 #include "Main_ui.h"
 #include "Validate.h"
 
-Main_ui::Main_ui()
-{
-    //ctor
-}
-
 ///the main menu function
 void Main_ui::main_menu(){
     char input = '\0';
@@ -208,14 +203,14 @@ void Main_ui::getRcrdMenu() {
     Employee employee = get.findEmployeeMonth(ssn, month, year);
 
     if (employee.get_name() != ""){
-        cout << "| Employee: " << endl << employee; /// it prints it out
-        system("PAUSE");
+        cout << "| Employee: " << endl << employee;         /// Here we check if the employee is accually found by checking if his name is the empty string,
+        system("PAUSE");                                    ///and if thats not the case then we print out the employee
         system("CLS");
     }
     else {
         cout << "Employee does not exist, exiting to main menu" << endl << endl;
         system("PAUSE");
-        system("CLS");
+        system("CLS");                                      ///If the employees name is in fact the emty string then an error message pops up saying the employee does not exist
     }
 }
 
@@ -259,14 +254,14 @@ void Main_ui::getYrPayMenu(){
     employee = get.findEmployeeYearlySalary(ssn, year);
 
     if (employee.get_name() != ""){
-        cout << "| Employee: " << endl << employee; /// it prints it out
-        system("PAUSE");
+        cout << "| Employee: " << endl << employee;                 /// Here we check if the employee is accually found by checking if his name is the empty string,
+        system("PAUSE");                                            ///and if thats not the case then we print out the employee
         system("CLS");
     }
     else {
         cout << "Employee does not exist, exiting to main menu" << endl << endl;
         system("PAUSE");
-        system("CLS");
+        system("CLS");                                  ///If the employees name is in fact the emty string then an error message pops up saying the employee does not exist
     }
 }
 
@@ -283,10 +278,10 @@ void Main_ui::getHiPayMenu(){
         cout << "| Enter a year :";
         cin >> year;
         try {
-            (validate.validateYear(year));
-            break;
+            (validate.validateYear(year));          ///Here we try to validate the year by calling the Validate class, and if the year is valid then the program
+            break;                                  ///continues, if its not valid then an exception is thrown
         }
-        catch (InvalidYearExc exc) {
+        catch (InvalidYearExc exc) {                ///Catches the error message and prints it on the screen
             cout << exc.getMessage() << endl;
         }
     }
@@ -294,16 +289,15 @@ void Main_ui::getHiPayMenu(){
     Employee employee = get.findHighestEmployeeYearly(year);
 
     if (employee.get_name() != ""){
-        cout << "| Employee: " << endl << employee; /// it prints it out
-        system("PAUSE");
+        cout << "| Employee: " << endl << employee;                 /// Here we check if the employee is accually found by checking if his name is the empty string,
+        system("PAUSE");                                            ///and if thats not the case then we print out the employee
         system("CLS");
     }
     else {
         cout << "Employee does not exist, exiting to main menu" << endl << endl;
         system("PAUSE");
-        system("CLS");
+        system("CLS");                                  ///If the employees name is in fact the emty string then an error message pops up saying the employee does not exist
     }
-
 }
 /*
 Service newEmployee

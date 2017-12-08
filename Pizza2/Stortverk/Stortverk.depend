@@ -23,3 +23,29 @@
 	<string>
 	<vector>
 
+1512741712 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\main.cpp
+	<iostream>
+	"Manager_ui.h"
+
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\toppings.cpp
+	"Toppings.h"
+
+1512735213 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\toppings.h
+	<iostream>
+	<string>
+	<vector>
+
+1512658238 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+	"Main_ui.h"
+
+1512741482 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+	<iostream>
+	<string>
+
+1512742356 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
+	"Main_ui.h"
+	<stdlib.h>
+
+1512742686 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+	"Manager_ui.h"
+

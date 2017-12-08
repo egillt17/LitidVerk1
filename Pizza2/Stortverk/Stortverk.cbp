@@ -38,9 +38,11 @@
 		</Compiler>
 		<Unit filename="include/models/Toppings.h" />
 		<Unit filename="include/ui/Main_ui.h" />
+		<Unit filename="include/ui/Manager_ui.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/models/Toppings.cpp" />
 		<Unit filename="src/ui/Main_ui.cpp" />
+		<Unit filename="src/ui/Manager_ui.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

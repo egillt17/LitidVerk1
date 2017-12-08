@@ -23,10 +23,6 @@ vector<Toppings> ToppingRepo::Read_toppings() {
 
     }
 
-    for(unsigned int i = 0; i < topping.size(); i++) {
-        cout << topping[i];
-    }
-
     fin.close();
     return topping;
 }

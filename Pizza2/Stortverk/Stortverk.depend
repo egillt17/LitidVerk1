@@ -27,15 +27,16 @@
 	<string>
 	"Manager_ui.h"
 
-1512749418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
+1512752166 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
 
-1512749328 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\toppings.h
+1512752086 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\toppings.h
 	<iostream>
 	<string>
 	<vector>
+	<fstream>
 
-1512743015 D
+1512744292 D
 
 1512743636 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
@@ -84,7 +85,7 @@
 1512743071 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\pizza.h
 	"Toppings.h"
 
-1512750618 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\toppingrepo.cpp
+1512751609 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\toppingrepo.cpp
 	"ToppingRepo.h"
 
 1512750382 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\repository\toppingrepo.h
@@ -93,7 +94,7 @@
 	<fstream>
 	<sstream>
 
-1512750666 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\topservice.cpp
+1512751578 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\topservice.cpp
 	"TopService.h"
 
 1512749712 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\topservice.h
@@ -125,16 +126,18 @@
 	"Main_ui.h"
 	<stdlib.h>
 
-<<<<<<< HEAD
 1512744292 777d9a9753da31a08f81987b2d7a2340d0c73
 
-1512745730 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\manager_ui.h
+1512751267 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\manager_ui.h
 	"Main_ui.h"
+	"TopService.h"
 	<stdlib.h>
 
-1512745730 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
+1512752342 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
-=======
+
+1512745730 i.h"
+
 1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
 
@@ -148,5 +151,6 @@
 	"Toppings.h"
 	<fstream>
 	<sstream>
->>>>>>> 666d1a67befcd0da3a5ccfae9d2aa50892e82518
+
+1512743959 d1a67befcd0da3a5ccfae9d2aa50892e82518
 

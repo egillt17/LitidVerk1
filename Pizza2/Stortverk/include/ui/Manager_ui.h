@@ -2,6 +2,7 @@
 #define MANAGER_UI_H
 
 #include "Main_ui.h"
+#include "TopService.h"
 #include <stdlib.h>
 
 class Manager_ui

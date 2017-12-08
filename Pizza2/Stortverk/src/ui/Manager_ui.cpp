@@ -52,6 +52,8 @@ void Manager_ui::managePizzaUI() {
 
 void Manager_ui::manageToppingUI() {
     char input = '\0';
+    TopService get;
+    vector <Toppings> topping;
 
     while(true) {
         cout << " -Manager - Toppings management- " << endl;
@@ -63,13 +65,19 @@ void Manager_ui::manageToppingUI() {
         cin >> input;
 
         if(input == '1') {
+            system("cls");
             cout << "Display topping list" << endl;
-            cout << endl;
-            
+            topping = get.getToppingList();
+            for(unsigned int i = 0; i < topping.size(); i++) {
+                cout << topping[i];
+            }
+            system("pause");
+            system("cls");
+
         }
         else if(input == '2'){
             cout << "Input new toppping" << endl;
-            cout << endl;
+            //get.addTopping()
         }
         else if(input == '3'){
             cout << "Remove topping from list" << endl;

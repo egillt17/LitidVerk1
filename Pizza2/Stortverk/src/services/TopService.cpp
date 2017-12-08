@@ -2,6 +2,7 @@
 
 vector <Toppings> TopService::getToppingList() {
    vector <Toppings> toppingList;
+   toppingList.clear();
    ToppingRepo get;
    toppingList = get.Read_toppings();
 

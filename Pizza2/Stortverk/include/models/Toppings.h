@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ class Toppings
         string getName();
         int getPrice();
         friend ostream& operator << (ostream& out, const Toppings& topping);
+        friend ofstream& operator << (ofstream& out, const Toppings& topping);
 
     protected:
 

@@ -25,7 +25,11 @@ int Toppings::getPrice() {
 }
 
 ostream& operator << (ostream& out, const Toppings& topping) {
-    out << "Name: " << topping._name << endl;
-    out << "Price: " << topping._price << endl;
+    out << "Name: " << topping._name << " | " << "Price: " << topping._price << endl;
+    return out;
+}
+
+ofstream& operator << (ofstream& out, const Toppings& topping) {
+    out << "." << topping._name << "." << topping._price << endl;
     return out;
 }

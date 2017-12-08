@@ -81,7 +81,13 @@ void Manager_ui::manageToppingUI() {
         }
         else if(input == '3'){
             cout << "Remove topping from list" << endl;
-            cout << endl;
+            string lala;
+            cin >> lala;
+            if(!get.removeTopping(lala)) {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+            system("cls");
         }
         else if(input == '4') {
             system("cls");

@@ -10,6 +10,7 @@ class TopService
     public:
         vector <Toppings> getToppingList();
         void addTopping(string name, string price);
+        bool removeTopping(string name);
         Toppings make_topping(string st, string price);
 
 

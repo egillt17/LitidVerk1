@@ -1,10 +1,5 @@
-.Fresh Mozzarella.10
-.Cream cheese.20
-.Cheddar cheese.20
-.Goat Cheese.40
 .Pineapple.30
 .Pepper.20
-.Mushrooms.5
 .Jalapeno.8
 .greeen Olives.5
 .Black Olives.5
@@ -14,7 +9,6 @@
 .Chilli.5
 .Tomatoes.20
 .Pepperoni.50
-.Ham.50
 .Minced beef.50
 .Bacon bits.45
 .Bacon slices.45

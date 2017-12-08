@@ -1,6 +1,6 @@
 #include "ToppingRepo.h"
 
-vector<Toppings> ToppingRepo::Read_toppings() {
+vector<Toppings> ToppingRepo::ReadToppings() {
     vector <Toppings> topping;
     TopService get;
 

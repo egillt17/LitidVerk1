@@ -2,6 +2,16 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
+	<File name="include\ui\Main_ui.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="104" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\services\Service.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="123" />
+=======
 	<File name="include\services\Validate.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="6" />
@@ -10,26 +20,57 @@
 	<File name="src\models\Employee.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="2402" topLine="44" />
+>>>>>>> b129fd1aaca7378cd5470a9e7dfa01ad3c86428e
 		</Cursor>
 	</File>
+	<File name="include\models\Employee.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="9" />
+		</Cursor>
+	</File>
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<File name="src\Repository\Repository.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="src\services\Validate.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="73" />
+=======
+	<File name="src\services\Service.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="131" />
+		</Cursor>
+	</File>
+<<<<<<< HEAD
 	<File name="src\ui\Main_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="256" />
-		</Cursor>
-	</File>
+>>>>>>> a1eef8c7b80988e56b05313cce19a0c285080108
+=======
 	<File name="src\Repository\Repository.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1324" topLine="12" />
+>>>>>>> b129fd1aaca7378cd5470a9e7dfa01ad3c86428e
 		</Cursor>
 	</File>
 	<File name="include\models\Employee.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1209" topLine="0" />
+>>>>>>> b129fd1aaca7378cd5470a9e7dfa01ad3c86428e
 		</Cursor>
 	</File>
-	<File name="src\services\Service.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+<<<<<<< HEAD
+	<File name="src\ui\Main_ui.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="131" />
+			<Cursor1 position="1495" topLine="0" />
+=======
+	<File name="src\models\Employee.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2402" topLine="44" />
+>>>>>>> a1eef8c7b80988e56b05313cce19a0c285080108
 		</Cursor>
 	</File>
 	<File name="src\services\Validate.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">

@@ -2,6 +2,7 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="19" topLine="0" />
@@ -57,4 +58,6 @@
 			<Cursor1 position="499" topLine="1" />
 		</Cursor>
 	</File>
+=======
+>>>>>>> dc9777d9a9753da31a08f81987b2d7a2340d0c73
 </CodeBlocks_layout_file>

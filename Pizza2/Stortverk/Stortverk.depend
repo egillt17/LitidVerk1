@@ -7,13 +7,19 @@
 
 1512657224 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\main_ui.h
 
-1512655827 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
+1512744292 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
-
-1512655827 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
 
-1512655827 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+1512744328 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+	"Main_ui.h"
+	<iostream>
+	<stdlib.h>
+
+1512744370 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+	<iostream>
+	<string>
+	"Manager_ui.h"
 
 1512742418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
@@ -22,6 +28,46 @@
 	<iostream>
 	<string>
 	<vector>
+
+1512742339 D
+
+1512743636 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\toppings.cpp
+	"Toppings.h"
+
+1512743636 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\toppings.h
+	<iostream>
+	<string>
+	<vector>
+
+1512738826 
+
+1512741712 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\main.cpp
+	<iostream>
+	"Manager_ui.h"
+
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\toppings.cpp
+	"Toppings.h"
+
+1512735213 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\toppings.h
+	<iostream>
+	<string>
+	<vector>
+
+1512658238 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+	"Main_ui.h"
+
+1512741482 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+	<iostream>
+	<string>
+
+1512742356 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
+	"Main_ui.h"
+	<stdlib.h>
+
+1512742686 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+	"Manager_ui.h"
+
+1512742686 ef8c7b80988e56b05313cce19a0c285080108
 
 1512743101 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
@@ -37,6 +83,7 @@
 	<fstream>
 	<sstream>
 
+<<<<<<< HEAD
 1512745454 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\topservice.cpp
 	"TopService.h"
 
@@ -44,3 +91,28 @@
 	"Toppings.h"
 	"ToppingRepo.h"
 
+=======
+1512743015 9fd1aaca7378cd5470a9e7dfa01ad3c86428e
+
+1512743636 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\pizza.cpp
+	"Pizza.h"
+
+1512743636 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\pizza.h
+	"Toppings.h"
+
+1512743636 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\repository\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1512743636 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\repository\toppingrepo.h
+	"Toppings.h"
+	<fstream>
+	<sstream>
+
+1512744297 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+	"Manager_ui.h"
+
+1512744292 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
+	"Main_ui.h"
+	<stdlib.h>
+
+>>>>>>> dc9777d9a9753da31a08f81987b2d7a2340d0c73

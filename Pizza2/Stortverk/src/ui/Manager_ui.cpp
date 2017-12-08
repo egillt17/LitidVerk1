@@ -1,9 +1,9 @@
 #include "Manager_ui.h"
 
-void Manager_ui::managerMmainUI(){
+void Manager_ui::managerMainUI(){
     char input = '\0';
 
-    
+
     while(true) {
         cout << "| -Manager Main Menu- " << endl;
         cout << "| 1. Pizza management " << endl;
@@ -13,7 +13,7 @@ void Manager_ui::managerMmainUI(){
         cout << "| 5. Pricing management" << endl;
         cout << "| 6. To Main menu      " << endl;
         cin >> input;
-    
+
         if(input == '1') {
             system("cls");
             managePizzaUI();
@@ -36,7 +36,7 @@ void Manager_ui::managerMmainUI(){
         }
         else if(input == '6') {
             system("cls");
-            managerMmainUI();
+            managerMainUI();
         }
         else {
             system("cls");
@@ -52,7 +52,7 @@ void Manager_ui::managePizzaUI() {
 
 void Manager_ui::manageToppingUI() {
     char input = '\0';
-    
+
     while(true) {
         cout << " -Manager - Toppings management- " << endl;
         cout << "|  " << endl;
@@ -74,7 +74,7 @@ void Manager_ui::manageToppingUI() {
             break;
         }
         else {
-            cout << "Invalid input - try again" << endl; 
+            cout << "Invalid input - try again" << endl;
         }
     }
 }

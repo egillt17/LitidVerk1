@@ -1,5 +1,5 @@
-#ifndef BAKER_UI_H
-#define BAKER_UI_H
+#ifndef BAKER_H
+#define BAKER_H
 #include "Main_ui.h"
 
 
@@ -11,4 +11,4 @@ class Baker_ui
     private:
 };
 
-#endif // BAKER_UI_H
+#endif // BAKER_H

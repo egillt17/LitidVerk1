@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1512394275 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\main.cpp
+1512743386 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\main.cpp
 	<iostream>
 
 1512657224 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\main_ui.cpp
@@ -15,11 +15,25 @@
 
 1512655827 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
 
-1512669757 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
+1512742418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
 
-1512669740 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\toppings.h
+1512742339 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\toppings.h
 	<iostream>
 	<string>
 	<vector>
+
+1512743101 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
+	"Pizza.h"
+
+1512743071 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\pizza.h
+	"Toppings.h"
+
+1512743354 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1512743015 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\repository\toppingrepo.h
+	"Toppings.h"
+	<fstream>
+	<sstream>
 

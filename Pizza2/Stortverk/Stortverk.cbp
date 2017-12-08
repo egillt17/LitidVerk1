@@ -16,6 +16,7 @@
 					<Add directory="include/ui" />
 					<Add directory="include/models" />
 					<Add directory="include/repository" />
+					<Add directory="include/services" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +29,7 @@
 					<Add directory="include/ui" />
 					<Add directory="include/models" />
 					<Add directory="include/repository" />
+					<Add directory="include/services" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -41,11 +43,13 @@
 		<Unit filename="include/models/Pizza.h" />
 		<Unit filename="include/models/Toppings.h" />
 		<Unit filename="include/repository/ToppingRepo.h" />
+		<Unit filename="include/services/TopService.h" />
 		<Unit filename="include/ui/Main_ui.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/models/Pizza.cpp" />
 		<Unit filename="src/models/Toppings.cpp" />
 		<Unit filename="src/repository/ToppingRepo.cpp" />
+		<Unit filename="src/services/TopService.cpp" />
 		<Unit filename="src/ui/Main_ui.cpp" />
 		<Extensions>
 			<code_completion />

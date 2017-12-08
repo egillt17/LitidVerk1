@@ -46,7 +46,7 @@ void Main_ui::mainUI() {
         }
         else {
             system("CLS");
-            cout << "| Wrong input, please try again" << endl;
+            cout << "| Wrong input, please try again" << endl << endl;
         }
     }
 }

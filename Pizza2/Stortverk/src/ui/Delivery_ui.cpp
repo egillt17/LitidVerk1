@@ -7,12 +7,11 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
 
     while (true)
     {
-        cout << endl << "| Hello Delivery Person!" << endl;
+        cout << "               Delivery Main Menu               " << endl;
+        cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
         cout << "| '1' to go to location 1" << endl << "| '2' to go to location 2" << endl << "| '3' to Quit" << endl;
-
         cin >> answer;
-        cout << endl;
 
         if (answer == '1')
         {
@@ -68,7 +67,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                         else
                         {
                             system("CLS");
-                            cout << "| Wrong input, please try again" << endl;
+                            cout << "| Wrong input, please try again" << endl << endl;
                         }
                     }
                 }
@@ -80,7 +79,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                 else
                 {
                     system("CLS");
-                    cout << "| Wrong input, please try again" << endl;
+                    cout << "| Wrong input, please try again" << endl << endl;
                 }
 
             }
@@ -141,7 +140,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                         else
                         {
                             system("CLS");
-                            cout << "| Wrong input, please try again" << endl;
+                            cout << "| Wrong input, please try again" << endl << endl;
                         }
                     }
                 }
@@ -153,7 +152,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                 else
                 {
                     system("CLS");
-                    cout << "| Wrong input, please try again" << endl;
+                    cout << "| Wrong input, please try again" << endl << endl;
                 }
             }
         }
@@ -165,7 +164,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
         else
         {
             system("CLS");
-            cout << "| Wrong input, please try again" << endl;
+            cout << "| Wrong input, please try again" << endl << endl;
         }
     }
 }

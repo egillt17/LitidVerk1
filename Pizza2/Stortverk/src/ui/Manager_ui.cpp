@@ -5,13 +5,14 @@ void Manager_ui::managerMainUI(){
 
 
     while(true) {
-        cout << "| -Manager Main Menu- " << endl;
-        cout << "| 1. Pizza management " << endl;
-        cout << "| 2. Toppings management" << endl;
-        cout << "| 3. Extra management" << endl;
-        cout << "| 4. Location management" << endl;
-        cout << "| 5. Pricing management" << endl;
-        cout << "| 6. To exit to Main menu" << endl;
+        cout << "               Manager Main Menu                " << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "| '1' for Pizza management " << endl;
+        cout << "| '2' for Toppings management" << endl;
+        cout << "| '3' for Extra management" << endl;
+        cout << "| '4' for Location management" << endl;
+        cout << "| '5' for Pricing management" << endl;
+        cout << "| '6' to exit to the Main menu" << endl;
         cin >> input;
 
         if(input == '1') {
@@ -40,7 +41,7 @@ void Manager_ui::managerMainUI(){
         }
         else {
             system("cls");
-            cout << "Invalid input - try again" << endl;
+            cout << "Wrong input, please try again" << endl << endl;
             system("pause");
         }
     }
@@ -94,7 +95,7 @@ void Manager_ui::manageToppingUI() {
             break;
         }
         else {
-            cout << "Invalid input - try again" << endl;
+            cout << "Wrong input, please try again" << endl << endl;
         }
     }
 }

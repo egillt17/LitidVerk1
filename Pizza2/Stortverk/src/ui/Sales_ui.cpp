@@ -6,7 +6,8 @@ void Sales_ui::salesMainUI()
 
     while (true)
     {
-        cout << "| Hello Sales Person!" << endl;
+        cout << "                Sales Main Menu                " << endl;
+        cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do? " << endl;
         cout << "| '1' to set up a new order" << endl << "| '2' to add pizzas (and other things) to order" << endl << "| '3' to get the total cost of an order" << endl
              << "| '4' to set an order sent or picked up" << endl << "| '5' to mark an order paid for" << endl << "| '6' to mark a pizza to a specific delivery place" << endl
@@ -51,7 +52,7 @@ void Sales_ui::salesMainUI()
                 else
                 {
                     system("CLS");
-                    cout << "| Wrong input, please try again" << endl;
+                    cout << "| Wrong input, please try again" << endl << endl;
                 }
             }
         }
@@ -88,7 +89,7 @@ void Sales_ui::salesMainUI()
         else
         {
             system("CLS");
-            cout << "| Wrong input, please try again" << endl;
+            cout << "| Wrong input, please try again" << endl << endl;
         }
     }
 }

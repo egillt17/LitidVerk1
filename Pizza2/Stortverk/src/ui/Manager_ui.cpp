@@ -52,24 +52,44 @@ void Manager_ui::managePizzaUI() {
 
 void Manager_ui::manageToppingUI() {
     char input = '\0';
+    TopService get;
+    vector <Toppings> topping;
 
     while(true) {
         cout << " -Manager - Toppings management- " << endl;
         cout << "|  " << endl;
-        cout << "| 1. Input new topping " << endl;
-        cout << "| 2. Remove topping" << endl;
-        cout << "| 3. Back to Manager main menu" << endl;
+        cout << "| 1. Display topping list " << endl;
+        cout << "| 2. Input new topping to list" << endl;
+        cout << "| 3. Remove topping from list" << endl;
+        cout << "| 4. Back to Manager main menu" << endl;
         cin >> input;
 
         if(input == '1') {
-            cout << "*write topping to topping list" << endl;
-            cin >> input;
+            system("cls");
+            cout << "Display topping list" << endl;
+            topping = get.getToppingList();
+            for(unsigned int i = 0; i < topping.size(); i++) {
+                cout << topping[i];
+            }
+            system("pause");
+            system("cls");
+
         }
         else if(input == '2'){
-            cout << "**remove topping from a list" << endl;
-            cin >> input;
+            cout << "Input new toppping" << endl;
+            //get.addTopping()
         }
-        else if(input == '3') {
+        else if(input == '3'){
+            cout << "Remove topping from list" << endl;
+            string lala;
+            cin >> lala;
+            if(!get.removeTopping(lala)) {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+            system("cls");
+        }
+        else if(input == '4') {
             system("cls");
             break;
         }

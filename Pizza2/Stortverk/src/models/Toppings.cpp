@@ -1,24 +1,35 @@
 #include "Toppings.h"
 
 Toppings::Toppings() {
-    _topp = "";
-    _topPrice = 0;
+    _name = "";
+    _price = 0;
 }
 
 Toppings::~Toppings() {
     //dtor
 }
 
-void Toppings::set_topping(string topping) {
-    _topp = topping;
+void Toppings::setName(string topping) {
+    _name = topping;
 }
 
-void Toppings::set_price(int price) {
-    _topPrice = price;
+void Toppings::setPrice(int price) {
+    _price = price;
+}
+
+string Toppings::getName() {
+    return _name;
+}
+int Toppings::getPrice() {
+    return _price;
 }
 
 ostream& operator << (ostream& out, const Toppings& topping) {
-    out << "Name: " << topping._topp << endl;
-    out << "Price: " << topping._topPrice << endl;
+    out << "Name: " << topping._name << " | " << "Price: " << topping._price << endl;
+    return out;
+}
+
+ofstream& operator << (ofstream& out, const Toppings& topping) {
+    out << "." << topping._name << "." << topping._price << endl;
     return out;
 }

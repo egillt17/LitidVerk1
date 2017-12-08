@@ -6,6 +6,9 @@ class Main_ui
 {
     public:
         Main_ui();
+        void customerOrStaff();
+        void customerMainUI();
+        void staffMainUI();
 
     private:
 };

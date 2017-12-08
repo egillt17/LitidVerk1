@@ -7,18 +7,29 @@
 
 1512657224 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\main_ui.h
 
-1512655827 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
+1512742563 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
-
-1512655827 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
 
-1512655827 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+1512743342 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+	"Main_ui.h"
+	<iostream>
+	<stdlib.h>
+
+1512741770 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
 
 1512669757 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
 
 1512669740 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\toppings.h
+	<iostream>
+	<string>
+	<vector>
+
+1512738826 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\toppings.cpp
+	"Toppings.h"
+
+1512738826 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\toppings.h
 	<iostream>
 	<string>
 	<vector>

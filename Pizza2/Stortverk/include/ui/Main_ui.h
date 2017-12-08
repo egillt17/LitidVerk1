@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include "Manager_ui.h"
 
 using namespace std;
 

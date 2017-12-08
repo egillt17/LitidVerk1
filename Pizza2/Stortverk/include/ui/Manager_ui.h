@@ -7,17 +7,17 @@
 class Manager_ui
 {
     public:
-        
-        void managerMmainUI();
-        
+
+        void managerMainUI();
+
         void managePizzaUI();
-        
+
         void manageToppingUI();
-        
+
         void manageExtraUI();
-        
+
         void manageLocationUI();
-        
+
         void managePriceUI();
 
     private:

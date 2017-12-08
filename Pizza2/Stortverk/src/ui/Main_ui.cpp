@@ -91,8 +91,8 @@ void Main_ui::staffMainUI() {
         if (input == '1') {
             system("CLS");
             cout << "Manager" << endl;
-            //Manager_ui managerUI;
-            //managerUI.managerMainUI();
+            Manager_ui managerUI;
+            managerUI.managerMainUI();
         }
         else if (input == '2') {
             system("CLS");

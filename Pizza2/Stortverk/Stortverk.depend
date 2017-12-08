@@ -47,26 +47,29 @@
 
 1512738826 
 
-1512741712 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\main.cpp
+1512744667 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
-	"Manager_ui.h"
+	"Main_ui.h"
 
-1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\toppings.cpp
+1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
 
-1512735213 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\toppings.h
+1512743959 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\toppings.h
 	<iostream>
 	<string>
 	<vector>
 
-1512658238 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+1512744667 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
+	<iostream>
+	<stdlib.h>
 
-1512741482 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+1512744667 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\main_ui.h
 	<iostream>
 	<string>
+	"Manager_ui.h"
 
-1512742356 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
+1512744667 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
 	"Main_ui.h"
 	<stdlib.h>
 
@@ -122,6 +125,7 @@
 	"Main_ui.h"
 	<stdlib.h>
 
+<<<<<<< HEAD
 1512744292 777d9a9753da31a08f81987b2d7a2340d0c73
 
 1512745730 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\manager_ui.h
@@ -130,4 +134,19 @@
 
 1512745730 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
+=======
+1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\pizza.cpp
+	"Pizza.h"
+
+1512743959 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\pizza.h
+	"Toppings.h"
+
+1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\repository\toppingrepo.cpp
+	"ToppingRepo.h"
+
+1512743959 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\repository\toppingrepo.h
+	"Toppings.h"
+	<fstream>
+	<sstream>
+>>>>>>> 666d1a67befcd0da3a5ccfae9d2aa50892e82518
 

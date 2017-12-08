@@ -1,22 +1,22 @@
 .Fresh Mozzarella.10
 .Cream cheese.20
-.Cheddar cheese.30
+.Cheddar cheese.20
 .Goat Cheese.40
-.Pineapple.10
+.Pineapple.30
 .Pepper.20
-.Mushrooms.50
-.Jalapeno.90
+.Mushrooms.5
+.Jalapeno.8
 .greeen Olives.5
-.Black Olives.7
-.Onion.54
-.Red onion.8
-.Garlic.7
-.Chilli.4
-.Tomatoes.5
-.Pepperoni.100
-.Ham.200
+.Black Olives.5
+.Onion.15
+.Red onion.15
+.Garlic.12
+.Chilli.5
+.Tomatoes.20
+.Pepperoni.50
+.Ham.50
 .Minced beef.50
-.Bacon bits.12
-.Bacon slices.79
-.Chicken.500
-.Pulled Pork.90
+.Bacon bits.45
+.Bacon slices.45
+.Chicken.100
+.Pulled Pork.100

@@ -12,15 +12,17 @@ class Toppings
     public:
         Toppings();
         virtual ~Toppings();
-        void set_topping(string topping);
-        void set_price(int price);
+        void setName(string topping);
+        void setPrice(int price);
+        string getName();
+        int getPrice();
         friend ostream& operator << (ostream& out, const Toppings& topping);
 
     protected:
 
     private:
-        string _topp;
-        int _topPrice;
+        string _name;
+        int _price;
 };
 
 #endif // TOPPINGS_H

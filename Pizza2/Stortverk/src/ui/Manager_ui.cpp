@@ -11,7 +11,7 @@ void Manager_ui::managerMainUI(){
         cout << "| 3. Extra management" << endl;
         cout << "| 4. Location management" << endl;
         cout << "| 5. Pricing management" << endl;
-        cout << "| 6. To Main menu      " << endl;
+        cout << "| 6. To exit to Main menu" << endl;
         cin >> input;
 
         if(input == '1') {
@@ -36,7 +36,7 @@ void Manager_ui::managerMainUI(){
         }
         else if(input == '6') {
             system("cls");
-            managerMainUI();
+            break;
         }
         else {
             system("cls");

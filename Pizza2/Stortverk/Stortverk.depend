@@ -7,19 +7,21 @@
 
 1512657224 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\main_ui.h
 
-1512744292 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
+1512747794 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
 	"Main_ui.h"
 
-1512744328 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+1512756193 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
-	<iostream>
-	<stdlib.h>
 
-1512744370 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+1512756274 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\main_ui.h
 	<iostream>
 	<string>
 	"Manager_ui.h"
+	"Sales_ui.h"
+	<stdlib.h>
+	"Baker_ui.h"
+	"Delivery_ui.h"
 
 1512742418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
@@ -99,10 +101,36 @@
 	<fstream>
 	<sstream>
 
-1512744297 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+1512748486 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
 1512744292 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
 	"Main_ui.h"
 	<stdlib.h>
+
+1512756842 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\sales_ui.h
+	"Main_ui.h"
+
+1512757795 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\sales_ui.cpp
+	"Sales_ui.h"
+
+1512748297 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker.cpp
+	"Baker.h"
+	"Main_ui.h"
+
+1512748312 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\baker.h
+
+1512749180 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\baker_ui.h
+	"Main_ui.h"
+
+1512752250 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker_ui.cpp
+	"Baker_ui.h"
+	"Main_ui.h"
+
+1512758219 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\delivery_ui.cpp
+	"Delivery_ui.h"
+	"Main_ui.h"
+
+1512749162 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\delivery_ui.h
+	"Main_ui.h"
 

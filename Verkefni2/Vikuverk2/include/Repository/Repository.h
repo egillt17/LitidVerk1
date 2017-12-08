@@ -16,7 +16,7 @@ class Repository
         void reWriteInFile(vector <Employee> employee);
         ///Function to rewrite the whole .txt file, will explain better in the .cpp file
         void getInfoInFile(vector <Employee>& employee);
-
+        ///Function to read the entire file and put all the info into the Employee vector
 
     private:
 };

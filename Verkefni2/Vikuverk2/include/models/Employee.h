@@ -32,8 +32,6 @@ class Employee
         ///set function to set only the month of a salary record
         friend ostream& operator << (ostream& out, Employee& employee);
         ///ostream cout overload function
-        friend istream& operator >> (istream& in, Employee& employee);
-        ///istream cin overload function
         friend ofstream& operator << (ofstream& out, Employee& employee);
         ///ofstream overload function to write directly to a .txt file
 

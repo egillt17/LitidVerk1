@@ -8,7 +8,7 @@ int main()
 {
 
     Main_ui mainUI;
-    mainUI.customerOrStaff();
+    mainUI.mainUI();
 
     return 0;
 }

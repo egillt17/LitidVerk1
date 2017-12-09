@@ -4,6 +4,10 @@
 #include <iostream>
 #include <string>
 #include "Manager_ui.h"
+#include "Sales_ui.h"
+#include <stdlib.h>
+#include "Baker_ui.h"
+#include "Delivery_ui.h"
 
 using namespace std;
 
@@ -11,9 +15,7 @@ class Main_ui
 {
     public:
         Main_ui();
-        void customerOrStaff();
-        void customerMainUI();
-        void staffMainUI();
+        void mainUI();
 
     private:
 };

@@ -1,21 +1,16 @@
 #include "Pizza.h"
 
 Pizza::Pizza() {
-    _person = "Unknown";
     _price = 0;
     _topping.clear();
     _size = "Not picked";
-    _sauce = "Not picked";
-    _crust = "Not picked";
+    _sauce = "Pizza sauce";
+    _crust = "Regular crust";
     _status = 'n';
 }
 
 Pizza::~Pizza() {
     //dtor
-}
-
-void Pizza::setPerson(string person) {
-    _person = person;
 }
 
 void Pizza::setPrice(int price) {
@@ -36,10 +31,6 @@ void Pizza::setCrust(string crust) {
 
 void Pizza::setStatus(char status) {
     _status = status;
-}
-
-string Pizza::getPerson() {
-    return _person;
 }
 
 int Pizza::getPrice() {
@@ -67,15 +58,19 @@ char Pizza::getStatus() {
 }
 
 ostream& operator << (ostream& out, const Pizza& pizza) {
-    out << "Name of person: " << pizza._person << endl;
     out << "Price: " << pizza._price << endl;
     out << "Toppings: ";
-    for(unsigned int i = 0; i < pizza._topping.size(); i++) {
-        if(i == (pizza._topping.size()-1)) {
-            out << pizza._topping[i] << endl;
-        }
-        else {
-            out << pizza._topping[i] << ", ";
+    if(pizza._topping.empty()) {
+        out << endl;
+    }
+    else {
+        for(unsigned int i = 0; i < pizza._topping.size(); i++) {
+            if(i == (pizza._topping.size()-1)) {
+                out << pizza._topping[i] << endl;
+            }
+            else {
+                out << pizza._topping[i] << ", ";
+            }
         }
     }
     out << "Size: " << pizza._size << endl;
@@ -86,7 +81,6 @@ ostream& operator << (ostream& out, const Pizza& pizza) {
 }
 
 ofstream& operator << (ofstream& out, const Pizza& pizza) {
-    out << "." << pizza._person;
     out << "." << pizza._price;
     out << "." << pizza._size;
     out << "." << pizza._sauce;

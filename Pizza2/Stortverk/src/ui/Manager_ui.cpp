@@ -1,5 +1,6 @@
 #include "Manager_ui.h"
 
+
 void Manager_ui::managerMainUI(){
     char input = '\0';
 
@@ -51,9 +52,11 @@ void Manager_ui::managePizzaUI() {
     cout << " -Manager - Pizza management- " << endl;
 }
 
+/// exceptions done
 void Manager_ui::manageToppingUI() {
     char input = '\0';
     TopService get;
+    Validate validate;
     vector <Toppings> topping;
     string top = "";
     string price = "";
@@ -76,25 +79,55 @@ void Manager_ui::manageToppingUI() {
                 cout << topping[i];
             }
             system("pause");
-
         }
         else if(input == '2'){
-            cout << "Input new topping" << endl;
-            cout << "Name: ";
-            cin.ignore();
-            getline(cin, top);
-            cout << "Price: ";
-            cin >> price;
+            while(true) {
+                cout << "Input new topping" << endl;
+                cout << "Name: ";
+                
+                cin.ignore();
+                getline(cin, top);
+                try {
+                    validate.validateName(top);
+                    cout << "Price: ";
+                    cin >> price;
+                    try {
+                        validate.validateNum(price);
+                        break;
+                    }
+                    catch(InvalidNumExceptions e) {
+                        cout << e.getMessage() << endl;
+                    }
+                }
+                catch(InvalidNameException e) {
+                    cout << e.getMessage() << endl;
+                }
+            }
             get.addTopping(top, price, 1);
         }
         else if(input == '3'){
-            cout << "Remove topping from list" << endl;
-            cout << "What topping would you like to remove? ";
-            cin.ignore();
-            getline(cin, top);
-            if(!get.removeTopping(top, 1)) {
-                cout << "no can do!" << endl;
-                system("pause");
+            while(true){
+                cout << "Remove topping from list" << endl;
+                cout << endl;
+                topping = get.getToppingList(1);
+                for(unsigned int i = 0; i < topping.size(); i++) {
+                    cout << topping[i];
+                }
+                cout << endl;
+                cout << "What topping would you like to remove? ";
+                cin.ignore();
+                getline(cin, top);
+                try {
+                    validate.validateName(top);
+                    if(!get.removeTopping(top, 1)) {
+                        cout << "Topping not found!" << endl;
+                        system("pause");
+                    }
+                    break;
+                }
+                catch(InvalidNameException e) {
+                    cout << e.getMessage() << endl;
+                }
             }
         }
         else if(input == '4') {
@@ -108,8 +141,9 @@ void Manager_ui::manageToppingUI() {
 }
 
 void Manager_ui::manageExtraUI(){
-        char input = '\0';
+    char input = '\0';
     TopService get;
+    Validate validate;
     vector <Toppings> topping;
     string top = "";
     string price = "";
@@ -127,24 +161,49 @@ void Manager_ui::manageExtraUI(){
         if(input == '1') {
             system("cls");
             cout << "Display extras list" << endl;
+            cout << endl;
             topping = get.getToppingList(5);
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << topping[i];
             }
+            cout << endl;
             system("pause");
 
         }
         else if(input == '2'){
-            cout << "Input new extras" << endl;
-            cout << "Name: ";
-            cin.ignore();
-            getline(cin, top);
-            cout << "Price: ";
-            cin >> price;
-            get.addTopping(top, price, 5);
+            while(true) {
+                cout << "Input new extras" << endl;
+                cout << "Name: ";
+                cin.ignore();
+                getline(cin, top);
+                try {
+                    validate.validateName(top);
+                    cout << "Price: ";
+                    getline(cin, price);
+                    try {
+                        validate.validateNum(price);
+                        get.addTopping(top, price, 5);
+                        break;
+                    }
+                    catch(InvalidNumExceptions e){
+                        
+                        cout << e.getMessage() << endl;
+                    }
+                }
+                catch(InvalidNameException e){
+                    
+                    cout << e.getMessage() << endl;
+                }
+            }
         }
         else if(input == '3'){
             cout << "Remove extras from list" << endl;
+            cout << endl;
+            topping = get.getToppingList(5);
+            for(unsigned int i = 0; i < topping.size(); i++) {
+                cout << topping[i];
+            }
+            cout << endl;
             cout << "What extras would you like to remove? ";
             cin.ignore();
             getline(cin, top);
@@ -166,6 +225,7 @@ void Manager_ui::manageExtraUI(){
 void Manager_ui::manageLocationUI(){
     char input = '\0';
      PizzaService get;
+     Validate validate;
     vector <string> locations;
     string location;
 
@@ -190,14 +250,28 @@ void Manager_ui::manageLocationUI(){
 
         }
         else if(input == '2'){
-            cout << "Input new locations" << endl;
-            cin.ignore();
-            getline(cin, location);
-            get.addLocation(location);
-
+            while(true){
+                cout << "Input new locations" << endl;
+                cin.ignore();
+                getline(cin, location);
+                try {
+                    validate.validateLocation(location);
+                    get.addLocation(location);
+                    break;
+                }
+                catch(InvalidLocationException e){
+                    cout << e.getMessage() << endl;
+                }
+            }
         }
         else if(input == '3'){
             cout << "Remove location from list" << endl;
+            cout << endl;
+            locations = get.getLocation();
+            for(unsigned int i = 0; i < locations.size(); i++) {
+                cout << locations[i] << endl;
+            }
+            cout << endl;
             cout << "What location would you like to remove? ";
             cin.ignore();
             getline(cin, location);

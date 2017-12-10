@@ -2,7 +2,31 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="src\ui\Manager_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="include\ui\Manager_ui.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="67" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\services\Validate.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="919" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="include\services\Validate.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Manager_ui.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6069" topLine="172" />
+=======
+	<File name="include\ui\Main_ui.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 5270ae7111299209fa3549dde490fc23b2d655c5
 		<Cursor>
 			<Cursor1 position="0" topLine="54" />
 		</Cursor>
@@ -19,6 +43,7 @@
 	</File>
 	<File name="include\models\Pizza.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="0" topLine="5" />
 		</Cursor>
 	</File>
@@ -55,6 +80,10 @@
 	<File name="src\services\PizzaService.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="0" topLine="0" />
+=======
+			<Cursor1 position="734" topLine="0" />
+>>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
+>>>>>>> 5270ae7111299209fa3549dde490fc23b2d655c5
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

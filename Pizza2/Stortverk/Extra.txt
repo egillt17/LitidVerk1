@@ -14,3 +14,8 @@
 .Lime Soda.200
 .Cola Soda.200
 .grape soda.200
+.Calzone.4
+.eerfiesta.500
+.alzone.30
+.rog.30
+.Grog.30

@@ -1,13 +1,2 @@
-.Fresh Mozzarella.10
-.Pineapple.30
-.Jalapeno.8
-.greeen Olives.5
-.Black Olives.5
-.Red onion.15
-.Garlic.12
-.Tomatoes.20
-.Pepperoni.50
-.Minced beef.50
-.Bacon bits.45
-.Bacon slices.45
-.Pulled Pork.100
+.apple.40
+.pepperoni.35

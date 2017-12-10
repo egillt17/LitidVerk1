@@ -10,9 +10,12 @@ class PizzaService
 {
     public:
         vector <string> getLocation();
+        void addLocation(string location);
+        bool removeLocation(string location);
 
 
     private:
+        bool locationCheck(string location);
 };
 
 #endif // PIZZASERVICE_H

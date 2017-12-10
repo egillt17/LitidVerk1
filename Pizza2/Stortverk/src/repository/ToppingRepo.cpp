@@ -46,19 +46,19 @@ void ToppingRepo::addToppingToList(Toppings topping, int pick) {
     ofstream fout;
 
     if(pick == 1) {
-        fout.open("Toppings.txt");
+        fout.open("Toppings.txt", ios::app);
     }
     else if(pick == 2) {
-        fout.open("Crust.txt");
+        fout.open("Crust.txt", ios::app);
     }
     else if(pick == 3) {
-        fout.open("Sizes.txt");
+        fout.open("Sizes.txt", ios::app);
     }
     else if(pick == 4) {
-        fout.open("Sauce.txt");
+        fout.open("Sauce.txt", ios::app);
     }
     else if(pick == 5) {
-        fout.open("Extra.txt");
+        fout.open("Extra.txt", ios::app);
     }
 
     if(fout.is_open()) {

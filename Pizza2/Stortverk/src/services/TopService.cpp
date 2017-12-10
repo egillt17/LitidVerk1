@@ -2,7 +2,6 @@
 
 vector <Toppings> TopService::getToppingList(int pick) {
    vector <Toppings> toppingList;
-   toppingList.clear();
    ToppingRepo get;
    toppingList = get.ReadToppings(pick);
 
@@ -16,8 +15,8 @@ void TopService::addTopping(string name, string price, int pick) {
 
     if(!toppingCheck(topping, pick)) {
         get.addToppingToList(topping, pick);
-    }
 
+    }
 }
 
 bool TopService::removeTopping(string name, int pick) {
@@ -31,7 +30,6 @@ bool TopService::removeTopping(string name, int pick) {
             get.reWriteToppingList(toppingList, pick);
             return true;
         }
-
     }
     return false;
 }
@@ -53,12 +51,11 @@ bool TopService::toppingCheck(Toppings topping, int pick) {
     toppingList = getToppingList(pick);
 
     for(unsigned int i = 0; i < toppingList.size(); i++) {
-        if(topping.getName().compare(toppingList[i].getName())) {
+        if(!topping.getName().compare(toppingList[i].getName())) {
             toppingList[i] = topping;
             get.reWriteToppingList(toppingList, pick);
             return true;
         }
-
     }
 
     return false;

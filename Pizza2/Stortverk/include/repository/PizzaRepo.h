@@ -8,6 +8,8 @@ class PizzaRepo
 {
     public:
         vector <string> readLocations();
+        void addLocationToList(string location);
+        void reWriteLocationList(vector <string> locations);
 
     private:
 };

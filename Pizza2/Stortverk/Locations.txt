@@ -1,6 +1,4 @@
-Skeifan
-Mjodd
-Nybilavegur
-Spong
-Kringlan
-Dalbraut 14
+mjodd
+armuli
+spong
+louholar 24

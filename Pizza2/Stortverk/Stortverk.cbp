@@ -45,6 +45,7 @@
 		<Unit filename="include/exceptions/InvalidLocationException.h" />
 		<Unit filename="include/exceptions/InvalidNameException.h" />
 		<Unit filename="include/exceptions/InvalidNumExceptions.h" />
+		<Unit filename="include/models/Order.h" />
 		<Unit filename="include/models/Pizza.h" />
 		<Unit filename="include/models/Toppings.h" />
 		<Unit filename="include/repository/PizzaRepo.h" />
@@ -61,6 +62,7 @@
 		<Unit filename="src/exceptions/InvalidLocationException.cpp" />
 		<Unit filename="src/exceptions/InvalidNameException.cpp" />
 		<Unit filename="src/exceptions/InvalidNumExceptions.cpp" />
+		<Unit filename="src/models/Order.cpp" />
 		<Unit filename="src/models/Pizza.cpp" />
 		<Unit filename="src/models/Toppings.cpp" />
 		<Unit filename="src/repository/PizzaRepo.cpp" />

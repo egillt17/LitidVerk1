@@ -80,14 +80,18 @@ void Manager_ui::manageToppingUI() {
         }
         else if(input == '2'){
             cout << "Input new topping" << endl;
-            cin >> top;
+            cout << "Name: ";
+            cin.ignore();
+            getline(cin, top);
+            cout << "Price: ";
             cin >> price;
             get.addTopping(top, price, 1);
         }
         else if(input == '3'){
             cout << "Remove topping from list" << endl;
             cout << "What topping would you like to remove? ";
-            cin >> top;
+            cin.ignore();
+            getline(cin, top);
             if(!get.removeTopping(top, 1)) {
                 cout << "no can do!" << endl;
                 system("pause");
@@ -132,14 +136,18 @@ void Manager_ui::manageExtraUI(){
         }
         else if(input == '2'){
             cout << "Input new extras" << endl;
-            cin >> top;
+            cout << "Name: ";
+            cin.ignore();
+            getline(cin, top);
+            cout << "Price: ";
             cin >> price;
             get.addTopping(top, price, 5);
         }
         else if(input == '3'){
             cout << "Remove extras from list" << endl;
             cout << "What extras would you like to remove? ";
-            cin >> top;
+            cin.ignore();
+            getline(cin, top);
             if(!get.removeTopping(top, 5)) {
                 cout << "no can do!" << endl;
                 system("pause");
@@ -240,7 +248,10 @@ void Manager_ui::manageSettingUI() {
         else if(input == '2'){
             pick = crustSauceSize();
             cout << "Input new item" << endl;
-            cin >> top;
+            cout << "Name: ";
+            cin.ignore();
+            getline(cin, top);
+            cout << "Price: ";
             cin >> price;
             get.addTopping(top, price, pick);
         }
@@ -248,7 +259,8 @@ void Manager_ui::manageSettingUI() {
             pick = crustSauceSize();
             cout << "Remove item from list" << endl;
             cout << "What item would you like to remove? ";
-            cin >> top;
+            cin.ignore();
+            getline(cin, top);
             if(!get.removeTopping(top, pick)) {
                 cout << "no can do!" << endl;
                 system("pause");

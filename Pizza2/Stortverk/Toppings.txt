@@ -1,2 +1,2 @@
-.apple.40
 .pepperoni.35
+.ham.45

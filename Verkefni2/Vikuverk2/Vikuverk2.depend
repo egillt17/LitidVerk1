@@ -175,7 +175,7 @@
 1512661753 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\exceptions\invalidyearexc.h
 	"Employee.h"
 
-1512491047 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\validate.cpp
 	"Validate.h"
 
 1512661681 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\services\validate.h
@@ -209,13 +209,9 @@
 	<fstream>
 	<vector>
 
-1512491362 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\ui\main_ui.cpp
 	"Main_ui.h"
-	"Service.h"
 	"Validate.h"
-	<string>
-	<stdlib.h>
-	<iostream>
 
 1512661753 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\include\ui\main_ui.h
 	"Service.h"
@@ -224,13 +220,13 @@
 	<stdlib.h>
 	<iostream>
 
-1512487781 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\models\employee.cpp
 	"Employee.h"
 
-1512488363 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\repository\repository.cpp
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\repository\repository.cpp
 	"Repository.h"
 
-1512488363 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
+1512735213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\src\services\service.cpp
 	"Service.h"
 
 1512658239 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\verkefni2\vikuverk2\main.cpp

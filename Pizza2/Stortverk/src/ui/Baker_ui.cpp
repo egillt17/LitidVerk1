@@ -38,7 +38,7 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
                     while (true)
                     {
                         cout << "| What would you like to do about that order?" << endl;
-                        cout << "| '1' to mark an order \"In the making\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
+                        cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
 
                         cin >> answer;
                         cout << endl;
@@ -46,12 +46,16 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
                         if (answer == '1')
                         {
                             system("CLS");
-                            cout << "---Marking an order \"In the making\"---" << endl;
+                            cout << "---Marking an order \"In progress\"---" << endl;
+                            Order order;
+                            order.setInProgress('y');
                         }
                         else if (answer == '2')
                         {
                             system("CLS");
                             cout << "---Marking an order Ready---" << endl;
+                            Order order;
+                            order.setIsReady('y');
                         }
                         else if (answer == '3')
                         {
@@ -105,7 +109,7 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
                     while (true)
                     {
                         cout << "| What would you like to do about that order?" << endl;
-                        cout << "| '1' to mark an order \"In the making\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
+                        cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
 
                         cin >> answer;
                         cout << endl;
@@ -113,12 +117,16 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
                         if (answer == '1')
                         {
                             system("CLS");
-                            cout << "---Marking an order \"In the making\"---" << endl;
+                            cout << "---Marking an order \"In progress\"---" << endl;
+                            Order order;
+                            order.setInProgress('y');
                         }
                         else if (answer == '2')
                         {
                             system("CLS");
                             cout << "---Marking an order Ready---" << endl;
+                            Order order;
+                            order.setIsReady('y');
                         }
                         else if (answer == '3')
                         {

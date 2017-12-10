@@ -125,12 +125,16 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                         if (answer == '1')
                         {
                             system("CLS");
-                            cout << "---Marking an order paid for" << endl;
+                            cout << "---Marking an order paid for---" << endl;
+                            Order order;
+                            order.setPaidFor('y');
                         }
                         else if (answer == '2')
                         {
                             system("CLS");
                             cout << "---Marking an order delivered---" << endl;
+                            Order order;
+                            order.setDelivered('y');
                         }
                         else if (answer == '3')
                         {

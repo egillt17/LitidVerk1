@@ -1,6 +1,7 @@
 #ifndef MANAGER_UI_H
 #define MANAGER_UI_H
 
+#include "Validate.h"
 #include "Main_ui.h"
 #include "TopService.h"
 #include "PizzaService.h"

@@ -113,7 +113,9 @@ Pizza Sales_ui::addPizza() {
     Pizza pizza;
     vector <Toppings> topping;
     while(true){
+        system("CLS");
         topping.clear();
+        cout << pizza;
         cout << "                Pizza menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do? " << endl;

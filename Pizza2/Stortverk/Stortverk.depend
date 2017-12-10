@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1512824551 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\main.cpp
+1512929479 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\main.cpp
 	<iostream>
 	"Main_ui.h"
 
 1512824551 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
 
-1512824551 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\main_ui.h
+1512929372 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\main_ui.h
 	<iostream>
 	<string>
 	"Manager_ui.h"
@@ -14,6 +14,7 @@
 	<stdlib.h>
 	"Baker_ui.h"
 	"Delivery_ui.h"
+	"Order.h"
 
 1512925146 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
@@ -41,7 +42,7 @@
 	<vector>
 	<fstream>
 
-1512744292 D
+1512913135 D
 
 1512759112 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
@@ -221,7 +222,7 @@
 1512824551 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Delivery_ui.h"
 
-1512929014 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
+1512929831 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 
 1512914986 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
@@ -239,7 +240,6 @@
 	"Toppings.h"
 	"PizzaRepo.h"
 
-<<<<<<< HEAD
 1512919548 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
@@ -262,7 +262,8 @@
 	"Pizza.h"
 	"Toppings.h"
 
-=======
+1512921367 h"
+
 1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\topservice.h
 	"Toppings.h"
 	"ToppingRepo.h"
@@ -332,7 +333,6 @@
 1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
 	"InvalidNumExceptions.h"
 
-<<<<<<< HEAD
 1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidlocationexception.cpp
 	"InvalidLocationException.h"
 
@@ -368,6 +368,11 @@
 1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\validate.cpp
 	"Validate.h"
 
-=======
->>>>>>> 3bf31ffcaead0aa6422e512a99e180f347692650
->>>>>>> 8beb7d40199977a15f5f6af7d71a24fdeaffbf4c
+1512921367 31ffcaead0aa6422e512a99e180f347692650
+
+1512921367 b7d40199977a15f5f6af7d71a24fdeaffbf4c
+
+1512929372 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\order.h
+	"Pizza.h"
+	"Toppings.h"
+

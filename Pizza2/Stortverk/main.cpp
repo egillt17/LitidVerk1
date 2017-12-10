@@ -7,8 +7,8 @@ using namespace std;
 int main()
 {
 
-    Order order;
-    cout << order << endl << endl;
+//    Order order;
+//    cout << order << endl << endl;
     Main_ui mainUI;
     mainUI.mainUI();
 

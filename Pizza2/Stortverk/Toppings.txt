@@ -1,16 +1,2 @@
-.Pineapple.30
-.Pepper.20
-.Jalapeno.8
-.greeen Olives.5
-.Black Olives.5
-.Onion.15
-.Red onion.15
-.Garlic.12
-.Chilli.5
-.Tomatoes.20
-.Pepperoni.50
-.Minced beef.50
-.Bacon bits.45
-.Bacon slices.45
-.Chicken.100
-.Pulled Pork.100
+.apple.40
+.pepperoni.35

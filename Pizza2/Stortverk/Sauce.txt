@@ -1,7 +1,7 @@
-Pizza sauce
-BBQ sauce
-A lot of sauce
-Little sauce
-Ketchup
-Raw sauce
-Sriracha
+.Pizza sauce.0
+.BBQ sauce.200
+.A lot of sauce.100
+.Little sauce.0
+.Ketchup.20
+.Raw sauce.100
+.Sriracha.500

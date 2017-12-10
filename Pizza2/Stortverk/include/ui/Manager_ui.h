@@ -3,6 +3,7 @@
 
 #include "Main_ui.h"
 #include "TopService.h"
+#include "PizzaService.h"
 #include <stdlib.h>
 
 class Manager_ui
@@ -19,7 +20,9 @@ class Manager_ui
 
         void manageLocationUI();
 
-        void managePriceUI();
+        void manageSettingUI();
+
+        int crustSauceSize();
 
     private:
 };

@@ -1,6 +1,6 @@
 #include "ToppingRepo.h"
 
-vector<Toppings> ToppingRepo::ReadToppings() {
+vector<Toppings> ToppingRepo::ReadToppings(int pick) {
     vector <Toppings> topping;
     TopService get;
 
@@ -8,7 +8,22 @@ vector<Toppings> ToppingRepo::ReadToppings() {
     string name = "";
     string price = "";
 
-    fin.open("Toppings.txt");
+    if(pick == 1) {
+        fin.open("Toppings.txt");
+    }
+    else if(pick == 2) {
+        fin.open("Crust.txt");
+    }
+    else if(pick == 3) {
+        fin.open("Sizes.txt");
+    }
+    else if(pick == 4) {
+        fin.open("Sauce.txt");
+    }
+    else if(pick == 5) {
+        fin.open("Extra.txt");
+    }
+
     if(fin.is_open()) {
         while(!fin.eof()) {
             getline(fin, name, '.');
@@ -27,9 +42,25 @@ vector<Toppings> ToppingRepo::ReadToppings() {
     return topping;
 }
 
-void ToppingRepo::addToppingToList(Toppings topping) {
+void ToppingRepo::addToppingToList(Toppings topping, int pick) {
     ofstream fout;
-    fout.open("Toppings.txt", ios::app);
+
+    if(pick == 1) {
+        fout.open("Toppings.txt", ios::app);
+    }
+    else if(pick == 2) {
+        fout.open("Crust.txt", ios::app);
+    }
+    else if(pick == 3) {
+        fout.open("Sizes.txt", ios::app);
+    }
+    else if(pick == 4) {
+        fout.open("Sauce.txt", ios::app);
+    }
+    else if(pick == 5) {
+        fout.open("Extra.txt", ios::app);
+    }
+
     if(fout.is_open()) {
         fout << topping;
     }
@@ -39,9 +70,25 @@ void ToppingRepo::addToppingToList(Toppings topping) {
     fout.close();
 }
 
-void ToppingRepo::reWriteToppingList(vector <Toppings> topping) {
+void ToppingRepo::reWriteToppingList(vector <Toppings> topping, int pick) {
     ofstream fout;
-    fout.open("Toppings.txt");
+
+    if(pick == 1) {
+        fout.open("Toppings.txt");
+    }
+    else if(pick == 2) {
+        fout.open("Crust.txt");
+    }
+    else if(pick == 3) {
+        fout.open("Sizes.txt");
+    }
+    else if(pick == 4) {
+        fout.open("Sauce.txt");
+    }
+    else if(pick == 5) {
+        fout.open("Extra.txt");
+    }
+
     if(fout.is_open()) {
         for(unsigned int i = 0; i < topping.size(); i++) {
             fout << topping[i];

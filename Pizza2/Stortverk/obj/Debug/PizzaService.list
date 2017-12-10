@@ -1,0 +1,19 @@
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccPVKiwy.s 			page 1
+
+
+   1              		.file	"PizzaService.cpp"
+   2              		.text
+   3              	Ltext0:
+   4              		.cfi_sections	.debug_frame
+   5              	Letext0:
+   6              		.section	.debug_line,"dr"
+   7              	Ldebug_line0:
+   8              		.section	.debug_str,"dr"
+   9              		.ident	"GCC: (tdm-1) 4.9.2"
+GAS LISTING C:\Users\NJLLMR~1\AppData\Local\Temp\ccPVKiwy.s 			page 2
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 PizzaService.cpp
+
+NO UNDEFINED SYMBOLS

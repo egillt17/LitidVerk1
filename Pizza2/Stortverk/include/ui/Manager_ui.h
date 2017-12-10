@@ -19,7 +19,9 @@ class Manager_ui
 
         void manageLocationUI();
 
-        void managePriceUI();
+        void manageSettingUI();
+
+        int crustSauceSize();
 
     private:
 };

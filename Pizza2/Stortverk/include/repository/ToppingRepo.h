@@ -10,9 +10,9 @@
 class ToppingRepo
 {
     public:
-        vector<Toppings> ReadToppings();
-        void addToppingToList(Toppings topping);
-        void reWriteToppingList(vector <Toppings> topping);
+        vector<Toppings> ReadToppings(int pick);
+        void addToppingToList(Toppings topping, int pick);
+        void reWriteToppingList(vector <Toppings> topping, int pick);
 
     private:
 

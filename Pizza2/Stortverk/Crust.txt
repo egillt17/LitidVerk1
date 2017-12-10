@@ -1,5 +1,5 @@
-Reguler crust
-Italian crust
-Thin crust
-Flatbread crust
-Thick crust
+.Reguler crust.0
+.Italian crust.150
+.Thin crust.50
+.Flatbread crust.200
+.Thick crust.250

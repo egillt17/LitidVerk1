@@ -1,4 +1,4 @@
-Small
-Medium
-Large
-EXTRA LARGE
+.Small.1000
+.Medium.1200
+.Large.1400
+.EXTRA LARGE.1600

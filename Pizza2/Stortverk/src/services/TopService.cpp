@@ -1,34 +1,34 @@
 #include "TopService.h"
 
-vector <Toppings> TopService::getToppingList() {
+vector <Toppings> TopService::getToppingList(int pick) {
    vector <Toppings> toppingList;
    toppingList.clear();
    ToppingRepo get;
-   toppingList = get.ReadToppings();
+   toppingList = get.ReadToppings(pick);
 
     return toppingList;
 }
 
-void TopService::addTopping(string name, string price) {
+void TopService::addTopping(string name, string price, int pick) {
     Toppings topping;
     ToppingRepo get;
     topping = make_topping(name, price);
 
-    if(!toppingCheck(topping)) {
-        get.addToppingToList(topping);
+    if(!toppingCheck(topping, pick)) {
+        get.addToppingToList(topping, pick);
     }
 
 }
 
-bool TopService::removeTopping(string name) {
+bool TopService::removeTopping(string name, int pick) {
     vector <Toppings> toppingList;
     ToppingRepo get;
-    toppingList = getToppingList();
+    toppingList = getToppingList(pick);
 
     for(unsigned int i = 0; i < toppingList.size(); i++) {
         if(!name.compare(toppingList[i].getName())) {
             toppingList.erase (toppingList.begin()+i);
-            get.reWriteToppingList(toppingList);
+            get.reWriteToppingList(toppingList, pick);
             return true;
         }
 
@@ -47,15 +47,15 @@ Toppings TopService::make_topping(string name, string price) {
     return topping;
 }
 
-bool TopService::toppingCheck(Toppings topping) {
+bool TopService::toppingCheck(Toppings topping, int pick) {
     vector <Toppings> toppingList;
     ToppingRepo get;
-    toppingList = getToppingList();
+    toppingList = getToppingList(pick);
 
     for(unsigned int i = 0; i < toppingList.size(); i++) {
         if(topping.getName().compare(toppingList[i].getName())) {
             toppingList[i] = topping;
-            get.reWriteToppingList(toppingList);
+            get.reWriteToppingList(toppingList, pick);
             return true;
         }
 

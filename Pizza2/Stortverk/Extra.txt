@@ -1,0 +1,15 @@
+.Breadsticks (Big).710
+.Breadsticks (small).475
+.Cheesy bites.810
+.Stuffed pepperoni.1020
+.Stuffed bacon.1020
+.Buffalo wings.1020
+.BBQ wings.1020
+.Cheesy goodness.810
+.Garlic Sauce.199
+.Breadsticks Sauce.199
+.BBQ Sauce.199
+.Club Soda.150
+.Orange Soda.200
+.Lime Soda.200
+.Cola Soda.200

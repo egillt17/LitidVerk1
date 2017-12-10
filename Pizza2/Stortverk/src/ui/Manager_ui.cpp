@@ -7,11 +7,11 @@ void Manager_ui::managerMainUI(){
     while(true) {
         cout << "               Manager Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "| '1' for Pizza management " << endl;
+        cout << "| '1' for Pizza specials management " << endl;
         cout << "| '2' for Toppings management" << endl;
         cout << "| '3' for Extra management" << endl;
         cout << "| '4' for Location management" << endl;
-        cout << "| '5' for Pricing management" << endl;
+        cout << "| '5' for Crust, Sauce and Size management" << endl;
         cout << "| '6' to exit to the Main menu" << endl;
         cin >> input;
 
@@ -33,7 +33,7 @@ void Manager_ui::managerMainUI(){
         }
         else if(input == '5') {
             system("cls");
-            managePriceUI();
+            manageSettingUI();
         }
         else if(input == '6') {
             system("cls");
@@ -57,6 +57,7 @@ void Manager_ui::manageToppingUI() {
     vector <Toppings> topping;
 
     while(true) {
+        system("cls");
         cout << " -Manager - Toppings management- " << endl;
         cout << "|  " << endl;
         cout << "| 1. Display topping list " << endl;
@@ -68,12 +69,11 @@ void Manager_ui::manageToppingUI() {
         if(input == '1') {
             system("cls");
             cout << "Display topping list" << endl;
-            topping = get.getToppingList();
+            topping = get.getToppingList(1);
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << topping[i];
             }
             system("pause");
-            system("cls");
 
         }
         else if(input == '2'){
@@ -82,13 +82,13 @@ void Manager_ui::manageToppingUI() {
         }
         else if(input == '3'){
             cout << "Remove topping from list" << endl;
+            cout << "What Topping would you like to remove? ";
             string lala;
             cin >> lala;
-            if(!get.removeTopping(lala)) {
+            if(!get.removeTopping(lala, 1)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }
-            system("cls");
         }
         else if(input == '4') {
             system("cls");
@@ -101,13 +101,137 @@ void Manager_ui::manageToppingUI() {
 }
 
 void Manager_ui::manageExtraUI(){
-    cout << " -Manager - Extra management- " << endl;
+        char input = '\0';
+    TopService get;
+    vector <Toppings> topping;
+
+    while(true) {
+        system("cls");
+        cout << " -Manager - Extras management- " << endl;
+        cout << "|  " << endl;
+        cout << "| 1. Display extras list " << endl;
+        cout << "| 2. Input new extras to list" << endl;
+        cout << "| 3. Remove extras from list" << endl;
+        cout << "| 4. Back to Manager main menu" << endl;
+        cin >> input;
+
+        if(input == '1') {
+            system("cls");
+            cout << "Display extras list" << endl;
+            topping = get.getToppingList(5);
+            for(unsigned int i = 0; i < topping.size(); i++) {
+                cout << topping[i];
+            }
+            system("pause");
+
+        }
+        else if(input == '2'){
+            cout << "Input new extras" << endl;
+            //get.addTopping()
+        }
+        else if(input == '3'){
+            cout << "Remove extras from list" << endl;
+            cout << "What extras would you like to remove? ";
+            string lala;
+            cin >> lala;
+            if(!get.removeTopping(lala, 5)) {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+        }
+        else if(input == '4') {
+            system("cls");
+            break;
+        }
+        else {
+            cout << "Wrong input, please try again" << endl << endl;
+        }
+    }
 }
 
 void Manager_ui::manageLocationUI(){
     cout << " -Manager - Location management- " << endl;
 }
 
-void Manager_ui::managePriceUI() {
-    cout << " -Manager - Pricing management- " << endl;
+void Manager_ui::manageSettingUI() {
+    char input = '\0';
+    int pick = 0;
+    TopService get;
+    vector <Toppings> topping;
+
+    while(true) {
+        system("cls");
+        cout << " -Manager - Crust, Sauce and Size management- " << endl;
+        cout << "|  " << endl;
+        cout << "| 1. Display list " << endl;
+        cout << "| 2. Input new item to list" << endl;
+        cout << "| 3. Remove item from list" << endl;
+        cout << "| 4. Back to Manager main menu" << endl;
+        cin >> input;
+
+        if(input == '1') {
+            system("cls");
+            pick = crustSauceSize();
+            cout << "Display list" << endl;
+            topping = get.getToppingList(pick);
+            for(unsigned int i = 0; i < topping.size(); i++) {
+                cout << topping[i];
+            }
+            system("pause");
+
+        }
+        else if(input == '2'){
+            cout << "Input new item" << endl;
+            //get.addTopping()
+        }
+        else if(input == '3'){
+            pick = crustSauceSize();
+            cout << "Remove item from list" << endl;
+            cout << "What item would you like to remove? ";
+            string lala;
+            cin >> lala;
+            if(!get.removeTopping(lala, pick)) {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+        }
+        else if(input == '4') {
+            system("cls");
+            break;
+        }
+        else {
+            cout << "Wrong input, please try again" << endl << endl;
+        }
+    }
+}
+
+int Manager_ui::crustSauceSize() {
+    char input = '0';
+    int pick = 0;
+        while(true) {
+        cout << "Which one would you like to manage?" << endl;
+        cout << "|  " << endl;
+        cout << "| 1. Crust" << endl;
+        cout << "| 2. Sauce" << endl;
+        cout << "| 3. Size" << endl;
+        cin >> input;
+
+        if(input == '1') {
+            pick = 2;
+            break;
+        }
+        else if(input == '2') {
+            pick = 4;
+            break;
+        }
+        else if(input == '3') {
+            pick = 3;
+            break;
+        }
+        else {
+            cout << "Wrong input, please try again" << endl;
+        }
+    }
+    system("cls");
+    return pick;
 }

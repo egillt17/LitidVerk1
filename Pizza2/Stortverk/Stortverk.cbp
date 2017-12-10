@@ -42,13 +42,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-<<<<<<< HEAD
-		<Unit filename="include/models/Order.h" />
-=======
 		<Unit filename="include/exceptions/InvalidLocationException.h" />
 		<Unit filename="include/exceptions/InvalidNameException.h" />
 		<Unit filename="include/exceptions/InvalidNumExceptions.h" />
->>>>>>> 3bf31ffcaead0aa6422e512a99e180f347692650
+		<Unit filename="include/models/Order.h" />
 		<Unit filename="include/models/Pizza.h" />
 		<Unit filename="include/models/Toppings.h" />
 		<Unit filename="include/repository/PizzaRepo.h" />
@@ -62,13 +59,10 @@
 		<Unit filename="include/ui/Manager_ui.h" />
 		<Unit filename="include/ui/Sales_ui.h" />
 		<Unit filename="main.cpp" />
-<<<<<<< HEAD
-		<Unit filename="src/models/Order.cpp" />
-=======
 		<Unit filename="src/exceptions/InvalidLocationException.cpp" />
 		<Unit filename="src/exceptions/InvalidNameException.cpp" />
 		<Unit filename="src/exceptions/InvalidNumExceptions.cpp" />
->>>>>>> 3bf31ffcaead0aa6422e512a99e180f347692650
+		<Unit filename="src/models/Order.cpp" />
 		<Unit filename="src/models/Pizza.cpp" />
 		<Unit filename="src/models/Toppings.cpp" />
 		<Unit filename="src/repository/PizzaRepo.cpp" />

@@ -53,33 +53,37 @@
 
 1512738826 
 
-1512744667 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\main.cpp
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
 	"Main_ui.h"
 
-1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\toppings.cpp
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
 
-1512743959 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\toppings.h
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\toppings.h
 	<iostream>
 	<string>
 	<vector>
+	<fstream>
 
-1512744667 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
-	<iostream>
-	<stdlib.h>
 
-1512744667 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\main_ui.h
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\main_ui.h
 	<iostream>
 	<string>
 	"Manager_ui.h"
+	"Sales_ui.h"
+	<stdlib.h>
+	"Baker_ui.h"
+	"Delivery_ui.h"
 
-1512744667 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
 	"Main_ui.h"
+	"TopService.h"
 	<stdlib.h>
 
-1512742686 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
 1512742686 ef8c7b80988e56b05313cce19a0c285080108
@@ -172,17 +176,18 @@
 
 1512745730 i.h"
 
-1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\pizza.cpp
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
 
-1512743959 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\pizza.h
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\pizza.h
 	"Toppings.h"
 
-1512743959 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\repository\toppingrepo.cpp
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\repository\toppingrepo.cpp
 	"ToppingRepo.h"
 
-1512743959 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\repository\toppingrepo.h
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\repository\toppingrepo.h
 	"Toppings.h"
+	"TopService.h"
 	<fstream>
 	<sstream>
 
@@ -229,4 +234,73 @@
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"
+
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\topservice.h
+	"Toppings.h"
+	"ToppingRepo.h"
+
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\sales_ui.h
+	"Main_ui.h"
+
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\baker_ui.h
+	"Main_ui.h"
+
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\ui\delivery_ui.h
+	"Main_ui.h"
+
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\repository\pizzarepo.cpp
+	"PizzaRepo.h"
+
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\repository\pizzarepo.h
+	"Pizza.h"
+	"Toppings.h"
+
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
+	"PizzaService.h"
+
+1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
+
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\services\topservice.cpp
+	"TopService.h"
+
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\baker_ui.cpp
+	"Baker_ui.h"
+
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\delivery_ui.cpp
+	"Delivery_ui.h"
+
+1512911627 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\sales_ui.cpp
+	"Sales_ui.h"
+
+1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidlocationexception.cpp
+	"InvalidLocationException.h"
+
+1512913911 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\exceptions\invalidlocationexception.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512913491 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\validate.h
+	<string>
+	<iostream>
+	"InvalidNameException.h"
+	"InvalidNumExceptions.h"
+	"InvalidLocationException.h"
+	"Toppings.h"
+
+1512913928 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\exceptions\invalidnameexception.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512913911 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\exceptions\invalidnumexceptions.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidnameexception.cpp
+	"InvalidNameException.h"
+
+1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
+	"InvalidNumExceptions.h"
 

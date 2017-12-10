@@ -17,6 +17,7 @@
 					<Add directory="include/models" />
 					<Add directory="include/repository" />
 					<Add directory="include/services" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -30,6 +31,7 @@
 					<Add directory="include/models" />
 					<Add directory="include/repository" />
 					<Add directory="include/services" />
+					<Add directory="include/exceptions" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -40,24 +42,32 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/exceptions/InvalidLocationException.h" />
+		<Unit filename="include/exceptions/InvalidNameException.h" />
+		<Unit filename="include/exceptions/InvalidNumExceptions.h" />
 		<Unit filename="include/models/Pizza.h" />
 		<Unit filename="include/models/Toppings.h" />
 		<Unit filename="include/repository/PizzaRepo.h" />
 		<Unit filename="include/repository/ToppingRepo.h" />
 		<Unit filename="include/services/PizzaService.h" />
 		<Unit filename="include/services/TopService.h" />
+		<Unit filename="include/services/Validate.h" />
 		<Unit filename="include/ui/Baker_ui.h" />
 		<Unit filename="include/ui/Delivery_ui.h" />
 		<Unit filename="include/ui/Main_ui.h" />
 		<Unit filename="include/ui/Manager_ui.h" />
 		<Unit filename="include/ui/Sales_ui.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/exceptions/InvalidLocationException.cpp" />
+		<Unit filename="src/exceptions/InvalidNameException.cpp" />
+		<Unit filename="src/exceptions/InvalidNumExceptions.cpp" />
 		<Unit filename="src/models/Pizza.cpp" />
 		<Unit filename="src/models/Toppings.cpp" />
 		<Unit filename="src/repository/PizzaRepo.cpp" />
 		<Unit filename="src/repository/ToppingRepo.cpp" />
 		<Unit filename="src/services/PizzaService.cpp" />
 		<Unit filename="src/services/TopService.cpp" />
+		<Unit filename="src/services/Validate.cpp" />
 		<Unit filename="src/ui/Baker_ui.cpp" />
 		<Unit filename="src/ui/Delivery_ui.cpp" />
 		<Unit filename="src/ui/Main_ui.cpp" />

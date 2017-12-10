@@ -3,6 +3,7 @@
 
 #include "Main_ui.h"
 #include "TopService.h"
+#include "PizzaService.h"
 #include <stdlib.h>
 
 class Manager_ui

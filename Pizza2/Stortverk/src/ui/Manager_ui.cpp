@@ -55,6 +55,8 @@ void Manager_ui::manageToppingUI() {
     char input = '\0';
     TopService get;
     vector <Toppings> topping;
+    string top = "";
+    string price = "";
 
     while(true) {
         system("cls");
@@ -77,15 +79,20 @@ void Manager_ui::manageToppingUI() {
 
         }
         else if(input == '2'){
-            cout << "Input new toppping" << endl;
-            //get.addTopping()
+            cout << "Input new topping" << endl;
+            cout << "Name: ";
+            cin.ignore();
+            getline(cin, top);
+            cout << "Price: ";
+            cin >> price;
+            get.addTopping(top, price, 1);
         }
         else if(input == '3'){
             cout << "Remove topping from list" << endl;
-            cout << "What Topping would you like to remove? ";
-            string lala;
-            cin >> lala;
-            if(!get.removeTopping(lala, 1)) {
+            cout << "What topping would you like to remove? ";
+            cin.ignore();
+            getline(cin, top);
+            if(!get.removeTopping(top, 1)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }
@@ -104,6 +111,8 @@ void Manager_ui::manageExtraUI(){
         char input = '\0';
     TopService get;
     vector <Toppings> topping;
+    string top = "";
+    string price = "";
 
     while(true) {
         system("cls");
@@ -127,14 +136,19 @@ void Manager_ui::manageExtraUI(){
         }
         else if(input == '2'){
             cout << "Input new extras" << endl;
-            //get.addTopping()
+            cout << "Name: ";
+            cin.ignore();
+            getline(cin, top);
+            cout << "Price: ";
+            cin >> price;
+            get.addTopping(top, price, 5);
         }
         else if(input == '3'){
             cout << "Remove extras from list" << endl;
             cout << "What extras would you like to remove? ";
-            string lala;
-            cin >> lala;
-            if(!get.removeTopping(lala, 5)) {
+            cin.ignore();
+            getline(cin, top);
+            if(!get.removeTopping(top, 5)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }
@@ -150,7 +164,56 @@ void Manager_ui::manageExtraUI(){
 }
 
 void Manager_ui::manageLocationUI(){
-    cout << " -Manager - Location management- " << endl;
+    char input = '\0';
+     PizzaService get;
+    vector <string> locations;
+    string location;
+
+    while(true) {
+        system("cls");
+        cout << " -Manager - Location management- " << endl;
+        cout << "|  " << endl;
+        cout << "| 1. Display locations list " << endl;
+        cout << "| 2. Input new locations to list" << endl;
+        cout << "| 3. Remove locations from list" << endl;
+        cout << "| 4. Back to Manager main menu" << endl;
+        cin >> input;
+
+        if(input == '1') {
+            system("cls");
+            cout << "Display locations list" << endl;
+            locations = get.getLocation();
+            for(unsigned int i = 0; i < locations.size(); i++) {
+                cout << locations[i] << endl;
+            }
+            system("pause");
+
+        }
+        else if(input == '2'){
+            cout << "Input new locations" << endl;
+            cin.ignore();
+            getline(cin, location);
+            get.addLocation(location);
+
+        }
+        else if(input == '3'){
+            cout << "Remove location from list" << endl;
+            cout << "What location would you like to remove? ";
+            cin.ignore();
+            getline(cin, location);
+            if(!get.removeLocation(location)) {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+        }
+        else if(input == '4') {
+            system("cls");
+            break;
+        }
+        else {
+            cout << "Wrong input, please try again" << endl << endl;
+        }
+    }
 }
 
 void Manager_ui::manageSettingUI() {
@@ -158,6 +221,8 @@ void Manager_ui::manageSettingUI() {
     int pick = 0;
     TopService get;
     vector <Toppings> topping;
+    string top = "";
+    string price = "";
 
     while(true) {
         system("cls");
@@ -181,16 +246,22 @@ void Manager_ui::manageSettingUI() {
 
         }
         else if(input == '2'){
+            pick = crustSauceSize();
             cout << "Input new item" << endl;
-            //get.addTopping()
+            cout << "Name: ";
+            cin.ignore();
+            getline(cin, top);
+            cout << "Price: ";
+            cin >> price;
+            get.addTopping(top, price, pick);
         }
         else if(input == '3'){
             pick = crustSauceSize();
             cout << "Remove item from list" << endl;
             cout << "What item would you like to remove? ";
-            string lala;
-            cin >> lala;
-            if(!get.removeTopping(lala, pick)) {
+            cin.ignore();
+            getline(cin, top);
+            if(!get.removeTopping(top, pick)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }

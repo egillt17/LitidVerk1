@@ -6,7 +6,6 @@ Pizza::Pizza() {
     _topping.clear();
     _size = "Not picked";
     _sauce = "Not picked";
-    _cheese = "Not picked";
     _crust = "Not picked";
     _status = 'n';
 }
@@ -29,10 +28,6 @@ void Pizza::setSize(string size_of) {
 
 void Pizza::setSauce(string sauce) {
     _sauce = sauce;
-}
-
-void Pizza::setCheese(string cheese) {
-    _cheese = cheese;
 }
 
 void Pizza::setCrust(string crust) {
@@ -63,10 +58,6 @@ string Pizza::getSauce() {
     return _sauce;
 }
 
-string Pizza::getCheese() {
-    return _cheese;
-}
-
 string Pizza::getCrust() {
     return _crust;
 }
@@ -89,7 +80,6 @@ ostream& operator << (ostream& out, const Pizza& pizza) {
     }
     out << "Size: " << pizza._size << endl;
     out << "Sauce: " << pizza._sauce << endl;
-    out << "Cheese: " << pizza._cheese << endl;
     out << "Crust: " << pizza._crust << endl;
     out << "Status: " << pizza._status << endl;
     return out;
@@ -100,7 +90,6 @@ ofstream& operator << (ofstream& out, const Pizza& pizza) {
     out << "." << pizza._price;
     out << "." << pizza._size;
     out << "." << pizza._sauce;
-    out << "." << pizza._cheese;
     out << "." << pizza._crust;
     out << "." << pizza._status << endl;
     for(unsigned int i = 0; i < pizza._topping.size(); i++) {

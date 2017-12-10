@@ -12,7 +12,6 @@ class Pizza
         void setPrice(int price);
         void setSize(string size_of);
         void setSauce(string sauce);
-        void setCheese(string cheese);
         void setCrust(string crust);
         void setStatus(char status);
         string getPerson();
@@ -20,7 +19,6 @@ class Pizza
         vector <Toppings> getToppings();
         string getSize();
         string getSauce();
-        string getCheese();
         string getCrust();
         char getStatus();
         friend ostream& operator << (ostream& out, const Pizza& pizza);
@@ -32,7 +30,6 @@ class Pizza
         vector <Toppings> _topping;
         string _size;
         string _sauce;
-        string _cheese;
         string _crust;
         char _status;
 

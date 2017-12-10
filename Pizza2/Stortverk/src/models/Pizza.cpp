@@ -60,12 +60,17 @@ char Pizza::getStatus() {
 ostream& operator << (ostream& out, const Pizza& pizza) {
     out << "Price: " << pizza._price << endl;
     out << "Toppings: ";
-    for(unsigned int i = 0; i < pizza._topping.size(); i++) {
-        if(i == (pizza._topping.size()-1)) {
-            out << pizza._topping[i] << endl;
-        }
-        else {
-            out << pizza._topping[i] << ", ";
+    if(pizza._topping.empty()) {
+        out << endl;
+    }
+    else {
+        for(unsigned int i = 0; i < pizza._topping.size(); i++) {
+            if(i == (pizza._topping.size()-1)) {
+                out << pizza._topping[i] << endl;
+            }
+            else {
+                out << pizza._topping[i] << ", ";
+            }
         }
     }
     out << "Size: " << pizza._size << endl;

@@ -4,6 +4,7 @@ void Sales_ui::salesMainUI()
 {
     char answer = '\0';
     string input = "";
+    Order takeOrder;
 
     while (true)
     {
@@ -109,12 +110,15 @@ void Sales_ui::salesMainUI()
 
 Pizza Sales_ui::addPizza() {
     char answer = '\0';
+    unsigned int number = 0;
     TopService get;
     Pizza pizza;
     vector <Toppings> topping;
     while(true){
         system("CLS");
         topping.clear();
+        cout << "                Your pizza                " << endl;
+        cout << "------------------------------------------------" << endl;
         cout << pizza;
         cout << "                Pizza menu                " << endl;
         cout << "------------------------------------------------" << endl;
@@ -132,14 +136,30 @@ Pizza Sales_ui::addPizza() {
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << (i+1) << ". " << topping[i];
             }
-            system("pause");
-
+            cout << "Pick a size: ";
+            cin >> answer;
+            number = answer - '0';
+            if(number > 0 && number <= topping.size()){
+                pizza.setSize(topping[number-1].getName());
+            }
+            else {
+                cout << "no can do!" << endl;
+            }
         }
         else if (answer == '2') {
             system("CLS");
             topping = get.getToppingList(4);
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << (i+1) << ". " << topping[i];
+            }
+            cout << "Pick a sauce: ";
+            cin >> answer;
+            number = answer - '0';
+            if(number > 0 && number <= topping.size()){
+                pizza.setSauce(topping[number-1].getName());
+            }
+            else {
+                cout << "no can do!" << endl;
             }
             system("pause");
 
@@ -149,6 +169,15 @@ Pizza Sales_ui::addPizza() {
             topping = get.getToppingList(2);
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << (i+1) << ". " << topping[i];
+            }
+            cout << "Pick a crust: ";
+            cin >> answer;
+            number = answer - '0';
+            if(number > 0 && number <= topping.size()){
+                pizza.setCrust(topping[number-1].getName());
+            }
+            else {
+                cout << "no can do!" << endl;
             }
             system("pause");
 

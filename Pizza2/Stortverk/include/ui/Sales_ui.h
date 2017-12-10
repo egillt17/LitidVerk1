@@ -3,6 +3,7 @@
 #include "Main_ui.h"
 #include "Toppings.h"
 #include "Pizza.h"
+#include "Order.h"
 
 class Sales_ui
 {

@@ -42,11 +42,24 @@
 	<vector>
 	<fstream>
 
-<<<<<<< HEAD
-1512913135 D
-=======
-1512915355 D
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
+1512928915 D
+
+1512928915 051859846e20d835f0c2f1e826b873a122034
+	"Validate.h"
+	<string>
+	<iostream>
+	<string>
+	<iostream>
+	"InvalidNameException.h"
+	"InvalidNumExceptions.h"
+	"InvalidLocationException.h"
+	"Toppings.h"
+	"Validate.h"
+	<string>
+	<iostream>
+	"Validate.h"
+	<string>
+	<iostream>
 
 1512759112 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
@@ -94,7 +107,7 @@
 
 1512742686 ef8c7b80988e56b05313cce19a0c285080108
 
-1512921796 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
+1512932786 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
 
 1512921777 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\pizza.h
@@ -209,10 +222,11 @@
 1512919548 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\topservice.cpp
 	"TopService.h"
 
-1512926182 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\sales_ui.h
+1512930309 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\sales_ui.h
 	"Main_ui.h"
 	"Toppings.h"
 	"Pizza.h"
+	"Order.h"
 
 1512824551 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\baker_ui.h
 	"Main_ui.h"
@@ -226,7 +240,7 @@
 1512824551 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Delivery_ui.h"
 
-1512929831 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
+1512932585 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 
 1512914986 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
@@ -239,7 +253,7 @@
 1512918465 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1512915355 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h
+1512931223 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"
@@ -266,11 +280,7 @@
 	"Pizza.h"
 	"Toppings.h"
 
-<<<<<<< HEAD
-1512921367 h"
-=======
-1512928571 h"
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
+1512929372 h"
 
 1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\topservice.h
 	"Toppings.h"
@@ -341,54 +351,30 @@
 1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
 	"InvalidNumExceptions.h"
 
-<<<<<<< HEAD
 1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidlocationexception.cpp
 	"InvalidLocationException.h"
 
 1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidlocationexception.h
-=======
-1512913135 31ffcaead0aa6422e512a99e180f347692650
+
+1512921367 31ffcaead0aa6422e512a99e180f347692650
 
 1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\exceptions\invalidlocationexception.cpp
 	"InvalidLocationException.h"
 
 1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidlocationexception.h
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
-	"Validate.h"
-	<string>
-	<iostream>
 
-<<<<<<< HEAD
 1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\validate.h
-=======
+
 1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\validate.h
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
-	<string>
-	<iostream>
-	"InvalidNameException.h"
-	"InvalidNumExceptions.h"
-	"InvalidLocationException.h"
-	"Toppings.h"
 
-<<<<<<< HEAD
 1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidnameexception.h
-=======
+
 1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidnameexception.h
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
-	"Validate.h"
-	<string>
-	<iostream>
 
-<<<<<<< HEAD
 1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidnumexceptions.h
-=======
-1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidnumexceptions.h
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
-	"Validate.h"
-	<string>
-	<iostream>
 
-<<<<<<< HEAD
+1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidnumexceptions.h
+
 1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidnameexception.cpp
 	"InvalidNameException.h"
 
@@ -398,15 +384,12 @@
 1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\validate.cpp
 	"Validate.h"
 
-1512921367 31ffcaead0aa6422e512a99e180f347692650
-
 1512921367 b7d40199977a15f5f6af7d71a24fdeaffbf4c
 
 1512929372 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\order.h
 	"Pizza.h"
 	"Toppings.h"
 
-=======
 1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\exceptions\invalidnameexception.cpp
 	"InvalidNameException.h"
 
@@ -416,4 +399,6 @@
 1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\validate.cpp
 	"Validate.h"
 
->>>>>>> 3e8051859846e20d835f0c2f1e826b873a122034
+1512929372 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\order.cpp
+	"Order.h"
+

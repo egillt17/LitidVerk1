@@ -41,7 +41,7 @@
 	<vector>
 	<fstream>
 
-1512744292 D
+1512915355 D
 
 1512759112 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\toppings.cpp
 	"Toppings.h"
@@ -237,7 +237,6 @@
 	"Toppings.h"
 	"PizzaRepo.h"
 
-<<<<<<< HEAD
 1512919548 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
@@ -253,14 +252,15 @@
 1512919548 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1512928729 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\order.cpp
+1512929509 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\order.cpp
 	"Order.h"
 
-1512928571 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\order.h
+1512929509 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\order.h
 	"Pizza.h"
 	"Toppings.h"
 
-=======
+1512928571 h"
+
 1512911627 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\topservice.h
 	"Toppings.h"
 	"ToppingRepo.h"
@@ -330,4 +330,40 @@
 1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
 	"InvalidNumExceptions.h"
 
->>>>>>> 3bf31ffcaead0aa6422e512a99e180f347692650
+1512913135 31ffcaead0aa6422e512a99e180f347692650
+
+1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\exceptions\invalidlocationexception.cpp
+	"InvalidLocationException.h"
+
+1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidlocationexception.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\validate.h
+	<string>
+	<iostream>
+	"InvalidNameException.h"
+	"InvalidNumExceptions.h"
+	"InvalidLocationException.h"
+	"Toppings.h"
+
+1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidnameexception.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\exceptions\invalidnumexceptions.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\exceptions\invalidnameexception.cpp
+	"InvalidNameException.h"
+
+1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
+	"InvalidNumExceptions.h"
+
+1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\validate.cpp
+	"Validate.h"
+

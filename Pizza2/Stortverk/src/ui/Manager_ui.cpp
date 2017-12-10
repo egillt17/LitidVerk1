@@ -77,15 +77,15 @@ void Manager_ui::manageToppingUI() {
 
         }
         else if(input == '2'){
-            cout << "Input new toppping" << endl;
+            cout << "Input new topping" << endl;
             //get.addTopping()
         }
         else if(input == '3'){
             cout << "Remove topping from list" << endl;
-            cout << "What Topping would you like to remove? ";
-            string lala;
-            cin >> lala;
-            if(!get.removeTopping(lala, 1)) {
+            cout << "What topping would you like to remove? ";
+            string remove_item;
+            cin >> remove_item;
+            if(!get.removeTopping(remove_item, 1)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }
@@ -132,9 +132,9 @@ void Manager_ui::manageExtraUI(){
         else if(input == '3'){
             cout << "Remove extras from list" << endl;
             cout << "What extras would you like to remove? ";
-            string lala;
-            cin >> lala;
-            if(!get.removeTopping(lala, 5)) {
+            string remove_item;
+            cin >> remove_item;
+            if(!get.removeTopping(remove_item, 5)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }
@@ -150,7 +150,52 @@ void Manager_ui::manageExtraUI(){
 }
 
 void Manager_ui::manageLocationUI(){
-    cout << " -Manager - Location management- " << endl;
+    char input = '\0';
+     PizzaService get;
+    vector <string> locations;
+
+    while(true) {
+        system("cls");
+        cout << " -Manager - Location management- " << endl;
+        cout << "|  " << endl;
+        cout << "| 1. Display locations list " << endl;
+        cout << "| 2. Input new locations to list" << endl;
+        cout << "| 3. Remove locations from list" << endl;
+        cout << "| 4. Back to Manager main menu" << endl;
+        cin >> input;
+
+        if(input == '1') {
+            system("cls");
+            cout << "Display locations list" << endl;
+            locations = get.getLocation();
+            for(unsigned int i = 0; i < locations.size(); i++) {
+                cout << locations[i] << endl;
+            }
+            system("pause");
+
+        }
+        else if(input == '2'){
+            cout << "Input new locations" << endl;
+
+        }
+        else if(input == '3'){
+            cout << "Remove location from list" << endl;
+            cout << "What location would you like to remove? ";
+            string remove_item;
+            cin >> remove_item;
+         /*   if(!get.need to make function(remove_item, 1)) {
+                cout << "no can do!" << endl;
+                system("pause");
+            }*/
+        }
+        else if(input == '4') {
+            system("cls");
+            break;
+        }
+        else {
+            cout << "Wrong input, please try again" << endl << endl;
+        }
+    }
 }
 
 void Manager_ui::manageSettingUI() {
@@ -188,9 +233,9 @@ void Manager_ui::manageSettingUI() {
             pick = crustSauceSize();
             cout << "Remove item from list" << endl;
             cout << "What item would you like to remove? ";
-            string lala;
-            cin >> lala;
-            if(!get.removeTopping(lala, pick)) {
+            string remove_item;
+            cin >> remove_item;
+            if(!get.removeTopping(remove_item, pick)) {
                 cout << "no can do!" << endl;
                 system("pause");
             }

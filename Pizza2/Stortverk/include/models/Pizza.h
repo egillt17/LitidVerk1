@@ -8,13 +8,11 @@ class Pizza
     public:
         Pizza();
         ~Pizza();
-        void setPerson(string person);
         void setPrice(int price);
         void setSize(string size_of);
         void setSauce(string sauce);
         void setCrust(string crust);
         void setStatus(char status);
-        string getPerson();
         int getPrice();
         vector <Toppings> getToppings();
         string getSize();
@@ -25,7 +23,6 @@ class Pizza
         friend ofstream& operator << (ofstream& out, const Pizza& pizza);
 
     private:
-        string _person;
         int _price;
         vector <Toppings> _topping;
         string _size;

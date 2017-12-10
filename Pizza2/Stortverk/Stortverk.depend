@@ -88,10 +88,10 @@
 
 1512742686 ef8c7b80988e56b05313cce19a0c285080108
 
-1512912273 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
+1512921796 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
 
-1512912273 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\pizza.h
+1512921777 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\pizza.h
 	"Toppings.h"
 
 1512919222 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\toppingrepo.cpp
@@ -202,8 +202,10 @@
 1512759112 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\topservice.cpp
 	"TopService.h"
 
-1512824551 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\sales_ui.h
+1512926182 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\sales_ui.h
 	"Main_ui.h"
+	"Toppings.h"
+	"Pizza.h"
 
 1512824551 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\baker_ui.h
 	"Main_ui.h"
@@ -217,7 +219,7 @@
 1512824551 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Delivery_ui.h"
 
-1512824551 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
+1512929014 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 
 1512914986 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
@@ -303,4 +305,39 @@
 
 1512913135 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
 	"InvalidNumExceptions.h"
+
+1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidlocationexception.cpp
+	"InvalidLocationException.h"
+
+1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidlocationexception.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\validate.h
+	<string>
+	<iostream>
+	"InvalidNameException.h"
+	"InvalidNumExceptions.h"
+	"InvalidLocationException.h"
+	"Toppings.h"
+
+1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidnameexception.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidnumexceptions.h
+	"Validate.h"
+	<string>
+	<iostream>
+
+1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidnameexception.cpp
+	"InvalidNameException.h"
+
+1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
+	"InvalidNumExceptions.h"
+
+1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\validate.cpp
+	"Validate.h"
 

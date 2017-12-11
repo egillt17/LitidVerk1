@@ -34,6 +34,7 @@ void Sales_ui::salesMainUI()
         else if (answer == '2')
         {
             addPizza();
+            /*
             system("CLS");
             char answer = '\0';
 
@@ -66,6 +67,7 @@ void Sales_ui::salesMainUI()
                     cout << "| Wrong input, please try again" << endl << endl;
                 }
             }
+            */
         }
         else if (answer == '3')
         {
@@ -111,11 +113,18 @@ void Sales_ui::salesMainUI()
 Pizza Sales_ui::addPizza() {
     char answer = '\0';
     unsigned int number = 0;
+    int sizePrice = 0;
+    int saucePrice = 0;
+    int crustPrice = 0;
+    int toppingPrice = 0;
+
     TopService get;
     Pizza pizza;
     vector <Toppings> topping;
     while(true){
         system("CLS");
+        int totalPrice = sizePrice + saucePrice + crustPrice + toppingPrice;
+        pizza.setPrice(totalPrice);
         topping.clear();
         cout << "                Your pizza                " << endl;
         cout << "------------------------------------------------" << endl;
@@ -141,6 +150,7 @@ Pizza Sales_ui::addPizza() {
             number = answer - '0';
             if(number > 0 && number <= topping.size()){
                 pizza.setSize(topping[number-1].getName());
+                sizePrice = topping[number-1].getPrice();
             }
             else {
                 cout << "no can do!" << endl;
@@ -157,12 +167,11 @@ Pizza Sales_ui::addPizza() {
             number = answer - '0';
             if(number > 0 && number <= topping.size()){
                 pizza.setSauce(topping[number-1].getName());
+                saucePrice = topping[number-1].getPrice();
             }
             else {
                 cout << "no can do!" << endl;
             }
-            system("pause");
-
         }
         else if (answer == '3') {
             system("CLS");
@@ -175,12 +184,11 @@ Pizza Sales_ui::addPizza() {
             number = answer - '0';
             if(number > 0 && number <= topping.size()){
                 pizza.setCrust(topping[number-1].getName());
+                crustPrice = topping[number-1].getPrice();
             }
             else {
                 cout << "no can do!" << endl;
             }
-            system("pause");
-
         }
         else if (answer == '4') {
             system("CLS");
@@ -190,6 +198,9 @@ Pizza Sales_ui::addPizza() {
             }
             system("pause");
 
+        }
+        else if (answer == '5') {
+            break;
         }
     }
 

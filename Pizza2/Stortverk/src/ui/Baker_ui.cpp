@@ -7,6 +7,8 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
 
     while (true)
     {
+        vector<Order> orders;
+        PizzaService get;
         cout << "                Bakers Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
@@ -18,7 +20,8 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
             system("CLS");
             while (true)
             {
-                cout << "---Goes to location 1---" << endl;
+                cout << "                  Location 1                    " << endl;
+                cout << "------------------------------------------------" << endl;
                 cout << "| What would you like to do at location 1?" << endl;
                 cout << "| '1' to get a list of all pending orders at location 1" << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
 
@@ -28,7 +31,13 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
                 if (answer == '1')
                 {
                     system("CLS");
-                    cout << "---Getting a list of all orders for location 1---" << endl;
+                    cout << "---Getting a list of all pending orders for location 1---" << endl;
+                    orders = get.getOrders();
+                    for (unsigned int i = 0; i < orders.size(); i++) {
+                        if (orders[i].getLocation() == "location1" && orders[i].getIsReady() == 'n') {
+                            cout << (i+1) << ". " << orders[i] << endl;
+                        }
+                    }
                 }
                 else if (answer == '2')
                 {
@@ -89,7 +98,8 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
 
             while (true)
             {
-                cout << "---Goes to location 2---" << endl;
+                cout << "                  Location 2                    " << endl;
+                cout << "------------------------------------------------" << endl;
                 cout << "| What would you like to do at location 2?" << endl;
                 cout << "| '1' to get a list of all pending orders for location 2" << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
 
@@ -99,7 +109,13 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
                 if (answer == '1')
                 {
                     system("CLS");
-                    cout << "---Getting a list of all orders for location 2---" << endl;
+                    cout << "---Getting a list of all pending orders for location 2---" << endl;
+                    orders = get.getOrders();
+                    for (unsigned int i = 0; i < orders.size(); i++) {
+                        if (orders[i].getLocation() == "location2" && orders[i].getIsReady() == 'n') {
+                            cout << (i+1) << ". " << orders[i] << endl;
+                        }
+                    }
                 }
                 else if (answer == '2')
                 {

@@ -44,3 +44,8 @@ bool PizzaService::locationCheck(string location) {
 
     return false;
 }
+
+vector<Order> PizzaService::getOrders() {
+
+
+}

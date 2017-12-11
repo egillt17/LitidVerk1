@@ -1,186 +1,112 @@
-#include "Delivery_ui.h"
+#include "Baker_ui.h"
 
 
-void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this function, to summarize we are figuring out which location the baker is located at and what
-                                        ///he is doing at that location.
-    char answer = '\0';
+void Delivery_ui::deliveryMainUI() {        ///Pretty basic if/else commands in this function, to summarize we are figuring out which location the baker is located at and what
+                                            ///he is doing at that location.
+    while (true)
+    {
+        vector<string> locations;
+        unsigned int number;
+        string input;
+        string location;
+        PizzaService get;
+
+        cout << "                Bakers Main Menu                " << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "| What is you location? " << endl;
+
+        locations = get.getLocation();                          ///Create a vector of locations based on the function getLocations in PizzaService class
+        for(unsigned int i = 0; i < locations.size(); i++) {
+            cout << "| " << (i+1) << ". " << locations[i] << endl;      ///printing all locations from the getLocations function
+        }
+        cout << "| " << locations.size() + 1 << ". to Exit" << endl;
+        cin >> input;
+        stringstream sin(input);            ///Using stringstream to turn the char input to an unsigned int
+        sin >> number;
+
+        if(number > 0 && number <= locations.size()) {
+            location = locations[number-1];             ///checking if the input is valid according to the state of the locations text file
+            locationMenu(location);                     ///and sends that to the locationMenu function
+        }
+        else if (number == locations.size()+1) {
+            system("CLS");
+            break;
+        }
+        else {
+            system("CLS");
+            cout << "| Wrong input, please try again" << endl << endl;
+        }
+    }
+}
+
+void Delivery_ui::locationMenu(string location) {        ///Takes in the location that was choosen
+
+    system("CLS");
+
+    vector<Order> orders;
+    Order order;
+    char answer;
+    PizzaService get;
 
     while (true)
     {
-        vector<Order> orders;
-        PizzaService get;
-        cout << "               Delivery Main Menu               " << endl;
+        cout << "               Location: " << location << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "| What is you location? " << endl;
-        cout << "| '1' to go to location 1" << endl << "| '2' to go to location 2" << endl << "| '3' to Quit" << endl;
+        cout << "| What would you like to do at " << location << "?" << endl;
+        cout << "| '1' to get a list of all orders at "<< location << endl << "| '2' to get a list of all ready orders at " << location << endl
+             << "| '3' to get a specific order up" << endl << "| '4' to Quit" << endl;
+
         cin >> answer;
+        cout << endl;
 
-        if (answer == '1')
-        {
+        if (answer == '1') {
             system("CLS");
-            while (true)
-            {
-                cout << "                  Location 1                    " << endl;
-                cout << "------------------------------------------------" << endl;
-                cout << "| What would you like to do at location 1?" << endl;
-                cout << "| '1' to get a list of all orders at location 1" << endl << "| '2' to get a list of ready orders for location 1" << endl << "| '3' to get up a specific order" <<
-                endl << "| '4' to Quit" << endl;
-
-                cin >> answer;
-                cout << endl;
-
-                if (answer == '1')
-                {
-                    system("CLS");
-                    cout << "---Getting a list of all orders for location 1---" << endl;
-                    orders = get.getOrders();
-                    for (unsigned int i = 0; i < orders.size(); i++) {
-                        if (orders[i].getLocation() == "location1") {
-                            cout << (i+1) << ". " << orders[i];
-                        }
-                    }
+            cout << "---Getting a list of all orders for " << location << endl;
+            orders = get.getOrders();                                   ///Getting all orders from the orders text file and
+            for (unsigned int i = 0; i < orders.size(); i++) {          ///Prints all orders from the chosen location
+                if (orders[i].getLocation() == location) {
+                    cout << (i+1) << ". " << orders[i] << endl;         ///Runs if the location matches
                 }
-                else if (answer == '2')
-                {
-                    system("CLS");
-                    cout << "---Getting a list of all ready orders for location 1---" << endl;
-                    orders = get.getOrders();
-                    for (unsigned int i = 0; i < orders.size(); i++) {
-                        if (orders[i].getLocation() == "location1" && orders[i].getProgress() == 'r') {
-                            cout << (i+1) << ". " << orders[i];
-                        }
-                    }
-                }
-                else if (answer == '3')
-                {
-                    system("CLS");
-                    char answer = '\0';
-
-                    while (true)
-                    {
-                        cout << "| What would you like to do about that order?" << endl;
-                        cout << "| '1' to mark an order paid for" << endl << "| '2' to mark an order delivered" << endl << "| '3' to Quit" << endl;
-
-                        cin >> answer;
-                        cout << endl;
-
-                        if (answer == '1')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order paid for" << endl;
-                            Order order;
-                            order.setPaidFor('y');
-                        }
-                        else if (answer == '2')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order delivered---" << endl;
-                            Order order;
-                            order.setDelivered('y');
-                        }
-                        else if (answer == '3')
-                        {
-                            system("CLS");
-                            break;
-                        }
-                        else
-                        {
-                            system("CLS");
-                            cout << "| Wrong input, please try again" << endl << endl;
-                        }
-                    }
-                }
-                else if (answer == '4')
-                {
-                    system("CLS");
-                    break;
-                }
-                else
-                {
-                    system("CLS");
-                    cout << "| Wrong input, please try again" << endl << endl;
-                }
-
             }
         }
-        else if (answer == '2')
+        else if (answer == '2') {
+            system("CLS");
+            cout << "---Getting a list of all ready orders for " << location << endl;
+            orders = get.getOrders();
+            for (unsigned int i = 0; i < orders.size(); i++) {
+                if (orders[i].getLocation() == location && orders[i].getProgress() == 'r') {        ///Same process but only for ready orders
+                    cout << (i+1) << ". " << orders[i] << endl;
+                }
+            }
+        }
+        else if (answer == '3')
         {
             system("CLS");
             char answer = '\0';
 
             while (true)
             {
-                cout << "                  Location 2                    " << endl;
-                cout << "------------------------------------------------" << endl;
-                cout << "| What would you like to do at location 2?" << endl;
-                cout << "| '1' to get a list of all pending orders for location 2" << endl << "| '2' to get a list of all ready orders from location 2"
-                     << endl << "| '3' to get up a specific order" << endl << "| '4' to Quit" << endl;
+                cout << "| What would you like to do about that order?" << endl;
+                cout << "| '1' to mark an order paid for" << endl << "| '2' to mark an order delivered" << endl << "| '3' to Quit" << endl;
 
                 cin >> answer;
                 cout << endl;
 
-                if (answer == '1')
+                if (answer == '1')                  ///Pretty straightforward, here we are changing the Progress variable in the Order class
                 {
                     system("CLS");
-                    cout << "---Getting a list of all orders for location 2---" << endl;
-                    orders = get.getOrders();
-                    for (unsigned int i = 0; i < orders.size(); i++) {
-                        if (orders[i].getLocation() == "location2") {
-                            cout << (i+1) << ". " << orders[i];
-                        }
-                    }
+                    cout << "---Marking an order paid for---" << endl;
+                    Order order;
+                    order.setProgress('y');
                 }
                 else if (answer == '2')
                 {
                     system("CLS");
-                    cout << "---Getting a list of all ready orders for location 2---" << endl;
-                    orders = get.getOrders();
-                    for (unsigned int i = 0; i < orders.size(); i++) {
-                        if (orders[i].getLocation() == "location2" && orders[i].getProgress() == 'r') {
-                            cout << (i+1) << ". " << orders[i];
-                        }
-                    }
+                    cout << "---Marking an order delivered---" << endl;
+                    Order order;
+                    order.setProgress('r');
                 }
                 else if (answer == '3')
-                {
-                    system("CLS");
-                    char answer = '\0';
-
-                    while (true)
-                    {
-                        cout << "| What would you like to do about that order?" << endl;
-                        cout << "| '1' to mark an order paid for" << endl << "| '2' to mark an order delivered" << endl << "| '3' to Quit" << endl;
-
-                        cin >> answer;
-                        cout << endl;
-
-                        if (answer == '1')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order paid for---" << endl;
-                            Order order;
-                            order.setPaidFor('y');
-                        }
-                        else if (answer == '2')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order delivered---" << endl;
-                            Order order;
-                            order.setDelivered('y');
-                        }
-                        else if (answer == '3')
-                        {
-                            system("CLS");
-                            break;
-                        }
-                        else
-                        {
-                            system("CLS");
-                            cout << "| Wrong input, please try again" << endl << endl;
-                        }
-                    }
-                }
-                else if (answer == '4')
                 {
                     system("CLS");
                     break;
@@ -192,7 +118,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                 }
             }
         }
-        else if (answer == '3')
+        else if (answer == '4')
         {
             system("CLS");
             break;

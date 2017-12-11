@@ -30,6 +30,46 @@ string Order::getPerson() {
     return _person;
 }
 
+string Order::getLocation() {
+
+    return _location;
+}
+
+string Order::getComments() {
+
+    return _comments;
+}
+
+char Order::getInProgress() {
+
+    return _inProgress;
+}
+
+char Order::getIsReady() {
+
+    return _isReady;
+}
+
+char Order::getPickedOrSent() {
+
+    return _pickedOrSent;
+}
+
+char Order::getDelivered() {
+
+    return _delivered;
+}
+
+char Order::getPrice() {
+
+    return _price;
+}
+
+char Order::getPaidFor() {
+
+    return _paidFor;
+}
+
 void Order::setPerson(string person) {
 
     _person = person;
@@ -38,6 +78,41 @@ void Order::setPerson(string person) {
 void Order::setLocationForOrder(string location) {
 
     _location = location;
+}
+
+void Order::setComments(string comments) {
+
+    _comments = comments;
+}
+
+void Order::setInProgress(char inProgress) {
+
+    _inProgress = inProgress;
+}
+
+void Order::setIsReady(char isReady) {
+
+    _isReady = isReady;
+}
+
+void Order::setPickedOrSent(char pickedOrSent) {
+
+    _pickedOrSent = pickedOrSent;
+}
+
+void Order::setDelivered(char delivered) {
+
+    _delivered = delivered;
+}
+
+void Order::setPrice(char price) {
+
+    _price = price;
+}
+
+void Order::setPaidFor(char paidFor) {
+
+    _paidFor = paidFor;
 }
 
 ostream& operator << (ostream& out, const Order& order) {

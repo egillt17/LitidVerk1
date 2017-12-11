@@ -53,11 +53,15 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                         {
                             system("CLS");
                             cout << "---Marking an order paid for" << endl;
+                            Order order;
+                            order.setPaidFor('y');
                         }
                         else if (answer == '2')
                         {
                             system("CLS");
                             cout << "---Marking an order delivered---" << endl;
+                            Order order;
+                            order.setDelivered('y');
                         }
                         else if (answer == '3')
                         {
@@ -93,8 +97,8 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
             {
                 cout << "---Goes to location 2---" << endl;
                 cout << "| What would you like to do at location 2?" << endl;
-                cout << "| '1' to get a list of all pending orders for location 2" << endl << "| '2' to get a specific order up" << endl << "| '3' to get up a specific order" << endl
-                     << "| '4' to Quit" << endl;
+                cout << "| '1' to get a list of all pending orders for location 2" << endl << "| '2' to get a list of all ready orders from location 2"
+                     << endl << "| '3' to get up a specific order" << endl << "| '4' to Quit" << endl;
 
                 cin >> answer;
                 cout << endl;
@@ -125,12 +129,16 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                         if (answer == '1')
                         {
                             system("CLS");
-                            cout << "---Marking an order paid for" << endl;
+                            cout << "---Marking an order paid for---" << endl;
+                            Order order;
+                            order.setPaidFor('y');
                         }
                         else if (answer == '2')
                         {
                             system("CLS");
                             cout << "---Marking an order delivered---" << endl;
+                            Order order;
+                            order.setDelivered('y');
                         }
                         else if (answer == '3')
                         {

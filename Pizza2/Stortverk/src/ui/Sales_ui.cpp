@@ -14,7 +14,7 @@ void Sales_ui::salesMainUI()
         cout << "| '1' to set up a new order" << endl;
         cout << "| '2' to add pizzas (and other things) to order" << endl;
         cout << "| '3' to get the total cost of an order" << endl;
-        cout << "| '4' to set an order sent or picked up" << endl;
+        cout << "| '4' to set an order picked up or sent" << endl;
         cout << "| '5' to mark an order paid for" << endl;
         cout << "| '6' to mark a pizza to a specific delivery place" << endl;
         cout << "| '7' to  Add comments" << endl;
@@ -73,16 +73,25 @@ void Sales_ui::salesMainUI()
         {
             system("CLS");
             cout << "---Getting the total cost of an order---" << endl;
+            Order order;
+            order.getPrice();
         }
         else if (answer == '4')
         {
             system("CLS");
-            cout << "---setting an order sent or picked up---" << endl;
+            char answer = '\0';
+            cout << "---setting an order picked up or sent---" << endl;
+            cout << "Do you want the order picked up or sent? ('p' for picked up, 's' for sent)";
+            cin >> answer;
+            Order order;
+            order.setPickedOrSent(answer);
         }
         else if (answer == '5')
         {
             system("CLS");
             cout << "---Marking an order paid for---" << endl;
+            Order order;
+            order.setPaidFor('y');
         }
         else if (answer == '6')
         {
@@ -96,6 +105,8 @@ void Sales_ui::salesMainUI()
             cout << "Comment: ";
             cin.ignore();
             getline(cin, input);
+            Order order;
+            order.setComments(input);
         }
         else if (answer == '8')
         {

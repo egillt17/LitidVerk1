@@ -3,6 +3,7 @@
 
 #include "Pizza.h"
 #include "Toppings.h"
+#include "Order.h"
 
 class PizzaRepo
 {
@@ -10,6 +11,7 @@ class PizzaRepo
         vector <string> readLocations();
         void addLocationToList(string location);
         void reWriteLocationList(vector <string> locations);
+        void addOrderToList(Order order);
 
     private:
 };

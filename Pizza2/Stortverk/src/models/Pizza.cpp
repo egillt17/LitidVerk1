@@ -95,19 +95,15 @@ ostream& operator << (ostream& out, Pizza& pizza) {
     return out;
 }
 
-ofstream& operator << (ofstream& out, const Pizza& pizza) {
-    out << "." << pizza._price;
-    out << "." << pizza._size;
-    out << "." << pizza._sauce;
-    out << "." << pizza._crust;
-    out << "." << pizza._status << endl;
+ofstream& operator << (ofstream& out, Pizza& pizza) {
+    out << "^" << pizza._price;
+    out << "^" << pizza._size;
+    out << "^" << pizza._sauce;
+    out << "^" << pizza._crust;
+    out << "^" << pizza._status << endl;
     for(unsigned int i = 0; i < pizza._topping.size(); i++) {
-        if(i == (pizza._topping.size()-1)) {
-            out << pizza._topping[i] << endl;
-        }
-        else {
-            out << pizza._topping[i] << ", ";
-        }
+        out << "^" << pizza._topping[i].getName();
     }
+    out << endl;
     return out;
 }

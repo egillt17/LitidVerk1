@@ -15,6 +15,7 @@ class PizzaService
         void addLocation(string location);
         bool removeLocation(string location);
         Toppings pickTopping(int number);
+        void addOrder(Order order);
         vector <Order> getOrders();
 
 

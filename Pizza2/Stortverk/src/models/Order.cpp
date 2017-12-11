@@ -201,10 +201,11 @@ ofstream& operator << (ofstream& out, Order& order) {
     for(unsigned int i = 0; i < order._extras.size(); i++) {
         out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
     }
-    for(unsigned int i = 0; i < order._extras.size(); i++) {
-        out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
+    out << endl;
+    for(unsigned int i = 0; i < order._pizza.size(); i++) {
+        out << order._pizza[i];
     }
-
+    out << ":" << endl;
 
     return out;
 }

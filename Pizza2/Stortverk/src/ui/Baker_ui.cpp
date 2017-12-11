@@ -8,14 +8,34 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
     while (true)
     {
         vector<Order> orders;
+        Order order;
+        vector<string> locations;
         PizzaService get;
+        unsigned int number = 0;
+        string answer;
+        char locAnswer = (char)answer;
         cout << "                Bakers Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
-        cout << "| '1' to go to location 1" << endl << "| '2' to go to location 2" << endl << "| '3' to Quit" << endl;
-        cin >> answer;
 
-        if (answer == '1')
+        locations = get.getLocation();
+        for (unsigned int i = 0; i < locations.size(); i++) {
+            cout << (i+1) << ". " << locations[i] << endl;
+        }
+
+        cout << "Pick a Location: " ;
+        cin >> locAnswer;
+        stringstream sin(Answer);
+            sin >> number;
+            if(number > 0 && number <= locations.size()){
+                order.setLocationForOrder(locations[number-1]);
+            }
+            else {
+                cout << "Wrong input, please try again" << endl;
+                system("pause");
+            }
+
+        if (locAnswer == '1')
         {
             system("CLS");
             while (true)
@@ -91,7 +111,7 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
 
             }
         }
-        else if (answer == '2')
+        else if (locAnswer == '2')
         {
             system("CLS");
             char answer = '\0';

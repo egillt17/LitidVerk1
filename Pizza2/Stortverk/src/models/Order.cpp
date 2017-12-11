@@ -7,8 +7,7 @@ Order::Order()
     _person = "Unknown";
     _location = "Unknown";
     _comments = "No added comments";
-    _inProgress = 'n';
-    _isReady = 'n';
+    _Progress = 'n';
     _pickedOrSent = 'u';
     _delivered = 'n';
     _price = 0;
@@ -40,14 +39,9 @@ string Order::getComments() {
     return _comments;
 }
 
-char Order::getInProgress() {
+char Order::getProgress() {
 
-    return _inProgress;
-}
-
-char Order::getIsReady() {
-
-    return _isReady;
+    return _Progress;
 }
 
 char Order::getPickedOrSent() {
@@ -109,14 +103,9 @@ void Order::setComments(string comments) {
     _comments = comments;
 }
 
-void Order::setInProgress(char inProgress) {
+void Order::setProgress(char inProgress) {
 
-    _inProgress = inProgress;
-}
-
-void Order::setIsReady(char isReady) {
-
-    _isReady = isReady;
+    _Progress = inProgress;
 }
 
 void Order::setPickedOrSent(char pickedOrSent) {
@@ -147,20 +136,13 @@ ostream& operator << (ostream& out, Order& order) {
     out << "  Comments: " << order._comments << endl;
     out << "  Price: " << order._price << endl;
     out << "  Order in progress?: ";
-    if (order._inProgress == 'n') {
+    if (order._Progress == 'n') {
         out << "No" << endl;
     }
-    else if (order._inProgress == 'y') {
-        out << "Yes" << endl;
+    else if (order._Progress == 'w') {
+        out << "Waiting" << endl;
     }
-    else {
-        out << "Unknown" << endl;
-    }
-    out << "  Order ready?: ";
-    if (order._isReady == 'n') {
-        out << "No" << endl;
-    }
-    else if (order._isReady == 'y') {
+    else if (order._Progress == 'y') {
         out << "Yes" << endl;
     }
     else {
@@ -204,5 +186,25 @@ ostream& operator << (ostream& out, Order& order) {
     for (unsigned int i = 0; i < order._pizza.size(); i++) {
         out << order._pizza.at(i) << endl;
     }
+    return out;
+}
+
+ofstream& operator << (ofstream& out, Order& order) {
+    out << "^" << order._person;
+    out << "^" << order._location;
+    out << "^" << order._Progress;
+    out << "^" << order._pickedOrSent;
+    out << "^" << order._delivered;
+    out << "^" << order._price;
+    out << "^" << order._paidFor;
+    out << "^" << order._comments << endl;
+    for(unsigned int i = 0; i < order._extras.size(); i++) {
+        out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
+    }
+    for(unsigned int i = 0; i < order._extras.size(); i++) {
+        out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
+    }
+
+
     return out;
 }

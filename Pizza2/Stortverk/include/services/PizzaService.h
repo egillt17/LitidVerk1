@@ -4,6 +4,8 @@
 #include "Pizza.h"
 #include "Toppings.h"
 #include "PizzaRepo.h"
+#include "Main_ui.h"
+#include "Order.h"
 
 
 class PizzaService
@@ -13,6 +15,7 @@ class PizzaService
         void addLocation(string location);
         bool removeLocation(string location);
         Toppings pickTopping(int number);
+        vector <Order> getOrders();
 
 
     private:

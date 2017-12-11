@@ -2,68 +2,54 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-<<<<<<< HEAD
-	<File name="src\models\Order.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1717" topLine="36" />
-		</Cursor>
-	</File>
-	<File name="include\models\Order.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="321" topLine="7" />
-		</Cursor>
-	</File>
 	<File name="include\models\Pizza.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="8" />
-=======
-	<File name="src\ui\Baker_ui.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3981" topLine="58" />
+			<Cursor1 position="387" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ui\Sales_ui.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\repository\PizzaRepo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="5211" topLine="126" />
->>>>>>> 0f0f3b5162abf1945abb1101ec73cc63096c3573
+			<Cursor1 position="337" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\ui\Delivery_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\models\Order.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-<<<<<<< HEAD
-			<Cursor1 position="2285" topLine="33" />
+			<Cursor1 position="4248" topLine="180" />
 		</Cursor>
 	</File>
-	<File name="src\ui\Baker_ui.cpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ui\Sales_ui.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1634" topLine="21" />
-=======
-			<Cursor1 position="6036" topLine="120" />
->>>>>>> 0f0f3b5162abf1945abb1101ec73cc63096c3573
+			<Cursor1 position="8680" topLine="236" />
 		</Cursor>
 	</File>
-	<File name="src\ui\Sales_ui.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\services\PizzaService.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-<<<<<<< HEAD
-			<Cursor1 position="6796" topLine="81" />
+			<Cursor1 position="371" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\services\PizzaService.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\models\Order.h" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1233" topLine="21" />
+			<Cursor1 position="1067" topLine="20" />
 		</Cursor>
 	</File>
-	<File name="src\models\Toppings.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\models\Pizza.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="329" topLine="0" />
+			<Cursor1 position="684" topLine="79" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\repository\PizzaRepo.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-=======
-			<Cursor1 position="745" topLine="0" />
->>>>>>> 0f0f3b5162abf1945abb1101ec73cc63096c3573
+			<Cursor1 position="1056" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Manager_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2738" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\services\PizzaService.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1356" topLine="27" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

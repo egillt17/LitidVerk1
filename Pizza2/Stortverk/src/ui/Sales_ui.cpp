@@ -5,6 +5,7 @@ void Sales_ui::salesMainUI()
     char answer = '\0';
     string input = "";
     Order takeOrder;
+    PizzaService get;
     Pizza pizza;
     Toppings extras;
     int pizzaPrice = 0;
@@ -24,7 +25,7 @@ void Sales_ui::salesMainUI()
         cout << "| '4' to view total of an order" << endl;
         cout << "| '5' to set an order picked up or sent" << endl;
         cout << "| '6' to mark an order paid for" << endl;
-        cout << "| '7' to mark a pizza to a specific delivery place" << endl;
+        cout << "| '7' to Commit Order" << endl;
         cout << "| '8' to  Add comments" << endl;
         cout << "| '9' to Quit" << endl;
 
@@ -81,10 +82,8 @@ void Sales_ui::salesMainUI()
             order.setPaidFor('y');
         }
         else if (answer == '7') {
-            system("CLS");
-            cout << "---Marking a pizza to a specific delivery place---" << endl;
-            Order order;
-            order.setLocationForOrder("SpecificDeliveryPlace");
+            get.addOrder(takeOrder);
+            cout << "aloha" << endl;
         }
         else if (answer == '8') {
             system("CLS");

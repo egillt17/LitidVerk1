@@ -50,3 +50,9 @@ vector<Order> PizzaService::getOrders() {
 
     return orders;
 }
+
+void PizzaService::addOrder(Order order) {
+    PizzaRepo get;
+    get.addOrderToList(order);
+    system("pause");
+}

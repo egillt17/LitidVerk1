@@ -23,7 +23,7 @@ class Pizza
         string getCrust();
         char getStatus();
         friend ostream& operator << (ostream& out, Pizza& pizza);
-        friend ofstream& operator << (ofstream& out, const Pizza& pizza);
+        friend ofstream& operator << (ofstream& out, Pizza& pizza);
 
     private:
         int _price;

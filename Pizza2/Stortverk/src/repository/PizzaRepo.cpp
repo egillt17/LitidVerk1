@@ -39,3 +39,15 @@ void PizzaRepo::reWriteLocationList(vector <string> locations) {
     }
     fout.close();
 }
+
+void PizzaRepo::addOrderToList(Order order) {
+    ofstream fout;
+    fout.open("Orders.txt", ios::app);
+    if(fout.is_open()) {
+        fout << order;
+    }
+    else {
+
+    }
+    fout.close();
+}

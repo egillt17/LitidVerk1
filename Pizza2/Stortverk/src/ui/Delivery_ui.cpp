@@ -46,7 +46,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                     cout << "---Getting a list of all ready orders for location 1---" << endl;
                     orders = get.getOrders();
                     for (unsigned int i = 0; i < orders.size(); i++) {
-                        if (orders[i].getLocation() == "location1" && orders[i].getIsReady() == 'y') {
+                        if (orders[i].getLocation() == "location1" && orders[i].getProgress() == 'r') {
                             cout << (i+1) << ". " << orders[i];
                         }
                     }
@@ -136,7 +136,7 @@ void Delivery_ui::deliveryMainUI() {    ///Pretty basic if/else commands in this
                     cout << "---Getting a list of all ready orders for location 2---" << endl;
                     orders = get.getOrders();
                     for (unsigned int i = 0; i < orders.size(); i++) {
-                        if (orders[i].getLocation() == "location2" && orders[i].getIsReady() == 'y') {
+                        if (orders[i].getLocation() == "location2" && orders[i].getProgress() == 'r') {
                             cout << (i+1) << ". " << orders[i];
                         }
                     }

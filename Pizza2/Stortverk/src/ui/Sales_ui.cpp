@@ -31,8 +31,7 @@ void Sales_ui::salesMainUI()
         cin >> answer;
         cout << endl;
 
-        if (answer == '1')
-        {
+        if (answer == '1') {
             system("CLS");
             cout << "---Setting up a new order---" << endl;
             cout << "| Name: ";
@@ -40,29 +39,25 @@ void Sales_ui::salesMainUI()
             getline(cin, input);
             takeOrder.setPerson(input);
         }
-        else if (answer == '2')
-        {
+        else if (answer == '2') {
             system("CLS");
             pizza = addPizza();
             takeOrder.addPizza(pizza);
             pizzaPrice = takeOrder.getPizzaTotalCost();
         }
-        else if (answer == '3')
-        {
+        else if (answer == '3') {
             extras = addExtras();
             if(extras.getName().compare("")) {
                 takeOrder.addExtras(extras);
                 extrasPrice = takeOrder.getExtrasTotalCost();
             }
         }
-        else if (answer == '4')
-        {
+        else if (answer == '4') {
             system("CLS");
             cout << "---Getting the total cost of an order---" << endl;
             viewOrderTotal(takeOrder);
         }
-        else if (answer == '5')
-        {
+        else if (answer == '5') {
             system("CLS");
             char answer = '\0';
             while (true) {
@@ -79,22 +74,19 @@ void Sales_ui::salesMainUI()
                 }
             }
         }
-        else if (answer == '6')
-        {
+        else if (answer == '6') {
             system("CLS");
             cout << "---Marking an order paid for---" << endl;
             Order order;
             order.setPaidFor('y');
         }
-        else if (answer == '7')
-        {
+        else if (answer == '7') {
             system("CLS");
             cout << "---Marking a pizza to a specific delivery place---" << endl;
             Order order;
             order.setLocationForOrder("SpecificDeliveryPlace");
         }
-        else if (answer == '8')
-        {
+        else if (answer == '8') {
             system("CLS");
             cout << "---Adding comments---" << endl;
             cout << "| Comment: ";
@@ -103,13 +95,11 @@ void Sales_ui::salesMainUI()
             Order order;
             order.setComments(input);
         }
-        else if (answer == '9')
-        {
+        else if (answer == '9') {
             system("CLS");
             break;
         }
-        else
-        {
+        else {
             system("CLS");
             cout << "| Wrong input, please try again" << endl << endl;
         }
@@ -157,7 +147,7 @@ Pizza Sales_ui::addPizza() {
             cin >> answer;
             stringstream sin(answer);
             sin >> number;
-            if(number > 0 && number <= topping.size()){
+            if(number > 0 && number <= topping.size()) {
                 pizza.setSize(topping[number-1].getName());
                 sizePrice = topping[number-1].getPrice();
             }

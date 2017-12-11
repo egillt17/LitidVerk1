@@ -13,8 +13,7 @@ class Order
         string getPerson();
         string getLocation();
         string getComments();
-        char getInProgress();
-        char getIsReady();
+        char getProgress();
         char getPickedOrSent();
         char getDelivered();
         char getPrice();
@@ -26,13 +25,13 @@ class Order
         void setPerson(string name);
         void setLocationForOrder(string location);
         void setComments(string comments);
-        void setInProgress(char inProgress);
-        void setIsReady(char isReady);
+        void setProgress(char inProgress);
         void setPickedOrSent(char pickedOrSent);
         void setDelivered(char delivered);
         void setPrice(int price);
         void setPaidFor(char paidFor);
         friend ostream& operator << (ostream& out, Order& order);
+        friend ofstream& operator << (ofstream& out, Order& order);
 
     private:
         vector<Pizza> _pizza;
@@ -40,8 +39,7 @@ class Order
         string _person;
         string _location;
         string _comments;
-        char _inProgress;
-        char _isReady;
+        char _Progress;
         char _pickedOrSent;
         char _delivered;
         int _price;

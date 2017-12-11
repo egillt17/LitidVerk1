@@ -7,7 +7,9 @@ class Delivery_ui
 {
     public:
         void deliveryMainUI();
+        ///Main UI for the delivery person
         void locationMenu(string location);
+        ///Menu that pops up after the location is selected, and that location is the ran throught the function
 
 
     private:

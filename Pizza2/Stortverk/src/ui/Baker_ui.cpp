@@ -15,18 +15,18 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
         cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
 
-        locations = get.getLocation();
+        locations = get.getLocation();                          ///Create a vector of locations based on the function getLocations in PizzaService class
         for(unsigned int i = 0; i < locations.size(); i++) {
-            cout << "| " << (i+1) << ". " << locations[i] << endl;
+            cout << "| " << (i+1) << ". " << locations[i] << endl;      ///printing all locations from the getLocations function
         }
         cout << "| " << locations.size() + 1 << ". to Exit" << endl;
         cin >> input;
-        stringstream sin(input);
+        stringstream sin(input);            ///Using stringstream to turn the char input to an unsigned int
         sin >> number;
 
         if(number > 0 && number <= locations.size()) {
-            location = locations[number-1];
-            locationMenu(location);
+            location = locations[number-1];             ///checking if the input is valid according to the state of the locations text file
+            locationMenu(location);                     ///and sends that to the locationMenu function
         }
         else if (number == locations.size()+1) {
             system("CLS");
@@ -39,7 +39,7 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
     }
 }
 
-void Baker_ui::locationMenu(string location) {
+void Baker_ui::locationMenu(string location) {              ///Takes in the location that was choosen
 
     system("CLS");
 
@@ -62,8 +62,8 @@ void Baker_ui::locationMenu(string location) {
         {
             system("CLS");
             cout << "---Getting a list of all pending orders for " << location << endl;
-            orders = get.getOrders();
-            for (unsigned int i = 0; i < orders.size(); i++) {
+            orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
+            for (unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
                 if (orders[i].getLocation() == location && orders[i].getProgress() == 'w') {
                     cout << (i+1) << ". " << orders[i] << endl;
                 }
@@ -82,7 +82,7 @@ void Baker_ui::locationMenu(string location) {
                 cin >> answer;
                 cout << endl;
 
-                if (answer == '1')
+                if (answer == '1')                                              ///Pretty straightforward, here we are changing the Progress variable in the Order class
                 {
                     system("CLS");
                     cout << "---Marking an order \"In progress\"---" << endl;

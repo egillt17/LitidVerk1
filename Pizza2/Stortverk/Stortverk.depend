@@ -170,7 +170,7 @@
 	"Order.h"
 	<sstream>
 
-1513008407 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\sales_ui.cpp
+1513011008 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 
 1512748297 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker.cpp
@@ -182,10 +182,10 @@
 1512760050 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\baker_ui.h
 	"Main_ui.h"
 
-1513009829 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker_ui.cpp
+1513013514 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker_ui.cpp
 	"Baker_ui.h"
 
-1513006386 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\delivery_ui.cpp
+1513011593 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Delivery_ui.h"
 
 1512749162 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\delivery_ui.h
@@ -286,13 +286,13 @@
 1512919548 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\repository\pizzarepo.cpp
 	"PizzaRepo.h"
 
-1512999791 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
+1513011008 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1513007130 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\order.cpp
+1513011008 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\order.cpp
 	"Order.h"
 
-1513007130 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\order.h
+1513011008 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\order.h
 	"Pizza.h"
 	"Toppings.h"
 

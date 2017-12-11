@@ -33,6 +33,21 @@ void Pizza::setStatus(char status) {
     _status = status;
 }
 
+void Pizza::addTopping(Toppings topping) {
+    _topping.push_back(topping);
+}
+void Pizza::clearTopping() {
+    _topping.clear();
+}
+
+int Pizza::getToppingPrice() {
+    int totalPrice = 0;
+    for(unsigned int i = 0; i < _topping.size(); i++) {
+        totalPrice += _topping[i].getPrice();
+    }
+    return totalPrice;
+}
+
 int Pizza::getPrice() {
     return _price;
 }
@@ -57,7 +72,7 @@ char Pizza::getStatus() {
     return _status;
 }
 
-ostream& operator << (ostream& out, const Pizza& pizza) {
+ostream& operator << (ostream& out, Pizza& pizza) {
     out << "Price: " << pizza._price << endl;
     out << "Toppings: ";
     if(pizza._topping.empty()) {
@@ -66,10 +81,10 @@ ostream& operator << (ostream& out, const Pizza& pizza) {
     else {
         for(unsigned int i = 0; i < pizza._topping.size(); i++) {
             if(i == (pizza._topping.size()-1)) {
-                out << pizza._topping[i] << endl;
+                out << pizza._topping[i].getName() << endl;
             }
             else {
-                out << pizza._topping[i] << ", ";
+                out << pizza._topping[i].getName() << ", ";
             }
         }
     }

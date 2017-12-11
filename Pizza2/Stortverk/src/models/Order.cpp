@@ -70,6 +70,30 @@ char Order::getPaidFor() {
     return _paidFor;
 }
 
+int Order::getPizzaTotalCost() {
+    int totalCost = 0;
+    for(unsigned int i = 0; i < _pizza.size(); i++) {
+        totalCost += _pizza[i].getPrice();
+    }
+
+    return totalCost;
+}
+int Order::getExtrasTotalCost() {
+    int totalCost = 0;
+    for(unsigned int i = 0; i < _extras.size(); i++) {
+        totalCost += _extras[i].getPrice();
+    }
+
+    return totalCost;
+}
+
+void Order::addPizza(Pizza pizza) {
+    _pizza.push_back(pizza);
+}
+void Order::addExtras(Toppings extra) {
+    _extras.push_back(extra);
+}
+
 void Order::setPerson(string person) {
 
     _person = person;
@@ -105,7 +129,7 @@ void Order::setDelivered(char delivered) {
     _delivered = delivered;
 }
 
-void Order::setPrice(char price) {
+void Order::setPrice(int price) {
 
     _price = price;
 }
@@ -115,7 +139,7 @@ void Order::setPaidFor(char paidFor) {
     _paidFor = paidFor;
 }
 
-ostream& operator << (ostream& out, const Order& order) {
+ostream& operator << (ostream& out, Order& order) {
 
     out << "Order: " << endl;
     out << "  Name: " << order._person << endl;
@@ -174,11 +198,11 @@ ostream& operator << (ostream& out, const Order& order) {
     }
     out << "  Extras: " << endl;
     for (unsigned int i = 0; i < order._extras.size(); i++) {
-        out << "  " << order._extras.at(i) << endl;
+        out << order._extras.at(i);
     }
     out << "  Pizzas: " << endl;
     for (unsigned int i = 0; i < order._pizza.size(); i++) {
-        out << "  " << order._pizza.at(i) << endl;
+        out << order._pizza.at(i) << endl;
     }
     return out;
 }

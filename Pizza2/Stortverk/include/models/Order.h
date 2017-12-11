@@ -19,6 +19,10 @@ class Order
         char getDelivered();
         char getPrice();
         char getPaidFor();
+        int getPizzaTotalCost();
+        int getExtrasTotalCost();
+        void addPizza(Pizza pizza);
+        void addExtras(Toppings extra);
         void setPerson(string name);
         void setLocationForOrder(string location);
         void setComments(string comments);
@@ -26,9 +30,9 @@ class Order
         void setIsReady(char isReady);
         void setPickedOrSent(char pickedOrSent);
         void setDelivered(char delivered);
-        void setPrice(char price);
+        void setPrice(int price);
         void setPaidFor(char paidFor);
-        friend ostream& operator << (ostream& out, const Order& order);
+        friend ostream& operator << (ostream& out, Order& order);
 
     private:
         vector<Pizza> _pizza;

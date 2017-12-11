@@ -4,14 +4,15 @@
 #include "Toppings.h"
 #include "Pizza.h"
 #include "Order.h"
+#include <sstream>
 
 class Sales_ui
 {
     public:
         void salesMainUI();
         Pizza addPizza();
-        Toppings addToppings();
         Toppings addExtras();
+        void viewOrderTotal(Order takeOrder);
 
     private:
 };

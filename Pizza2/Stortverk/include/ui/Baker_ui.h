@@ -7,6 +7,7 @@ class Baker_ui
 {
     public:
         void bakerMainUI();
+        void locationMenu(string location);
 
     private:
 };

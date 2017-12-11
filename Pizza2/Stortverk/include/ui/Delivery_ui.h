@@ -7,6 +7,7 @@ class Delivery_ui
 {
     public:
         void deliveryMainUI();
+        void locationMenu(string location);
 
 
     private:

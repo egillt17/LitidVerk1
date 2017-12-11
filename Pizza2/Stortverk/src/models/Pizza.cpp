@@ -101,8 +101,13 @@ ofstream& operator << (ofstream& out, Pizza& pizza) {
     out << "^" << pizza._sauce;
     out << "^" << pizza._crust;
     out << "^" << pizza._status << endl;
-    for(unsigned int i = 0; i < pizza._topping.size(); i++) {
-        out << "^" << pizza._topping[i].getName();
+    if(pizza._topping.empty()) {
+        out << "^" << "No toppings";
+    }
+    else {
+        for(unsigned int i = 0; i < pizza._topping.size(); i++) {
+            out << "^" << pizza._topping[i].getName();
+        }
     }
     out << endl;
     return out;

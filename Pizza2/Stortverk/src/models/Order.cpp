@@ -198,12 +198,23 @@ ofstream& operator << (ofstream& out, Order& order) {
     out << "^" << order._price;
     out << "^" << order._paidFor;
     out << "^" << order._comments << endl;
-    for(unsigned int i = 0; i < order._extras.size(); i++) {
-        out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
+    if(order._extras.empty()) {
+        out << "^" << "No extras";
+    }
+    else {
+        for(unsigned int i = 0; i < order._extras.size(); i++) {
+            out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
+        }
     }
     out << endl;
-    for(unsigned int i = 0; i < order._pizza.size(); i++) {
-        out << order._pizza[i];
+    if(order._pizza.empty()) {
+        out << "^" << "No pizzas" << endl;
+        out << "^" << "No pizzas" << endl;
+    }
+    else {
+        for(unsigned int i = 0; i < order._pizza.size(); i++) {
+            out << order._pizza[i];
+        }
     }
     out << ":" << endl;
 

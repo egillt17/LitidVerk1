@@ -13,13 +13,16 @@ class Pizza
         void setSauce(string sauce);
         void setCrust(string crust);
         void setStatus(char status);
+        void addTopping(Toppings topping);
+        void clearTopping();
+        int getToppingPrice();
         int getPrice();
         vector <Toppings> getToppings();
         string getSize();
         string getSauce();
         string getCrust();
         char getStatus();
-        friend ostream& operator << (ostream& out, const Pizza& pizza);
+        friend ostream& operator << (ostream& out, Pizza& pizza);
         friend ofstream& operator << (ofstream& out, const Pizza& pizza);
 
     private:

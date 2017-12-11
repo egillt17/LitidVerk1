@@ -42,45 +42,10 @@ void Sales_ui::salesMainUI()
         }
         else if (answer == '2')
         {
-<<<<<<< HEAD
-            addPizza();
             system("CLS");
-            char answer = '\0';
-
-            while (true)
-            {
-                cout << "| What would you like to add to an order?" << endl;
-                cout << "| '1' to set a new size or bottom to a pizza" << endl << "| '2' to see the price of per pizza in an order" << endl << "| '3' to Quit" << endl;
-
-                cin >> answer;
-                cout << endl;
-
-                if (answer == '1')
-                {
-                    system("CLS");
-                    cout << "---seting a new size or bottom to a pizza---" << endl;
-                }
-                else if (answer == '2')
-                {
-                    system("CLS");
-                    cout << "---seeing the price of per pizza in an order---" << endl;
-                }
-                else if (answer == '3')
-                {
-                    system("CLS");
-                    break;
-                }
-                else
-                {
-                    system("CLS");
-                    cout << "| Wrong input, please try again" << endl << endl;
-                }
-            }
-=======
             pizza = addPizza();
             takeOrder.addPizza(pizza);
             pizzaPrice = takeOrder.getPizzaTotalCost();
->>>>>>> a58a526055c107625ba83c6bbbf7e4aa40d6763e
         }
         else if (answer == '3')
         {
@@ -186,9 +151,9 @@ Pizza Sales_ui::addPizza() {
             system("CLS");
             topping = get.getToppingList(3);
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << "| " << (i+1) << ". " << topping[i];
+                cout << (i+1) << ". " << topping[i];
             }
-            cout << "| Pick a size: ";
+            cout << "Pick a size: ";
             cin >> answer;
             stringstream sin(answer);
             sin >> number;
@@ -197,21 +162,17 @@ Pizza Sales_ui::addPizza() {
                 sizePrice = topping[number-1].getPrice();
             }
             else {
-<<<<<<< HEAD
-                cout << "| no can do!" << endl;
-=======
                 cout << "no can do!" << endl;
                 system("pause");
->>>>>>> a58a526055c107625ba83c6bbbf7e4aa40d6763e
             }
         }
         else if (input == '2') {
             system("CLS");
             topping = get.getToppingList(4);
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << "| " << (i+1) << ". " << topping[i];
+                cout << (i+1) << ". " << topping[i];
             }
-            cout << "| Pick a sauce: ";
+            cout << "Pick a sauce: ";
             cin >> answer;
             stringstream sin(answer);
             sin >> number;
@@ -220,24 +181,17 @@ Pizza Sales_ui::addPizza() {
                 saucePrice = topping[number-1].getPrice();
             }
             else {
-<<<<<<< HEAD
-                cout << "| no can do!" << endl;
-            }
-            //system("pause");
-
-=======
                 cout << "no can do!" << endl;
                 system("pause");
             }
->>>>>>> a58a526055c107625ba83c6bbbf7e4aa40d6763e
         }
         else if (input == '3') {
             system("CLS");
             topping = get.getToppingList(2);
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << "| " << (i+1) << ". " << topping[i];
+                cout << (i+1) << ". " << topping[i];
             }
-            cout << "| Pick a crust: ";
+            cout << "Pick a crust: ";
             cin >> answer;
             stringstream sin(answer);
             sin >> number;
@@ -246,27 +200,16 @@ Pizza Sales_ui::addPizza() {
                 crustPrice = topping[number-1].getPrice();
             }
             else {
-<<<<<<< HEAD
-                cout << "| no can do!" << endl;
-            }
-            //system("pause");
-
-=======
                 cout << "no can do!" << endl;
                 system("pause");
             }
->>>>>>> a58a526055c107625ba83c6bbbf7e4aa40d6763e
         }
         else if (input == '4') {
             system("CLS");
             topping = get.getToppingList(1);
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << "| " << (i+1) << ". " << topping[i];
+                cout << (i+1) << ". " << topping[i];
             }
-<<<<<<< HEAD
-            //system("pause");
-
-=======
             cout << "Pick a Topping: ";
             cin >> answer;
             stringstream sin(answer);
@@ -292,17 +235,6 @@ Pizza Sales_ui::addPizza() {
             else {
                 break;
             }
->>>>>>> a58a526055c107625ba83c6bbbf7e4aa40d6763e
-        }
-        else if (answer == '5')
-        {
-            system("CLS");
-            break;
-        }
-        else
-        {
-            system("CLS");
-            cout << "| Wrong input, please try again" << endl << endl;
         }
     }
 

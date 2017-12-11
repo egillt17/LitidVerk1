@@ -141,7 +141,7 @@
 1513007130 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
 
-1513007130 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\pizza.h
+1513020507 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\models\pizza.h
 	"Toppings.h"
 
 1512919548 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\repository\toppingrepo.cpp
@@ -273,16 +273,17 @@
 	"Main_ui.h"
 	"Order.h"
 
-1512999520 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
+1513020507 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"
 	"Main_ui.h"
 	"Order.h"
 
-1512919548 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\repository\pizzarepo.h
+1513020507 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\repository\pizzarepo.h
 	"Pizza.h"
 	"Toppings.h"
+	"Order.h"
 
 1512919548 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\repository\pizzarepo.cpp
 	"PizzaRepo.h"

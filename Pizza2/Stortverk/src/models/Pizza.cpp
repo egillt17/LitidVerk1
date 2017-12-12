@@ -96,11 +96,7 @@ ofstream& operator << (ofstream& out, Pizza& pizza) {
     out << "^" << pizza._size;
     out << "^" << pizza._sauce;
     out << "^" << pizza._crust;
-<<<<<<< HEAD
-    out << "^" << pizza._status << "^" << endl;
-=======
-    out << "^" << pizza._status << endl;                    ///Here we're using the '^' symbol as a delimiter to write to .txt files
->>>>>>> da462ccf578df2b5c9a243629dba91b6f6129365
+    out << "^" << pizza._status << "^" << endl;                   ///Here we're using the '^' symbol as a delimiter to write to .txt files
     if(pizza._topping.empty()) {
         out << "^" << "No toppings";
     }

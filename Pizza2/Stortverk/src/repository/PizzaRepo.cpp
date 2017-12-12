@@ -51,3 +51,28 @@ void PizzaRepo::addOrderToList(Order order) {
     }
     fout.close();
 }
+
+vector <Order> PizzaRepo::readOrders() {
+    vector <Order> orders;
+    Order tempOrder;
+    PizzaService get;
+    ifstream fin;
+    string st;
+    vector <string> info;
+    fin.open("Orders.txt");
+    if(fin.is_open()) {
+        while(!fin.eof()) {
+            getline(fin, st);
+            if(st == ":") {
+                tempOrder = get.fixOrderInfo(info);
+                orders.push_back(tempOrder);
+                info.clear();
+            }
+            else {
+                info.push_back(st);
+            }
+        }
+    }
+
+    return orders;
+}

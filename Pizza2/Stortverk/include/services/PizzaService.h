@@ -17,6 +17,7 @@ class PizzaService
         Toppings pickTopping(int number);
         void addOrder(Order order);
         vector <Order> getOrders();
+        Order fixOrderInfo(vector <string> info);
 
 
     private:

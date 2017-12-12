@@ -19,22 +19,21 @@ void Sales_ui::salesMainUI()
         cout << "                Sales Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do? " << endl;
-        cout << "| '1' to set up a new order" << endl;
+        cout << "| '1' to set name on order" << endl;
         cout << "| '2' to add pizza to the order" << endl;
         cout << "| '3' to add extras to the order" << endl;
         cout << "| '4' to view total of an order" << endl;
-        cout << "| '5' to set an order picked up or sent" << endl;
-        cout << "| '6' to mark an order paid for" << endl;
-        cout << "| '7' to Commit Order" << endl;
-        cout << "| '8' to  Add comments" << endl;
-        cout << "| '9' to Quit" << endl;
+        cout << "| '5' to set order settings" << endl;
+        cout << "| '6' to Commit Order" << endl;
+        cout << "| '7' to Add comments" << endl;
+        cout << "| '8' to Quit" << endl;
 
         cin >> answer;
         cout << endl;
 
         if (answer == '1') {                                        ///Pretty straightforward if / else commands here
             system("CLS");
-            cout << "---Setting up a new order---" << endl;
+            cout << "---adding name to order---" << endl;
             cout << "| Name: ";
             cin.ignore();
             getline(cin, input);
@@ -59,33 +58,25 @@ void Sales_ui::salesMainUI()
             viewOrderTotal(takeOrder);
         }
         else if (answer == '5') {
-            system("CLS");
-            char answer = '\0';
-            while (true) {
-                cout << "---setting an order picked up or sent---" << endl;
-                cout << "| Do you want the order picked up or sent? ('p' for picked up, 's' for sent)";
-                cin >> answer;
-                if (answer == 'p' || answer == 's') {            ///Sends the characters 'p' or 's'  for picked up or sent to the variable PickedOrSent in the Order class
-                    Order order;
-                    order.setPickedOrSent(answer);
-                    break;
+            setOrderSettings(takeOrder);
+        }
+        else if (answer == '6') {
+            if(!takeOrder.getPerson().compare("Unknown")) {
+                cout << "| To commit an order you have to set a name to the order" << endl;
+                system("pause");
+            }
+            else {
+                if(takeOrder.getExtras().empty() && takeOrder.getPizzas().empty()) {
+                    cout << "| To commit an order you have to add either a pizza or an extra" << endl;
+                    system("pause");
                 }
                 else {
-                    cout << "| Wrong input, please try again" << endl;
+                get.addOrder(takeOrder);
+                takeOrder.clearOrder(takeOrder);
                 }
             }
         }
-        else if (answer == '6') {
-            system("CLS");
-            cout << "---Marking an order paid for---" << endl;
-            Order order;
-            order.setPaidFor('y');
-        }
         else if (answer == '7') {
-            get.addOrder(takeOrder);
-            cout << "aloha" << endl;
-        }
-        else if (answer == '8') {
             system("CLS");
             cout << "---Adding comments---" << endl;
             cout << "| Comment: ";
@@ -94,7 +85,7 @@ void Sales_ui::salesMainUI()
             Order order;
             order.setComments(input);
         }
-        else if (answer == '9') {
+        else if (answer == '8') {
             system("CLS");
             break;
         }
@@ -263,4 +254,83 @@ Toppings Sales_ui::addExtras() {
 void Sales_ui::viewOrderTotal(Order takeOrder) {
     cout << takeOrder;                              ///Displays the order, with everything there is to know about that order
     system("pause");
+}
+
+void Sales_ui::setOrderSettings(Order& order) {
+    PizzaService get;
+    vector <string> locations;
+    string answer = "";
+    while(true) {
+        system("CLS");
+        cout << "                Order Settings menu                " << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "| What would you like to do? " << endl;
+        cout << "| '1' set location" << endl;
+        cout << "| '2' set picked up or sent" << endl;
+        cout << "| '3' set paid status" << endl;
+        cout << "| '4' Done" << endl;
+        char input;
+        cout << "pick a number: ";
+        cin >> input;
+
+        if(input == '1') {
+            locations = get.getLocation();
+            for(unsigned int i = 0; i < locations.size(); i++) {
+            cout << (i+1) << ". " << locations[i] << endl;
+            }
+            cout << "Pick an Location: ";
+            cin >> answer;
+            stringstream sin(answer);
+            unsigned int number = 0;
+            sin >> number;
+            if(number > 0 && number <= locations.size()){
+                order.setLocationForOrder(locations[number-1]);
+            }
+            else {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+        }
+        else if(input == '2') {
+            cout << "| '1' for picked up" << endl;
+            cout << "| '2' for sent" << endl;
+            cout << "pick a number: ";
+            cin >> answer;
+            stringstream sin(answer);
+            unsigned int number = 0;
+            sin >> number;
+            if(number == 1) {
+                order.setPickedOrSent('p');
+            }
+            else if(number == 2) {
+                order.setPickedOrSent('d');
+            }
+            else {
+                cout << "Invalid input!" << endl;
+                system("pause");
+            }
+        }
+        else if(input == '3') {
+            cout << "| '1' for paid" << endl;
+            cout << "| '2' for not paid" << endl;
+            cout << "pick a number: ";
+            cin >> answer;
+            stringstream sin(answer);
+            unsigned int number = 0;
+            sin >> number;
+            if(number == 1) {
+                order.setPaidFor('p');
+            }
+            else if(number == 2) {
+                order.setPaidFor('n');
+            }
+            else {
+                cout << "Invalid input!" << endl;
+                system("pause");
+            }
+        }
+        else if(input == '4') {
+            break;
+        }
+    }
 }

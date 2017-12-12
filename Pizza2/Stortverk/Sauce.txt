@@ -5,3 +5,4 @@
 .Ketchup.20
 .Raw sauce.100
 .Sriracha.500
+.Salsa sauce.30

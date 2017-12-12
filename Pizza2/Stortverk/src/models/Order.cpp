@@ -14,6 +14,19 @@ Order::Order()
     _paidFor = 'n';
 }
 
+void Order::clearOrder(Order& order) {
+    _pizza.clear();
+    _extras.clear();
+    _person = "Unknown";
+    _location = "Unknown";
+    _comments = "No added comments";
+    _Progress = 'n';
+    _pickedOrSent = 'u';
+    _delivered = 'n';
+    _price = 0;
+    _paidFor = 'n';
+}
+
 vector<Pizza> Order::getPizzas() {
 
     return _pizza;
@@ -84,6 +97,13 @@ int Order::getExtrasTotalCost() {
 void Order::addPizza(Pizza pizza) {
     _pizza.push_back(pizza);
 }
+
+void Order::setExtras(vector <Toppings> extras) {
+    for(unsigned int i = 0; i < extras.size(); i++) {
+        _extras.push_back(extras[i]);
+    }
+}
+
 void Order::addExtras(Toppings extra) {
     _extras.push_back(extra);
 }
@@ -197,19 +217,19 @@ ofstream& operator << (ofstream& out, Order& order) {
     out << "^" << order._delivered;
     out << "^" << order._price;
     out << "^" << order._paidFor;
-    out << "^" << order._comments << endl;
+    out << "^" << order._comments << "^" << endl;
     if(order._extras.empty()) {
-        out << "^" << "No extras";
+        out << "^" << "No extras" << "^" << 0;
     }
     else {
         for(unsigned int i = 0; i < order._extras.size(); i++) {
             out << "^" << order._extras[i].getName() << "^" << order._extras[i].getPrice();
         }
     }
-    out << endl;
+    out << "^" << endl;
     if(order._pizza.empty()) {
-        out << "^" << "No pizzas" << endl;
-        out << "^" << "No pizzas" << endl;
+        out << "^" << "No pizzas" << "^" << endl;
+        out << "^" << "No pizzas" << "^" << endl;
     }
     else {
         for(unsigned int i = 0; i < order._pizza.size(); i++) {

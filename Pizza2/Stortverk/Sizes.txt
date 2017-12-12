@@ -2,3 +2,4 @@
 .Medium.1200
 .Large.1400
 .EXTRA LARGE.1650
+.Humongoz Size.19000

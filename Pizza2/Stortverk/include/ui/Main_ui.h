@@ -16,6 +16,7 @@ class Main_ui
 {
     public:
         void mainUI();
+        ///Displays the main menu of the program
 
     private:
 };

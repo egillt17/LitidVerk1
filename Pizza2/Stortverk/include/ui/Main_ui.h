@@ -15,8 +15,8 @@ using namespace std;
 class Main_ui
 {
     public:
-        Main_ui();
         void mainUI();
+        ///Displays the main menu of the program
 
     private:
 };

@@ -1,6 +1,6 @@
 #include "Pizza.h"
 
-Pizza::Pizza() {
+Pizza::Pizza() {                            ///default constructor that resets the private variables of a pizza
     _price = 0;
     _topping.clear();
     _size = "Not picked";
@@ -9,11 +9,7 @@ Pizza::Pizza() {
     _status = 'n';
 }
 
-Pizza::~Pizza() {
-    //dtor
-}
-
-void Pizza::setPrice(int price) {
+void Pizza::setPrice(int price) {                   ///Get and set functions
     _price = price;
 }
 
@@ -40,7 +36,7 @@ void Pizza::clearTopping() {
     _topping.clear();
 }
 
-int Pizza::getToppingPrice() {
+int Pizza::getToppingPrice() {                          ///for loop to count the price of each individual toppings, then adds it together and returns the total cost of toppings
     int totalPrice = 0;
     for(unsigned int i = 0; i < _topping.size(); i++) {
         totalPrice += _topping[i].getPrice();
@@ -79,7 +75,7 @@ ostream& operator << (ostream& out, Pizza& pizza) {
         out << endl;
     }
     else {
-        for(unsigned int i = 0; i < pizza._topping.size(); i++) {
+        for(unsigned int i = 0; i < pizza._topping.size(); i++) {           ///Displays the toppings if any have been picked  and prints them to the screen
             if(i == (pizza._topping.size()-1)) {
                 out << pizza._topping[i].getName() << endl;
             }
@@ -95,19 +91,20 @@ ostream& operator << (ostream& out, Pizza& pizza) {
     return out;
 }
 
-ofstream& operator << (ofstream& out, const Pizza& pizza) {
-    out << "." << pizza._price;
-    out << "." << pizza._size;
-    out << "." << pizza._sauce;
-    out << "." << pizza._crust;
-    out << "." << pizza._status << endl;
-    for(unsigned int i = 0; i < pizza._topping.size(); i++) {
-        if(i == (pizza._topping.size()-1)) {
-            out << pizza._topping[i] << endl;
-        }
-        else {
-            out << pizza._topping[i] << ", ";
+ofstream& operator << (ofstream& out, Pizza& pizza) {
+    out << "^" << pizza._price;
+    out << "^" << pizza._size;
+    out << "^" << pizza._sauce;
+    out << "^" << pizza._crust;
+    out << "^" << pizza._status << "^" << endl;                   ///Here we're using the '^' symbol as a delimiter to write to .txt files
+    if(pizza._topping.empty()) {
+        out << "^" << "No toppings";
+    }
+    else {
+        for(unsigned int i = 0; i < pizza._topping.size(); i++) {
+            out << "^" << pizza._topping[i].getName();
         }
     }
+    out << "^" << endl;
     return out;
 }

@@ -1,12 +1,6 @@
 #include "Main_ui.h"
 
 
-
-Main_ui::Main_ui()
-{
-    //ctor
-}
-
 void Main_ui::mainUI() {
 
     char input = '\0';

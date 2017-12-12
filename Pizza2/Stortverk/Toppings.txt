@@ -4,3 +4,7 @@
 .bacon.45
 .onions.30
 .mushrooms.30
+.Kina.1000
+.SKina.1000
+.krajr.14
+.VEPPIR.250

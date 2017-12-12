@@ -3,83 +3,70 @@
 
 void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this function, to summarize we are figuring out which location the baker is located at and what
                                         ///he is doing at that location.
-    char answer = '\0';
-
     while (true)
     {
+        vector<string> locations;
+        unsigned int number;
+        string input;
+        string location;
+        PizzaService get;
+
         cout << "                Bakers Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
-        cout << "| '1' to go to location 1" << endl << "| '2' to go to location 2" << endl << "| '3' to Quit" << endl;
+
+        locations = get.getLocation();                          ///Create a vector of locations based on the function getLocations in PizzaService class
+        for(unsigned int i = 0; i < locations.size(); i++) {
+            cout << "| " << (i+1) << ". " << locations[i] << endl;      ///printing all locations from the getLocations function
+        }
+        cout << "| " << locations.size() + 1 << ". to Exit" << endl;
+        cin >> input;
+        stringstream sin(input);            ///Using stringstream to turn the char input to an unsigned int
+        sin >> number;
+
+        if(number > 0 && number <= locations.size()) {
+            location = locations[number-1];             ///checking if the input is valid according to the state of the locations text file
+            locationMenu(location);                     ///and sends that to the locationMenu function
+        }
+        else if (number == locations.size()+1) {        ///If the number is 1 over the location.size() then the UI will exit
+            system("CLS");
+            break;
+        }
+        else {
+            system("CLS");
+            cout << "| Wrong input, please try again" << endl << endl;
+        }
+    }
+}
+
+void Baker_ui::locationMenu(string location) {              ///Takes in the location that was choosen
+
+    system("CLS");
+
+    vector<Order> orders;
+    Order order;
+    char answer;
+    PizzaService get;
+
+    while (true)
+    {
+        cout << "               Location: " << location << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "| What would you like to do at " << location << "?" << endl;
+        cout << "| '1' to get a list of all pending orders at "<< location << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
+
         cin >> answer;
+        cout << endl;
 
         if (answer == '1')
         {
             system("CLS");
-            while (true)
-            {
-                cout << "---Goes to location 1---" << endl;
-                cout << "| What would you like to do at location 1?" << endl;
-                cout << "| '1' to get a list of all pending orders at location 1" << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
-
-                cin >> answer;
-                cout << endl;
-
-                if (answer == '1')
-                {
-                    system("CLS");
-                    cout << "---Getting a list of all orders for location 1---" << endl;
+            cout << "---Getting a list of all pending orders for " << location << endl;
+            orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
+            for (unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
+                if (orders[i].getLocation() == location && orders[i].getProgress() == 'w') {
+                    cout << (i+1) << ". " << orders[i] << endl;
                 }
-                else if (answer == '2')
-                {
-                    system("CLS");
-                    char answer = '\0';
-
-                    while (true)
-                    {
-                        cout << "| What would you like to do about that order?" << endl;
-                        cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
-
-                        cin >> answer;
-                        cout << endl;
-
-                        if (answer == '1')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order \"In progress\"---" << endl;
-                            Order order;
-                            order.setInProgress('y');
-                        }
-                        else if (answer == '2')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order Ready---" << endl;
-                            Order order;
-                            order.setIsReady('y');
-                        }
-                        else if (answer == '3')
-                        {
-                            system("CLS");
-                            break;
-                        }
-                        else
-                        {
-                            system("CLS");
-                            cout << "| Wrong input, please try again" << endl << endl;
-                        }
-                    }
-                }
-                else if (answer == '3')
-                {
-                    system("CLS");
-                    break;
-                }
-                else
-                {
-                    system("CLS");
-                    cout << "| Wrong input, please try again" << endl << endl;
-                }
-
             }
         }
         else if (answer == '2')
@@ -89,56 +76,25 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
 
             while (true)
             {
-                cout << "---Goes to location 2---" << endl;
-                cout << "| What would you like to do at location 2?" << endl;
-                cout << "| '1' to get a list of all pending orders for location 2" << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
+                cout << "| What would you like to do about that order?" << endl;
+                cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
 
                 cin >> answer;
                 cout << endl;
 
-                if (answer == '1')
+                if (answer == '1')                                              ///Pretty straightforward, here we are changing the Progress variable in the Order class
                 {
                     system("CLS");
-                    cout << "---Getting a list of all orders for location 2---" << endl;
+                    cout << "---Marking an order \"In progress\"---" << endl;
+                    Order order;
+                    order.setProgress('y');
                 }
                 else if (answer == '2')
                 {
                     system("CLS");
-                    char answer = '\0';
-
-                    while (true)
-                    {
-                        cout << "| What would you like to do about that order?" << endl;
-                        cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
-
-                        cin >> answer;
-                        cout << endl;
-
-                        if (answer == '1')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order \"In progress\"---" << endl;
-                            Order order;
-                            order.setInProgress('y');
-                        }
-                        else if (answer == '2')
-                        {
-                            system("CLS");
-                            cout << "---Marking an order Ready---" << endl;
-                            Order order;
-                            order.setIsReady('y');
-                        }
-                        else if (answer == '3')
-                        {
-                            system("CLS");
-                            break;
-                        }
-                        else
-                        {
-                            system("CLS");
-                            cout << "| Wrong input, please try again" << endl << endl;
-                        }
-                    }
+                    cout << "---Marking an order Ready---" << endl;
+                    Order order;
+                    order.setProgress('r');
                 }
                 else if (answer == '3')
                 {
@@ -164,3 +120,5 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
         }
     }
 }
+
+

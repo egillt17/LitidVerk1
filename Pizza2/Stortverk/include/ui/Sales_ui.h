@@ -17,6 +17,7 @@ class Sales_ui
         ///Function that displays a list of all toppings and lets you choose which extra you want to add to your order
         void viewOrderTotal(Order takeOrder);
         ///Function that displays the order, with everything there is to know about that order
+        void setOrderSettings(Order& order);
 
     private:
 };

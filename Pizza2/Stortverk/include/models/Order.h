@@ -34,6 +34,7 @@ class Order
         ///Get function that return the variable ExtraTotalCost
         void addPizza(Pizza pizza);
         ///set function that adds the pizza that was sent to the function to the vector pizzas
+        void setExtras(vector <Toppings> extras);
         void addExtras(Toppings extra);
         ///set function that adds the extra that was sent to the function to the vector extras
         void setPerson(string name);

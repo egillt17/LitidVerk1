@@ -100,7 +100,7 @@ ofstream& operator << (ofstream& out, Pizza& pizza) {
     out << "^" << pizza._size;
     out << "^" << pizza._sauce;
     out << "^" << pizza._crust;
-    out << "^" << pizza._status << endl;
+    out << "^" << pizza._status << "^" << endl;
     if(pizza._topping.empty()) {
         out << "^" << "No toppings";
     }
@@ -109,6 +109,6 @@ ofstream& operator << (ofstream& out, Pizza& pizza) {
             out << "^" << pizza._topping[i].getName();
         }
     }
-    out << endl;
+    out << "^" << endl;
     return out;
 }

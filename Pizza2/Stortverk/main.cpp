@@ -7,10 +7,7 @@ using namespace std;
 int main()
 {
     Main_ui mainUI;
-    //mainUI.mainUI();
-
-    PizzaRepo lala;
-    lala.readOrders();
+    mainUI.mainUI();
 
     return 0;
 }

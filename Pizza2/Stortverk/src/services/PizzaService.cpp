@@ -59,40 +59,126 @@ void PizzaService::addOrder(Order order) {
 
 Order PizzaService::fixOrderInfo(vector <string> info) {
     Order order;
+    Toppings tempTop;
     string name;
     vector <string> costumerInfo;
-    string extras = info[1];
+    vector <string> extras;
+    vector <string> pizzaInfo;
+    vector <Toppings> pizzaToppings;
     string delimiter = "^";
     unsigned int place = 0;
-    while((place = info[1].find(delimiter)) != string::npos) {
-        name = info[1].substr(0, place);
+    while((place = info[0].find(delimiter)) != string::npos) {
+        name = info[0].substr(0, place);
         if(name.compare("")) {
             costumerInfo.push_back(name);
         }
+        info[0].erase(0, place + delimiter.length());
+    }
+    while((place = info[1].find(delimiter)) != string::npos) {
+        name = info[1].substr(0, place);
+        if(name.compare("")) {
+            extras.push_back(name);
+        }
         info[1].erase(0, place + delimiter.length());
     }
-   for(unsigned int i = 0; i < costumerInfo.size(); i++) {
-    cout << costumerInfo[i] << endl;
-   }
-
-    cin >> name;
-    info[0]; /// costumer info
-    info[1]; /// extras
-            /// rest is pizza!
+    for(unsigned int i = 2; i < info.size(); i++) {
+        if( i % 2 == 0) {
+            while((place = info[i].find(delimiter)) != string::npos) {
+            name = info[i].substr(0, place);
+            if(name.compare("")) {
+                pizzaInfo.push_back(name);
+            }
+                info[i].erase(0, place + delimiter.length());
+            }
+        }
+        else {
+            while((place = info[i].find(delimiter)) != string::npos) {
+            name = info[i].substr(0, place);
+            if(name.compare("")) {
+                tempTop.setName(name);
+                pizzaToppings.push_back(tempTop);
+            }
+                info[i].erase(0, place + delimiter.length());
+            }
+            order.addPizza(makePizzaFromVector(pizzaInfo, pizzaToppings));
+            pizzaInfo.clear();
+            pizzaToppings.clear();
+        }
+    }
+    char tempProg = '0';
+    char tempPick = '0';
+    char tempDeliv = '0';
+    char tempPaidFor = '0';
+    int tempPrice = 0;
+    stringstream sin(costumerInfo[5]);
+    sin >> tempPrice;
+    stringstream sin2(costumerInfo[2]);
+    sin2 >> tempProg;
+    stringstream sin3(costumerInfo[3]);
+    sin3 >> tempPick;
+    stringstream sin4(costumerInfo[4]);
+    sin4 >> tempDeliv;
+    stringstream sin5(costumerInfo[6]);
+    sin5 >> tempPaidFor;
+    order.setExtras(makeToppingFromVector(extras));
+    order.setPerson(costumerInfo[0]);
+    order.setLocationForOrder(costumerInfo[1]);
+    order.setProgress(tempProg);
+    order.setPickedOrSent(tempPick);
+    order.setDelivered(tempDeliv);
+    order.setPrice(tempPrice);
+    order.setPaidFor(tempPaidFor);
+    order.setComments(costumerInfo[7]);
 
     return order;
 }
 
-/*
-std::string s = "scott>=tiger>=mushroom";
-std::string delimiter = ">=";
+vector <Toppings> PizzaService::makeToppingFromVector(vector <string> extras) {
+    vector <Toppings> readyExtras;
+    int tempPrice = 0;
+    string tempName;
+    Toppings topping;
 
-size_t pos = 0;
-std::string token;
-while ((pos = s.find(delimiter)) != std::string::npos) {
-    token = s.substr(0, pos);
-    std::cout << token << std::endl;
-    s.erase(0, pos + delimiter.length());
+    for(unsigned int i = 0; i < extras.size(); i++) {
+        if(i % 2 == 0) {
+            tempName = extras[i];
+        }
+        else {
+            stringstream sin(extras[i]);
+            sin >> tempPrice;
+            topping.setName(tempName);
+            topping.setPrice(tempPrice);
+            readyExtras.push_back(topping);
+        }
+    }
+
+    return readyExtras;
 }
-std::cout << s << std::endl;
-*/
+
+Pizza PizzaService::makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings) {
+    Pizza readyPizzas;
+    int tempPrice = 0;
+    char tempStatus = '0';
+    stringstream sin(pizzaInfo[0]);
+    sin >> tempPrice;
+    stringstream sin2(pizzaInfo[4]);
+    sin2 >> tempStatus;
+    readyPizzas.setPrice(tempPrice);
+    readyPizzas.setSize(pizzaInfo[1]);
+    readyPizzas.setSauce(pizzaInfo[2]);
+    readyPizzas.setCrust(pizzaInfo[3]);
+    readyPizzas.setStatus(tempStatus);
+
+    for(unsigned int i = 0; i < pizzaToppings.size(); i++) {
+        readyPizzas.addTopping(pizzaToppings[i]);
+    }
+
+    return readyPizzas;
+}
+
+vector <Order> PizzaService::getOrderList() {
+    PizzaRepo get;
+    vector <Order> orders = get.readOrders();
+
+    return orders;
+}

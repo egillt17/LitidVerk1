@@ -8,6 +8,7 @@ class Order
 {
     public:
         Order();
+        void clearOrder(Order& order);
         vector<Pizza> getPizzas();
         ///Get function that return the variable pizzas
         vector<Toppings> getExtras();

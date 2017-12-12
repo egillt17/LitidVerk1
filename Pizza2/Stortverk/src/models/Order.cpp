@@ -14,6 +14,19 @@ Order::Order()
     _paidFor = 'n';
 }
 
+void Order::clearOrder(Order& order) {
+    _pizza.clear();
+    _extras.clear();
+    _person = "Unknown";
+    _location = "Unknown";
+    _comments = "No added comments";
+    _Progress = 'n';
+    _pickedOrSent = 'u';
+    _delivered = 'n';
+    _price = 0;
+    _paidFor = 'n';
+}
+
 vector<Pizza> Order::getPizzas() {
 
     return _pizza;

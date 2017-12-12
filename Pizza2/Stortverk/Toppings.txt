@@ -7,4 +7,3 @@
 .Kina.1000
 .SKina.1000
 .krajr.14
-.VEPPIR.250

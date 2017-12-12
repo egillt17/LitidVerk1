@@ -69,10 +69,10 @@ void Manager_ui::manageToppingUI() {
         cout << endl;
         cout << "         -Manager - Toppings management-        " << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "| 1. Display topping list " << endl;
-        cout << "| 2. Input new topping to list" << endl;
-        cout << "| 3. Remove topping from list" << endl;
-        cout << "| 4. Back to Manager main menu" << endl;
+        cout << "| '1' Display topping list " << endl;
+        cout << "| '2' Input new topping to list" << endl;
+        cout << "| '3' Remove topping from list" << endl;
+        cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
 
@@ -124,6 +124,7 @@ void Manager_ui::manageToppingUI() {
         else if(input == '3'){
             while(true){
                 system("cls");
+                cout << endl;
                 cout << "           -Remove topping from list-         " << endl;
                 cout << "------------------------------------------------" << endl;
                 cout << "| " << endl;
@@ -179,10 +180,10 @@ void Manager_ui::manageExtraUI(){
         cout << endl;
         cout << "          -Manager - Extras management-         " << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "| 1. Display extras list " << endl;
-        cout << "| 2. Input new extras to list" << endl;
-        cout << "| 3. Remove extras from list" << endl;
-        cout << "| 4. Back to Manager main menu" << endl;
+        cout << "| '1' Display extras list " << endl;
+        cout << "| '2' Input new extras to list" << endl;
+        cout << "| '3' Remove extras from list" << endl;
+        cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
 
@@ -234,6 +235,7 @@ void Manager_ui::manageExtraUI(){
         else if(input == '3'){
             while(true){
                 system("cls");
+                cout << endl;
                 cout << "            -Remove extras from list-           " << endl;
                 cout << "------------------------------------------------" << endl;
                 cout << "| " << endl;
@@ -285,12 +287,13 @@ void Manager_ui::manageLocationUI(){
 
     while(true) {
         system("cls");
+        cout << endl;
         cout << "         -Manager - Location management-        " << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "| 1. Display locations list " << endl;
-        cout << "| 2. Input new locations to list" << endl;
-        cout << "| 3. Remove locations from list" << endl;
-        cout << "| 4. Back to Manager main menu" << endl;
+        cout << "| '1' Display locations list " << endl;
+        cout << "| '2' Input new locations to list" << endl;
+        cout << "| '3' Remove locations from list" << endl;
+        cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
 
@@ -377,7 +380,9 @@ void Manager_ui::manageLocationUI(){
             break;
         }
         else {
-            cout << "Wrong input, please try again" << endl << endl;
+            cout << "| Wrong input, please try again" << endl << endl;
+            cout << "| ";
+            system("pause");
         }
     }
 }
@@ -393,65 +398,104 @@ void Manager_ui::manageSettingUI() {
 
     while(true) {
         system("cls");
-        cout << " -Manager - Crust, Sauce and Size management- " << endl;
+        cout << endl;
+        cout << "   -Manager - Crust, Sauce and Size management- " << endl;
+        cout << "-------------------------------------------------" << endl;
         cout << "|  " << endl;
-        cout << "| 1. Display list " << endl;
-        cout << "| 2. Input new item to list" << endl;
-        cout << "| 3. Remove item from list" << endl;
-        cout << "| 4. Back to Manager main menu" << endl;
+        cout << "| '1' Display list " << endl;
+        cout << "| '2' Input new item to list" << endl;
+        cout << "| '3' Remove item from list" << endl;
+        cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
 
         if(input == '1') {
-            //system("cls");
+            system("cls");
             pick = crustSauceSize();
-            cout << "Display list" << endl;
+            cout << endl;
+            cout << "                -Display list-                  " << endl;
+            cout << "------------------------------------------------" << endl;
+            cout << "| " << endl;
             topping = get.getToppingList(pick);
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << topping[i];
+                cout << "| " << topping[i];
             }
+            cout << "| " << endl;
+            cout << "| ";
             system("pause");
-
         }
         else if(input == '2'){
-            pick = crustSauceSize();
-            cout << "Input new item" << endl;
-            cout << "Name: ";
-            cin.ignore();
-            getline(cin, top);
-            try {
-                validate.validateName(top);
-                cout << "Price: ";
-                cin >> price;
+            while(true){
+                system("cls");
+                pick = crustSauceSize(); // 2 - crust 4 - sauce 3 - size
+                string name[5] = {"", "", "crust", "size", "sauce"};
+                system("cls");
+                cout << endl;
+                cout << "               -Input new " << name[pick] << "-"<< endl;
+                cout << "------------------------------------------------" << endl;
+                cout << "|Name : ";
+                cin.ignore();
+                getline(cin, top);
                 try {
-                    validate.validateNum(price);
-                    get.addTopping(top, price, pick);
+                    validate.validateName(top);
+                    cout << "| Price: ";
+                    cin >> price;
+                    try {
+                        validate.validateNum(price);
+                        get.addTopping(top, price, pick);
+                        cout << "| " << name[pick] << " successfully added" << endl;
+                        cout << "| ";
+                        system("pause");
+                        break;
+                    }
+                    catch (InvalidNumExceptions e){
+                        cout << e.getMessage() << endl;
+                        break;
+                    }
+                }
+                catch (InvalidNameException e){
+                    cout << e.getMessage() << endl;
+                    cout << "| ";
+                    system("pause");
                     break;
                 }
-                catch (InvalidNumExceptions e){
-                    cout << e.getMessage() << endl;
-                }
-            }
-            catch (InvalidNameException e){
-                cout << e.getMessage() << endl;
             }
         }
         else if(input == '3'){
-            pick = crustSauceSize();
-            cout << "Remove item from list" << endl;
-            cout << endl;
-            topping = get.getToppingList(pick);
-            for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << topping[i];
+            while(true) {
+                system("cls");
+                pick = crustSauceSize();
+                system("cls");
+                cout << endl;
+                cout << "            -Remove item from list-             " << endl;
+                cout << "------------------------------------------------" << endl;
+                cout << "|" <<  endl;
+                topping = get.getToppingList(pick);
+                for(unsigned int i = 0; i < topping.size(); i++) {
+                    cout << "| Name: " << topping[i]; 
+                }
+                cout << "|" << endl;
+                cout << "| What item would you like to remove? ";
+                cin.ignore();
+                getline(cin, top);
+                try {
+                    validate.validateName(top);
+                    if(!get.removeTopping(top, pick)) {
+                        cout << "| Item not found" << endl;
+                        system("pause");
+                    }
+                    cout << "| Item successfully removed" << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;  
+                }
+                catch(InvalidNameException e) {
+                    cout << e.getMessage() << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;
+                }
             }
-            cout << endl;
-            cout << "What item would you like to remove? ";
-            cin.ignore();
-            getline(cin, top);
-            if(!get.removeTopping(top, pick)) {
-                cout << "Invalid Input - Please try again" << endl;
-                system("pause");
-            }  
         }
         else if(input == '4') {
             //system("cls");
@@ -467,25 +511,31 @@ int Manager_ui::crustSauceSize() {
     char input = '0';
     int pick = 0;
         while(true) {
-        cout << "Which one would you like to manage?" << endl;
+        cout << endl;
+        cout << "      -Which one would you like to manage?-     " << endl;
+        cout << "------------------------------------------------" << endl;
         cout << "|  " << endl;
         cout << "| 1. Crust" << endl;
         cout << "| 2. Sauce" << endl;
         cout << "| 3. Size" << endl;
+        cout << "| " << endl;
         cout << "| Input : ";
         cin.ignore();
         cin >> input;
 
         if(input == '1') {
             pick = 2;
+            system("cls");
             break;
         }
         else if(input == '2') {
             pick = 4;
+            system("cls");
             break;
         }
         else if(input == '3') {
             pick = 3;
+            system("cls");
             break;
         }
         else {

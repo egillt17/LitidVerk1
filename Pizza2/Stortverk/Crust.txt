@@ -2,4 +2,3 @@
 .Italian crust.150
 .Thin crust.50
 .Flatbread crust.200
-.Thick crust.250

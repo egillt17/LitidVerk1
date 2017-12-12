@@ -5,27 +5,53 @@
 using namespace std;
 
 bool Validate::validateName(string name){
-    if(name.empty()){
-        throw(InvalidNameException("Invalid Input - Empty string not allowed"));
+    bool isSpace = false;
+    int tempPos; 
+    int countSpace = 0;
+    if(name == ""){
+        throw(InvalidNameException("| Invalid Input - Empty string not allowed"));
+    }
+    if (name[0] == ' '){
+        throw(InvalidNameException("| Invalid Input - Name must start with a letter"));
+    }
+    if (name[name.length()-1] == ' '){
+        throw(InvalidNameException("| Invalid Input - Name cannot end with space"));
+    }
+    for(unsigned int i = 1; i < name.length(); i++){
+        if(name[i] == ' '){
+            isSpace = true;
+            countSpace++;
+        }
+    }
+    if(countSpace > 1) {
+        throw(InvalidNameException("| Invalid Input - Name must be 1 or 2 words"));
+    }
+    if(isSpace) {
+        tempPos = name.find(" ");
+        name.erase(tempPos,1);
+        for(unsigned int i = 0; i < name.length(); i++){
+            if(!isalpha(name[i])){
+            throw(InvalidNameException("| Invalid Input - Name must be letters only"));
+            }
+        }
+        name.insert(tempPos," ");
+        return true;
     }
     for(unsigned int i = 0; i < name.length(); i++){
         if(!isalpha(name[i])){
-            throw(InvalidNameException("Invalid Input - Name must be letters only"));
+            throw(InvalidNameException("| Invalid Input - Name must be letters only"));
         }
-    }
-    if (name[0] == ' '){
-        throw(InvalidNameException("Invalid Input - Name must start with a letter"));
     }
 return true;
 }
 
 bool Validate::validateNum(string number){
-    if(number.empty()){
-        throw(InvalidNumExceptions("Invalid Input - Empty string not allowed"));
+    if(number == ""){
+        throw(InvalidNumExceptions("| Invalid Input - Empty string not allowed"));
     }
     for(unsigned int i = 0; i < number.length(); i++){
         if(!isdigit(number[i])){
-            throw(InvalidNumExceptions("Invalid Input - Must be digits only"));
+            throw(InvalidNumExceptions("| Invalid Input - Must be digits only"));
         }
     }
 return true;
@@ -38,10 +64,10 @@ bool Validate::validateLocation(string location){
     int num_of_delimiters = 0;
     unsigned int pos = 0;
     if(location.empty()){
-        throw(InvalidLocationException("Invalid Input - Empty string not allowed"));
+        throw(InvalidLocationException("| Invalid Input - Empty string not allowed"));
     }
     if(location[0] == ' '){
-        throw(InvalidLocationException("Invalid Input - Must start with a letter"));
+        throw(InvalidLocationException("| Invalid Input - Must start with a letter"));
     }
     for(size_t i = 0; i < location.length(); i++) {
         if(location[i] == ' '){
@@ -51,13 +77,13 @@ bool Validate::validateLocation(string location){
     if(num_of_delimiters == 0){
         for(size_t i = 0; i < location.length(); i++) {
             if(isdigit(location[i])){
-                throw(InvalidLocationException("Invalid Input - Street name must be only letters"));
+                throw(InvalidLocationException("| Invalid Input - Street name must be only letters"));
             }
         }
         return true;
     }
     if(num_of_delimiters > 1) {
-        throw(InvalidLocationException("Invalid Input - Only street name followed by a number"));
+        throw(InvalidLocationException("| Invalid Input - Only street name followed by a number"));
     }
     pos = location.find(delimiter);
     tempStreet = location.substr(0, pos);
@@ -65,12 +91,12 @@ bool Validate::validateLocation(string location){
     tempNum = location.substr(0, location.length());
     for(size_t i = 0; i < tempStreet.length();i++){
         if(!isalpha(tempStreet[i])){
-            throw(InvalidLocationException("Invalid Input - Street name must be only letters"));
+            throw(InvalidLocationException("| Invalid Input - Street name must be only letters"));
         }
     }
     for(size_t i = 0; i < tempNum.length(); i++){
         if(!isdigit(tempNum[i])) {
-            throw(InvalidLocationException("Invalid Input - Street number must be only digits"));
+            throw(InvalidLocationException("| Invalid Input - Street number must be only digits"));
         }
     }
 return true;

@@ -1,15 +1,11 @@
 #include "Toppings.h"
 
-Toppings::Toppings() {
+Toppings::Toppings() {                          ///Default constructor that resets all private variables
     _name = "";
     _price = 0;
 }
 
-Toppings::~Toppings() {
-    //dtor
-}
-
-void Toppings::setName(string topping) {
+void Toppings::setName(string topping) {            ///Get and set functions
     _name = topping;
 }
 
@@ -25,11 +21,11 @@ int Toppings::getPrice() {
 }
 
 ostream& operator << (ostream& out, const Toppings& topping) {
-    out << "Name: " << topping._name << " | " << "Price: " << topping._price << endl;
+    out << "Name: " << topping._name << " | " << "Price: " << topping._price << endl;   ///Ostream operator overload
     return out;
 }
 
 ofstream& operator << (ofstream& out, const Toppings& topping) {
-    out << "." << topping._name << "." << topping._price << endl;
+    out << "." << topping._name << "." << topping._price << endl;                       ///Ofstream operator overload using '.' as a delimiter
     return out;
 }

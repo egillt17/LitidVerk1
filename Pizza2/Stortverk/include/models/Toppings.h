@@ -12,13 +12,19 @@ class Toppings
 {
     public:
         Toppings();
-        virtual ~Toppings();
+        ///Default constructor
         void setName(string topping);
+        ///Set function that sets the name of the topping with the string that was sent to the function
         void setPrice(int price);
+        ///Set function that sets the price of the topping with the int that was sent to the function
         string getName();
+        ///Get function that returns the name of the topping
         int getPrice();
+        ///Get function that returns the price of the topping
         friend ostream& operator << (ostream& out, const Toppings& topping);
+        ///Function that overloads the ostream operator
         friend ofstream& operator << (ofstream& out, const Toppings& topping);
+        ///Function that overloads the ofstream operator to write to a text file
 
     protected:
 

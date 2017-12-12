@@ -15,7 +15,6 @@ using namespace std;
 class Main_ui
 {
     public:
-        Main_ui();
         void mainUI();
 
     private:

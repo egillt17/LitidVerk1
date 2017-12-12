@@ -28,7 +28,7 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
             location = locations[number-1];             ///checking if the input is valid according to the state of the locations text file
             locationMenu(location);                     ///and sends that to the locationMenu function
         }
-        else if (number == locations.size()+1) {
+        else if (number == locations.size()+1) {        ///If the number is 1 over the location.size() then the UI will exit
             system("CLS");
             break;
         }

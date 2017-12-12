@@ -1,6 +1,6 @@
 .pepperoni.35
 .ham.45
-.pineapple.35
+.pineapple.30
 .bacon.45
 .onions.30
 .mushrooms.30

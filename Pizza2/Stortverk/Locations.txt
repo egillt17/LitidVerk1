@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+Mjoddin
+=======
 mjodd
 armuli 32
 spong
 arbaer
 Gardabaer
+>>>>>>> cd2a4425a0fb956a439e4214f5607dc2dfb59330

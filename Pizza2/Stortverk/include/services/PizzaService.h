@@ -17,7 +17,7 @@ class PizzaService
         bool removeLocation(string location);
         Toppings pickTopping(int number);
         void addOrder(Order order);
-        vector <Order> getOrders();
+        vector <Order> getOrders(); /// delete this
         Order fixOrderInfo(vector <string> info);
         vector <Toppings> makeToppingFromVector(vector <string> extras);
         Pizza makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings);

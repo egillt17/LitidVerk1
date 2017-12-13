@@ -62,7 +62,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         {
             system("CLS");
             cout << "---Getting a list of all pending orders for " << location << endl;
-            orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
+             orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
             for (unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
                 if (orders[i].getLocation() == location && orders[i].getProgress() == 'w') {
                     cout << (i+1) << ". " << orders[i] << endl;

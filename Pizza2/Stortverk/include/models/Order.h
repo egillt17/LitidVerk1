@@ -13,6 +13,8 @@ class Order
         ///Get function that return the variable pizzas
         vector<Toppings> getExtras();
         ///Get function that return the variable Extras
+        void printPizzaOrders();
+        void setPizzaStatus(char status, int number);
         string getPerson();
         ///Get function that return the variable Person
         string getLocation();

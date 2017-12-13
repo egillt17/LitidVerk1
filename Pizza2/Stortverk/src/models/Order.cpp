@@ -37,6 +37,16 @@ vector<Toppings> Order::getExtras() {
     return _extras;
 }
 
+void Order::printPizzaOrders() {
+    for(unsigned int i = 0; i < _pizza.size(); i++) {
+        cout << _pizza[i];
+    }
+}
+
+void Order::setPizzaStatus(char status, int number) {
+    _pizza[number].setStatus(status);
+}
+
 string Order::getPerson() {
 
     return _person;

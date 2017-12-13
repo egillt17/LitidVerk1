@@ -73,6 +73,6 @@ vector <Order> PizzaRepo::readOrders() {
             }
         }
     }
-
+    fin.close();
     return orders;
 }

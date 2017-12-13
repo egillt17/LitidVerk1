@@ -64,13 +64,12 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
             system("CLS");
             cout << "         All unfinished pizzas at " << location << endl;
             cout << "------------------------------------------------" << endl;
-            ///orders = get.getOrdersforASpecificLocation(location);                           ///Getting all pending orders from the orders text file and
-            cout << orders.size() << endl;
+            orders = get.getOrdersforASpecificLocation(location);
+            cout << "Hello" << endl;                          ///Getting all pending orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
-                    cout << "lala" << endl;
                     cout << orders[i];
             }
-            cout << "What pizza would you like to get up?";
+            cout << "What pizza would you like to get up? ";
             cin >> stranswer;
             stringstream sin(stranswer);
             unsigned int number = 0;
@@ -130,5 +129,4 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         }
     }
 }
-
 

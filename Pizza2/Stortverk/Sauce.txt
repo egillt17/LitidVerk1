@@ -3,6 +3,5 @@
 .A lot of sauce.100
 .Little sauce.0
 .Ketchup.20
-.Raw sauce.100
 .Sriracha.500
 .Salsa sauce.30

@@ -3,7 +3,6 @@
 .Cheesy bites.810
 .Stuffed pepperoni.1020
 .Stuffed bacon.1020
-.Buffalo wings.1020
 .BBQ wings.1020
 .Cheesy goodness.810
 .Garlic Sauce.199

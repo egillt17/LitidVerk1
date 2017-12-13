@@ -67,7 +67,10 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
             orders = get.getOrdersforASpecificLocation(location);
                                                                                             ///Getting all pending orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++) {                               ///Prints all orders from the chosen location
-                    cout << (i+1) << ". " << orders[i];
+                vector <Pizza> temp = orders[i].getPizzas();
+                for(int i = 0; i < temp.size(); i++){
+                    cout << temp[i];
+                }
             }
             cout << "What pizza would you like to get up? ";
             cin >> stranswer;

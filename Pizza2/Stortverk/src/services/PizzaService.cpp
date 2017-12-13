@@ -88,13 +88,27 @@ Order PizzaService::fixOrderInfo(vector <string> info) {
     while(counter < info.size()) {
         counter2 = counter;
         if(counter % 2 == 0){
+            cout << "Length should be right next to here: " << info[counter2].length() << endl;
             for(unsigned int i = 0; i < info[counter2].length(); i++) {
                 place = info[counter2].find(delimiter);
-                name = info[counter2].substr(0, place);
+                    cout << "Do I get to this point: " << info[counter2].length() <<  endl;
+
+                if (info[counter2].size() > 2){
+                    cout << "My string now is: " << info[counter2] << " with delimeter in place: " << place <<  endl;
+                    name = info[counter2].substr(0, place);
+                }
+                else{
+                    cout << "Hello" << endl;
+                    name = info[counter2];
+                }
                 if(name.compare("")) {
                     pizzaInfo.push_back(name);
                 }
+                cout << place + delimiter.length() << endl;
                 info[counter2].erase(0, place + delimiter.length());
+                if (info[counter2].length() < 5){
+                    cout << "Can you see me: " << info[counter2] << "with size: " << info[counter2].length() <<  endl;
+                }
             }
         }
         else {
@@ -165,13 +179,13 @@ vector <Toppings> PizzaService::makeToppingFromVector(vector <string> extras) {
 }
 
 Pizza PizzaService::makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings) {
-   // for(unsigned int i = 0; i < pizzaInfo.size(); i++) {
-   //     cout << i << " " << pizzaInfo[i] << endl;
-   // }
+    for(unsigned int i = 0; i < pizzaInfo.size(); i++) {
+        cout << i << " " << pizzaInfo[i] << endl;
+    }
     Pizza readyPizzas;
     int tempPrice = 0;
     char tempStatus = '0';
-  //  cin >> tempStatus;
+    cin >> tempStatus;
     stringstream sin(pizzaInfo[0]);
     sin >> tempPrice;
     ///stringstream sin2(pizzaInfo[4]);  this line is crashing

@@ -53,31 +53,50 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         cout << "               Location: " << location << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do at " << location << "?" << endl;
-        cout << "| '1' to get a list of all pending orders at "<< location << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
+        cout << "| '1' to get a list of all pending pizzas at "<< location << endl << "| '2' to Quit" << endl;
 
         cin >> answer;
         cout << endl;
 
         if (answer == '1')
         {
+            string stranswer = "";
             system("CLS");
+<<<<<<< HEAD
             cout << "---Getting a list of all pending orders for " << location << endl;
              orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
             for (unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
                 if (orders[i].getLocation() == location && orders[i].getProgress() == 'w') {
                     cout << (i+1) << ". " << orders[i] << endl;
                 }
+=======
+            cout << "         All unfinished pizzas at " << location << endl;
+            cout << "------------------------------------------------" << endl;
+            ///orders = get.getOrdersforASpecificLocation(location);                           ///Getting all pending orders from the orders text file and
+            cout << orders.size() << endl;
+            for(unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
+                    cout << "lala" << endl;
+                    cout << orders[i];
             }
-        }
-        else if (answer == '2')
-        {
-            system("CLS");
+            cout << "What pizza would you like to get up?";
+            cin >> stranswer;
+            stringstream sin(stranswer);
+            unsigned int number = 0;
+            sin >> number;
+            if(number > 0 && number <= orders.size()){
+                cout << orders[number-1];
+            }
+            else {
+                cout << "no can do!" << endl;
+                system("pause");
+>>>>>>> e7a5a0b298fa93a610df928dbc3bbb1c927aa123
+            }
             char answer = '\0';
 
             while (true)
             {
-                cout << "| What would you like to do about that order?" << endl;
-                cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
+                cout << "| What would you like to do about that pizza?" << endl;
+                cout << "| '1' to mark it \"In progress\"" << endl << "| '2' to mark it Ready" << endl << "| '3' to Quit" << endl;
 
                 cin >> answer;
                 cout << endl;
@@ -85,14 +104,14 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                 if (answer == '1')                                              ///Pretty straightforward, here we are changing the Progress variable in the Order class
                 {
                     system("CLS");
-                    cout << "---Marking an order \"In progress\"---" << endl;
+                    cout << "---Marking a pizza \"In progress\"---" << endl;
                     Order order;
                     order.setProgress('y');
                 }
                 else if (answer == '2')
                 {
                     system("CLS");
-                    cout << "---Marking an order Ready---" << endl;
+                    cout << "---Marking a pizza Ready---" << endl;
                     Order order;
                     order.setProgress('r');
                 }
@@ -108,7 +127,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                 }
             }
         }
-        else if (answer == '3')
+        else if (answer == '2')
         {
             system("CLS");
             break;

@@ -16,10 +16,9 @@
 	"Delivery_ui.h"
 	"Order.h"
 
-1513114015 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
+1513171049 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\main.cpp
 	<iostream>
 	"Main_ui.h"
-	"PizzaRepo.h"
 
 1513019428 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\main_ui.cpp
 	"Main_ui.h"
@@ -155,10 +154,10 @@
 	<fstream>
 	<sstream>
 
-1513114015 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+1513183695 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
-1512933149 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
+1513183695 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\manager_ui.h
 	"Validate.h"
 	"Main_ui.h"
 	"TopService.h"
@@ -184,7 +183,7 @@
 1513018118 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\ui\baker_ui.h
 	"Main_ui.h"
 
-1513169344 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker_ui.cpp
+1513183886 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\baker_ui.cpp
 	"Baker_ui.h"
 
 1513165380 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\ui\delivery_ui.cpp
@@ -277,7 +276,7 @@
 	"Order.h"
 	"TopService.h"
 
-1513167622 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
+1513170395 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"
@@ -291,10 +290,10 @@
 	"Toppings.h"
 	"Order.h"
 
-1513114015 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\repository\pizzarepo.cpp
+1513178951 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\repository\pizzarepo.cpp
 	"PizzaRepo.h"
 
-1513167622 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
+1513183208 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
 1513167622 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\models\order.cpp
@@ -414,7 +413,13 @@
 	"InvalidLocationException.h"
 	"Toppings.h"
 
-1512928915 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\validate.h
+1513183695 c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\include\services\validate.h
+	<string>
+	<iostream>
+	"InvalidNameException.h"
+	"InvalidNumExceptions.h"
+	"InvalidLocationException.h"
+	"Toppings.h"
 
 1512921367 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\exceptions\invalidnameexception.h
 
@@ -447,7 +452,7 @@
 1512928915 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
 	"InvalidNumExceptions.h"
 
-1513114015 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\validate.cpp
+1513183695 source:c:\users\lenovo\desktop\verklegt 1\litidverk1\pizza2\stortverk\src\services\validate.cpp
 	"Validate.h"
 	<string>
 	<iostream>

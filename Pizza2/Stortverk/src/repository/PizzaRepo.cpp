@@ -76,3 +76,17 @@ vector <Order> PizzaRepo::readOrders() {
     fin.close();
     return orders;
 }
+
+void reWriteOrders(vector <Order> orders) {
+    ofstream fout;
+    fout.open("Orders.txt");
+    if(fout.is_open()) {
+        for(unsigned int i = 0; i < orders.size(); i++) {
+            fout << orders[i] << endl;
+        }
+    }
+    else {
+
+    }
+    fout.close();
+}

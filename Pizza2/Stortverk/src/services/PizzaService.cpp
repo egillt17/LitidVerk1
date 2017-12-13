@@ -174,8 +174,8 @@ Pizza PizzaService::makePizzaFromVector(vector <string> pizzaInfo, vector <Toppi
   //  cin >> tempStatus;
     stringstream sin(pizzaInfo[0]);
     sin >> tempPrice;
-    //stringstream sin2(pizzaInfo[4]); /// this line is crashing
-    //sin2 >> tempStatus;
+    ///stringstream sin2(pizzaInfo[4]);  this line is crashing
+    ///sin2 >> tempStatus;
     readyPizzas.setPrice(tempPrice);
     readyPizzas.setSize(pizzaInfo[1]);
     readyPizzas.setSauce(pizzaInfo[2]);
@@ -205,6 +205,5 @@ vector <Order> PizzaService::getOrdersforASpecificLocation(string location) {
             locationOrders.push_back(allOrders[i]);
         }
     }
-
     return locationOrders;
 }

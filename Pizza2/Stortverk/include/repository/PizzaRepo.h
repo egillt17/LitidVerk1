@@ -14,6 +14,7 @@ class PizzaRepo
         void reWriteLocationList(vector <string> locations);
         void addOrderToList(Order order);
         vector <Order> readOrders();
+        void reWriteOrders(vector <Order> orders);
 
     private:
 };

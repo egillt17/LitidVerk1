@@ -206,7 +206,7 @@
 	"PizzaService.h"
 	<stdlib.h>
 
-1512932880 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
+1513164768 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
 1512745730 i.h"
@@ -256,7 +256,7 @@
 1513020396 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Baker_ui.h"
 
-1513106234 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
+1513166418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 
 1513085786 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
@@ -268,10 +268,10 @@
 	"Toppings.h"
 	"Order.h"
 
-1513095469 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
+1513165891 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1513095108 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h
+1513165415 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"
@@ -426,7 +426,7 @@
 1512921367 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\exceptions\invalidnumexceptions.cpp
 	"InvalidNumExceptions.h"
 
-1512932880 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\validate.cpp
+1513106486 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\validate.cpp
 	"Validate.h"
 	<string>
 	<iostream>
@@ -448,7 +448,7 @@
 	<string>
 	<iostream>
 
-1513105114 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\order.cpp
+1513165009 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\order.cpp
 	"Order.h"
 
 1513102542 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\order.h

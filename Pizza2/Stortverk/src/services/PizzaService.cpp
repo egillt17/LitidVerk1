@@ -182,3 +182,16 @@ vector <Order> PizzaService::getOrderList() {
 
     return orders;
 }
+
+vector <Order> PizzaService::getOrdersforASpecificLocation(string location) {
+    vector <Order> allOrders = getOrderList();
+    vector <Order> locationOrders;
+
+    for(unsigned int i = 0; i < allOrders.size(); i++) {
+        if(!location.compare(allOrders[i].getLocation()) && allOrders[i].getProgress() != 'r') {
+            locationOrders.push_back(allOrders[i]);
+        }
+    }
+
+    return locationOrders;
+}

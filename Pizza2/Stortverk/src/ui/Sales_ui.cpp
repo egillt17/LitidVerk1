@@ -61,8 +61,9 @@ void Sales_ui::salesMainUI()
             setOrderSettings(takeOrder);
         }
         else if (answer == '6') {
-            if(!takeOrder.getPerson().compare("Unknown")) {
+            if(!takeOrder.getPerson().compare("Unknown") || !takeOrder.getLocation().compare("Unknown")) {
                 cout << "| To commit an order you have to set a name to the order" << endl;
+                cout << "| and pick a location" << endl;
                 system("pause");
             }
             else {

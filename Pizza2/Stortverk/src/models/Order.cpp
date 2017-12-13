@@ -159,8 +159,8 @@ ostream& operator << (ostream& out, Order& order) {
     if (order._Progress == 'n') {
         out << "No" << endl;
     }
-    else if (order._Progress == 'w') {
-        out << "Waiting" << endl;
+    else if (order._Progress == 'r') {
+        out << "Ready" << endl;
     }
     else if (order._Progress == 'y') {
         out << "Yes" << endl;

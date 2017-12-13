@@ -1,22 +1,24 @@
-^einar jonsson^The Jungle^n^u^y^1200^y^no tomatoes^
+^bjarni olafsson^arbaer^n^p^n^6240^p^No added comments^
+^Cola Soda^200^BBQ wings^1020^
+^1860^Large^BBQ sauce^Italian crust^n^
+^pepperoni^bacon^onions^
+^2030^Large^Sriracha^Thin crust^n^
+^pepperoni^bacon^
+^1130^Small^A lot of sauce^Regular crust^n^
+^mushrooms^
+:
+^einar atlason^spong^n^u^n^1630^n^No added comments^
 ^No extras^0^
-^1200^Medium^Pizza sauce^Regular crust^n^
+^1630^Large^Pizza sauce^Italian crust^n^
+^pepperoni^ham^
+:
+^jonas halldorsson^Gardabaer^n^u^n^1550^n^No added comments^
+^No extras^0^
+^1550^Large^Pizza sauce^Italian crust^n^
 ^No toppings^
 :
-^joi spoi^Unknown^n^u^n^3595^n^No added comments^
-^Breadsticks (Big)^710^Buffalo wings^1020^Club Soda^150^
-^1715^EXTRA LARGE^Pizza sauce^Regular crust^n^
-^pepperoni^onions^
-:
-^halldor bjarni ^Reykjavik^n^u^n^5055^n^real shit^
-^Breadsticks (Big)^710^Stuffed bacon^1020^Club Soda^150^
-^1820^Large^BBQ sauce^Italian crust^n^
-^pepperoni^pineapple^
-^1355^Medium^Little sauce^Thin crust^n^
-^bacon^onions^mushrooms^
-:
-^bjarni gislason^Unknown^n^u^n^710^n^No added comments^
-^Breadsticks (Big)^710^
-^No pizzas^
-^No pizzas^
+^kari gudjonsson^arbaer^n^u^n^1400^n^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^Regular crust^n^
+^No toppings^
 :

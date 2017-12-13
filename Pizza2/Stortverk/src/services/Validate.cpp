@@ -4,9 +4,10 @@
 
 using namespace std;
 
+/// Boolean function, that validates the name input in the manager UI
 bool Validate::validateName(string name){
-    bool isSpace = false;
-    int tempPos; 
+    bool isSpace = false;   /// checks if there is a space in the string example (Pizza sauce)
+    int tempPos;    /// 
     int countSpace = 0;
     if(name == ""){
         throw(InvalidNameException("| Invalid Input - Empty string not allowed"));

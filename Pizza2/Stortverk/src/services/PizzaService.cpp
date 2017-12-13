@@ -67,44 +67,53 @@ Order PizzaService::fixOrderInfo(vector <string> info) {
     vector <Toppings> pizzaToppings;
     string delimiter = "^";
     unsigned int place = 0;
-    while((place = info[0].find(delimiter)) != string::npos) {
+    unsigned int counter = 2;
+    int counter2 = 0;
+    for(unsigned int i = 0; i < info[0].length(); i++) {
+        place = info[0].find(delimiter);
         name = info[0].substr(0, place);
         if(name.compare("")) {
             costumerInfo.push_back(name);
         }
         info[0].erase(0, place + delimiter.length());
     }
-    while((place = info[1].find(delimiter)) != string::npos) {
+    for(unsigned int i = 0; i < info[1].length()+2; i++) {
+        place = info[1].find(delimiter);
         name = info[1].substr(0, place);
         if(name.compare("")) {
             extras.push_back(name);
         }
         info[1].erase(0, place + delimiter.length());
     }
-    for(unsigned int i = 2; i < info.size(); i++) {
-        if( i % 2 == 0) {
-            while((place = info[i].find(delimiter)) != string::npos) {
-            name = info[i].substr(0, place);
-            if(name.compare("")) {
-                pizzaInfo.push_back(name);
-            }
-                info[i].erase(0, place + delimiter.length());
+    while(counter < info.size()) {
+        counter2 = counter;
+        if(counter % 2 == 0){
+            for(unsigned int i = 0; i < info[counter2].length(); i++) {
+                place = info[counter2].find(delimiter);
+                name = info[counter2].substr(0, place);
+                if(name.compare("")) {
+                    pizzaInfo.push_back(name);
+                }
+                info[counter2].erase(0, place + delimiter.length());
             }
         }
         else {
-            while((place = info[i].find(delimiter)) != string::npos) {
-            name = info[i].substr(0, place);
-            if(name.compare("")) {
-                tempTop.setName(name);
-                pizzaToppings.push_back(tempTop);
-            }
-                info[i].erase(0, place + delimiter.length());
+            for(unsigned int i = 0; i < info[counter2].length(); i++) {
+                place = info[counter2].find(delimiter);
+                name = info[counter2].substr(0, place);
+                if(name.compare("")) {
+                    tempTop.setName(name);
+                    pizzaToppings.push_back(tempTop);
+                }
+                info[counter2].erase(0, place + delimiter.length());
             }
             order.addPizza(makePizzaFromVector(pizzaInfo, pizzaToppings));
             pizzaInfo.clear();
             pizzaToppings.clear();
         }
+        counter++;
     }
+
     char tempProg = '0';
     char tempPick = '0';
     char tempDeliv = '0';
@@ -156,13 +165,17 @@ vector <Toppings> PizzaService::makeToppingFromVector(vector <string> extras) {
 }
 
 Pizza PizzaService::makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings) {
+   // for(unsigned int i = 0; i < pizzaInfo.size(); i++) {
+   //     cout << i << " " << pizzaInfo[i] << endl;
+   // }
     Pizza readyPizzas;
     int tempPrice = 0;
     char tempStatus = '0';
+  //  cin >> tempStatus;
     stringstream sin(pizzaInfo[0]);
     sin >> tempPrice;
-    stringstream sin2(pizzaInfo[4]);
-    sin2 >> tempStatus;
+    //stringstream sin2(pizzaInfo[4]); /// this line is crashing
+    //sin2 >> tempStatus;
     readyPizzas.setPrice(tempPrice);
     readyPizzas.setSize(pizzaInfo[1]);
     readyPizzas.setSauce(pizzaInfo[2]);

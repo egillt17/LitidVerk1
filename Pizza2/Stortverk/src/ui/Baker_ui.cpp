@@ -53,26 +53,25 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         cout << "               Location: " << location << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do at " << location << "?" << endl;
-        cout << "| '1' to get a list of all pending pizzas at "<< location << endl << "| '2' to get a specific pizza up" << endl << "| '3' to Quit" << endl;
+        cout << "| '1' to get a list of all pending pizzas at "<< location << endl << "| '2' to Quit" << endl;
 
         cin >> answer;
         cout << endl;
 
         if (answer == '1')
         {
-            string answer = "";
+            string stranswer = "";
             system("CLS");
-            cout << "     All unfinished pizzas at " << location << endl;
+            cout << "         All unfinished pizzas at " << location << endl;
             cout << "------------------------------------------------" << endl;
-            orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
-            for (unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
-                if (orders[i].getLocation() == location && orders[i].getProgress() != 'r') {
-                    cout << (i+1) << ". " << orders[i] << endl;
-                }
+            orders = get.getOrdersforASpecificLocation(location);                           ///Getting all pending orders from the orders text file and
+            for(unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
+                    cout << "lala" << endl;
+                    cout << orders[i];
             }
-            cout << "What piiza would you like to get up?";
-            cin >> answer;
-            stringstream sin(answer);
+            cout << "What pizza would you like to get up?";
+            cin >> stranswer;
+            stringstream sin(stranswer);
             unsigned int number = 0;
             sin >> number;
             if(number > 0 && number <= orders.size()){
@@ -82,17 +81,12 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                 cout << "no can do!" << endl;
                 system("pause");
             }
-
-        }
-        else if (answer == '2')
-        {
-            system("CLS");
             char answer = '\0';
 
             while (true)
             {
-                cout << "| What would you like to do about that order?" << endl;
-                cout << "| '1' to mark a pizza \"In progress\"" << endl << "| '2' to mark a pizza Ready" << endl << "| '3' to Quit" << endl;
+                cout << "| What would you like to do about that pizza?" << endl;
+                cout << "| '1' to mark it \"In progress\"" << endl << "| '2' to mark it Ready" << endl << "| '3' to Quit" << endl;
 
                 cin >> answer;
                 cout << endl;
@@ -123,7 +117,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                 }
             }
         }
-        else if (answer == '3')
+        else if (answer == '2')
         {
             system("CLS");
             break;

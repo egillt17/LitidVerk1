@@ -53,21 +53,36 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         cout << "               Location: " << location << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do at " << location << "?" << endl;
-        cout << "| '1' to get a list of all pending orders at "<< location << endl << "| '2' to get a specific order up" << endl << "| '3' to Quit" << endl;
+        cout << "| '1' to get a list of all pending pizzas at "<< location << endl << "| '2' to get a specific pizza up" << endl << "| '3' to Quit" << endl;
 
         cin >> answer;
         cout << endl;
 
         if (answer == '1')
         {
+            string answer = "";
             system("CLS");
-            cout << "---Getting a list of all pending orders for " << location << endl;
+            cout << "     All unfinished pizzas at " << location << endl;
+            cout << "------------------------------------------------" << endl;
             orders = get.getOrders();                                                       ///Getting all pending orders from the orders text file and
             for (unsigned int i = 0; i < orders.size(); i++) {                              ///Prints all orders from the chosen location
-                if (orders[i].getLocation() == location && orders[i].getProgress() == 'w') {
+                if (orders[i].getLocation() == location && orders[i].getProgress() != 'r') {
                     cout << (i+1) << ". " << orders[i] << endl;
                 }
             }
+            cout << "What piiza would you like to get up?";
+            cin >> answer;
+            stringstream sin(answer);
+            unsigned int number = 0;
+            sin >> number;
+            if(number > 0 && number <= orders.size()){
+                cout << orders[number-1];
+            }
+            else {
+                cout << "no can do!" << endl;
+                system("pause");
+            }
+
         }
         else if (answer == '2')
         {
@@ -77,7 +92,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
             while (true)
             {
                 cout << "| What would you like to do about that order?" << endl;
-                cout << "| '1' to mark an order \"In progress\"" << endl << "| '2' to mark an order Ready" << endl << "| '3' to Quit" << endl;
+                cout << "| '1' to mark a pizza \"In progress\"" << endl << "| '2' to mark a pizza Ready" << endl << "| '3' to Quit" << endl;
 
                 cin >> answer;
                 cout << endl;
@@ -85,14 +100,14 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                 if (answer == '1')                                              ///Pretty straightforward, here we are changing the Progress variable in the Order class
                 {
                     system("CLS");
-                    cout << "---Marking an order \"In progress\"---" << endl;
+                    cout << "---Marking a pizza \"In progress\"---" << endl;
                     Order order;
                     order.setProgress('y');
                 }
                 else if (answer == '2')
                 {
                     system("CLS");
-                    cout << "---Marking an order Ready---" << endl;
+                    cout << "---Marking a pizza Ready---" << endl;
                     Order order;
                     order.setProgress('r');
                 }

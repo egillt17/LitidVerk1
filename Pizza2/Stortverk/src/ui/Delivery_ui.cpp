@@ -21,7 +21,7 @@ void Delivery_ui::deliveryMainUI() {        ///Pretty basic if/else commands in 
         }
         cout << "| " << locations.size() + 1 << ". to Exit" << endl;
         cin >> input;
-        stringstream sin(input);            ///Using stringstream to turn the char input to an unsigned int
+        stringstream sin(input);            ///Using stringstream to turn the string input to an int
         sin >> number;
 
         if(number > 0 && number <= locations.size()) {

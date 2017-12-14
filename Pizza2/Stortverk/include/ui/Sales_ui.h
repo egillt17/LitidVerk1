@@ -5,6 +5,7 @@
 #include "Pizza.h"
 #include "Order.h"
 #include <sstream>
+#include <string>
 
 class Sales_ui
 {

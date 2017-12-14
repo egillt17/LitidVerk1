@@ -90,3 +90,18 @@ void PizzaRepo::reWriteOrders(vector <Order> orders) {
     }
     fout.close();
 }
+
+vector <string> PizzaRepo::readPizzaSpecials() {
+    vector <string> info;
+    ifstream fin;
+    string st;
+    fin.open("Pizza_specials.txt");
+    if(fin.is_open()) {
+        while(getline(fin, st)) {
+            info.push_back(st);
+        }
+    }
+    fin.close();
+    return info;
+}
+

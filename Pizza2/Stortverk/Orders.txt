@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ^einar atlason^spong^r^u^n^1630^p^please help me^
 ^No extras^0^
 ^1630^Large^Pizza sauce^r^Italian crust^
@@ -44,4 +41,3 @@
 ^No pizzas^
 ^No pizzas^
 :
->>>>>>> 13841860d0d1e2b771c1d145e137ec9f3f1fa77f

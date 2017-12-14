@@ -1,0 +1,74 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+^bjarni olafsson^arbaer^n^p^n^6240^p^No added comments^
+^Cola Soda^200^BBQ wings^1020^
+^1860^Large^BBQ sauce^i^Italian crust^
+^pepperoni^bacon^onions^
+^2030^Large^Sriracha^i^Thin crust^
+^pepperoni^bacon^
+^1130^Small^A lot of sauce^n^Regular crust^
+^mushrooms^
+:
+^kari gudjonsson^arbaer^n^u^n^1400^n^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^n^Regular crust^
+^No toppings^
+:
+^einar atlason^spong^n^u^n^1630^n^please help me^
+=======
+^bjarni olafsson^arbaer^r^p^n^6240^p^No added comments^
+^Cola Soda^200^BBQ wings^1020^
+^1860^Large^BBQ sauce^r^Italian crust^
+^pepperoni^bacon^onions^
+^2030^Large^Sriracha^r^Thin crust^
+^pepperoni^bacon^
+^1130^Small^A lot of sauce^r^Regular crust^
+^mushrooms^
+:
+^kari gudjonsson^arbaer^n^u^n^1400^p^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^i^Regular crust^
+^No toppings^
+:
+^einar atlason^spong^r^u^n^1630^n^please help me^
+>>>>>>> 42431a6738fef0c41a84152222077dd32fe5edde
+^No extras^0^
+^1630^Large^Pizza sauce^r^Italian crust^
+^pepperoni^ham^
+:
+^elvis the king ^spong^n^d^n^7210^p^No added comments^
+^Stuffed bacon^1020^Stuffed pepperoni^1020^
+^2075^EXTRA LARGE^BBQ sauce^i^Italian crust^
+^onions^bacon^
+^1525^Medium^A lot of sauce^r^Italian crust^
+^ham^pineapple^
+^1570^Large^Ketchup^r^Regular crust^
+^mushrooms^bacon^onions^
+:
+<<<<<<< HEAD
+=======
+^Egill thorisson^Gardabaer^r^p^n^2255^n^No added comments^
+^Cheesy bites^810^
+^1445^Medium^Salsa sauce^r^Italian crust^
+^pepperoni^mushrooms^
+:
+>>>>>>> 42431a6738fef0c41a84152222077dd32fe5edde
+^jonas halldorsson^Gardabaer^n^u^n^1550^n^No added comments^
+^No extras^0^
+^1550^Large^Pizza sauce^n^Italian crust^
+^No toppings^
+:
+<<<<<<< HEAD
+^baldvin^Gardabaer^n^u^n^710^n^No added comments^
+=======
+^baldvin^Gardabaer^r^u^n^710^p^No added comments^
+>>>>>>> 42431a6738fef0c41a84152222077dd32fe5edde
+^Breadsticks (Big)^710^
+^No pizzas^
+^No pizzas^
+:
+>>>>>>> 46c55b748eb4e9f9989cc8790b632dc63fe9cce5
+>>>>>>> cc43cd7c8ce182d5e394217838d8df95a9ef1619

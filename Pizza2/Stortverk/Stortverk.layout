@@ -2,12 +2,57 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="src\ui\Sales_ui.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<File name="src\models\Order.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="src\repository\PizzaRepo.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> bb9298a3f7087d951b4053a9255fbca37f98bb5a
+=======
+<<<<<<< HEAD
+	<File name="src\services\PizzaService.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 46c55b748eb4e9f9989cc8790b632dc63fe9cce5
+>>>>>>> cc43cd7c8ce182d5e394217838d8df95a9ef1619
 		<Cursor>
 			<Cursor1 position="712" topLine="9" />
 		</Cursor>
 	</File>
+<<<<<<< HEAD
 	<File name="src\services\PizzaService.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="include\services\PizzaService.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1057" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Baker_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2046" topLine="27" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Manager_ui.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22073" topLine="499" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Sales_ui.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="10013" topLine="120" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Delivery_ui.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8322" topLine="163" />
+		</Cursor>
+	</File>
+	<File name="src\services\PizzaService.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+	<File name="include\services\PizzaService.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> cc43cd7c8ce182d5e394217838d8df95a9ef1619
 		<Cursor>
 			<Cursor1 position="0" topLine="235" />
 		</Cursor>
@@ -24,7 +69,116 @@
 	</File>
 	<File name="src\ui\Manager_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="23425" topLine="408" />
+=======
+			<Cursor1 position="0" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="include\models\Order.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="471" topLine="52" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Delivery_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="153" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Manager_ui.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22918" topLine="519" />
+		</Cursor>
+	</File>
+	<File name="src\models\Order.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1853" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\repository\PizzaRepo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="454" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\models\Pizza.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2371" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\models\Toppings.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Sales_ui.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="99" />
+		</Cursor>
+	</File>
+	<File name="src\repository\PizzaRepo.cpp" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1921" topLine="0" />
+=======
+	<File name="src\models\Order.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 46c55b748eb4e9f9989cc8790b632dc63fe9cce5
+		<Cursor>
+			<Cursor1 position="2035" topLine="77" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Baker_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="104" />
+		</Cursor>
+	</File>
+	<File name="src\ui\Sales_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="307" />
+		</Cursor>
+	</File>
+	<File name="include\services\PizzaService.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1103" topLine="6" />
+		</Cursor>
+	</File>
+	<File name="src\services\PizzaService.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="25" topLine="277" />
+		</Cursor>
+	</File>
+	<File name="src\models\Pizza.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="199" topLine="0" />
+		</Cursor>
+	</File>
+<<<<<<< HEAD
+	<File name="src\ui\Sales_ui.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> 46c55b748eb4e9f9989cc8790b632dc63fe9cce5
+=======
+	<File name="include\repository\PizzaRepo.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+<<<<<<< HEAD
+			<Cursor1 position="533" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> bb9298a3f7087d951b4053a9255fbca37f98bb5a
+		<Cursor>
+			<Cursor1 position="125" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\models\Order.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2194" topLine="0" />
+=======
+			<Cursor1 position="0" topLine="307" />
+>>>>>>> 42431a6738fef0c41a84152222077dd32fe5edde
+>>>>>>> 46c55b748eb4e9f9989cc8790b632dc63fe9cce5
+		</Cursor>
+	</File>
+	<File name="src\models\Pizza.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="583" topLine="64" />
+>>>>>>> cc43cd7c8ce182d5e394217838d8df95a9ef1619
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

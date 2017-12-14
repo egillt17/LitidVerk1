@@ -26,6 +26,8 @@ class PizzaService
         void reWriteOrdersService(vector <Order> orders, string location);
         vector <Order> getReadyOrdersforASpecificLocation(string location);
         vector <Order> getAllOrdersforASpecificLocation(string location);
+        vector <Pizza> getPizzaSpecials();
+
 
 
     private:

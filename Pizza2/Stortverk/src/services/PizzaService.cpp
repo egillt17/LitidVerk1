@@ -259,3 +259,49 @@ void PizzaService::checkIfOrderIsReady(vector <Order>& allOrders) {
         }
     }
 }
+
+vector <Pizza> PizzaService::getPizzaSpecials() {
+    vector <Pizza> pizzaSpecials;
+    vector <string> pizzaInfo;
+    vector <Toppings> pizzaToppings;
+    PizzaRepo get;
+    string delimiter = "^";
+    string name = "";
+    unsigned int place = 0;
+    unsigned int counter = 0;
+    int counter2 = 0;
+    Toppings tempTop;
+    vector <string> info = get.readPizzaSpecials();
+    while(counter < info.size()) {
+        counter2 = counter;
+        if(counter % 2 == 0) {
+            for(unsigned int i = 0; i < info[counter2].length(); i++) {
+                place = info[counter2].find(delimiter);
+                name = info[counter2].substr(0, place);
+                if(name.compare("")) {
+                    pizzaInfo.push_back(name);
+                }
+                info[counter2].erase(0, place + delimiter.length());
+            }
+        }
+        else {
+            for(unsigned int i = 0; i < info[counter2].length(); i++) {
+                place = info[counter2].find(delimiter);
+                name = info[counter2].substr(0, place);
+                if(name.compare("")) {
+                    tempTop.setName(name);
+                    pizzaToppings.push_back(tempTop);
+                }
+                info[counter2].erase(0, place + delimiter.length());
+            }
+            if(pizzaInfo[0].compare("No pizzas")) {
+            pizzaSpecials.push_back(makePizzaFromVector(pizzaInfo, pizzaToppings));
+            }
+            pizzaInfo.clear();
+            pizzaToppings.clear();
+        }
+        counter++;
+    }
+
+    return pizzaSpecials;
+}

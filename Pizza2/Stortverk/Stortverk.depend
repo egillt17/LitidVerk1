@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1513269909 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\main.cpp
+1513271065 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\main.cpp
 	<iostream>
 	"Main_ui.h"
 
@@ -113,7 +113,7 @@
 
 1512742686 ef8c7b80988e56b05313cce19a0c285080108
 
-1513206719 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
+1513271065 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\pizza.cpp
 	"Pizza.h"
 
 1513095688 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\pizza.h
@@ -268,7 +268,7 @@
 1513020396 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\delivery_ui.h
 	"Main_ui.h"
 
-1513264192 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\baker_ui.cpp
+1513271065 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\baker_ui.cpp
 	"Baker_ui.h"
 
 1513264192 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
@@ -277,19 +277,19 @@
 1513166418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 
-1513268823 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
+1513273149 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
 	"PizzaRepo.h"
 
-1513269986 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\repository\pizzarepo.h
+1513272199 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\repository\pizzarepo.h
 	"PizzaService.h"
 	"Pizza.h"
 	"Toppings.h"
 	"Order.h"
 
-1513269719 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
+1513273134 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1513269398 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h
+1513272746 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"

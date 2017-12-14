@@ -45,12 +45,6 @@ bool PizzaService::locationCheck(string location) {
     return false;
 }
 
-vector<Order> PizzaService::getOrders() {
-    vector <Order> orders;
-
-    return orders;
-}
-
 void PizzaService::addOrder(Order order) {
     PizzaRepo get;
     get.addOrderToList(order);
@@ -304,4 +298,14 @@ vector <Pizza> PizzaService::getPizzaSpecials() {
     }
 
     return pizzaSpecials;
+}
+
+void PizzaService::addPizzaSpecialToList(Pizza pizza) {
+    PizzaRepo get;
+    get.addPizzaSpecial(pizza);
+}
+
+void reWritePizzaService(vector <Pizza> pizzas) {
+    PizzaRepo get;
+    get.reWritePizzaSpecial(pizzas);
 }

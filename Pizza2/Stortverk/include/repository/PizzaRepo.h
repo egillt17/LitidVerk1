@@ -16,7 +16,8 @@ class PizzaRepo
         vector <Order> readOrders();
         void reWriteOrders(vector <Order> orders);
         vector <string> readPizzaSpecials();
-        void addPizzaSpecial();
+        void addPizzaSpecial(Pizza pizza);
+        void reWritePizzaSpecial(vector <Pizza> pizzas);
 
     private:
 };

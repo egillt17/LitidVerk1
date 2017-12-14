@@ -25,7 +25,7 @@ class Order
         ///Get function that return the variable PickedUpOrSent
         char getDelivered();
         ///Get function that return the variable Delivered
-        char getPrice();
+        int getPrice();
         ///Get function that return the variable Price
         char getPaidFor();
         ///Get function that return the variable PaidFor

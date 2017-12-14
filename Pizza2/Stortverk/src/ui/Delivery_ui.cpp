@@ -84,9 +84,44 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
 
                     cin >> answer;
                     cout << endl;
+                    string input = "";
+                    int number2 = 0;
+                    bool paying = false;
 
                     if (answer == '1')                  ///Pretty straightforward, here we are changing the Progress variable in the Order class
                     {
+                        while(paying == false) {
+                            system("CLS");
+                            cout << "| Cost of order: " << orders[number-1].getPrice() << endl;
+                            cout << "|'1' Cash" << endl;
+                            cout << "|'2' Credit" << endl;
+                            cin >> input;
+                            stringstream sin2(input);
+                            sin2 >> number2;
+                            if(number2 == 1) {
+                                while(paying == false) {
+                                    cout << "Input amount: ";
+                                    cin >> input;
+                                    stringstream sin2(input);
+                                    sin2 >> number2;
+                                    if(number2 >= orders[number-1].getPrice()){
+                                        cout << "change: " << number2 - orders[number-1].getPrice() << endl;
+                                        system("pause");
+                                        paying = true;
+                                    }
+                                    else {
+                                        cout << "Not enough!" << endl;
+                                    }
+                                }
+                            }
+                            else if(number2 == 2) {
+                                paying = true;
+                            }
+                            else {
+                                cout << "Invalid input!" << endl;
+                                system("pause");
+                            }
+                        }
                         system("CLS");
                         cout << "| Order marked paid for" << endl;
                         orders[number-1].setPaidFor('p');

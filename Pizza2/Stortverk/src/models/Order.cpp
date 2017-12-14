@@ -1,6 +1,6 @@
 #include "Order.h"
 
-Order::Order()
+Order::Order()      ///Default constructor that resets all variables
 {
     _pizza.clear();
     _extras.clear();
@@ -14,7 +14,7 @@ Order::Order()
     _paidFor = 'n';
 }
 
-void Order::clearOrder(Order& order) {
+void Order::clearOrder(Order& order) {  ///Function that works similar to the default constructor, resets all variables
     order._pizza.clear();
     order._extras.clear();
     order._person = "Unknown";
@@ -27,7 +27,7 @@ void Order::clearOrder(Order& order) {
     order._paidFor = 'n';
 }
 
-vector<Pizza> Order::getPizzas() {
+vector<Pizza> Order::getPizzas() {          ///Get functions for the private variables
 
     return _pizza;
 }
@@ -67,7 +67,7 @@ char Order::getDelivered() {
     return _delivered;
 }
 
-char Order::getPrice() {
+int Order::getPrice() {
 
     return _price;
 }
@@ -77,7 +77,7 @@ char Order::getPaidFor() {
     return _paidFor;
 }
 
-int Order::getPizzaTotalCost() {
+int Order::getPizzaTotalCost() {                ///Function that returns the total cost of an order
     int totalCost = 0;
     for(unsigned int i = 0; i < _pizza.size(); i++) {
         totalCost += _pizza[i].getPrice();
@@ -85,7 +85,7 @@ int Order::getPizzaTotalCost() {
 
     return totalCost;
 }
-int Order::getExtrasTotalCost() {
+int Order::getExtrasTotalCost() {               ///Function that returns the total cost of all extras
     int totalCost = 0;
     for(unsigned int i = 0; i < _extras.size(); i++) {
         totalCost += _extras[i].getPrice();
@@ -94,11 +94,11 @@ int Order::getExtrasTotalCost() {
     return totalCost;
 }
 
-void Order::addPizza(Pizza pizza) {
+void Order::addPizza(Pizza pizza) {             ///Function that is used when adding pizzas to an order
     _pizza.push_back(pizza);
 }
 
-void Order::setExtras(vector <Toppings> extras) {
+void Order::setExtras(vector <Toppings> extras) {   ///Set functions for the private variables
     _extras = extras;
 }
 
@@ -150,7 +150,7 @@ void Order::setPaidFor(char paidFor) {
     _paidFor = paidFor;
 }
 
-ostream& operator << (ostream& out, Order& order) {
+ostream& operator << (ostream& out, Order& order) {             ///Ostream operator overload function filled with if / elses that depend on the private variables
 
     out << "Order: " << endl;
     out << "  Name: " << order._person << endl;
@@ -211,7 +211,7 @@ ostream& operator << (ostream& out, Order& order) {
     return out;
 }
 
-ofstream& operator << (ofstream& out, Order& order) {
+ofstream& operator << (ofstream& out, Order& order) {           ///Ofstream operator that prints to a .txt file with the delimiter '^'
     out << "^" << order._person;
     out << "^" << order._location;
     out << "^" << order._Progress;

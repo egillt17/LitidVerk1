@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+^bjarni olafsson^arbaer^n^p^n^6240^p^No added comments^
+^Cola Soda^200^BBQ wings^1020^
+^1860^Large^BBQ sauce^i^Italian crust^
+^pepperoni^bacon^onions^
+^2030^Large^Sriracha^i^Thin crust^
+^pepperoni^bacon^
+^1130^Small^A lot of sauce^n^Regular crust^
+^mushrooms^
+:
+^kari gudjonsson^arbaer^n^u^n^1400^n^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^n^Regular crust^
+^No toppings^
+:
+^einar atlason^spong^n^u^n^1630^n^please help me^
+=======
+>>>>>>> 5965f1219091766d6057ce4d106332e889cbe2a4
 ^bjarni olafsson^arbaer^r^p^n^6240^p^No added comments^
 ^Cola Soda^200^BBQ wings^1020^
 ^1860^Large^BBQ sauce^r^Italian crust^
@@ -41,3 +65,5 @@
 ^No pizzas^
 ^No pizzas^
 :
+>>>>>>> 46c55b748eb4e9f9989cc8790b632dc63fe9cce5
+>>>>>>> cc43cd7c8ce182d5e394217838d8df95a9ef1619

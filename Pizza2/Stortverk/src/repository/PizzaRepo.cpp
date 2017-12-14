@@ -105,3 +105,29 @@ vector <string> PizzaRepo::readPizzaSpecials() {
     return info;
 }
 
+void PizzaRepo::addPizzaSpecial(Pizza pizza) {
+    ofstream fout;
+    fout.open("Pizza_specials.txt", ios::app);
+    if(fout.is_open()) {
+        fout << pizza;
+    }
+    else {
+
+    }
+    fout.close();
+}
+
+void PizzaRepo::reWritePizzaSpecial(vector <Pizza> pizzas) {
+    ofstream fout;
+    fout.open("Pizza_specials.txt");
+    if(fout.is_open()) {
+        for(unsigned int i = 0; i < pizzas.size(); i++) {
+            fout << pizzas[i];
+        }
+    }
+    else {
+
+    }
+    fout.close();
+}
+

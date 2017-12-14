@@ -69,8 +69,8 @@ char Pizza::getStatus() {
 }
 
 ostream& operator << (ostream& out, Pizza& pizza) {
-    out << "Price: " << pizza._price << endl;
-    out << "Toppings: ";
+    out << "| Price: " << pizza._price << endl;
+    out << "| Toppings: ";
     if(pizza._topping.empty()) {
         out << endl;
     }
@@ -84,10 +84,19 @@ ostream& operator << (ostream& out, Pizza& pizza) {
             }
         }
     }
-    out << "Size: " << pizza._size << endl;
-    out << "Sauce: " << pizza._sauce << endl;
-    out << "Crust: " << pizza._crust << endl;
-    out << "Status: " << pizza._status << endl;
+    out << "| Size: " << pizza._size << endl;
+    out << "| Sauce: " << pizza._sauce << endl;
+    out << "| Crust: " << pizza._crust << endl;
+    out << "| Status: "; 
+    if(pizza._status == 'n'){
+        out << "Not Ready" << endl;
+    }
+    else if(pizza._status == 'i'){
+        out << "In Progress" << endl;
+    }
+    else if(pizza._status == 'r'){
+        out << "Ready" << endl;
+    }
     return out;
 }
 

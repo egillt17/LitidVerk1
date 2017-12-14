@@ -29,6 +29,7 @@ class PizzaService
 
 
     private:
+        void checkIfOrderIsReady(vector <Order>& allOrders);
         bool locationCheck(string location);
 };
 

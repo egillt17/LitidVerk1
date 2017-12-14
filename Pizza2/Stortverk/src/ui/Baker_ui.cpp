@@ -44,12 +44,15 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
     system("CLS");
 
     vector<Order> orders;
+    PizzaService get;
     Order order;
     char answer;
-    PizzaService get;
+    unsigned int number = 0;
+    bool changed = false;
 
     while (true)
     {
+        system("CLS");
         cout << "               Location: " << location << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do at " << location << "?" << endl;
@@ -67,57 +70,29 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
             orders = get.getOrdersforASpecificLocation(location);
                                                                                             ///Getting all pending orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++) {                               ///Prints all orders from the chosen location
+                cout << "Order number " << (i+1) << "." << endl;
                 vector <Pizza> temp = orders[i].getPizzas();
-                for(int i = 0; i < temp.size(); i++){
-                    cout << temp[i];
+                for(unsigned int j = 0; j < temp.size(); j++){
+                    cout << endl << "Pizza number " << (j+1) << "." << endl;
+                    cout << temp[j];
+                }
+                cout << "| Anything you would like to change with this order? " << endl;
+                cout << "| '1' to change status " << endl;
+                cout << "| any other key to continue " << endl;
+                cin >> stranswer;
+                stringstream sin(stranswer);
+                sin >> number;
+                if(number == 1 ) {
+                    changed = true;
+                    changeStatus(temp);
+                    orders[i].setPizzas(temp);
+                }
+                else {
+
                 }
             }
-            cout << "What pizza would you like to get up? ";
-            cin >> stranswer;
-            stringstream sin(stranswer);
-            unsigned int number = 0;
-            sin >> number;
-            if(number > 0 && number <= orders.size()){
-                cout << orders[number-1];
-            }
-            else {
-                cout << "no can do!" << endl;
-                system("pause");
-            }
-            char answer = '\0';
-
-            while (true)
-            {
-                cout << "| What would you like to do about that pizza?" << endl;
-                cout << "| '1' to mark it \"In progress\"" << endl << "| '2' to mark it Ready" << endl << "| '3' to Quit" << endl;
-
-                cin >> answer;
-                cout << endl;
-
-                if (answer == '1')                                              ///Pretty straightforward, here we are changing the Progress variable in the Order class
-                {
-                    system("CLS");
-                    cout << "---Marking a pizza \"In progress\"---" << endl;
-                    Order order;
-                    order.setProgress('y');
-                }
-                else if (answer == '2')
-                {
-                    system("CLS");
-                    cout << "---Marking a pizza Ready---" << endl;
-                    Order order;
-                    order.setProgress('r');
-                }
-                else if (answer == '3')
-                {
-                    system("CLS");
-                    break;
-                }
-                else
-                {
-                    system("CLS");
-                    cout << "| Wrong input, please try again" << endl << endl;
-                }
+            if(changed == true) {
+                get.reWriteOrdersService(orders, location);
             }
         }
         else if (answer == '2')
@@ -129,6 +104,42 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         {
             system("CLS");
             cout << "| Wrong input, please try again" << endl << endl;
+        }
+    }
+}
+
+void Baker_ui::changeStatus(vector <Pizza>& pizzas) {
+    system("CLS");
+    string stranswer = "";
+    int number = 0;
+    for(unsigned int i = 0; i < pizzas.size(); i++) {
+        cout << pizzas[i];
+        cout << "| Anything you would like to change with this order? " << endl;
+        cout << "| '1' to change status " << endl;
+        cout << "| any other key to continue " << endl;
+        cin >> stranswer;
+        stringstream sin(stranswer);
+        sin >> number;
+        if(number == 1 ) {
+            cout << "| '1' to change status to ready " << endl;
+            cout << "| '2' to change status to in progress " << endl;
+            cout << "| '3' to go back " << endl;
+            cout << "| any other key to continue" << endl;
+            cin >> stranswer;
+            stringstream sin(stranswer);
+            sin >> number;
+            if(number == 1) {
+                pizzas[i].setStatus('r');
+            }
+            else if(number == 2) {
+                pizzas[i].setStatus('i');
+            }
+            else if(number == 3) {
+                break;
+            }
+        }
+        else {
+
         }
     }
 }

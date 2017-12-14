@@ -23,6 +23,7 @@ class PizzaService
         Pizza makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings);
         vector <Order> getOrderList();
         vector <Order> getOrdersforASpecificLocation(string location);
+        void reWriteOrdersService(vector <Order> orders, string location);
 
 
     private:

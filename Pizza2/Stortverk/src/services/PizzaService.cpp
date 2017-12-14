@@ -87,28 +87,14 @@ Order PizzaService::fixOrderInfo(vector <string> info) {
     }
     while(counter < info.size()) {
         counter2 = counter;
-        if(counter % 2 == 0){
-            cout << "Length should be right next to here: " << info[counter2].length() << endl;
+        if(counter % 2 == 0) {
             for(unsigned int i = 0; i < info[counter2].length(); i++) {
                 place = info[counter2].find(delimiter);
-                    cout << "Do I get to this point: " << info[counter2].length() <<  endl;
-
-                if (info[counter2].size() > 2){
-                    cout << "My string now is: " << info[counter2] << " with delimeter in place: " << place <<  endl;
-                    name = info[counter2].substr(0, place);
-                }
-                else{
-                    cout << "Hello" << endl;
-                    name = info[counter2];
-                }
+                name = info[counter2].substr(0, place);
                 if(name.compare("")) {
                     pizzaInfo.push_back(name);
                 }
-                cout << place + delimiter.length() << endl;
                 info[counter2].erase(0, place + delimiter.length());
-                if (info[counter2].length() < 5){
-                    cout << "Can you see me: " << info[counter2] << "with size: " << info[counter2].length() <<  endl;
-                }
             }
         }
         else {
@@ -121,7 +107,9 @@ Order PizzaService::fixOrderInfo(vector <string> info) {
                 }
                 info[counter2].erase(0, place + delimiter.length());
             }
+            if(pizzaInfo[0].compare("No pizzas")) {
             order.addPizza(makePizzaFromVector(pizzaInfo, pizzaToppings));
+            }
             pizzaInfo.clear();
             pizzaToppings.clear();
         }
@@ -179,21 +167,17 @@ vector <Toppings> PizzaService::makeToppingFromVector(vector <string> extras) {
 }
 
 Pizza PizzaService::makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings) {
-    for(unsigned int i = 0; i < pizzaInfo.size(); i++) {
-        cout << i << " " << pizzaInfo[i] << endl;
-    }
     Pizza readyPizzas;
     int tempPrice = 0;
     char tempStatus = '0';
-    cin >> tempStatus;
     stringstream sin(pizzaInfo[0]);
     sin >> tempPrice;
-    ///stringstream sin2(pizzaInfo[4]);  this line is crashing
-    ///sin2 >> tempStatus;
+    stringstream sin2(pizzaInfo[3]);
+    sin2 >> tempStatus;
     readyPizzas.setPrice(tempPrice);
     readyPizzas.setSize(pizzaInfo[1]);
     readyPizzas.setSauce(pizzaInfo[2]);
-    readyPizzas.setCrust(pizzaInfo[3]);
+    readyPizzas.setCrust(pizzaInfo[4]);
     readyPizzas.setStatus(tempStatus);
 
     for(unsigned int i = 0; i < pizzaToppings.size(); i++) {
@@ -220,4 +204,16 @@ vector <Order> PizzaService::getOrdersforASpecificLocation(string location) {
         }
     }
     return locationOrders;
+}
+
+void PizzaService::reWriteOrdersService(vector <Order> orders, string location) {
+    vector <Order> allOrders = getOrderList();
+    PizzaRepo get;
+
+    for(unsigned int i = 0; i < allOrders.size(); i++) {
+        if(location.compare(allOrders[i].getLocation())) {
+            orders.push_back(allOrders[i]);
+        }
+    }
+    get.reWriteOrders(orders);
 }

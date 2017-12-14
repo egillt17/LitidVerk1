@@ -14,12 +14,14 @@ void Baker_ui::bakerMainUI() {          ///Pretty basic if/else commands in this
         cout << "                Bakers Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
+        cout << "|" << endl;
 
         locations = get.getLocation();                          ///Create a vector of locations based on the function getLocations in PizzaService class
         for(unsigned int i = 0; i < locations.size(); i++) {
-            cout << "| " << (i+1) << ". " << locations[i] << endl;      ///printing all locations from the getLocations function
+            cout << "| " << "'" << (i+1) << "' " << locations[i] << endl;      ///printing all locations from the getLocations function
         }
-        cout << "| " << locations.size() + 1 << ". to Exit" << endl;
+        cout << "| '" << locations.size() + 1 << "' to Exit" << endl;
+        cout << "| Input : ";
         cin >> input;
         stringstream sin(input);            ///Using stringstream to turn the string input to an int
         sin >> number;
@@ -56,7 +58,10 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         cout << "               Location: " << location << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do at " << location << "?" << endl;
-        cout << "| '1' to get a list of all pending pizzas at "<< location << endl << "| '2' to Quit" << endl;
+        cout << "|" << endl;
+        cout << "| '1' to get a list of all pending pizzas at "<< location << endl;
+        cout << "| '2' to Quit" << endl;
+        cout << "| Input : ";
 
         cin >> answer;
         cout << endl;
@@ -70,15 +75,20 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
             orders = get.getUnfinishedOrdersforASpecificLocation(location);
                                                                                             ///Getting all pending orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++) {                               ///Prints all orders from the chosen location
-                cout << "Order number " << (i+1) << "." << endl;
+                cout << "|" << endl;
+                cout << "------------------------------------------------" << endl;
+                cout << "|" << "\t" << "Order number " << (i+1) << "." << endl;
                 vector <Pizza> temp = orders[i].getPizzas();
                 for(unsigned int j = 0; j < temp.size(); j++){
-                    cout << endl << "Pizza number " << (j+1) << "." << endl;
-                    cout << temp[j];
+                    cout << "| " << "Pizza number " << (j+1) << "." << endl;
+                    cout << "|" << endl;
+                    cout << temp[j] << "|" << endl;
                 }
-                cout << "| Anything you would like to change with this order? " << endl;
-                cout << "| '1' to change status " << endl;
-                cout << "| any other key to continue " << endl;
+                cout << "|" << endl;
+                cout << "| Change Order Number: " << (i+1) << "?" << endl;
+                cout << "| '1' to change status in this order" << endl;
+                cout << "| 'Any Key' to continue to next order" << endl;
+                cout << "| Input : ";
                 cin >> stranswer;
                 stringstream sin(stranswer);
                 sin >> number;
@@ -88,7 +98,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                     orders[i].setPizzas(temp);
                 }
                 else {
-
+                    
                 }
             }
             if(changed == true) {
@@ -112,35 +122,31 @@ void Baker_ui::changeStatus(vector <Pizza>& pizzas) {
     system("CLS");
     string stranswer = "";
     int number = 0;
+    cout << "|            -Change Pizza Status-              " << endl;
+    cout << "------------------------------------------------" << endl;
+    cout << "|" << endl;
     for(unsigned int i = 0; i < pizzas.size(); i++) {
         cout << pizzas[i];
-        cout << "| Anything you would like to change with this order? " << endl;
-        cout << "| '1' to change status " << endl;
-        cout << "| any other key to continue " << endl;
+        cout << "|" << endl;
+        cout << "| Change status to Pizza number " << (i+1) << "?" << endl;
+        cout << "| '1' To change status to 'In Progress' " << endl;
+        cout << "| '2' To change status to 'Ready' " << endl;
+        cout << "| 'Any Key' for next pizza " << endl;
+        cout << "| Input : ";
         cin >> stranswer;
         stringstream sin(stranswer);
         sin >> number;
         if(number == 1 ) {
-            cout << "| '1' to change status to ready " << endl;
-            cout << "| '2' to change status to in progress " << endl;
-            cout << "| '3' to go back " << endl;
-            cout << "| any other key to continue" << endl;
-            cin >> stranswer;
-            stringstream sin(stranswer);
-            sin >> number;
-            if(number == 1) {
-                pizzas[i].setStatus('r');
-            }
-            else if(number == 2) {
-                pizzas[i].setStatus('i');
-            }
-            else if(number == 3) {
-                break;
-            }
+            pizzas[i].setStatus('i');
+        }
+        else if(number == 2) {
+            pizzas[i].setStatus('r');
         }
         else {
-
+            
         }
-    }
+        cout << "|" << endl;
+        cout << "|" << "\t" << "Next Pizza " << endl;
+        cout << "|" << endl;
+    } 
 }
-

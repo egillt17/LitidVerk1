@@ -224,7 +224,7 @@
 	"PizzaService.h"
 	<stdlib.h>
 
-1513275458 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
+1513284078 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
 1512745730 i.h"
@@ -279,16 +279,16 @@
 	"Sales_ui.h"
 	<string>
 
-1513273149 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
+1513290749 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\repository\pizzarepo.cpp
 	"PizzaRepo.h"
 
-1513272199 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\repository\pizzarepo.h
+1513289651 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\repository\pizzarepo.h
 	"PizzaService.h"
 	"Pizza.h"
 	"Toppings.h"
 	"Order.h"
 
-1513283641 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
+1513289420 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
 1513280249 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\pizzaservice.h

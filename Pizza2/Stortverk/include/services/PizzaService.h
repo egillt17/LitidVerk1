@@ -22,12 +22,14 @@ class PizzaService
         vector <Toppings> makeToppingFromVector(vector <string> extras);
         Pizza makePizzaFromVector(vector <string> pizzaInfo, vector <Toppings> pizzaToppings);
         vector <Order> getOrderList();
-        vector <Order> getOrdersforASpecificLocation(string location);
+        vector <Order> getUnfinishedOrdersforASpecificLocation(string location);
         void reWriteOrdersService(vector <Order> orders, string location);
         vector <Order> getReadyOrdersforASpecificLocation(string location);
+        vector <Order> getAllOrdersforASpecificLocation(string location);
 
 
     private:
+        void checkIfOrderIsReady(vector <Order>& allOrders);
         bool locationCheck(string location);
 };
 

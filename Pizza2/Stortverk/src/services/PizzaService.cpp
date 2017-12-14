@@ -194,7 +194,7 @@ vector <Order> PizzaService::getOrderList() {
     return orders;
 }
 
-vector <Order> PizzaService::getOrdersforASpecificLocation(string location) {
+vector <Order> PizzaService::getUnfinishedOrdersforASpecificLocation(string location) {
     vector <Order> allOrders = getOrderList();
     vector <Order> locationOrders;
 
@@ -215,6 +215,7 @@ void PizzaService::reWriteOrdersService(vector <Order> orders, string location) 
             orders.push_back(allOrders[i]);
         }
     }
+    checkIfOrderIsReady(orders);
     get.reWriteOrders(orders);
 }
 
@@ -228,4 +229,33 @@ vector <Order> PizzaService::getReadyOrdersforASpecificLocation(string location)
         }
     }
     return readyOrders;
+}
+
+vector <Order> PizzaService::getAllOrdersforASpecificLocation(string location) {
+    vector <Order> allOrders = getOrderList();
+    vector <Order> AllOrdersAtLocation;
+
+    for(unsigned int i = 0; i < allOrders.size(); i++) {
+        if(!location.compare(allOrders[i].getLocation())) {
+            AllOrdersAtLocation.push_back(allOrders[i]);
+        }
+    }
+    return AllOrdersAtLocation;
+}
+
+void PizzaService::checkIfOrderIsReady(vector <Order>& allOrders) {
+    vector <Pizza> tempPizza;
+    int counter = 0;
+    for(unsigned int i = 0; i < allOrders.size(); i++) {
+        counter = 0;
+        tempPizza = allOrders[i].getPizzas();
+        for(unsigned int j = 0; j < tempPizza.size(); j++) {
+            if(tempPizza[j].getStatus() != 'r') {
+                counter++;
+            }
+        }
+        if(counter == 0) {
+            allOrders[i].setProgress('r');
+        }
+    }
 }

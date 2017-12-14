@@ -12,7 +12,7 @@ void Delivery_ui::deliveryMainUI() {        ///Pretty basic if/else commands in 
         PizzaService get;
 
         cout << "                Bakers Main Menu                " << endl;
-        cout << "------------------------------------------------" << endl;
+          cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
 
         locations = get.getLocation();                          ///Create a vector of locations based on the function getLocations in PizzaService class
@@ -69,7 +69,7 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
             for(unsigned int i = 0; i < orders.size(); i++){                                          ///Prints all orders from the chosen location
                     cout << (i+1) << ". " << orders[i] << endl;                                         ///Runs if the location matches
             }
-            cout << (orders.size()+1) << ". " << "to Exit" << endl;
+            cout << (orders.size()+1) << ". " << "to Exit" << endl << endl;
             cout << "| What order would you like to get up? ";
             cin >> stranswer;
             stringstream sin(stranswer);
@@ -97,7 +97,7 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
                     {
                         system("CLS");
                         cout << "| Order marked delivered" << endl;
-                        order.setDelivered('y');
+                        orders[number-1].setDelivered('y');
                         get.reWriteOrdersService(orders, location);
                         system("Pause");
                     }
@@ -132,7 +132,7 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
                 for(unsigned int i = 0; i < orders.size(); i++){                                          ///Prints all ready orders from the chosen location
                     cout << (i+1) << ". " << orders[i] << endl;                                         ///Runs if the location matches
                 }
-                cout << (orders.size()+1) << ". " << "to Exit" << endl;
+                cout << (orders.size()+1) << ". " << "to Exit" << endl << endl;
                 cout << "| What order would you like to get up? ";
                 cin >> stranswer;
                 stringstream sin(stranswer);

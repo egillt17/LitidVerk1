@@ -45,7 +45,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
 
     vector<Order> orders;
     PizzaService get;
-    Order order;
+    //Order order;
     char answer;
     unsigned int number = 0;
     bool changed = false;

@@ -66,7 +66,7 @@ void Manager_ui::manageToppingUI() {
     vector <Toppings> topping;  /// Makes a topping vector of the Toppings class
     string top = "";
     string price = "";
-    
+
     /// Sub menu of the manager UI to manage toppings
     while(true) {
         system("cls");
@@ -79,7 +79,7 @@ void Manager_ui::manageToppingUI() {
         cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
-        
+
         /// displays list of toppings
         if(input == '1') {
             system("cls");
@@ -88,7 +88,7 @@ void Manager_ui::manageToppingUI() {
             cout << "------------------------------------------------" << endl;
             cout << "| " << endl;
             topping = get.getToppingList(toppingsPick);    /// reads the topping list, (toppingsPick) is enumeration
-            for(unsigned int i = 0; i < topping.size(); i++) {  /// sort through 
+            for(unsigned int i = 0; i < topping.size(); i++) {  /// sort through
                 cout << "| " << topping[i];     /// prints it to the screen
             }
             cout << "| " << endl;
@@ -105,7 +105,7 @@ void Manager_ui::manageToppingUI() {
                 cout << "| Name: ";
                 cin.ignore();
                 getline(cin, top);  /// Input name
-                try {                               
+                try {
                     validate.validateName(top);    /// tries to validate the name in the validation class
                     cout << "| Price: ";
                     cin >> price;       /// name goes through, input price
@@ -116,7 +116,7 @@ void Manager_ui::manageToppingUI() {
                     }
                     catch(InvalidNumExceptions e) { /// catches the error message if invalid number
                         cout << e.getMessage() << endl; /// prints it out
-                        
+
                     }
                 }
                 catch(InvalidNameException e) { /// catches the error message if invalid name
@@ -143,7 +143,7 @@ void Manager_ui::manageToppingUI() {
                 cout << "| What topping would you like to remove? ";
                 cin.ignore();
                 getline(cin, top);
-                try {   
+                try {
                     validate.validateName(top);
                     if(!get.removeTopping(top, toppingsPick)) { /// If name is validated, but don't find the right topping
                         cout << "| Topping not found!" << endl; /// error
@@ -177,7 +177,7 @@ void Manager_ui::manageToppingUI() {
 /// UI to manage all the extra, soda or sides
 void Manager_ui::manageExtraUI(){
     char input = '\0';
-    TopService get; 
+    TopService get;
     Validate validate;
     vector <Toppings> topping;
     string top = "";
@@ -194,7 +194,7 @@ void Manager_ui::manageExtraUI(){
         cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
-        
+
         /// UI to display the list of extras
         if(input == '1') {
             system("cls");
@@ -230,11 +230,11 @@ void Manager_ui::manageExtraUI(){
                         break;
                     }
                     catch(InvalidNumExceptions e){  /// number exception error message
-                        
+
                         cout << e.getMessage() << endl;
                     }
                 }
-                catch(InvalidNameException e){          /// name exception error message             
+                catch(InvalidNameException e){          /// name exception error message
                     cout << e.getMessage() << endl;
                     cout << "| ";
                     system("pause");
@@ -250,7 +250,7 @@ void Manager_ui::manageExtraUI(){
                 cout << "            -Remove extras from list-           " << endl;
                 cout << "------------------------------------------------" << endl;
                 cout << "| " << endl;
-                topping = get.getToppingList(extraPick);    
+                topping = get.getToppingList(extraPick);
                 for(unsigned int i = 0; i < topping.size(); i++) {
                     cout << "| " << topping[i];                         /// this is the same as displaying extras list
                 }                                                       /// helps to find the item you wan't to remove
@@ -260,7 +260,7 @@ void Manager_ui::manageExtraUI(){
                 getline(cin, top);
                 try {
                     validate.validateName(top);
-                    if(!get.removeTopping(top, extraPick)) {    /// validates the name , if is validated 
+                    if(!get.removeTopping(top, extraPick)) {    /// validates the name , if is validated
                         cout << "| Extra not found" << endl;    /// but not found it displays an error
                         cout << "| ";
                         system("pause");
@@ -335,7 +335,7 @@ void Manager_ui::manageLocationUI(){
                 cout << "| " << endl;
                 cout << "| Address: ";
                 cin.ignore();
-                getline(cin, location); 
+                getline(cin, location);
                 try {   /// to validate the name of the location (location and address number / or just location)
                     validate.validateLocation(location);
                     get.addLocation(location);  /// if it validates, it writes to the location list
@@ -368,7 +368,7 @@ void Manager_ui::manageLocationUI(){
                 cout << "| What location would you like to remove? ";
                 cin.ignore();
                 getline(cin, location);
-                try {               /// validates the name to remove, 
+                try {               /// validates the name to remove,
                     validate.validateLocation(location);    /// if name of location is valid but
                     if(!get.removeLocation(location)) { ///  location is not found, prints error
                         cout << "| Location not found" << endl;
@@ -443,7 +443,7 @@ void Manager_ui::manageSettingUI() {
         else if(input == '2'){
             while(true){
                 system("cls");
-                pick = crustSauceSize(); // 2 - crust 4 - sauce 3 - size    
+                pick = crustSauceSize(); // 2 - crust 4 - sauce 3 - size
                 string name[5] = {"", "", "crust", "size", "sauce"};    /// name of the picked item, to be displayed on the menu header
                 system("cls");
                 cout << endl;
@@ -455,7 +455,7 @@ void Manager_ui::manageSettingUI() {
                 try {
                     validate.validateName(top); /// validates the name
                     cout << "| Price: ";
-                    cin >> price;  
+                    cin >> price;
                     try {
                         validate.validateNum(price);     /// validates the price
                         get.addTopping(top, price, pick);
@@ -504,7 +504,7 @@ void Manager_ui::manageSettingUI() {
                     cout << "| Item successfully removed" << endl;
                     cout << "| ";
                     system("pause");
-                    break;  
+                    break;
                 }
                 catch(InvalidNameException e) { /// for invalid name error exception message
                     cout << e.getMessage() << endl;
@@ -525,7 +525,7 @@ void Manager_ui::manageSettingUI() {
 }
 
 /// Submenu that picks the sauce, crust or size
-/// that picks from the 
+/// that picks from the
 int Manager_ui::crustSauceSize() {
     char input = '0';
     int pick = 0;
@@ -537,6 +537,7 @@ int Manager_ui::crustSauceSize() {
         cout << "| 1. Crust" << endl;
         cout << "| 2. Sauce" << endl;
         cout << "| 3. Size" << endl;
+        cout << "| 4. to Exit" << endl;
         cout << "| " << endl;
         cout << "| Input : ";
         cin.ignore();
@@ -557,8 +558,13 @@ int Manager_ui::crustSauceSize() {
             system("cls");
             break;
         }
+        else if (input == '4') {
+            system("CLS");
+            break;
+        }
         else {
-            cout << "Wrong input, please try again" << endl;
+            system("CLS");
+            cout << "| Wrong input, please try again" << endl;
         }
     }
     //system("cls");

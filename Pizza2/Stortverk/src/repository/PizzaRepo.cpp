@@ -77,7 +77,7 @@ vector <Order> PizzaRepo::readOrders() {
     return orders;
 }
 
-void reWriteOrders(vector <Order> orders) {
+void PizzaRepo::reWriteOrders(vector <Order> orders) {
     ofstream fout;
     fout.open("Orders.txt");
     if(fout.is_open()) {

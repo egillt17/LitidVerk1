@@ -10,6 +10,7 @@ class Baker_ui
         ///Main UI for the baker
         void locationMenu(string location);
         ///Menu that pops up after the location is selected, and that location is the ran throught the function
+        void changeStatus(vector <Pizza>& pizzas);
 
     private:
 };

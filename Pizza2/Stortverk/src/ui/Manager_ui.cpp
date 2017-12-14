@@ -560,13 +560,12 @@ int Manager_ui::crustSauceSize() {
         }
         else if (input == '4') {
             system("CLS");
-            break;
+            manageSettingUI();
         }
         else {
             system("CLS");
             cout << "| Wrong input, please try again" << endl;
         }
     }
-    //system("cls");
     return pick;
 }

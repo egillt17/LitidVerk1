@@ -70,13 +70,15 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
         {
             string stranswer = "";
             system("CLS");
+            cout << endl;
             cout << "         All unfinished pizzas at " << location << endl;
-            cout << "------------------------------------------------" << endl;
+            //cout << "------------------------------------------------" << endl;
             orders = get.getUnfinishedOrdersforASpecificLocation(location);
                                                                                             ///Getting all pending orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++) {                               ///Prints all orders from the chosen location
-                cout << "|" << endl;
+                
                 cout << "------------------------------------------------" << endl;
+                cout << "|" << endl;
                 cout << "|" << "\t" << "Order number " << (i+1) << "." << endl;
                 vector <Pizza> temp = orders[i].getPizzas();
                 for(unsigned int j = 0; j < temp.size(); j++){

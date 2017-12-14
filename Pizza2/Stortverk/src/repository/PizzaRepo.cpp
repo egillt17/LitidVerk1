@@ -82,7 +82,7 @@ void PizzaRepo::reWriteOrders(vector <Order> orders) {
     fout.open("Orders.txt");
     if(fout.is_open()) {
         for(unsigned int i = 0; i < orders.size(); i++) {
-            fout << orders[i] << endl;
+            fout << orders[i];
         }
     }
     else {

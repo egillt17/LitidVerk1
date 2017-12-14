@@ -12,7 +12,7 @@ void Delivery_ui::deliveryMainUI() {        ///Pretty basic if/else commands in 
         PizzaService get;
 
         cout << "                Bakers Main Menu                " << endl;
-          cout << "------------------------------------------------" << endl;
+        cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
 
         locations = get.getLocation();                          ///Create a vector of locations based on the function getLocations in PizzaService class
@@ -63,13 +63,15 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
 
         if (answer == '1') {
             system("CLS");
-            cout << "| List of all orders for " << location << endl;
+            cout << "        List of all orders for " << location << endl;
+            //cout << "------------------------------------------------" << endl;
             orders = get.getAllOrdersforASpecificLocation(location);
                                                                                                     ///Getting all orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++){                                          ///Prints all orders from the chosen location
-                    cout << (i+1) << ". " << orders[i] << endl;                                         ///Runs if the location matches
+                    cout << "| " << (i+1) << ". " << orders[i];
+                    cout << "------------------------------------------------" << endl;             ///Runs if the location matches
             }
-            cout << (orders.size()+1) << ". " << "to Exit" << endl << endl;
+            cout << "| " << (orders.size()+1) << ". " << "to Exit" << endl << "| " << endl;
             cout << "| What order would you like to get up? ";
             cin >> stranswer;
             stringstream sin(stranswer);
@@ -161,13 +163,14 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
 
             while(true) {
                 system("CLS");
-                cout << "| List of all ready orders for " << location << endl;
+                cout << "        List of all ready orders for " << location << endl;
+                cout << "------------------------------------------------" << endl;
                 orders = get.getReadyOrdersforASpecificLocation(location);
                                                                                                         ///Getting all ready orders from the orders text file and
                 for(unsigned int i = 0; i < orders.size(); i++){                                          ///Prints all ready orders from the chosen location
-                    cout << (i+1) << ". " << orders[i] << endl;                                         ///Runs if the location matches
+                    cout << "| " << (i+1) << ". " << orders[i];                                         ///Runs if the location matches
                 }
-                cout << (orders.size()+1) << ". " << "to Exit" << endl << endl;
+                cout << "| " << (orders.size()+1) << ". " << "to Exit" << endl << "| " << endl;
                 cout << "| What order would you like to get up? ";
                 cin >> stranswer;
                 stringstream sin(stranswer);

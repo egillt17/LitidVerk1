@@ -67,7 +67,7 @@ char Order::getDelivered() {
     return _delivered;
 }
 
-char Order::getPrice() {
+int Order::getPrice() {
 
     return _price;
 }

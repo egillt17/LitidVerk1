@@ -217,3 +217,15 @@ void PizzaService::reWriteOrdersService(vector <Order> orders, string location) 
     }
     get.reWriteOrders(orders);
 }
+
+vector <Order> PizzaService::getReadyOrdersforASpecificLocation(string location) {
+    vector <Order> allOrders = getOrderList();
+    vector <Order> readyOrders;
+
+    for(unsigned int i = 0; i < allOrders.size(); i++) {
+        if(!location.compare(allOrders[i].getLocation()) && allOrders[i].getProgress() == 'r') {
+            readyOrders.push_back(allOrders[i]);
+        }
+    }
+    return readyOrders;
+}

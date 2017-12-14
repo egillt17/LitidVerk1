@@ -128,10 +128,10 @@
 	<fstream>
 	<sstream>
 
-1512919322 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\topservice.cpp
+1513275458 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\services\topservice.cpp
 	"TopService.h"
 
-1512832877 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\topservice.h
+1513275458 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\services\topservice.h
 	"Toppings.h"
 	"ToppingRepo.h"
 
@@ -224,7 +224,7 @@
 	"PizzaService.h"
 	<stdlib.h>
 
-1513184324 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
+1513275458 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
 1512745730 i.h"
@@ -268,10 +268,10 @@
 1513020396 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\ui\delivery_ui.h
 	"Main_ui.h"
 
-1513271065 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\baker_ui.cpp
+1513273411 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\baker_ui.cpp
 	"Baker_ui.h"
 
-1513264192 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
+1513275843 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Baker_ui.h"
 
 1513166418 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\ui\sales_ui.cpp
@@ -481,7 +481,7 @@
 
 1512921367 b7d40199977a15f5f6af7d71a24fdeaffbf4c
 
-1513251889 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\order.h
+1513275534 c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\include\models\order.h
 	"Pizza.h"
 	"Toppings.h"
 
@@ -496,7 +496,7 @@
 	<string>
 	<iostream>
 
-1513251960 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\order.cpp
+1513275534 source:c:\users\halld\desktop\hr\Önn 1\verklegt námskeið 1\hópur 19\verkefni\pizza2\stortverk\src\models\order.cpp
 	"Order.h"
 
 1513254120 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\models\order.h

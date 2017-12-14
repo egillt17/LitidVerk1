@@ -15,16 +15,16 @@ Order::Order()
 }
 
 void Order::clearOrder(Order& order) {
-    _pizza.clear();
-    _extras.clear();
-    _person = "Unknown";
-    _location = "Unknown";
-    _comments = "No added comments";
-    _Progress = 'n';
-    _pickedOrSent = 'u';
-    _delivered = 'n';
-    _price = 0;
-    _paidFor = 'n';
+    order._pizza.clear();
+    order._extras.clear();
+    order._person = "Unknown";
+    order._location = "Unknown";
+    order._comments = "No added comments";
+    order._Progress = 'n';
+    order._pickedOrSent = 'u';
+    order._delivered = 'n';
+    order._price = 0;
+    order._paidFor = 'n';
 }
 
 vector<Pizza> Order::getPizzas() {
@@ -35,16 +35,6 @@ vector<Pizza> Order::getPizzas() {
 vector<Toppings> Order::getExtras() {
 
     return _extras;
-}
-
-void Order::printPizzaOrders() {
-    for(unsigned int i = 0; i < _pizza.size(); i++) {
-        cout << _pizza[i];
-    }
-}
-
-void Order::setPizzaStatus(char status, int number) {
-    _pizza[number].setStatus(status);
 }
 
 string Order::getPerson() {
@@ -109,9 +99,11 @@ void Order::addPizza(Pizza pizza) {
 }
 
 void Order::setExtras(vector <Toppings> extras) {
-    for(unsigned int i = 0; i < extras.size(); i++) {
-        _extras.push_back(extras[i]);
-    }
+    _extras = extras;
+}
+
+void Order::setPizzas(vector <Pizza> pizzas) {
+    _pizza = pizzas;
 }
 
 void Order::addExtras(Toppings extra) {

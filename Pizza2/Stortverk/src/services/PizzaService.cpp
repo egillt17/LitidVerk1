@@ -189,123 +189,121 @@ vector <Order> PizzaService::getOrderList() {   /// returns vector with all orde
 }
 
 vector <Order> PizzaService::getUnfinishedOrdersforASpecificLocation(string location) {
-    vector <Order> allOrders = getOrderList();
+    vector <Order> allOrders = getOrderList();  /// gets all orders
     vector <Order> locationOrders;
 
-    for(unsigned int i = 0; i < allOrders.size(); i++) {
-        if(!location.compare(allOrders[i].getLocation()) && allOrders[i].getProgress() != 'r') {
-            locationOrders.push_back(allOrders[i]);
+    for(unsigned int i = 0; i < allOrders.size(); i++) {    /// goes through all the orders
+        if(!location.compare(allOrders[i].getLocation()) && allOrders[i].getProgress() != 'r') {    /// checks if it is the right location and if its not ready
+            locationOrders.push_back(allOrders[i]); /// if it meets those requirements then it gets added to the other vector
         }
     }
-    return locationOrders;
+    return locationOrders;  /// returns the filtered vector
 }
 
-void PizzaService::reWriteOrdersService(vector <Order> orders, string location) {
-    vector <Order> allOrders = getOrderList();
+void PizzaService::reWriteOrdersService(vector <Order> orders, string location) {   /// sends orders to be re written in repo
+    vector <Order> allOrders = getOrderList();  /// gets all orders
     PizzaRepo get;
 
-    for(unsigned int i = 0; i < allOrders.size(); i++) {
-        if(location.compare(allOrders[i].getLocation())) {
-            orders.push_back(allOrders[i]);
+    for(unsigned int i = 0; i < allOrders.size(); i++) {    /// goes through all the orders
+        if(location.compare(allOrders[i].getLocation())) {  /// if its not the same as the location then it gets added
+            orders.push_back(allOrders[i]);         /// because the vector that gets sent in only has the orders for a specific location
         }
     }
-    checkIfOrderIsReady(orders);
-    get.reWriteOrders(orders);
+    checkIfOrderIsReady(orders);    /// goes through the orders and checks if they are ready
+    get.reWriteOrders(orders);      /// then it gets sent down to the repo to be re written
 }
 
 vector <Order> PizzaService::getReadyOrdersforASpecificLocation(string location) {
-    vector <Order> allOrders = getOrderList();
+    vector <Order> allOrders = getOrderList();  /// gets all orders
     vector <Order> readyOrders;
 
-    for(unsigned int i = 0; i < allOrders.size(); i++) {
-        if(!location.compare(allOrders[i].getLocation()) && allOrders[i].getProgress() == 'r') {
-            readyOrders.push_back(allOrders[i]);
+    for(unsigned int i = 0; i < allOrders.size(); i++) {    /// goes through all the orders
+        if(!location.compare(allOrders[i].getLocation()) && allOrders[i].getProgress() == 'r') {    /// checks if they are the right location and if they are ready
+            readyOrders.push_back(allOrders[i]);    /// if they meet the requirements then they get added
         }
     }
-    return readyOrders;
+    return readyOrders; /// returns the filtered vector
 }
 
 vector <Order> PizzaService::getAllOrdersforASpecificLocation(string location) {
-    vector <Order> allOrders = getOrderList();
+    vector <Order> allOrders = getOrderList();  /// gets all orders
     vector <Order> AllOrdersAtLocation;
 
-    for(unsigned int i = 0; i < allOrders.size(); i++) {
-        if(!location.compare(allOrders[i].getLocation())) {
-            AllOrdersAtLocation.push_back(allOrders[i]);
+    for(unsigned int i = 0; i < allOrders.size(); i++) {    /// goes through all orders
+        if(!location.compare(allOrders[i].getLocation())) { /// and checks if they have the right location
+            AllOrdersAtLocation.push_back(allOrders[i]);    /// if so they get added
         }
     }
-    return AllOrdersAtLocation;
+    return AllOrdersAtLocation; /// returns filtered vector
 }
 
 void PizzaService::checkIfOrderIsReady(vector <Order>& allOrders) {
-    vector <Pizza> tempPizza;
-    int counter = 0;
-    for(unsigned int i = 0; i < allOrders.size(); i++) {
-        counter = 0;
-        tempPizza = allOrders[i].getPizzas();
-        for(unsigned int j = 0; j < tempPizza.size(); j++) {
-            if(tempPizza[j].getStatus() != 'r') {
+    vector <Pizza> tempPizza;   /// temp pizza vector
+    int counter = 0;    /// create a counter
+    for(unsigned int i = 0; i < allOrders.size(); i++) {    /// goes through all the vector
+        counter = 0;    /// nulls counter
+        tempPizza = allOrders[i].getPizzas();   /// puts all the pizzas of the order in the temp vector
+        for(unsigned int j = 0; j < tempPizza.size(); j++) {    /// goes through all the pizzas
+            if(tempPizza[j].getStatus() != 'r') {   /// if they are not ready then it gets marked
                 counter++;
             }
         }
-        if(counter == 0) {
-            allOrders[i].setProgress('r');
+        if(counter == 0) {  /// if there was nothing marked with a specific order that means that everything is ready
+            allOrders[i].setProgress('r');  /// and the order gets marked as ready
         }
     }
 }
 
-vector <Pizza> PizzaService::getPizzaSpecials() {
-    vector <Pizza> pizzaSpecials;
-    vector <string> pizzaInfo;
-    vector <Toppings> pizzaToppings;
+vector <Pizza> PizzaService::getPizzaSpecials() {   /// returns the pizza specials
+    vector <Pizza> pizzaSpecials;   /// create a pizza vector
+    vector <string> pizzaInfo;  /// create a for the pizza info
+    vector <Toppings> pizzaToppings;    /// vector for the pizza topping
     PizzaRepo get;
-    string delimiter = "^";
+    string delimiter = "^"; /// set delimiter
     string name = "";
     unsigned int place = 0;
     unsigned int counter = 0;
     int counter2 = 0;
     Toppings tempTop;
-    vector <string> info = get.readPizzaSpecials();
-    while(counter < info.size()) {
+    vector <string> info = get.readPizzaSpecials(); /// put all the info that was sent from repo into this vector
+    while(counter < info.size()) {  /// goes through the entire vector
         counter2 = counter;
-        if(counter % 2 == 0) {
-            for(unsigned int i = 0; i < info[counter2].length(); i++) {
-                place = info[counter2].find(delimiter);
-                name = info[counter2].substr(0, place);
-                if(name.compare("")) {
-                    pizzaInfo.push_back(name);
+        if(counter % 2 == 0) {  /// we check if its even because we know that the pizza info is written in every other line
+            for(unsigned int i = 0; i < info[counter2].length(); i++) { /// goes through the entire string
+                place = info[counter2].find(delimiter); /// checks for delimiter
+                name = info[counter2].substr(0, place); /// puts substring in name
+                if(name.compare("")) {  /// if name is empty then it doesnt get added
+                    pizzaInfo.push_back(name);  /// adds name to the pizza info
                 }
-                info[counter2].erase(0, place + delimiter.length());
+                info[counter2].erase(0, place + delimiter.length());    /// erases the stuff that we dont need any more
             }
         }
-        else {
-            for(unsigned int i = 0; i < info[counter2].length(); i++) {
-                place = info[counter2].find(delimiter);
-                name = info[counter2].substr(0, place);
-                if(name.compare("")) {
-                    tempTop.setName(name);
-                    pizzaToppings.push_back(tempTop);
+        else {  /// because we know that in the line below pizza info the toppings are written
+            for(unsigned int i = 0; i < info[counter2].length(); i++) {   /// goes through the entire string
+                place = info[counter2].find(delimiter); /// checks for delimiter
+                name = info[counter2].substr(0, place); /// puts the substring in name
+                if(name.compare("")) {  /// if name is empty then it doesnt get added
+                    tempTop.setName(name);  /// puts name into temp topping variable
+                    pizzaToppings.push_back(tempTop);   /// then the topping variable gets added to the vector
                 }
-                info[counter2].erase(0, place + delimiter.length());
+                info[counter2].erase(0, place + delimiter.length());    /// erases the stuff that we dont need any more
             }
-            if(pizzaInfo[0].compare("No pizzas")) {
-            pizzaSpecials.push_back(makePizzaFromVector(pizzaInfo, pizzaToppings));
-            }
-            pizzaInfo.clear();
-            pizzaToppings.clear();
+            pizzaSpecials.push_back(makePizzaFromVector(pizzaInfo, pizzaToppings)); /// gets made into a pizza variable that gets added to the vector
+            pizzaInfo.clear();  /// clears vector
+            pizzaToppings.clear();  /// clears vector
         }
-        counter++;
+        counter++;  /// adds one to the counter
     }
 
-    return pizzaSpecials;
+    return pizzaSpecials;   /// returns the vector with all the pizzas
 }
 
-void PizzaService::addPizzaSpecialToList(Pizza pizza) {
+void PizzaService::addPizzaSpecialToList(Pizza pizza) { /// gets pizza form ui
     PizzaRepo get;
-    get.addPizzaSpecial(pizza);
+    get.addPizzaSpecial(pizza); /// to be sent down to repo
 }
 
-void reWritePizzaService(vector <Pizza> pizzas) {
+void reWritePizzaService(vector <Pizza> pizzas) {   /// gets vector
     PizzaRepo get;
-    get.reWritePizzaSpecial(pizzas);
+    get.reWritePizzaSpecial(pizzas);    /// to be sent down to repo so the file can be rewritten
 }

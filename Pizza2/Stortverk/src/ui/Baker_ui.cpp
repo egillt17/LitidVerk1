@@ -95,8 +95,8 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                 stringstream sin(stranswer);
                 sin >> number;
                 if(number == 1 ) {
-                    changed = true;
-                    changeStatus(temp);
+                    changed = true;                 ///If the user chooses to change an order then and only then is the status changed on the pizza, so the program doesnt
+                    changeStatus(temp);             ///Call the function for no reason
                     orders[i].setPizzas(temp);
                 }
                 else {
@@ -136,7 +136,7 @@ void Baker_ui::changeStatus(vector <Pizza>& pizzas) {
         cout << "| 'Any Key' for next pizza " << endl;
         cout << "| Input : ";
         cin >> stranswer;
-        stringstream sin(stranswer);
+        stringstream sin(stranswer);              ///Changing the string stranswer to an int number to compare it with integers
         sin >> number;
         if(number == 1 ) {
             pizzas[i].setStatus('i');

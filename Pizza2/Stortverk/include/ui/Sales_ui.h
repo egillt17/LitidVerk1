@@ -19,6 +19,7 @@ class Sales_ui
         void viewOrderTotal(Order takeOrder);
         ///Function that displays the order, with everything there is to know about that order
         void setOrderSettings(Order& order);
+        ///Function that is used to set the settings of an order, such as location, picked or sent, or to set the paid status. Takes in an order
 
     private:
 };

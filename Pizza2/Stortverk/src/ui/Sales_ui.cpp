@@ -12,10 +12,11 @@ void Sales_ui::salesMainUI()
     Toppings extras;
     int pizzaPrice = 0;
     int extrasPrice = 0;
+    int orderPrice = 0;
 
     while (true)
     {
-        int orderPrice = pizzaPrice + extrasPrice;
+        orderPrice = pizzaPrice + extrasPrice;
         takeOrder.setPrice(orderPrice);
         system("CLS");
         cout << "                Sales Main Menu                " << endl;
@@ -24,17 +25,19 @@ void Sales_ui::salesMainUI()
         cout << "| '1' to set name on order" << endl;
         cout << "| '2' to add pizza to the order" << endl;
         cout << "| '3' to add extras to the order" << endl;
-        cout << "| '4' to view total of an order" << endl;
-        cout << "| '5' to set order settings" << endl;
+        cout << "| '4' to set order settings" << endl;
+        cout << "| '5' to Add comments" << endl;
         cout << "| '6' to Commit Order" << endl;
-        cout << "| '7' to Add comments" << endl;
-        cout << "| '8' to Quit" << endl;
-
+        cout << "| '7' to Quit" << endl;
+        cout << "|-----------------------------------------------" << endl;
+        cout << "|" << endl;
+        cout << "|           Current Order: " << endl;
+        viewOrderTotal(takeOrder);
+        cout << "|" << endl;
+        cout << "| Input: ";
         cin >> answer;
-        cout << endl;
-
+        
         if (answer == '1') {                                        ///Pretty straightforward if / else commands here
-            system("CLS");
             cout << "| Please enter a name for the order" << endl;
             cout << "| Name: ";
             cin.ignore();
@@ -42,7 +45,7 @@ void Sales_ui::salesMainUI()
             takeOrder.setPerson(input);
         }
         else if (answer == '2') {
-            system("CLS");
+            
             pizza = addPizza();
             takeOrder.addPizza(pizza);
             pizzaPrice = takeOrder.getPizzaTotalCost();
@@ -55,10 +58,6 @@ void Sales_ui::salesMainUI()
             }
         }
         else if (answer == '4') {
-            system("CLS");
-            viewOrderTotal(takeOrder);
-        }
-        else if (answer == '5') {
             setOrderSettings(takeOrder);
         }
         else if (answer == '6') {
@@ -78,14 +77,13 @@ void Sales_ui::salesMainUI()
                 }
             }
         }
-        else if (answer == '7') {
-            system("CLS");
+        else if (answer == '5') {
             cout << "| Comment: ";
             cin.ignore();
             getline(cin, input);            ///cin.ignore() is used to ba able to send a getline() to the setComments function in the Order class
             takeOrder.setComments(input);
         }
-        else if (answer == '8') {
+        else if (answer == '7') {
             system("CLS");
             break;
         }
@@ -129,10 +127,12 @@ Pizza Sales_ui::addPizza() {
         cout << "| '5' clear toppings" << endl;
         cout << "| '6' choose special pizza" << endl;
         cout << "| '7' Done" << endl;
-
+        cout << "| Input : ";
         cin >> input;
         if (input == '1') {
             topping = get.getToppingList(3);
+            cout << "                 -Size list-                    " << endl;
+            cout << "------------------------------------------------" << endl;
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << "| " << (i+1) << ". " << topping[i];
             }
@@ -150,8 +150,9 @@ Pizza Sales_ui::addPizza() {
             }
         }
         else if (input == '2') {
-            system("CLS");
             topping = get.getToppingList(4);
+            cout << "                -Sauce list-                    " << endl;
+            cout << "------------------------------------------------" << endl;
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << "| " << (i+1) << ". " << topping[i];
             }
@@ -169,8 +170,9 @@ Pizza Sales_ui::addPizza() {
             }
         }
         else if (input == '3') {
-            system("CLS");
             topping = get.getToppingList(2);
+            cout << "                -Crust list-                    " << endl;
+            cout << "------------------------------------------------" << endl;
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << "| " << (i+1) << ". " << topping[i];
             }
@@ -188,8 +190,9 @@ Pizza Sales_ui::addPizza() {
             }
         }
         else if (input == '4') {
-            system("CLS");
             topping = get.getToppingList(1);
+            cout << "                -Toppings list-                 " << endl;
+            cout << "------------------------------------------------" << endl;
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << "| " << (i+1) << ". " << topping[i];
             }
@@ -223,6 +226,9 @@ Pizza Sales_ui::addPizza() {
             sin >> number;
             if(number <= pizza_special.size() && number > 0){
                 pizza = pizza_special[number-1];
+                cout << "| Special pizza added" << endl;
+                cout << "| ";
+                system("pause");
                 break;
             }
             if(number > pizza_special.size() || number <= 0){
@@ -250,7 +256,6 @@ Toppings Sales_ui::addExtras() {
     string answer = "";
     vector <Toppings> topping;                                      ///Menu for the extras
     TopService get;
-    system("CLS");
     topping = get.getToppingList(5);
     cout << "                Extras menu                " << endl;
     cout << "------------------------------------------------" << endl;
@@ -286,84 +291,94 @@ Toppings Sales_ui::addExtras() {
 }
 
 void Sales_ui::viewOrderTotal(Order takeOrder) {
-    cout << "| " << takeOrder;                              ///Displays the order, with everything there is to know about that order
-    system("pause");
+    cout << "| " << takeOrder;      ///Displays the order, with everything there is to know about that order
 }
 
 void Sales_ui::setOrderSettings(Order& order) {
     PizzaService get;
     vector <string> locations;
     string answer = "";
+    char input;
     while(true) {
-        system("CLS");
-        cout << "                Order Settings menu                " << endl;
-        cout << "------------------------------------------------" << endl;
-        cout << "| What would you like to do? " << endl;
-        cout << "| '1' set location" << endl;
-        cout << "| '2' set picked up or sent" << endl;
-        cout << "| '3' set paid status" << endl;
-        cout << "| '4' Done" << endl;
-        char input;
-        cout << "| pick a number: ";
+        cout << "                       Order Settings menu                " << endl;
+        cout << "----------------------------------------------------------" << endl;
+        cout << "|      What would you like to do? " << endl;
+        cout << "|      '1' set location" << endl;
+        cout << "|      '2' set picked up or sent" << endl;
+        cout << "|      '3' set paid status" << endl;
+        cout << "|      pick a number: ";
         cin >> input;
 
         if(input == '1') {
             locations = get.getLocation();
             for(unsigned int i = 0; i < locations.size(); i++) {
-            cout << "| " << (i+1) << ". " << locations[i] << endl;
+            cout << "|          " << (i+1) << ". " << locations[i] << endl;
             }
-            cout << "| Pick an Location: ";
+            cout << "|          Pick an Location: ";
             cin >> answer;
             stringstream sin(answer);
             unsigned int number = 0;
             sin >> number;
             if(number > 0 && number <= locations.size()){
                 order.setLocationForOrder(locations[number-1]);
+                break;
             }
             else {
-                cout << "| no can do!" << endl;
+                cout << "| Invalid Input" << endl;
+                cout << "| ";
                 system("pause");
+                break;
             }
         }
         else if(input == '2') {
-            cout << "| '1' for picked up" << endl;
-            cout << "| '2' for sent" << endl;
-            cout << "| pick a number: ";
+            cout << "|          '1' for picked up" << endl;
+            cout << "|          '2' for sent" << endl;
+            cout << "|          pick a number: ";
             cin >> answer;
             stringstream sin(answer);
             unsigned int number = 0;
             sin >> number;
             if(number == 1) {
                 order.setPickedOrSent('p');
+                break;
             }
             else if(number == 2) {
                 order.setPickedOrSent('d');
+                break;
             }
             else {
-                cout << "| Invalid input!" << endl;
+                cout << "| Invalid input" << endl;
                 system("pause");
+                break;
             }
         }
         else if(input == '3') {
-            cout << "| '1' for paid" << endl;
-            cout << "| '2' for not paid" << endl;
-            cout << "| pick a number: ";
+            cout << "|          '1' for paid" << endl;
+            cout << "|          '2' for not paid" << endl;
+            cout << "|          pick a number: ";
             cin >> answer;
             stringstream sin(answer);
             unsigned int number = 0;
             sin >> number;
             if(number == 1) {
                 order.setPaidFor('p');
+                break;
             }
             else if(number == 2) {
                 order.setPaidFor('n');
+                break;
             }
             else {
                 cout << "| Invalid input!" << endl;
+                cout << "| ";
                 system("pause");
+                break;
             }
         }
-        else if(input == '4') {
+        else {
+            cout << "| Invalid Input " << endl;
+            cout << "| ";
+            system("pause");
             break;
         }
     }

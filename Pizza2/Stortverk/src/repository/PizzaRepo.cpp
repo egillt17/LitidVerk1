@@ -131,3 +131,17 @@ void PizzaRepo::reWritePizzaSpecial(vector <Pizza> pizzas) {
     fout.close();   /// file closes
 }
 
+void PizzaRepo::addDeliveredOrdersToList(vector <Order> orders) {
+    ofstream fout;
+    fout.open("Old_orders.txt", ios::app);  /// opens order file
+    if(fout.is_open()) {    /// checks if its open
+        for(unsigned int i = 0; i < orders.size(); i++) {   /// goes through the vector
+            fout << orders[i];  /// adds the order at the end of the file
+        }
+    }
+    else {
+
+    }
+    fout.close();   /// close file
+}
+

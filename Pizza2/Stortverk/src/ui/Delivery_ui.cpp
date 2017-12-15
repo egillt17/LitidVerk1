@@ -11,7 +11,7 @@ void Delivery_ui::deliveryMainUI() {        ///Pretty basic if/else commands in 
         string location;
         PizzaService get;
 
-        cout << "                Bakers Main Menu                " << endl;
+        cout << "           Delivery Persons Main Menu           " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What is you location? " << endl;
 
@@ -133,10 +133,27 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
                     else if (answer == '2')
                     {
                         system("CLS");
-                        cout << "| Order marked delivered" << endl;
-                        orders[number-1].setDelivered('y');
-                        get.reWriteOrdersService(orders, location);
-                        system("Pause");
+                        if (orders[number-1].getPaidFor() == 'p' && orders[number-1].getProgress() == 'r') {
+                            cout << "| Order marked delivered" << endl;
+                            orders[number-1].setDelivered('y');
+                            get.reWriteOrdersService(orders, location);
+                            system("Pause");
+                        }
+                        else if (orders[number-1].getPaidFor() == 'p' && orders[number-1].getProgress() != 'r') {
+                            cout << "Order has to be ready before it is delivered" << endl;
+                            system("pause");
+                            locationMenu(location);
+                        }
+                        else if (orders[number-1].getPaidFor() != 'p' && orders[number-1].getProgress() == 'r') {
+                            cout << "Order has to be paid for before it is delivered" << endl;
+                            system("pause");
+                            locationMenu(location);
+                        }
+                        else {
+                            cout << "Order has to be ready and paid for before it is delivered" << endl;
+                            system("pause");
+                            locationMenu(location);
+                        }
                     }
                     else if (answer == '3')
                     {
@@ -187,21 +204,75 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
 
                         cin >> answer;
                         cout << endl;
+                        string input = "";
+                        int number2 = 0;
+                        bool paying = false;
 
                         if (answer == '1')                  ///Pretty straightforward, here we are changing the Progress variable in the Order class
                         {
-                            cout << "| Order marked paid for" << endl;
-                            orders[number-1].setPaidFor('p');
-                            get.reWriteOrdersService(orders, location);
-                            system("Pause");
+                        while(paying == false) {
+                            system("CLS");
+                            cout << "| Cost of order: " << orders[number-1].getPrice() << endl;
+                            cout << "|'1' Cash" << endl;
+                            cout << "|'2' Credit" << endl;
+                            cin >> input;
+                            stringstream sin2(input);
+                            sin2 >> number2;
+                            if(number2 == 1) {
+                                while(paying == false) {
+                                    cout << "Input amount: ";
+                                    cin >> input;
+                                    stringstream sin2(input);
+                                    sin2 >> number2;
+                                    if(number2 >= orders[number-1].getPrice()){
+                                        cout << "change: " << number2 - orders[number-1].getPrice() << endl;
+                                        system("pause");
+                                        paying = true;
+                                    }
+                                    else {
+                                        cout << "Not enough!" << endl;
+                                    }
+                                }
+                            }
+                            else if(number2 == 2) {
+                                paying = true;
+                            }
+                            else {
+                                cout << "Invalid input!" << endl;
+                                system("pause");
+                            }
                         }
+                        system("CLS");
+                        cout << "| Order marked paid for" << endl;
+                        orders[number-1].setPaidFor('p');
+                        get.reWriteOrdersService(orders, location);
+                        system("Pause");
+                    }
                         else if (answer == '2')
                         {
+                        system("CLS");
+                        if (orders[number-1].getPaidFor() == 'p' && orders[number-1].getProgress() == 'r') {
                             cout << "| Order marked delivered" << endl;
                             orders[number-1].setDelivered('y');
                             get.reWriteOrdersService(orders, location);
                             system("Pause");
                         }
+                        else if (orders[number-1].getPaidFor() == 'p' && orders[number-1].getProgress() != 'r') {
+                            cout << "Order has to be ready before it is delivered" << endl;
+                            system("pause");
+                            locationMenu(location);
+                        }
+                        else if (orders[number-1].getPaidFor() != 'p' && orders[number-1].getProgress() == 'r') {
+                            cout << "Order has to be paid for before it is delivered" << endl;
+                            system("pause");
+                            locationMenu(location);
+                        }
+                        else {
+                            cout << "Order has to be ready and paid for before it is delivered" << endl;
+                            system("pause");
+                            locationMenu(location);
+                        }
+                    }
                         else if (answer == '3')
                         {
                             system("CLS");

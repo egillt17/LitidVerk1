@@ -95,7 +95,7 @@ void Sales_ui::salesMainUI()
 }
 
 Pizza Sales_ui::addPizza() {
-    
+
     string answer = "";
     char input = '0';
     unsigned int number = 0;
@@ -103,7 +103,7 @@ Pizza Sales_ui::addPizza() {
     int saucePrice = 0;
     int crustPrice = 0;
     int toppingPrice = 0;
-    
+
     PizzaService getSpecial;
     vector<Pizza> pizza_special = getSpecial.getPizzaSpecials();
     TopService get;
@@ -316,7 +316,7 @@ void Sales_ui::setOrderSettings(Order& order) {
             }
             cout << "|          Pick an Location: ";
             cin >> answer;
-            stringstream sin(answer);
+            stringstream sin(answer);                   ///Changing string to int, to compare it with the size of the vector locations
             unsigned int number = 0;
             sin >> number;
             if(number > 0 && number <= locations.size()){
@@ -335,7 +335,7 @@ void Sales_ui::setOrderSettings(Order& order) {
             cout << "|          '2' for sent" << endl;
             cout << "|          pick a number: ";
             cin >> answer;
-            stringstream sin(answer);
+            stringstream sin(answer);                   ///Same stringstream usage as before, only now to compare the number to integers
             unsigned int number = 0;
             sin >> number;
             if(number == 1) {

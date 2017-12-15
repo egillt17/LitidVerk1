@@ -9,6 +9,7 @@ class Order
     public:
         Order();
         void clearOrder(Order& order);
+        /// clears order when it gets commited
         vector<Pizza> getPizzas();
         ///Get function that return the variable pizzas
         vector<Toppings> getExtras();
@@ -36,6 +37,7 @@ class Order
         void addPizza(Pizza pizza);
         ///set function that adds the pizza that was sent to the function to the vector pizzas
         void setExtras(vector <Toppings> extras);
+        /// takes a vector of extras and sets it as the extras in the order
         void setPizzas(vector <Pizza> pizzas);
         void addExtras(Toppings extra);
         ///set function that adds the extra that was sent to the function to the vector extras

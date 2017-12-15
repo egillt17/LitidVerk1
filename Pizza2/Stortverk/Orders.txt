@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ^Njalli^Gardabaer^r^p^n^2950^n^Happy birthday^
 ^Red wine^100^
 ^1400^Medium^Pizza sauce^r^Regular crust^
@@ -6,13 +7,21 @@
 ^pepperoni^onion^mushrooms^paprika^
 :
 ^bjarni olafsson^spong^n^p^n^6240^p^No added comments^
+=======
+<<<<<<< HEAD
+^bjarni olafsson^arbaer^r^p^n^6240^p^No added comments^
+=======
+^bjarni olafsson^arbaer^r^n^y^6240^p^No added comments^
+>>>>>>> b06701d2caa352e3faa9ac05b4f23aac95756e82
+>>>>>>> fc35e139e3b9590a0953c37af77da86c7074ab7b
 ^Cola Soda^200^BBQ wings^1020^
-^1860^Large^BBQ sauce^i^Italian crust^
+^1860^Large^BBQ sauce^r^Italian crust^
 ^pepperoni^bacon^onions^
-^2030^Large^Sriracha^i^Thin crust^
+^2030^Large^Sriracha^r^Thin crust^
 ^pepperoni^bacon^
-^1130^Small^A lot of sauce^n^Regular crust^
+^1130^Small^A lot of sauce^r^Regular crust^
 ^mushrooms^
+<<<<<<< HEAD
 :
 ^kari gudjonsson^spong^n^u^n^1400^n^No added comments^
 ^No extras^0^
@@ -23,6 +32,35 @@
 ^No extras^0^
 ^1630^Large^Pizza sauce^r^Italian crust^
 ^pepperoni^ham^
+=======
+:
+^Egill thorisson^Gardabaer^r^p^n^2255^p^No added comments^
+^Cheesy bites^810^
+^1445^Medium^Salsa sauce^r^Italian crust^
+^pepperoni^mushrooms^
+>>>>>>> fc35e139e3b9590a0953c37af77da86c7074ab7b
+:
+<<<<<<< HEAD
+^jonas halldorsson^Gardabaer^n^u^n^1550^n^No added comments^
+^No extras^0^
+^1550^Large^Pizza sauce^n^Italian crust^
+^No toppings^
+:
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> b06701d2caa352e3faa9ac05b4f23aac95756e82
+^baldvin^Gardabaer^r^u^n^710^p^No added comments^
+^Breadsticks (Big)^710^
+^No pizzas^
+^No pizzas^
+<<<<<<< HEAD
+=======
+:
+^kari gudjonsson^spong^n^u^n^1400^n^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^n^Regular crust^
+^No toppings^
 :
 ^elvis the king ^spong^n^d^n^7210^p^No added comments^
 ^Stuffed bacon^1020^Stuffed pepperoni^1020^
@@ -33,8 +71,10 @@
 ^1570^Large^Ketchup^r^Regular crust^
 ^mushrooms^bacon^onions^
 :
-^jonas halldorsson^spong^n^u^n^1550^n^No added comments^
+^jonas halldorsson^spong^r^u^y^1550^p^No added comments^
 ^No extras^0^
-^1550^Large^Pizza sauce^n^Italian crust^
+^1550^Large^Pizza sauce^r^Italian crust^
 ^No toppings^
+>>>>>>> b06701d2caa352e3faa9ac05b4f23aac95756e82
 :
+>>>>>>> fc35e139e3b9590a0953c37af77da86c7074ab7b

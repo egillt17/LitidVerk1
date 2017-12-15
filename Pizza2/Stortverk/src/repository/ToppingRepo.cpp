@@ -8,95 +8,95 @@ vector<Toppings> ToppingRepo::ReadToppings(int pick) {
     string name = "";
     string price = "";
 
-    if(pick == 1) {
-        fin.open("Toppings.txt");
+    if(pick == 1) {             /// depending on what the pick was it will open different files
+        fin.open("Toppings.txt");   /// opens the topping file
     }
     else if(pick == 2) {
-        fin.open("Crust.txt");
+        fin.open("Crust.txt");  /// opens the crust file
     }
     else if(pick == 3) {
-        fin.open("Sizes.txt");
+        fin.open("Sizes.txt");  /// opens the size file
     }
     else if(pick == 4) {
-        fin.open("Sauce.txt");
+        fin.open("Sauce.txt");  /// opens the sauce file
     }
     else if(pick == 5) {
-        fin.open("Extra.txt");
+        fin.open("Extra.txt");  /// opens the extras file
     }
 
-    if(fin.is_open()) {
-        while(!fin.eof()) {
-            getline(fin, name, '.');
-            if(name == ""){
-                getline(fin, name, '.');
+    if(fin.is_open()) { /// checks if the file was successfully opened
+        while(!fin.eof()) { /// goes through the entire file
+            getline(fin, name, '.');    /// gets line and checks for delimiter
+            if(name == ""){ /// checks if the line is empty
+                getline(fin, name, '.');    /// if it is then it gets it again
             }
-            getline(fin, price, '.');
-            topping.push_back(get.make_topping(name, price));
+            getline(fin, price, '.');   /// gets price because it is alway written after the name
+            topping.push_back(get.make_topping(name, price));   /// turns it into a topping variable and adds it to the vector
         }
     }
     else {
 
     }
 
-    fin.close();
+    fin.close();    /// closes file
     return topping;
 }
 
 void ToppingRepo::addToppingToList(Toppings topping, int pick) {
     ofstream fout;
 
-    if(pick == 1) {
-        fout.open("Toppings.txt", ios::app);
+    if(pick == 1) {             /// depending on what the pick was it will open different files
+        fout.open("Toppings.txt", ios::app);    /// opens topping file
     }
     else if(pick == 2) {
-        fout.open("Crust.txt", ios::app);
+        fout.open("Crust.txt", ios::app);   /// opens crust file
     }
     else if(pick == 3) {
-        fout.open("Sizes.txt", ios::app);
+        fout.open("Sizes.txt", ios::app);   /// opens size file
     }
     else if(pick == 4) {
-        fout.open("Sauce.txt", ios::app);
+        fout.open("Sauce.txt", ios::app);   /// opens sauce file
     }
     else if(pick == 5) {
-        fout.open("Extra.txt", ios::app);
+        fout.open("Extra.txt", ios::app);   /// opens extras file
     }
 
-    if(fout.is_open()) {
-        fout << topping;
+    if(fout.is_open()) {    /// checks if file was successfully opened
+        fout << topping;    /// if it was then it adds the topping variable to the list
     }
     else {
 
     }
-    fout.close();
+    fout.close();   /// closes the file
 }
 
 void ToppingRepo::reWriteToppingList(vector <Toppings> topping, int pick) {
     ofstream fout;
 
-    if(pick == 1) {
-        fout.open("Toppings.txt");
+    if(pick == 1) {      /// depending on what the pick was it will open different files
+        fout.open("Toppings.txt");  /// opens topping file
     }
     else if(pick == 2) {
-        fout.open("Crust.txt");
+        fout.open("Crust.txt"); /// opens crust file
     }
     else if(pick == 3) {
-        fout.open("Sizes.txt");
+        fout.open("Sizes.txt"); /// opens size file
     }
     else if(pick == 4) {
-        fout.open("Sauce.txt");
+        fout.open("Sauce.txt"); /// opens sauce file
     }
     else if(pick == 5) {
-        fout.open("Extra.txt");
+        fout.open("Extra.txt"); /// opens extras file
     }
 
-    if(fout.is_open()) {
-        for(unsigned int i = 0; i < topping.size(); i++) {
-            fout << topping[i];
+    if(fout.is_open()) {    /// checks if the file was successfully opened
+        for(unsigned int i = 0; i < topping.size(); i++) {  /// if it was then it goes through the topping vector
+            fout << topping[i]; /// and rewrites it in the file
         }
     }
     else {
 
     }
-    fout.close();
+    fout.close();   /// closes the file
 }
 

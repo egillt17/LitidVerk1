@@ -2,6 +2,39 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<File name="src\ui\Manager_ui.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="33494" topLine="68" />
+=======
+<<<<<<< HEAD
+	<File name="include\services\PizzaService.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+=======
+<<<<<<< HEAD
+	<File name="src\services\PizzaService.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="16512" topLine="283" />
+=======
+<<<<<<< HEAD
+	<File name="src\models\Pizza.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+>>>>>>> a7aabc8dd5c5eeb7a3e9b9e82ca46cac21d22228
+		<Cursor>
+			<Cursor1 position="1761" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="src\repository\PizzaRepo.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4857" topLine="142" />
+		</Cursor>
+	</File>
+	<File name="include\repository\PizzaRepo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1081" topLine="5" />
+		</Cursor>
+	</File>
+>>>>>>> f4d0f4439bfe241098073e6c03f1503f347c7bc2
 	<File name="src\services\PizzaService.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="18823" topLine="325" />
@@ -19,12 +52,34 @@
 	</File>
 	<File name="src\repository\PizzaRepo.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
+<<<<<<< HEAD
 			<Cursor1 position="0" topLine="142" />
 		</Cursor>
 	</File>
 	<File name="include\services\PizzaService.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="1388" topLine="21" />
+=======
+			<Cursor1 position="16577" topLine="12" />
+>>>>>>> 2bb7eabc76319b39881b09f38acc216874b2a544
+		</Cursor>
+		<Folding>
+			<Collapse line="60" />
+			<Collapse line="307" />
+			<Collapse line="423" />
+			<Collapse line="538" />
+			<Collapse line="650" />
+		</Folding>
+	</File>
+	<File name="include\ui\Manager_ui.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+<<<<<<< HEAD
+			<Cursor1 position="908" topLine="5" />
+=======
+			<Cursor1 position="14860" topLine="75" />
+>>>>>>> a7aabc8dd5c5eeb7a3e9b9e82ca46cac21d22228
+>>>>>>> 2bb7eabc76319b39881b09f38acc216874b2a544
+>>>>>>> f4d0f4439bfe241098073e6c03f1503f347c7bc2
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -16,7 +16,7 @@ void Main_ui::mainUI() {
         if (input == '1') {
             system("CLS");
             Manager_ui managerUI;
-            managerUI.managerMainUI();
+            managerUI.managerMainUI();          ///Simple if / else commands here, the input decides what UI screen to get up depending on the job of the user
         }
         else if (input == '2') {
             system("CLS");

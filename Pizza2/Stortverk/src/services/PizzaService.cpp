@@ -328,3 +328,28 @@ vector <Order> PizzaService::checkIfOrderIsDelivered(vector <Order> allOrders) {
 
     return unDeliveredOrders;
 }
+
+vector <Order> PizzaService::getOldOrders() {
+    PizzaRepo get;
+    vector <Order> oldOrders = get.readOldOrders();
+    return oldOrders;
+}
+
+int PizzaService::TotalSales() {
+    vector <Order> oldOrders = getOldOrders();
+    int salesTotal = 0;
+    for(unsigned int i = 0; i < oldOrders.size(); i ++) {
+        salesTotal += oldOrders[i].getPrice();
+    }
+
+    return salesTotal;
+}
+
+int PizzaService::AverageOrderPrice() {
+    vector <Order> oldOrders = getOldOrders();
+    int salesTotal = TotalSales();
+    int averagePriceOfOrder = salesTotal / oldOrders.size();
+
+    return averagePriceOfOrder;
+}
+

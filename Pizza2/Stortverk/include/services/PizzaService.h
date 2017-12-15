@@ -38,6 +38,9 @@ class PizzaService
         /// adds a pizza special to the list
         void reWritePizzaService(vector <Pizza> pizzas);
         /// sends pizza special list to repo to be re writen
+        vector <Order> getOldOrders();
+        int TotalSales();
+        int AverageOrderPrice();
 
 
     private:

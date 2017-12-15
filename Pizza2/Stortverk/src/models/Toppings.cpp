@@ -21,7 +21,7 @@ int Toppings::getPrice() {
 }
 
 ostream& operator << (ostream& out, const Toppings& topping) {
-    out << "Name: " << topping._name << " | " << "Price: " << topping._price << endl;   ///Ostream operator overload
+    out << "| Name: " << topping._name << " | " << "Price: " << topping._price << endl;   ///Ostream operator overload
     return out;
 }
 

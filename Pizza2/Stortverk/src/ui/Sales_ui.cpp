@@ -1,4 +1,6 @@
  #include "Sales_ui.h"
+ #include <string>
+
 
 void Sales_ui::salesMainUI()
 {
@@ -81,8 +83,7 @@ void Sales_ui::salesMainUI()
             cout << "| Comment: ";
             cin.ignore();
             getline(cin, input);            ///cin.ignore() is used to ba able to send a getline() to the setComments function in the Order class
-            Order order;
-            order.setComments(input);
+            takeOrder.setComments(input);
         }
         else if (answer == '8') {
             system("CLS");
@@ -96,6 +97,7 @@ void Sales_ui::salesMainUI()
 }
 
 Pizza Sales_ui::addPizza() {
+    
     string answer = "";
     char input = '0';
     unsigned int number = 0;
@@ -103,7 +105,9 @@ Pizza Sales_ui::addPizza() {
     int saucePrice = 0;
     int crustPrice = 0;
     int toppingPrice = 0;
-
+    
+    PizzaService getSpecial;
+    vector<Pizza> pizza_special = getSpecial.getPizzaSpecials();
     TopService get;
     Pizza pizza;
     vector <Toppings> topping;
@@ -123,7 +127,8 @@ Pizza Sales_ui::addPizza() {
         cout << "| '3' set crust" << endl;
         cout << "| '4' add topping" << endl;
         cout << "| '5' clear toppings" << endl;
-        cout << "| '6' Done" << endl;
+        cout << "| '6' choose special pizza" << endl;
+        cout << "| '7' Done" << endl;
 
         cin >> input;
         if (input == '1') {
@@ -207,6 +212,27 @@ Pizza Sales_ui::addPizza() {
             toppingPrice = pizza.getToppingPrice();
         }
         else if (input == '6') {
+            string inputNum = "";
+            unsigned int number;
+            for(unsigned int i = 0; i < pizza_special.size();i++) {
+                cout << "|      Pizza number: " << (i+1) << endl;
+                cout << pizza_special[i];
+            }
+            cout << "| Choose Pizza number: ";
+            cin >> inputNum;
+            stringstream sin(inputNum);
+            sin >> number;
+            if(number <= pizza_special.size() && number > 0){
+                pizza = pizza_special[number-1];
+                break;
+            }
+            if(number > pizza_special.size() || number <= 0){
+                cout << "| Invalid Input" << endl;
+                cout << "| ";
+                system("PAUSE");
+            }
+        }
+        else if (input == '7') {
             if(!pizza.getSize().compare("Not picked")) {
                 cout << "| You have to pick a size to add the pizza" << endl;     ///The program only allows the user to create the pizza if the size of the pizza is chosen
                 system("pause");

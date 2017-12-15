@@ -2,6 +2,7 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
 	<File name="src\services\PizzaService.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="16867" topLine="281" />
@@ -35,6 +36,11 @@
 	<File name="src\repository\PizzaRepo.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="4361" topLine="103" />
+=======
+	<File name="src\services\PizzaService.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="283" />
+>>>>>>> ecfb2ae9ecc7a4992104e31329c5153dca2dc107
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

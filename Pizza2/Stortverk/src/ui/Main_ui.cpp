@@ -11,6 +11,7 @@ void Main_ui::mainUI() {
         cout << "| What is your role? " << endl;
         cout << "| '1' for Manager," << endl << "| '2' for Sales Person, " << endl << "| '3' for Baker, " << endl
              << "| '4' for Delivery person, " << endl << "| '5' to Quit " << endl;
+        cout << "| Input: ";
         cin >> input;
 
         if (input == '1') {

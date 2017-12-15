@@ -11,7 +11,7 @@ void Manager_ui::managerMainUI(){
         cout << endl;
         cout << "               Manager Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
-        cout << "| '1' for Pizza specials management [NOT FINISHED]" << endl;
+        cout << "| '1' for Pizza specials management" << endl;
         cout << "| '2' for Toppings management" << endl;
         cout << "| '3' for Extra management" << endl;
         cout << "| '4' for Location management" << endl;
@@ -53,7 +53,6 @@ void Manager_ui::managerMainUI(){
     }
 }
 
-/// NOT FINISHED
 void Manager_ui::managePizzaUI() {
     char input = '\0';
     PizzaService pizza_specials;
@@ -101,11 +100,11 @@ void Manager_ui::managePizzaUI() {
             vector <Toppings> topping;
             topping = get.getToppingList(1);
             while(true){
+                system("cls");
                 if(!specialPrice) {
                     totalPrice = sizePrice + saucePrice + crustPrice + toppingPrice;
                 }
                 tmpPizza.setPrice(totalPrice);
-                system("cls");
                 char input = '\0';
                 cout << endl;
                 cout << "           -Input new Pizza to list-            " << endl;
@@ -140,6 +139,7 @@ void Manager_ui::managePizzaUI() {
                     }
                     else {
                         cout << "| Invalid Input" << endl;
+                        cout << "| ";
                         system("pause");
                     }
                 }
@@ -160,6 +160,7 @@ void Manager_ui::managePizzaUI() {
                     }
                     else {
                         cout << "| Invalid Input" << endl;
+                        cout << "| ";
                         system("pause");
                     }
                 }
@@ -180,6 +181,7 @@ void Manager_ui::managePizzaUI() {
                     }
                     else {
                         cout << "| Invalid Input" << endl;
+                        cout << "| ";
                         system("pause");
                     }
                 }
@@ -200,7 +202,8 @@ void Manager_ui::managePizzaUI() {
                     }
                     else {
                         cout << "| Invalid Input" << endl;
-                    system("pause");
+                        cout << "| ";
+                        system("pause");
                     }
                 }
                 else if (input == '5') {
@@ -217,44 +220,40 @@ void Manager_ui::managePizzaUI() {
                         specialPrice = true; 
                         totalPrice = newPrice;
                         cout << "| New price set successfully" << endl;
+                        cout << "| ";
                         system("pause");
                     }
                     catch (InvalidNumExceptions e) {
                         cout << e.getMessage() << endl;
+                        cout << "| ";
                         system("pause");
                     }
                 }
                 else if(input == '7'){
+                    if(!tmpPizza.getSize().compare("Not picked")) {
+                        cout << "| You have to pick a size to add the pizza" << endl;     
+                        system("pause");
+                        break;
+                    }
+                    else {
                     pizza_specials.addPizzaSpecialToList(tmpPizza);
+                    cout << "| Pizza successfully added to list" << endl;
+                    cout << "| ";
+                    system("pause");
                     break;
+                    }
                 }
                 else if(input == '8') {
-                    break;
+                    cout << "| ";
                     system("pause");
+                    break;
                 }
-                /*
-
-                cout << "Pick a Topping: ";
-                cin >> answer;
-                stringstream sin(answer);           
-                sin >> number;
-                if(number > 0 && number <= topping.size()){
-                    tmpPizza.addTopping(topping[number-1]);
-                    //toppingPrice = pizza.getToppingPrice();
-                }
-                tmpPizza.setCrust()
-                tmpPizza.setPrice()
-                tmpPizza.setSauce()
-                tmpPizza.setSize()
-                tmpPizza.addTopping()*/
-                
             }
-            
         }
         else if(input == '3') {
             vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();
             
-            //system("cls");
+            system("cls");
             string answer = "";
             unsigned int number = 0;
             cout << endl;
@@ -273,22 +272,27 @@ void Manager_ui::managePizzaUI() {
             cin >> answer;
                 
             stringstream sin(answer);                   
-            sin >> number;
-            cout << number << endl;                              
+            sin >> number;                             
             if(number > 0 && number <= tmpPizzas.size()) {
                     tmpPizzas.erase (tmpPizzas.begin()+(number-1));
                     pizza_specials.reWritePizzaService(tmpPizzas);
+                    cout << "| Pizza successfully removed" << endl;
+                    cout << "| ";
+                    system("pause");
             }
             else if (number == 0) {
                 cout << "| Nothing removed" << endl;
+                cout << "| ";
                 system("pause");
             }
             else {
                 cout << "| Invalid Input " << endl;
+                cout << "| ";
                 system("pause");
             }
         }
         else if(input == '4') {
+            cout << "| ";
             system("cls");
             break;            
         }
@@ -326,7 +330,7 @@ void Manager_ui::manageToppingUI() {
             cout << "| " << endl;
             topping = get.getToppingList(toppingsPick);    /// reads the topping list, (toppingsPick) is enumeration
             for(unsigned int i = 0; i < topping.size(); i++) {  /// sort through
-                cout << "| " << topping[i];     /// prints it to the screen
+                cout << topping[i];     /// prints it to the screen
             }
             cout << "| " << endl;
             cout << "| ";
@@ -374,7 +378,7 @@ void Manager_ui::manageToppingUI() {
                 cout << "| " << endl;
                 topping = get.getToppingList(toppingsPick); /// display the list of toppings, easier to write the topping to remove
                 for(unsigned int i = 0; i < topping.size(); i++) {
-                    cout << "| " << topping[i];
+                    cout << topping[i];
                 }
                 cout << "| " << endl;
                 cout << "| What topping would you like to remove? ";
@@ -670,7 +674,7 @@ void Manager_ui::manageSettingUI() {
             cout << "| " << endl;
             topping = get.getToppingList(pick); /// gets the list from the topping, (pick) is either crust, size or sauce
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << "| " << topping[i]; /// prints out the list to the screen
+                cout << topping[i]; /// prints out the list to the screen
             }
             cout << "| " << endl;
             cout << "| ";
@@ -725,7 +729,7 @@ void Manager_ui::manageSettingUI() {
                 cout << "|" <<  endl;
                 topping = get.getToppingList(pick);                 /// print list of toppings from picked list
                 for(unsigned int i = 0; i < topping.size(); i++) {
-                    cout << "| " << topping[i];     /// prints it out on the screen
+                    cout << topping[i];     /// prints it out on the screen
                 }
                 cout << "|" << endl;
                 cout << "| What item would you like to remove? ";

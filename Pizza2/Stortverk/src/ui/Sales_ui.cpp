@@ -132,7 +132,6 @@ Pizza Sales_ui::addPizza() {
 
         cin >> input;
         if (input == '1') {
-            system("CLS");
             topping = get.getToppingList(3);
             for(unsigned int i = 0; i < topping.size(); i++) {
                 cout << "| " << (i+1) << ". " << topping[i];

@@ -6,3 +6,6 @@
 ^pepperoni^bacon^pepper^
 ^1450^Medium^Pizza sauce^n^Regular crust^
 ^pepperoni^onion^mushrooms^paprika^
+^1240^Small^A lot of sauce^n^Regular crust^
+^pepperoni^ham^pineapple^onions^
+

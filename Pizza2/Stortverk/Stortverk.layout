@@ -2,4 +2,18 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	<File name="src\models\Toppings.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="643" topLine="0" />
+=======
+	<File name="src\services\PizzaService.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="283" />
+>>>>>>> ecfb2ae9ecc7a4992104e31329c5153dca2dc107
+		</Cursor>
+	</File>
+>>>>>>> 013e300e4dfe65a4abd7d2de484ac63c1cdc4467
 </CodeBlocks_layout_file>

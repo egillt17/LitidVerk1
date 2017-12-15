@@ -76,7 +76,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
             orders = get.getUnfinishedOrdersforASpecificLocation(location);
                                                                                             ///Getting all pending orders from the orders text file and
             for(unsigned int i = 0; i < orders.size(); i++) {                               ///Prints all orders from the chosen location
-                
+
                 cout << "------------------------------------------------" << endl;
                 cout << "|" << endl;
                 cout << "|" << "\t" << "Order number " << (i+1) << "." << endl;
@@ -100,7 +100,7 @@ void Baker_ui::locationMenu(string location) {              ///Takes in the loca
                     orders[i].setPizzas(temp);
                 }
                 else {
-                    
+
                 }
             }
             if(changed == true) {
@@ -145,10 +145,10 @@ void Baker_ui::changeStatus(vector <Pizza>& pizzas) {
             pizzas[i].setStatus('r');
         }
         else {
-            
+
         }
         cout << "|" << endl;
         cout << "|" << "\t" << "Next Pizza " << endl;
         cout << "|" << endl;
-    } 
+    }
 }

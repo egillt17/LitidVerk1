@@ -303,7 +303,7 @@ void PizzaService::addPizzaSpecialToList(Pizza pizza) { /// gets pizza form ui
     get.addPizzaSpecial(pizza); /// to be sent down to repo
 }
 
-void reWritePizzaService(vector <Pizza> pizzas) {   /// gets vector
+void PizzaService::reWritePizzaService(vector <Pizza> pizzas) {   /// gets vector
     PizzaRepo get;
     get.reWritePizzaSpecial(pizzas);    /// to be sent down to repo so the file can be rewritten
 }

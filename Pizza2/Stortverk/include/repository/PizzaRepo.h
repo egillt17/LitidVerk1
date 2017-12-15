@@ -28,7 +28,9 @@ class PizzaRepo
         void reWritePizzaSpecial(vector <Pizza> pizzas);
         /// rewrites pizza special file
         void addDeliveredOrdersToList(vector <Order> orders);
+        /// adds all orders that have been marked as delivered to the old orders list
         vector <Order> readOldOrders();
+        /// reads all the old orders and returns them as an order vector
 
     private:
 };

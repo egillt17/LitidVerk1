@@ -57,7 +57,7 @@ void Manager_ui::managerMainUI(){
 void Manager_ui::managePizzaUI() {
     char input = '\0';
     PizzaService pizza_specials;
-    Validate validate;
+    
     while(true){
         system("CLS");
         cout << "          -Manager - Pizza management-          " << endl;
@@ -84,10 +84,12 @@ void Manager_ui::managePizzaUI() {
             system("PAUSE");
         }
         else if(input == '2') {
+            Validate validate;
             system("cls");
             string answer = "";
-            int price = 0;
+            string price = "";
             unsigned int number;
+            unsigned int newPrice;
             int sizePrice = 0;
             int saucePrice = 0;
             int crustPrice = 0;
@@ -205,17 +207,22 @@ void Manager_ui::managePizzaUI() {
                     tmpPizza.clearTopping();                       
                     toppingPrice = tmpPizza.getToppingPrice();
                 }
-                                /// need try-trhow-catch on price
                 else if (input == '6') {
                     cout << "| Input special price: ";
                     cin >> price;
-                    totalPrice = price;
-                    //tmpPizza.setPrice(price);
-                    //try {
-                        //validate.validateNum(price);
-                        
-                    //}
-                    specialPrice = true; 
+                    try {
+                        validate.validateNum(price);
+                        stringstream sin(price);
+                        sin >> newPrice;
+                        specialPrice = true; 
+                        totalPrice = newPrice;
+                        cout << "| New price set successfully" << endl;
+                        system("pause");
+                    }
+                    catch (InvalidNumExceptions e) {
+                        cout << e.getMessage() << endl;
+                        system("pause");
+                    }
                 }
                 else if(input == '7'){
                     pizza_specials.addPizzaSpecialToList(tmpPizza);
@@ -246,7 +253,7 @@ void Manager_ui::managePizzaUI() {
         }
         else if(input == '3') {
             vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();
-            while(true){
+            
             //system("cls");
             string answer = "";
             unsigned int number = 0;
@@ -261,6 +268,7 @@ void Manager_ui::managePizzaUI() {
                 cout << "|-----------------------------------------------" << endl;
                 
             }
+            cout << "|'0' to exit" << endl;
             cout << "| Pick a pizza to remove: ";
             cin >> answer;
                 
@@ -269,9 +277,16 @@ void Manager_ui::managePizzaUI() {
             cout << number << endl;                              
             if(number > 0 && number <= tmpPizzas.size()) {
                     tmpPizzas.erase (tmpPizzas.begin()+(number-1));
-                    //pizza_specials.reWritePizzaService(tmpPizzas);
+                    pizza_specials.reWritePizzaService(tmpPizzas);
             }
-        }
+            else if (number == 0) {
+                cout << "| Nothing removed" << endl;
+                system("pause");
+            }
+            else {
+                cout << "| Invalid Input " << endl;
+                system("pause");
+            }
         }
         else if(input == '4') {
             system("cls");

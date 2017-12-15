@@ -16,9 +16,15 @@ void Sales_ui::salesMainUI()
 
     while (true)
     {
+        system("CLS");
+        vector <Pizza> orderPizzas = takeOrder.getPizzas();         ///checking if the order consists of 2 pizzas and 1 extra, af if so then the extra is free
+        vector <Toppings> orderExtras = takeOrder.getExtras();      ///Because of the special offer that is available
+        if (orderPizzas.size() == 2 && orderExtras.size() == 1) {
+            extrasPrice = 0;
+            cout << "Whammy! you ordered two pizzas and 1 extra which means the extra is free! " << endl;
+        }
         orderPrice = pizzaPrice + extrasPrice;
         takeOrder.setPrice(orderPrice);
-        system("CLS");
         cout << "                Sales Main Menu                " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| What would you like to do? " << endl;
@@ -28,7 +34,8 @@ void Sales_ui::salesMainUI()
         cout << "| '4' to set order settings" << endl;
         cout << "| '5' to Add comments" << endl;
         cout << "| '6' to Commit Order" << endl;
-        cout << "| '7' to Quit" << endl;
+        cout << "| '7' to Quit" << endl << "| " << endl;
+        cout << "| (order 2 pizzas and 1 extra to get the extra free!)" << endl;
         cout << "|-----------------------------------------------" << endl;
         cout << "|" << endl;
         cout << "|           Current Order: " << endl;

@@ -36,7 +36,7 @@ void Sales_ui::salesMainUI()
         cout << "|" << endl;
         cout << "| Input: ";
         cin >> answer;
-        
+
         if (answer == '1') {                                        ///Pretty straightforward if / else commands here
             cout << "| Please enter a name for the order" << endl;
             cout << "| Name: ";
@@ -45,7 +45,7 @@ void Sales_ui::salesMainUI()
             takeOrder.setPerson(input);
         }
         else if (answer == '2') {
-            
+
             pizza = addPizza();
             takeOrder.addPizza(pizza);
             pizzaPrice = takeOrder.getPizzaTotalCost();

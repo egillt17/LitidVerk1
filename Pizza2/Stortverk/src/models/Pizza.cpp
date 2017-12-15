@@ -87,7 +87,7 @@ ostream& operator << (ostream& out, Pizza& pizza) {
     out << "| Size: " << pizza._size << endl;
     out << "| Sauce: " << pizza._sauce << endl;
     out << "| Crust: " << pizza._crust << endl;
-    out << "| Status: "; 
+    out << "| Status: ";
     if(pizza._status == 'n'){
         out << "Not Ready" << endl;
     }

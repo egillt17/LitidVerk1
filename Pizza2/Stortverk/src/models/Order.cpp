@@ -153,11 +153,11 @@ void Order::setPaidFor(char paidFor) {
 ostream& operator << (ostream& out, Order& order) {             ///Ostream operator overload function filled with if / elses that depend on the private variables
 
     out << "Order: " << endl;
-    out << "  Name: " << order._person << endl;
-    out << "  Location: " << order._location << endl;
-    out << "  Comments: " << order._comments << endl;
-    out << "  Price: " << order._price << endl;
-    out << "  Order in progress?: ";
+    out << "| Name: " << order._person << endl;
+    out << "| Location: " << order._location << endl;
+    out << "| Comments: " << order._comments << endl;
+    out << "| Price: " << order._price << endl;
+    out << "| Order in progress?: ";
     if (order._Progress == 'n') {
         out << "No" << endl;
     }
@@ -170,7 +170,7 @@ ostream& operator << (ostream& out, Order& order) {             ///Ostream opera
     else {
         out << "Unknown" << endl;
     }
-    out << "  Order picked up or sent?: ";
+    out << "| Order picked up or sent?: ";
     if (order._pickedOrSent == 'p') {
         out << "Picked up" << endl;
     }
@@ -180,7 +180,7 @@ ostream& operator << (ostream& out, Order& order) {             ///Ostream opera
     else {
         out << "Unknown" << endl;
     }
-    out << "  Order paid for?: ";
+    out << "| Order paid for?: ";
     if (order._paidFor == 'n') {
         out << "No" << endl;
     }
@@ -190,7 +190,7 @@ ostream& operator << (ostream& out, Order& order) {             ///Ostream opera
     else {
         out << "Unknown" << endl;
     }
-    out << "  Order delivered?: ";
+    out << "| Order delivered?: ";
     if (order._delivered == 'n') {
         out << "No" << endl;
     }
@@ -200,13 +200,14 @@ ostream& operator << (ostream& out, Order& order) {             ///Ostream opera
     else {
         out << "Unknown" << endl;
     }
-    out << "  Extras: " << endl;
+    out << "| Extras: " << endl;
     for (unsigned int i = 0; i < order._extras.size(); i++) {
         out << order._extras.at(i);
     }
-    out << "  Pizzas: " << endl;
+    out << "| Pizzas: " << endl;
     for (unsigned int i = 0; i < order._pizza.size(); i++) {
-        out << order._pizza.at(i) << endl;
+        out << "| " << endl << "| " << "Pizza number " << (i+1) << endl;
+        out << order._pizza.at(i);
     }
     return out;
 }

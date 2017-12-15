@@ -19,6 +19,7 @@ class TopService
 
     private:
         bool toppingCheck(Toppings topping, int pick);
+        /// checks if topping has already been added to the list
 };
 
 #endif // TOPSERVICE_H

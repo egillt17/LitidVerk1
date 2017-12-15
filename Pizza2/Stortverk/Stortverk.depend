@@ -108,7 +108,7 @@
 	"PizzaService.h"
 	<stdlib.h>
 
-1513283826 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
+1513286493 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\manager_ui.cpp
 	"Manager_ui.h"
 
 1512742686 ef8c7b80988e56b05313cce19a0c285080108
@@ -355,10 +355,10 @@
 	"Toppings.h"
 	"Order.h"
 
-1513278484 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
+1513284710 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\services\pizzaservice.cpp
 	"PizzaService.h"
 
-1513278484 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
+1513284710 c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\include\services\pizzaservice.h
 	"Pizza.h"
 	"Toppings.h"
 	"PizzaRepo.h"
@@ -375,7 +375,7 @@
 1513278484 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\delivery_ui.cpp
 	"Baker_ui.h"
 
-1513278213 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\sales_ui.cpp
+1513286050 source:c:\users\njáll mýrdal\3viknanamskeid\litidverk1\pizza2\stortverk\src\ui\sales_ui.cpp
 	"Sales_ui.h"
 	<string>
 

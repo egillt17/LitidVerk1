@@ -86,17 +86,22 @@ void Manager_ui::managePizzaUI() {
         else if(input == '2') {
             system("cls");
             string answer = "";
+            int price = 0;
             unsigned int number;
             int sizePrice = 0;
             int saucePrice = 0;
             int crustPrice = 0;
             int toppingPrice = 0;
+            int totalPrice = 0;
+            bool specialPrice = false;
             Pizza tmpPizza;
             TopService get;
             vector <Toppings> topping;
             topping = get.getToppingList(1);
             while(true){
-                int totalPrice = sizePrice + saucePrice + crustPrice + toppingPrice;
+                if(!specialPrice) {
+                    totalPrice = sizePrice + saucePrice + crustPrice + toppingPrice;
+                }
                 tmpPizza.setPrice(totalPrice);
                 system("cls");
                 char input = '\0';
@@ -109,8 +114,11 @@ void Manager_ui::managePizzaUI() {
                 cout << "| '1' Set Size" << endl;
                 cout << "| '2' Set Crust" << endl;
                 cout << "| '3' Set Sauce" << endl;
-                cout << "| '4' Add Topping" << endl;
-                cout << "| '5' Add to list " << endl;
+                cout << "| '4' Add 1 topping to pizza" << endl;
+                cout << "| '5' Clear all toppings" << endl;
+                cout << "| '6' Set new price" << endl;
+                cout << "| '7' Add pizza to 'Pizza Specials' " << endl;
+                cout << "| '8' Cancel and go back to main manager menu" << endl;
                 cout << "| Input : ";
                 cin >> input;
                 if(input == '1') {
@@ -193,8 +201,29 @@ void Manager_ui::managePizzaUI() {
                     system("pause");
                     }
                 }
-                else if(input == '5'){
+                else if (input == '5') {
+                    tmpPizza.clearTopping();                       
+                    toppingPrice = tmpPizza.getToppingPrice();
+                }
+                                /// need try-trhow-catch on price
+                else if (input == '6') {
+                    cout << "| Input special price: ";
+                    cin >> price;
+                    totalPrice = price;
+                    //tmpPizza.setPrice(price);
+                    //try {
+                        //validate.validateNum(price);
+                        
+                    //}
+                    specialPrice = true; 
+                }
+                else if(input == '7'){
                     pizza_specials.addPizzaSpecialToList(tmpPizza);
+                    break;
+                }
+                else if(input == '8') {
+                    break;
+                    system("pause");
                 }
                 /*
 
@@ -216,11 +245,33 @@ void Manager_ui::managePizzaUI() {
             
         }
         else if(input == '3') {
-            system("cls");
+            vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();
+            while(true){
+            //system("cls");
+            string answer = "";
+            unsigned int number = 0;
             cout << endl;
             cout << "             -Remove Pizza from list-           " << endl;
             cout << "------------------------------------------------" << endl;
-            cout << "| " << endl;    
+            cout << "| " << endl;
+            
+            for(unsigned int i = 0; i < tmpPizzas.size(); i++) {
+                cout << "|          Pizza number: " << (i+1) << endl;
+                cout << tmpPizzas[i];
+                cout << "|-----------------------------------------------" << endl;
+                
+            }
+            cout << "| Pick a pizza to remove: ";
+            cin >> answer;
+                
+            stringstream sin(answer);                   
+            sin >> number;
+            cout << number << endl;                              
+            if(number > 0 && number <= tmpPizzas.size()) {
+                    tmpPizzas.erase (tmpPizzas.begin()+(number-1));
+                    //pizza_specials.reWritePizzaService(tmpPizzas);
+            }
+        }
         }
         else if(input == '4') {
             system("cls");

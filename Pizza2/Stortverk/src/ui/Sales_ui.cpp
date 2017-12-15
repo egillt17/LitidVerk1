@@ -134,12 +134,11 @@ Pizza Sales_ui::addPizza() {
 
         cin >> input;
         if (input == '1') {
-            system("CLS");
             topping = get.getToppingList(3);
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << (i+1) << ". " << topping[i];
+                cout << "| " << (i+1) << ". " << topping[i];
             }
-            cout << "Pick a size: ";
+            cout << "| Pick a size: ";
             cin >> answer;
             stringstream sin(answer);                   ///Stringstream changes the char answer into the int number so we can compare it to the topping.size() number
             sin >> number;                              ///in the if / else statement, we do this so the user can only interact with the exact size of the array

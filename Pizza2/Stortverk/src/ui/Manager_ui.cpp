@@ -16,7 +16,8 @@ void Manager_ui::managerMainUI(){
         cout << "| '3' for Extra management" << endl;
         cout << "| '4' for Location management" << endl;
         cout << "| '5' for Crust, Sauce and Size management" << endl;
-        cout << "| '6' to exit to the Main menu" << endl;
+        cout << "| '6' to view sales" << endl;
+        cout << "| '7' to exit to the Main menu" << endl;
         cout << "| Input : ";
         cin >> input;
         /// If else to choose which is function or UI to call
@@ -41,6 +42,10 @@ void Manager_ui::managerMainUI(){
             manageSettingUI();
         }
         else if(input == '6') {
+            system("cls");
+            manageSalesUI();
+        }
+        else if(input == '7') {
             system("cls");
             break;
         }
@@ -765,8 +770,43 @@ void Manager_ui::manageSettingUI() {
     }
 }
 
+void Manager_ui::manageSalesUI() {
+    char input = '\0';
+    PizzaService sales_numbers;
+    
+    while(true){
+        system("CLS");
+        cout << endl;
+        cout << "        -Manager - View sales and orders-       " << endl;
+        cout << "------------------------------------------------" << endl;
+        cout << "| '1' Display delivered orders list " << endl;
+        cout << "| '2' View total income numbers" << endl;
+        cout << "| '3' Average order payment" << endl;
+        cout << "| '4' Back to Manager main menu" << endl;
+        cout << "| Input : ";
+        cin >> input; 
+        if (input == '1'){
+            
+        }
+        else if(input =='2') {
+            
+        }
+        else if (input == '3') {
+            
+        }
+        else if( input == '4') {
+            system("cls");
+            break;
+        }
+        else {
+            cout << "| Wrong input, please try again" << endl;
+            cout << "| ";
+            system("pause");
+            system("cls");
+        }
+    }
+}
 /// Submenu that picks the sauce, crust or size
-/// that picks from the
 int Manager_ui::crustSauceSize() {
     char input = '0';
     int pick = 0;

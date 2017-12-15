@@ -310,21 +310,46 @@ void PizzaService::reWritePizzaService(vector <Pizza> pizzas) {   /// gets vecto
 }
 
 vector <Order> PizzaService::checkIfOrderIsDelivered(vector <Order> allOrders) {
-    vector <Order> deliveredOrders;
-    vector <Order> unDeliveredOrders;
+    vector <Order> deliveredOrders; /// vector for delivered orders
+    vector <Order> unDeliveredOrders;   /// vector for undelivered orders
     PizzaRepo get;
 
-    for(unsigned int i = 0; i < allOrders.size(); i++) {
-        if(allOrders[i].getDelivered() == 'y') {
-            deliveredOrders.push_back(allOrders[i]);
+    for(unsigned int i = 0; i < allOrders.size(); i++) {    /// goes through all the orders
+        if(allOrders[i].getDelivered() == 'y') {    /// if they are marked as delivered
+            deliveredOrders.push_back(allOrders[i]);    /// then they get added to the delivered vector
         }
-        else{
+        else{   /// else they get added to the undelivered orders
             unDeliveredOrders.push_back(allOrders[i]);
         }
     }
-    if(!deliveredOrders.empty()) {
+    if(!deliveredOrders.empty()) {  /// if delivered orders is not empty then it gets sent to repo
         get.addDeliveredOrdersToList(deliveredOrders);
     }
 
-    return unDeliveredOrders;
+    return unDeliveredOrders;   /// returns all undelivered orders
 }
+
+vector <Order> PizzaService::getOldOrders() {
+    PizzaRepo get;
+    vector <Order> oldOrders = get.readOldOrders(); /// gets all old orders from repo
+    return oldOrders;   /// and returns them
+}
+
+int PizzaService::TotalSales() {
+    vector <Order> oldOrders = getOldOrders();  /// gets all old orders
+    int salesTotal = 0;
+    for(unsigned int i = 0; i < oldOrders.size(); i ++) {   /// goes through them
+        salesTotal += oldOrders[i].getPrice();  /// and adds all the prices up in this variable
+    }
+
+    return salesTotal; /// then it returns all the sales numbers
+}
+
+int PizzaService::AverageOrderPrice() {
+    vector <Order> oldOrders = getOldOrders();  /// gets all the orders
+    int salesTotal = TotalSales();  /// gets total sales
+    int averagePriceOfOrder = salesTotal / oldOrders.size();    /// divides total sales with the number of old orders
+
+    return averagePriceOfOrder; /// and returns the average of all orders
+}
+

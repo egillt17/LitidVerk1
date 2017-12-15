@@ -24,6 +24,8 @@ class Manager_ui
         void manageSettingUI();
         /// This function is a menu that chooses either sauce, crust or size
         int crustSauceSize();
+        /// This function is a menu that views sales numbers and delivered orders
+        void manageSalesUI();
 
     private:
 };

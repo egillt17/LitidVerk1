@@ -38,6 +38,12 @@ class PizzaService
         /// adds a pizza special to the list
         void reWritePizzaService(vector <Pizza> pizzas);
         /// sends pizza special list to repo to be re writen
+        vector <Order> getOldOrders();
+        /// returns all the orders that have been delivered
+        int TotalSales();
+        /// returns the total sales numbers of all delivered order
+        int AverageOrderPrice();
+        /// returns the average of all delivered orders
 
 
     private:
@@ -49,6 +55,7 @@ class PizzaService
         void checkIfOrderIsReady(vector <Order>& allOrders);
         /// checks all the orders and if all the pizzas in a specific order are ready then the order gets marked as ready
         vector <Order> checkIfOrderIsDelivered(vector <Order> allOrders);
+        /// checks if order has been delivered if it has then it gets added to the old order file
         bool locationCheck(string location);
         /// checks if location has already been added
 };

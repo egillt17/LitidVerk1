@@ -48,6 +48,7 @@ class PizzaService
         /// into a pizza variable and returns that
         void checkIfOrderIsReady(vector <Order>& allOrders);
         /// checks all the orders and if all the pizzas in a specific order are ready then the order gets marked as ready
+        vector <Order> checkIfOrderIsDelivered(vector <Order> allOrders);
         bool locationCheck(string location);
         /// checks if location has already been added
 };

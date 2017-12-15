@@ -210,6 +210,7 @@ void PizzaService::reWriteOrdersService(vector <Order> orders, string location) 
         }
     }
     checkIfOrderIsReady(orders);    /// goes through the orders and checks if they are ready
+    orders = checkIfOrderIsDelivered(orders);
     get.reWriteOrders(orders);      /// then it gets sent down to the repo to be re written
 }
 
@@ -306,4 +307,24 @@ void PizzaService::addPizzaSpecialToList(Pizza pizza) { /// gets pizza form ui
 void PizzaService::reWritePizzaService(vector <Pizza> pizzas) {   /// gets vector
     PizzaRepo get;
     get.reWritePizzaSpecial(pizzas);    /// to be sent down to repo so the file can be rewritten
+}
+
+vector <Order> PizzaService::checkIfOrderIsDelivered(vector <Order> allOrders) {
+    vector <Order> deliveredOrders;
+    vector <Order> unDeliveredOrders;
+    PizzaRepo get;
+
+    for(unsigned int i = 0; i < allOrders.size(); i++) {
+        if(allOrders[i].getDelivered() == 'y') {
+            deliveredOrders.push_back(allOrders[i]);
+        }
+        else{
+            unDeliveredOrders.push_back(allOrders[i]);
+        }
+    }
+    if(!deliveredOrders.empty()) {
+        get.addDeliveredOrdersToList(deliveredOrders);
+    }
+
+    return unDeliveredOrders;
 }

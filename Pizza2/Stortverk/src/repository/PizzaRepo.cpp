@@ -145,3 +145,28 @@ void PizzaRepo::addDeliveredOrdersToList(vector <Order> orders) {
     fout.close();   /// close file
 }
 
+vector <Order> PizzaRepo::readOldOrders() {
+    vector <Order> orders;
+    Order tempOrder;
+    PizzaService get;
+    ifstream fin;
+    string st;
+    vector <string> info;
+    fin.open("Old_orders.txt"); /// opens order file
+    if(fin.is_open()) { /// checks if its open
+        while(!fin.eof()) { /// loop runs til it reaches the end of the file
+            getline(fin, st);   /// gets each line from the file
+            if(st == ":") { /// checks for delimiter
+                tempOrder = get.fixOrderInfo(info); /// sends the info to be fixed and then added to a temp order variable
+                orders.push_back(tempOrder);    /// adds the fixed order variable to the order vector
+                info.clear();   /// clears the vector that had the info
+            }
+            else {  /// if it doesnt find the delimiter then it adds to the info vector
+                info.push_back(st);
+            }
+        }
+    }
+    fin.close();    /// closes file
+    return orders;  /// returns the orders
+}
+

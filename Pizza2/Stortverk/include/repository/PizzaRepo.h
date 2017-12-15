@@ -28,6 +28,7 @@ class PizzaRepo
         void reWritePizzaSpecial(vector <Pizza> pizzas);
         /// rewrites pizza special file
         void addDeliveredOrdersToList(vector <Order> orders);
+        vector <Order> readOldOrders();
 
     private:
 };

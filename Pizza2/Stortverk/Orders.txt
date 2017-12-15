@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-^bjarni olafsson^spong^n^p^n^6240^p^No added comments^
-=======
 ^Njalli^Gardabaer^r^p^n^2950^n^Happy birthday^
 ^Red wine^100^
 ^1400^Medium^Pizza sauce^r^Regular crust^
@@ -9,7 +6,6 @@
 ^pepperoni^onion^mushrooms^paprika^
 :
 ^bjarni olafsson^arbaer^r^n^y^6240^p^No added comments^
->>>>>>> 3d19786dcde8241c7042ef1c98f203d891e4c450
 ^Cola Soda^200^BBQ wings^1020^
 ^1860^Large^BBQ sauce^i^Italian crust^
 ^pepperoni^bacon^onions^
@@ -41,8 +37,6 @@
 ^No extras^0^
 ^1550^Large^Pizza sauce^n^Italian crust^
 ^No toppings^
-<<<<<<< HEAD
-=======
 :
 ^kari gudjonsson^arbaer^n^u^n^1400^p^No added comments^
 ^No extras^0^
@@ -82,5 +76,4 @@
 ^No extras^0^
 ^1550^Large^Pizza sauce^r^Italian crust^
 ^No toppings^
->>>>>>> 3d19786dcde8241c7042ef1c98f203d891e4c450
 :

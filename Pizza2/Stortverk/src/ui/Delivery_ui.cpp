@@ -222,7 +222,7 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
                                 while(paying == false) {
                                     cout << "Input amount: ";
                                     cin >> input;
-                                    stringstream sin2(input);
+                                    stringstream sin2(input);                                               ///Cash or credit that calculates the change of an order
                                     sin2 >> number2;
                                     if(number2 >= orders[number-1].getPrice()){
                                         cout << "change: " << number2 - orders[number-1].getPrice() << endl;
@@ -251,8 +251,8 @@ void Delivery_ui::locationMenu(string location) {        ///Takes in the locatio
                         else if (answer == '2')
                         {
                         system("CLS");
-                        if (orders[number-1].getPaidFor() == 'p' && orders[number-1].getProgress() == 'r') {
-                            cout << "| Order marked delivered" << endl;
+                        if (orders[number-1].getPaidFor() == 'p' && orders[number-1].getProgress() == 'r') {                ///Making sure that an order is paid and ready before it is
+                            cout << "| Order marked delivered" << endl;                                                     ///delivered.
                             orders[number-1].setDelivered('y');
                             get.reWriteOrdersService(orders, location);
                             system("Pause");

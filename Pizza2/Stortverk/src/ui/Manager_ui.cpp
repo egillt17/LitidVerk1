@@ -58,11 +58,12 @@ void Manager_ui::managerMainUI(){
     }
 }
 
+/// This is a menu that puts special menu item pizzas to a list
 void Manager_ui::managePizzaUI() {
     char input = '\0';
-    PizzaService pizza_specials;
+    PizzaService pizza_specials;    /// Makes pizza_special variable from PizzaService class
     
-    while(true){
+    while(true){    /// submenu for the Pizza Management
         system("CLS");
         cout << "          -Manager - Pizza management-          " << endl;
         cout << "------------------------------------------------" << endl;
@@ -72,14 +73,14 @@ void Manager_ui::managePizzaUI() {
         cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input;
-        if (input == '1'){
+        if (input == '1'){  /// to display the pizza special menu
             system("cls");
             cout << endl;
             cout << "              -Display Pizza list-              " << endl;
             cout << "------------------------------------------------" << endl;
             cout << "| " << endl;
-            vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();
-            for(unsigned int i = 0; i < tmpPizzas.size(); i++) {
+            vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();    /// makes a vector of Pizza, called tmpPizzas - all special pizzas goes into that vector
+            for(unsigned int i = 0; i < tmpPizzas.size(); i++) {    /// looped through the list
                 cout << "|          Pizza number: " << (i+1) << endl;
                 cout << tmpPizzas[i];
                 cout << "|-----------------------------------------------" << endl;
@@ -87,29 +88,29 @@ void Manager_ui::managePizzaUI() {
             cout << "| ";
             system("PAUSE");
         }
-        else if(input == '2') {
-            Validate validate;
+        else if(input == '2') { /// the code below works just like the code in Sales_ui.cpp class
+            Validate validate;  /// this is to validate the price (if input is new price)
             system("cls");
-            string answer = "";
+            string answer = ""; 
             string price = "";
-            unsigned int number;
-            unsigned int newPrice;
-            int sizePrice = 0;
-            int saucePrice = 0;
-            int crustPrice = 0;
-            int toppingPrice = 0;
-            int totalPrice = 0;
-            bool specialPrice = false;
-            Pizza tmpPizza;
-            TopService get;
-            vector <Toppings> topping;
+            unsigned int number;    /// this holds the list number value, to pick from a list.
+            unsigned int newPrice;  ///  var to hold the new input price
+            int sizePrice = 0;  /// holds the price for size
+            int saucePrice = 0; /// holds the price for sauce
+            int crustPrice = 0; /// hold the crust price
+            int toppingPrice = 0;   /// holds the toppings price
+            int totalPrice = 0; /// to hold total price
+            bool specialPrice = false;  /// setting the special price of menu item
+            Pizza tmpPizza;     /// tmpPizza of the class Pizza
+            TopService get;     /// to handle toppings
+            vector <Toppings> topping;      /// Make vector of the class toppings;
             topping = get.getToppingList(1);
             while(true){
                 system("cls");
-                if(!specialPrice) {
-                    totalPrice = sizePrice + saucePrice + crustPrice + toppingPrice;
+                if(!specialPrice) {     /// if we choose to set another price instead of accumulated price
+                    totalPrice = sizePrice + saucePrice + crustPrice + toppingPrice;    /// this won't calculate, only the new price is set
                 }
-                tmpPizza.setPrice(totalPrice);
+                tmpPizza.setPrice(totalPrice);  /// this accumulates all prices
                 char input = '\0';
                 cout << endl;
                 cout << "           -Input new Pizza to list-            " << endl;
@@ -130,28 +131,28 @@ void Manager_ui::managePizzaUI() {
                 if(input == '1') {
                     cout << "                  -Set Size-                    " << endl;
                     cout << "------------------------------------------------" << endl;
-                    topping = get.getToppingList(3);
-                    for(unsigned int i = 0; i < topping.size(); i++) {
+                    topping = get.getToppingList(sizesPick);   /// gets the list of sizes
+                    for(unsigned int i = 0; i < topping.size(); i++) {  /// displays the list
                         cout << "| " << (i+1) << ". " << topping[i];
                     }
                     cout << "| Pick a size: ";
                     cin >> answer;
                     stringstream sin(answer);                   
-                    sin >> number;                              
-                    if(number > 0 && number <= topping.size()) {
-                        tmpPizza.setSize(topping[number-1].getName());
-                        sizePrice = topping[number-1].getPrice();         
+                    sin >> number;                                 
+                    if(number > 0 && number <= topping.size()) {        /// this picks the number of the list of toppings
+                        tmpPizza.setSize(topping[number-1].getName());  /// now the tmpPizza has this new size
+                        sizePrice = topping[number-1].getPrice();         /// and it accumulates the new price
                     }
-                    else {
+                    else {  ///  error if input is wrong
                         cout << "| Invalid Input" << endl;
                         cout << "| ";
                         system("pause");
                     }
                 }
-                else if(input == '2'){
+                else if(input == '2'){      /// same as size, but with crust
                     cout << "                  -Set Crust-                    " << endl;
                     cout << "------------------------------------------------" << endl;
-                    topping = get.getToppingList(2);
+                    topping = get.getToppingList(crustPick);    /// gets the list of crust
                     for(unsigned int i = 0; i < topping.size(); i++) {
                         cout << "| " << (i+1) << ". " << topping[i];
                     }
@@ -159,31 +160,31 @@ void Manager_ui::managePizzaUI() {
                     cin >> answer;
                     stringstream sin(answer);                   
                     sin >> number;
-                    if(number > 0 && number <= topping.size()){
-                        tmpPizza.setCrust(topping[number-1].getName());
-                        crustPrice = topping[number-1].getPrice();
+                    if(number > 0 && number <= topping.size()){ /// to pick the number of the list
+                        tmpPizza.setCrust(topping[number-1].getName()); /// tmpPizza has now the picked crust
+                        crustPrice = topping[number-1].getPrice();  /// accumulates the new price
                     }
                     else {
                         cout << "| Invalid Input" << endl;
                         cout << "| ";
                         system("pause");
                     }
-                }
+                }           /// same as with size / crust but now with Sauce, works the same
                 else if (input == '3') {
                     cout << "                  -Set Sauce-                    " << endl;
                     cout << "------------------------------------------------" << endl;
-                    topping = get.getToppingList(4);
+                    topping = get.getToppingList(saucePick);    /// gets the list of sauces
                     for(unsigned int i = 0; i < topping.size(); i++) {
                         cout << "| " << (i+1) << ". " << topping[i];
                     }
                     cout << "| Pick a sauce: ";
                     cin >> answer;
-                    stringstream sin(answer);                   ///Works the same way as the chunk of code above but instead changes the sauce and it's price
+                    stringstream sin(answer);  
                     sin >> number;
                     if(number > 0 && number <= topping.size()){
-                        tmpPizza.setSauce(topping[number-1].getName());
-                        saucePrice = topping[number-1].getPrice();
-                    }
+                        tmpPizza.setSauce(topping[number-1].getName());     /// tmpPizza has now the new sauce
+                        saucePrice = topping[number-1].getPrice();          /// accumulates the price
+                    }           
                     else {
                         cout << "| Invalid Input" << endl;
                         cout << "| ";
@@ -193,17 +194,17 @@ void Manager_ui::managePizzaUI() {
                 else if(input == '4'){
                     cout << "               -Add toppings-                    " << endl;
                     cout << "------------------------------------------------" << endl;
-                    topping = get.getToppingList(1);
+                    topping = get.getToppingList(toppingsPick);     /// to get the toppings list
                     for(unsigned int i = 0; i < topping.size(); i++) {
-                        cout << "| " << (i+1) << ". " << topping[i];
+                        cout << "| " << (i+1) << ". " << topping[i];    /// display the toppings
                     }
                     cout << "| Pick a Topping: ";
                     cin >> answer;
                     stringstream sin(answer);                  
                     sin >> number;
-                    if(number > 0 && number <= topping.size()){
-                        tmpPizza.addTopping(topping[number-1]);
-                        toppingPrice = tmpPizza.getToppingPrice();
+                    if(number > 0 && number <= topping.size()){     /// pick one topping of the list
+                        tmpPizza.addTopping(topping[number-1]);     /// accumulates the topping to the pizza 
+                        toppingPrice = tmpPizza.getToppingPrice();  /// accumulates the topping price
                     }
                     else {
                         cout << "| Invalid Input" << endl;
@@ -211,36 +212,36 @@ void Manager_ui::managePizzaUI() {
                         system("pause");
                     }
                 }
-                else if (input == '5') {
-                    tmpPizza.clearTopping();                       
-                    toppingPrice = tmpPizza.getToppingPrice();
+                else if (input == '5') {    /// this is handy to clear all the toppings of the pizza, if manager made a mistake
+                    tmpPizza.clearTopping();             /// clears toppings          
+                    toppingPrice = tmpPizza.getToppingPrice();  /// clears the accumulated price of toppings
                 }
-                else if (input == '6') {
+                else if (input == '6') {    /// to input another price other than accumulated price
                     cout << "| Input special price: ";
                     cin >> price;
-                    try {
+                    try {   /// this validates the price if it contains only digits
                         validate.validateNum(price);
                         stringstream sin(price);
-                        sin >> newPrice;
-                        specialPrice = true; 
-                        totalPrice = newPrice;
+                        sin >> newPrice;    
+                        specialPrice = true;    /// setting the special price bool
+                        totalPrice = newPrice;  /// total price is not the new price
                         cout << "| New price set successfully" << endl;
                         cout << "| ";
                         system("pause");
                     }
-                    catch (InvalidNumExceptions e) {
+                    catch (InvalidNumExceptions e) {    /// catches the invalid number exception error
                         cout << e.getMessage() << endl;
                         cout << "| ";
                         system("pause");
                     }
                 }
-                else if(input == '7'){
+                else if(input == '7'){  /// error message if manager tries to submit the new pizza without making the size of pizza first
                     if(!tmpPizza.getSize().compare("Not picked")) {
                         cout << "| You have to pick a size to add the pizza" << endl;     
                         system("pause");
                         break;
                     }
-                    else {
+                    else {  /// the new pizza will now be added to the special pizza list,
                     pizza_specials.addPizzaSpecialToList(tmpPizza);
                     cout << "| Pizza successfully added to list" << endl;
                     cout << "| ";
@@ -248,55 +249,55 @@ void Manager_ui::managePizzaUI() {
                     break;
                     }
                 }
-                else if(input == '8') {
+                else if(input == '8') { /// goes to the Pizza management  menu
                     cout << "| ";
                     system("pause");
                     break;
                 }
             }
         }
-        else if(input == '3') {
-            vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();
+        else if(input == '3') { /// this removes a special pizza from a list
+            vector<Pizza> tmpPizzas = pizza_specials.getPizzaSpecials();    /// get the special pizza list and adds them to a temPizza vector
             
             system("cls");
             string answer = "";
-            unsigned int number = 0;
+            unsigned int number = 0;    /// to store the value of the removed pizza in the list
             cout << endl;
             cout << "             -Remove Pizza from list-           " << endl;
             cout << "------------------------------------------------" << endl;
             cout << "| " << endl;
             
             for(unsigned int i = 0; i < tmpPizzas.size(); i++) {
-                cout << "|          Pizza number: " << (i+1) << endl;
+                cout << "|          Pizza number: " << (i+1) << endl;   /// display the special pizza list
                 cout << tmpPizzas[i];
                 cout << "|-----------------------------------------------" << endl;
                 
             }
-            cout << "|'0' to exit" << endl;
+            cout << "|'0' to exit" << endl; 
             cout << "| Pick a pizza to remove: ";
-            cin >> answer;
+            cin >> answer; 
                 
             stringstream sin(answer);                   
             sin >> number;                             
-            if(number > 0 && number <= tmpPizzas.size()) {
-                    tmpPizzas.erase (tmpPizzas.begin()+(number-1));
-                    pizza_specials.reWritePizzaService(tmpPizzas);
+            if(number > 0 && number <= tmpPizzas.size()) {  /// if you pick a number from the list
+                    tmpPizzas.erase (tmpPizzas.begin()+(number-1)); /// the item from the list will be removed
+                    pizza_specials.reWritePizzaService(tmpPizzas);  /// writes the new list to service class and down to repo
                     cout << "| Pizza successfully removed" << endl;
                     cout << "| ";
                     system("pause");
             }
-            else if (number == 0) {
+            else if (number == 0) { /// goes out without removing anything
                 cout << "| Nothing removed" << endl;
                 cout << "| ";
                 system("pause");
             }
-            else {
+            else {  /// 
                 cout << "| Invalid Input " << endl;
                 cout << "| ";
                 system("pause");
             }
         }
-        else if(input == '4') {
+        else if(input == '4') { /// goes back to the Main Manager UI
             cout << "| ";
             system("cls");
             break;            
@@ -375,6 +376,8 @@ void Manager_ui::manageToppingUI() {
         }
         /// UI to remove a topping from the list
         else if(input == '3'){
+            string answer = "";
+            unsigned int number;
             while(true){
                 system("cls");
                 cout << endl;
@@ -383,27 +386,30 @@ void Manager_ui::manageToppingUI() {
                 cout << "| " << endl;
                 topping = get.getToppingList(toppingsPick); /// display the list of toppings, easier to write the topping to remove
                 for(unsigned int i = 0; i < topping.size(); i++) {
-                    cout << topping[i];
+                    cout << "| " << i+1 << ". " << topping[i].getName() << endl;
                 }
                 cout << "| " << endl;
+                cout << "| '0' Nothing will be removed" << endl;
                 cout << "| What topping would you like to remove? ";
-                cin.ignore();
-                getline(cin, top);
-                try {
-                    validate.validateName(top);
-                    if(!get.removeTopping(top, toppingsPick)) { /// If name is validated, but don't find the right topping
-                        cout << "| Topping not found!" << endl; /// error
-                        cout << "| ";
-                        system("pause");
-                        break;
-                    }
-                    cout << "| Successfully removed" << endl;
+                cin >> answer;
+                stringstream sin(answer);                   
+                sin >> number;                                 
+                if(number > 0 && number <= topping.size()) {        /// this picks the number of the list of toppings
+                    top = topping[number-1].getName();              /// puts the name of picked topping to varialbe top
+                    get.removeTopping(top, toppingsPick);           /// goes to service to remove topping from list
+                    cout << "| Topping succesfully removed" << endl;
                     cout << "| ";
                     system("pause");
                     break;
                 }
-                catch(InvalidNameException e) { /// catches an error, if the name is wrong, (only letters)
-                    cout << e.getMessage() << endl;
+                else if(number == 0) {  /// to go back and remove nothing, and display notification
+                    cout << "| Nothing removed" << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;
+                }
+                else {  ///  error if input is wrong
+                    cout << "| Invalid Input" << endl;
                     cout << "| ";
                     system("pause");
                     break;
@@ -450,7 +456,7 @@ void Manager_ui::manageExtraUI(){
             cout << "| " << endl;
             topping = get.getToppingList(extraPick);    /// Gets the extra topping list from service
             for(unsigned int i = 0; i < topping.size(); i++) {
-                cout << "| " << topping[i]; /// prints out the list on the screen
+                cout << topping[i]; /// prints out the list on the screen
             }
             cout << "| " << endl;
             cout << "| ";
@@ -491,6 +497,8 @@ void Manager_ui::manageExtraUI(){
         /// UI to remove extras from the list
         else if(input == '3'){
             while(true){
+                string answer = "";
+                unsigned int number = 0;
                 system("cls");
                 cout << endl;
                 cout << "            -Remove extras from list-           " << endl;
@@ -498,31 +506,34 @@ void Manager_ui::manageExtraUI(){
                 cout << "| " << endl;
                 topping = get.getToppingList(extraPick);
                 for(unsigned int i = 0; i < topping.size(); i++) {
-                    cout << "| " << topping[i];                         /// this is the same as displaying extras list
+                    cout << "| " << i+1 << ". " << topping[i].getName() << endl;     /// this is the same as displaying extras list
                 }                                                       /// helps to find the item you wan't to remove
                 cout << "| " << endl;
+                cout << "| '0' Will remove nothing" << endl;
                 cout << "| What extras would you like to remove? ";
-                cin.ignore();
-                getline(cin, top);
-                try {
-                    validate.validateName(top);
-                    if(!get.removeTopping(top, extraPick)) {    /// validates the name , if is validated
-                        cout << "| Extra not found" << endl;    /// but not found it displays an error
-                        cout << "| ";
-                        system("pause");
-                        break;
-                    }
-                }
-                catch(InvalidNameException e){  /// if name is not validated this name exception catches an error
-                    cout << e.getMessage() << endl;
+                cin >> answer;
+                stringstream sin(answer);                   
+                sin >> number;                                 
+                if(number > 0 && number <= topping.size()) {        /// this picks the number of the list of toppings
+                    top = topping[number-1].getName();              /// puts the name of picked topping to varialbe top
+                    get.removeTopping(top, extraPick);           /// goes to service to remove topping from list
+                    cout << "| Extra succesfully removed" << endl;
                     cout << "| ";
                     system("pause");
                     break;
                 }
-                cout << "| Successfully removed" << endl;
-                cout << "| ";
-                system("pause");
-                break;
+                else if(number == 0) {  /// to go back and remove nothing, and display notification
+                    cout << "| Nothing removed" << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;
+                }
+                else {  ///  error if input is wrong
+                    cout << "| Invalid Input" << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;
+                }
             }
         }
         else if(input == '4') {
@@ -602,33 +613,38 @@ void Manager_ui::manageLocationUI(){
         else if(input == '3'){
             while(true){
                 system("cls");
+                string answer = "";
+                unsigned int number = 0;
                 cout << endl;
                 cout << "          -Remove location from list-           " << endl;
                 cout << "------------------------------------------------" << endl;
                 cout << "|" << endl;
                 locations = get.getLocation();
                 for(unsigned int i = 0; i < locations.size(); i++) {
-                    cout << "| Address " << i+1 << ": " << locations[i] << endl;    /// gets the list and displays the list
+                    cout << "| " << i+1 << ": " << locations[i] << endl;    /// gets the list and displays the list
                 }
                 cout << "|" << endl;
+                cout << "| '0' Will remove nothing" << endl;
                 cout << "| What location would you like to remove? ";
-                cin.ignore();
-                getline(cin, location);
-                try {               /// validates the name to remove,
-                    validate.validateLocation(location);    /// if name of location is valid but
-                    if(!get.removeLocation(location)) { ///  location is not found, prints error
-                        cout << "| Location not found" << endl;
-                        cout << "| ";
-                        system("pause");
-                        break;
-                    }   /// if it validates, and found, removes it.
-                    cout << "| Location successfully removed" << endl;
+                cin >> answer;
+                stringstream sin(answer);                   
+                sin >> number;                                 
+                if(number > 0 && number <= location.size()) {        /// this picks the number of the list of location
+                    location = locations[number-1];              /// puts the name of picked location to varialbe top
+                    get.removeLocation(location);           /// goes to service to remove location from list
+                    cout << "| Item succesfully removed" << endl;
                     cout << "| ";
                     system("pause");
                     break;
                 }
-                catch(InvalidLocationException e) { /// prints out location exception error message from validation class
-                    cout << e.getMessage() << endl;
+                else if(number == 0) {  /// to go back and remove nothing, and display notification
+                    cout << "| Nothing removed" << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;
+                }
+                else {  ///  error if input is wrong
+                    cout << "| Invalid Input" << endl;
                     cout << "| ";
                     system("pause");
                     break;
@@ -728,32 +744,38 @@ void Manager_ui::manageSettingUI() {
                 system("cls");
                 pick = crustSauceSize();
                 system("cls");
+                string answer = "";
+                unsigned int number = 0;
                 cout << endl;
                 cout << "            -Remove item from list-             " << endl;
                 cout << "------------------------------------------------" << endl;
                 cout << "|" <<  endl;
-                topping = get.getToppingList(pick);                 /// print list of toppings from picked list
+                topping = get.getToppingList(pick);
                 for(unsigned int i = 0; i < topping.size(); i++) {
-                    cout << topping[i];     /// prints it out on the screen
-                }
-                cout << "|" << endl;
+                    cout << "| " << i+1 << ". " << topping[i].getName() << endl;     /// this is the same as displaying extras list
+                }                                                       /// helps to find the item you wan't to remove
+                cout << "| " << endl;
+                cout << "| '0' Will remove nothing" << endl;
                 cout << "| What item would you like to remove? ";
-                cin.ignore();
-                getline(cin, top);
-                try {
-                    validate.validateName(top); /// validates the name, if true,
-                    if(!get.removeTopping(top, pick)) { /// but can't find it on the list, display error
-                        cout << "| Item not found" << endl;
-                        system("pause");
-                        break;
-                    }
-                    cout << "| Item successfully removed" << endl;
+                cin >> answer;
+                stringstream sin(answer);                   
+                sin >> number;                                 
+                if(number > 0 && number <= topping.size()) {        /// this picks the number of the list of toppings
+                    top = topping[number-1].getName();              /// puts the name of picked topping to varialbe top
+                    get.removeTopping(top, pick);           /// goes to service to remove topping from list
+                    cout << "| Item succesfully removed" << endl;
                     cout << "| ";
                     system("pause");
                     break;
                 }
-                catch(InvalidNameException e) { /// for invalid name error exception message
-                    cout << e.getMessage() << endl;
+                else if(number == 0) {  /// to go back and remove nothing, and display notification
+                    cout << "| Nothing removed" << endl;
+                    cout << "| ";
+                    system("pause");
+                    break;
+                }
+                else {  ///  error if input is wrong
+                    cout << "| Invalid Input" << endl;
                     cout << "| ";
                     system("pause");
                     break;
@@ -770,36 +792,63 @@ void Manager_ui::manageSettingUI() {
     }
 }
 
+/// menu to view total sales number / view old delivered orders / view average order price
 void Manager_ui::manageSalesUI() {
-    char input = '\0';
-    PizzaService sales_numbers;
+    char input = '\0';  /// to input in the submenu
+    PizzaService sales_numbers; ///  makes a variable of PizzaService class
+    vector<Order> old_orders = sales_numbers.getOldOrders();   /// makes a vector of Order class called old orders, pulls old orders from sales_numbers
+    int totalSales = sales_numbers.TotalSales();    /// total sales number
+    int averageSales = sales_numbers.AverageOrderPrice();   /// average sales number
     
-    while(true){
+    while(true){    /// submenu
         system("CLS");
         cout << endl;
         cout << "        -Manager - View sales and orders-       " << endl;
         cout << "------------------------------------------------" << endl;
         cout << "| '1' Display delivered orders list " << endl;
         cout << "| '2' View total income numbers" << endl;
-        cout << "| '3' Average order payment" << endl;
+        cout << "| '3' Average order numbers" << endl;
         cout << "| '4' Back to Manager main menu" << endl;
         cout << "| Input : ";
         cin >> input; 
-        if (input == '1'){
-            
+        if (input == '1'){  /// to view old orders that have been delivered loops through the list
+            system("cls");
+            for(unsigned int i = 0; i < old_orders.size();i++){
+                cout << "|          Order Number : " << i+1 << endl;
+                cout << "| " << old_orders[i];
+                cout << "|-----------------------------------------------" << endl;
+                cout << "| ";
+                system("pause");
+            }
         }
-        else if(input =='2') {
-            
+        else if(input =='2') {  /// submenu to view total sales numbers
+            system("cls");
+            cout << endl;
+            cout << "        -Manager - total income numbers-        " << endl;
+            cout << "------------------------------------------------" << endl;
+            cout << "|" <<endl;
+            cout << "| Total sales numbers :" << totalSales << endl;
+            cout << "| " << endl;
+            cout << "| ";
+            system("pause");
         }
-        else if (input == '3') {
-            
+        else if (input == '3') {    /// submenu to view average order sales number
+            system("cls");
+            cout << endl;
+            cout << "        -Manager -Average order numbers-        " << endl;
+            cout << "------------------------------------------------" << endl;
+            cout << "|" <<endl;
+            cout << "| Total average order numbers :" << averageSales << endl;
+            cout << "| " << endl;
+            cout << "| ";
+            system("pause");
         }
-        else if( input == '4') {
+        else if( input == '4') {    /// goes back to manager menu
             system("cls");
             break;
         }
         else {
-            cout << "| Wrong input, please try again" << endl;
+            cout << "| Wrong input, please try again" << endl;  /// throws an error if wrong input
             cout << "| ";
             system("pause");
             system("cls");

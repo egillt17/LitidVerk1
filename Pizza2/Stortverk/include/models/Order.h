@@ -39,6 +39,7 @@ class Order
         void setExtras(vector <Toppings> extras);
         /// takes a vector of extras and sets it as the extras in the order
         void setPizzas(vector <Pizza> pizzas);
+        /// takes a vector of pizzas and sets it as the pizzas in the order
         void addExtras(Toppings extra);
         ///set function that adds the extra that was sent to the function to the vector extras
         void setPerson(string name);

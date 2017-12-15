@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 ^bjarni olafsson^spong^n^p^n^6240^p^No added comments^
+=======
+^Njalli^Gardabaer^r^p^n^2950^n^Happy birthday^
+^Red wine^100^
+^1400^Medium^Pizza sauce^r^Regular crust^
+^pepperoni^mushrooms^
+^1450^Medium^Pizza sauce^r^Regular crust^
+^pepperoni^onion^mushrooms^paprika^
+:
+^bjarni olafsson^arbaer^r^n^y^6240^p^No added comments^
+>>>>>>> 3d19786dcde8241c7042ef1c98f203d891e4c450
 ^Cola Soda^200^BBQ wings^1020^
 ^1860^Large^BBQ sauce^i^Italian crust^
 ^pepperoni^bacon^onions^
@@ -30,4 +41,46 @@
 ^No extras^0^
 ^1550^Large^Pizza sauce^n^Italian crust^
 ^No toppings^
+<<<<<<< HEAD
+=======
+:
+^kari gudjonsson^arbaer^n^u^n^1400^p^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^i^Regular crust^
+^No toppings^
+:
+^Egill thorisson^Gardabaer^r^p^n^2255^n^No added comments^
+^Cheesy bites^810^
+^1445^Medium^Salsa sauce^r^Italian crust^
+^pepperoni^mushrooms^
+:
+^jonas halldorsson^Gardabaer^n^u^n^1550^n^No added comments^
+^No extras^0^
+^1550^Large^Pizza sauce^n^Italian crust^
+^No toppings^
+:
+^baldvin^Gardabaer^r^u^n^710^p^No added comments^
+^Breadsticks (Big)^710^
+^No pizzas^
+^No pizzas^
+:
+^kari gudjonsson^spong^n^u^n^1400^n^No added comments^
+^No extras^0^
+^1400^Large^Pizza sauce^n^Regular crust^
+^No toppings^
+:
+^elvis the king ^spong^n^d^n^7210^p^No added comments^
+^Stuffed bacon^1020^Stuffed pepperoni^1020^
+^2075^EXTRA LARGE^BBQ sauce^i^Italian crust^
+^onions^bacon^
+^1525^Medium^A lot of sauce^r^Italian crust^
+^ham^pineapple^
+^1570^Large^Ketchup^r^Regular crust^
+^mushrooms^bacon^onions^
+:
+^jonas halldorsson^spong^r^u^y^1550^p^No added comments^
+^No extras^0^
+^1550^Large^Pizza sauce^r^Italian crust^
+^No toppings^
+>>>>>>> 3d19786dcde8241c7042ef1c98f203d891e4c450
 :
